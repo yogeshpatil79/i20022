@@ -1,0 +1,716 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>i20022</name>
+    </assembly>
+    <members>
+        <member name="T:i20022.Reporting.MessageReporter">
+            <summary>
+            <example>
+            <code>
+            :
+            using i20022;               // references the convenience classes
+            using i20022.Reporting;     // references reporting 
+            using i20022.acmt00100102;  // references the messages to work on
+            
+            namespace SampleCode
+            {
+                class Program
+                {
+                    static void Main(string[] args)
+                    {
+                        // reads the xml message
+                        string xml = File.ReadAllText(".//acmt.001.001.02.xml");
+            
+                        // converts it to an object
+                        MessageDocument md = new MessageDocument(xml);
+                        
+                        // it is ready to use programmatically
+                        Document messageObject = (Document) md.ToObject();
+             
+                        // generates a full report of the message in plain text
+                        string report = MessageReporter.Report(messageObject, ReportingType.PlainText);
+                        :
+                    }
+                }
+            </code>
+            </example>
+            </summary>
+        </member>
+        <member name="M:i20022.Reporting.MessageReporter.Report(System.Object,i20022.Reporting.ReportingType)">
+            <summary>
+            Report a message object in plain text ou html.
+            <remarks>TODO: xml report</remarks>
+            </summary>
+            <param name="instance">The message instance to report.</param>
+            <param name="reportingType">The reporting type.</param>
+            <returns>The report.</returns>
+        </member>
+        <member name="M:i20022.Reporting.MessageReporter.TraverseMessage(i20022.Reporting.IMessageMember,i20022.Reporting.ReportingType,System.Text.StringBuilder@,System.Int32@)">
+            <summary>
+            Traverses the message.
+            </summary>
+            <param name="member">The member.</param>
+            <param name="concat">The reporting type.</param>
+            <param name="indent">The indent value.</param>
+        </member>
+        <member name="M:i20022.Reporting.MessageReporter.GetMembers(System.Object)">
+            <summary>
+            Gets all members.
+            </summary>
+            <param name="obj">Any object to browse </param>
+            <returns>List of members</returns>
+        </member>
+        <member name="M:i20022.Reporting.MessageReporter.IsCollection(System.Object)">
+            <summary>
+            Determines whether the specified obj is collection.
+            </summary>
+            <param name="obj">The obj.</param>
+            <returns>
+            	<c>true</c> if the specified obj is collection; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:i20022.Reporting.MessageReporter.IsEnum(System.Object)">
+            <summary>
+            Determines whether the specified object is an enumeration.
+            </summary>
+            <param name="obj">The object instance.</param>
+            <returns>
+            	<c>true</c> if the specified object instance is an enumeration; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:i20022.Reporting.MessageReporter.GetListItems(System.Collections.ICollection)">
+            <summary>
+            Gets the list items.
+            </summary>
+            <param name="collection">The collection.</param>
+            <returns></returns>
+        </member>
+        <member name="M:i20022.Reporting.MessageReporter.IsValueType(System.Type)">
+            <summary>
+            Determines whether [is value tyype] [the specified t].
+            </summary>
+            <param name="t">The t.</param>
+            <returns>
+            	<c>true</c> if [is value tyype] [the specified t]; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="T:i20022.MessageDocument">
+            <summary>
+            This class is class responsible for converting xml ISO 20022 message
+            documents to .NET message objects.
+            <example>
+            <code>
+            using i20022;               // references the convenience classes
+            using i20022.Reporting;     // references reporting 
+            using i20022.acmt00100102;  // references the messages to work on
+            
+            namespace SampleCode
+            {
+                class Program
+                {
+                    static void Main(string[] args)
+                    {
+                        // reads the xml message
+                        string xml = File.ReadAllText(".//acmt.001.001.02.xml");
+                        :
+                        // converts it to an object
+                        MessageDocument md = new MessageDocument(xml);
+                        
+                        // it is ready to use programmatically
+                        Document messageObject = (Document) md.ToObject();
+                        :
+                        :
+                    }
+                }
+            
+            </code>
+            </example>
+            </summary>
+        </member>
+        <member name="M:i20022.MessageDocument.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:i20022.MessageObject"/> class.
+            </summary>
+            <param name="xml">The xml message document.</param>
+        </member>
+        <member name="M:i20022.MessageDocument.ToObject">
+            <summary>
+            Converts an ISO 20022 xml message to an instance of a message object.
+            </summary>
+            <returns>Returns an instance of a message object representing the xml message document.</returns>
+            <exception cref="T:System.ArgumentOutOfRangeException"></exception>
+            <exception cref="T:System.ArgumentException"></exception>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:i20022.MessageDocument.Initialize(System.Type)">
+            <summary>
+            Initializes a new XmlSerializer.
+            </summary>
+            <param name="type">The datatype of an unifi message instance.</param>
+            <returns>The xml serializer.</returns>
+        </member>
+        <member name="M:i20022.MessageDocument.serializer_UnknownNode(System.Object,System.Xml.Serialization.XmlNodeEventArgs)">
+            <summary>
+            Handles the UnknownNode event of the serializer control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Xml.Serialization.XmlNodeEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:i20022.MessageDocument.serializer_UnknownAttribute(System.Object,System.Xml.Serialization.XmlAttributeEventArgs)">
+            <summary>
+            Handles the UnknownAttribute event of the serializer control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Xml.Serialization.XmlAttributeEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:i20022.MessageDocument.serializer_UnknownElement(System.Object,System.Xml.Serialization.XmlElementEventArgs)">
+            <summary>
+            Handles the UnknownElement event of the serializer control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Xml.Serialization.XmlElementEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:i20022.MessageDocument.serializer_UnreferencedObject(System.Object,System.Xml.Serialization.UnreferencedObjectEventArgs)">
+            <summary>
+            Handles the UnreferencedObject event of the serializer control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Xml.Serialization.UnreferencedObjectEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="P:i20022.MessageDocument.Xml">
+            <summary>
+            Gets the xml message document.
+            </summary>
+            <value>The xml message document.</value>
+        </member>
+        <member name="P:i20022.MessageDocument.ErrorText">
+            <summary>
+            Gets the error text.
+            </summary>
+            <value>The error text.</value>
+        </member>
+        <member name="P:i20022.MessageDocument.MessageCode">
+            <summary>
+            Gets the message code.
+            </summary>
+            <value>The message code.</value>
+        </member>
+        <member name="P:i20022.MessageDocument.MessageType">
+            <summary>
+            Gets the message type.
+            </summary>
+            <value>The message type.</value>
+        </member>
+        <member name="T:i20022.Reporting.MemberComparer">
+            <summary>
+            Represents the message member custom comparer.
+            </summary>
+        </member>
+        <member name="M:i20022.Reporting.MemberComparer.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:i20022.Reporting.MemberComparer"/> class.
+            </summary>
+        </member>
+        <member name="M:i20022.Reporting.MemberComparer.Compare(i20022.Reporting.IMessageMember,i20022.Reporting.IMessageMember)">
+            <summary>
+            Compares the specified member one with member two.
+            </summary>
+            <param name="memberOne">The member one.</param>
+            <param name="memberTwo">The member two.</param>
+            <returns></returns>
+        </member>
+        <member name="T:i20022.Reporting.MessageItem">
+            <summary>
+            Implementation class of the message item. 
+            </summary>
+        </member>
+        <member name="T:i20022.Reporting.IMessageMember">
+            <summary>
+            The <b>i20022 message member</b> interface.
+            </summary>
+        </member>
+        <member name="M:i20022.Reporting.IMessageMember.GetValue">
+            <summary>
+            Gets the member´s value if it is a value type.
+            </summary>
+            <returns>The member´s value.</returns>
+        </member>
+        <member name="M:i20022.Reporting.IMessageMember.GetChildren">
+            <summary>
+            Gets the list of child member´s.
+            </summary>
+            <returns>The list of child member´s.</returns>
+        </member>
+        <member name="P:i20022.Reporting.IMessageMember.Type">
+            <summary>
+            Gets the member´s type.
+            </summary>
+            <value>The member´s type.</value>
+        </member>
+        <member name="P:i20022.Reporting.IMessageMember.HasValue">
+            <summary>
+            Gets a value indicating whether this instance has value.
+            </summary>
+            <value>
+                <c>true</c> if this instance has value; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:i20022.Reporting.IMessageMember.Name">
+            <summary>
+            Gets the member´s name.
+            </summary>
+            <value>The member´s name.</value>
+        </member>
+        <member name="P:i20022.Reporting.IMessageMember.HasChildren">
+            <summary>
+            Gets a value indicating whether this instance has children.
+            </summary>
+            <value>
+            	<c>true</c> if this instance has children; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:i20022.Reporting.MessageItem.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="!:Item"/> class.
+            </summary>
+        </member>
+        <member name="M:i20022.Reporting.MessageItem.#ctor(System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="!:Item"/> class.
+            </summary>
+            <param name="source">The source.</param>
+        </member>
+        <member name="M:i20022.Reporting.MessageItem.GetValue">
+            <summary>
+            Gets the value.
+            </summary>
+            <returns>The value.</returns>
+        </member>
+        <member name="M:i20022.Reporting.MessageItem.GetChildren">
+            <summary>
+            Returns the child members of the member.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:i20022.Reporting.MessageItem.Name">
+            <summary>
+            Gets the name.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="P:i20022.Reporting.MessageItem.Type">
+            <summary>
+            Gets the type.
+            </summary>
+            <value>The type.</value>
+        </member>
+        <member name="P:i20022.Reporting.MessageItem.HasValue">
+            <summary>
+            Gets a value indicating whether this instance has value.
+            </summary>
+            <value><c>true</c> if this instance has value; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:i20022.Reporting.MessageItem.HasChildren">
+            <summary>
+            Returns true if the object has child members and false otherwise.
+            </summary>
+            <value>
+            	<c>true</c> if this instance has children; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:i20022.Reporting.MessageFields">
+            <summary>
+            Represents the message fields.
+            </summary>
+        </member>
+        <member name="T:i20022.Reporting.MessageField">
+            <summary>
+            Represent a message field.
+            </summary>
+        </member>
+        <member name="M:i20022.Reporting.MessageField.#ctor(System.Reflection.FieldInfo,System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:i20022.Reporting.MessageField"/> class.
+            </summary>
+            <param name="info">The info.</param>
+            <param name="parent">The parent.</param>
+        </member>
+        <member name="P:i20022.Reporting.MessageField.Info">
+            <summary>
+            Gets the info.
+            </summary>
+            <value>The info.</value>
+        </member>
+        <member name="P:i20022.Reporting.MessageField.Name">
+            <summary>
+            Gets the name.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="P:i20022.Reporting.MessageField.Type">
+            <summary>
+            Gets the type.
+            </summary>
+            <value>The type.</value>
+        </member>
+        <member name="M:i20022.Reporting.MessageFields.#ctor(System.Reflection.FieldInfo,System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:i20022.Reporting.MessageFields"/> class.
+            </summary>
+            <param name="info">The info.</param>
+            <param name="parent">The parent.</param>
+        </member>
+        <member name="M:i20022.Reporting.MessageFields.GetChildren">
+            <summary>
+            Returns the child members of the member.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:i20022.Reporting.MessageFields.HasChildren">
+            <summary>
+            Returns true if the object has child members and false otherwise.
+            </summary>
+            <value>
+            	<c>true</c> if this instance has children; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:i20022.Utilities">
+            <summary>
+            Convenience utility class.
+            </summary>
+        </member>
+        <member name="M:i20022.Utilities.#cctor">
+            <summary>
+            Initializes the <see cref="T:i20022.Utilities"/> class.
+            </summary>
+        </member>
+        <member name="M:i20022.Utilities.Trace(System.String)">
+            <summary>
+            Traces the specified text.
+            </summary>
+            <param name="Text">The text.</param>
+        </member>
+        <member name="M:i20022.Utilities.Trace(System.String,System.Object[])">
+            <summary>
+            Traces the specified formated text.
+            </summary>
+            <param name="format">The format.</param>
+            <param name="args">The args.</param>
+        </member>
+        <member name="M:i20022.Utilities.GetMessageCode(System.String)">
+            <summary>
+            Gets the unifi message code.
+            </summary>
+            <param name="xml">The xml message.</param>
+            <returns>The message type.</returns>
+            <exception cref="T:System.ArgumentOutOfRangeException"></exception>
+            <exception cref="T:System.ArgumentException"></exception>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:i20022.Utilities.GetMessageType(System.String)">
+            <summary>
+            Gets the unifi message datatype.
+            </summary>
+            <param name="xml">The xml message.</param>
+            <returns>The unifi message datatype.</returns>
+            <exception cref="T:System.ArgumentOutOfRangeException"></exception>
+            <exception cref="T:System.ArgumentException"></exception>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:i20022.Utilities.String2MemoryStream(System.String)">
+            <summary>
+            Creates a MemoryStream from a xml string message.
+            </summary>
+            <param name="xml">The xml message.</param>
+            <returns>The MemoryStream.</returns>
+        </member>
+        <member name="M:i20022.Utilities.MemoryStream2String(System.IO.Stream)">
+            <summary>
+            
+            </summary>
+            <param name="st">The MemoryStream.</param>
+            <returns>The xml message.</returns>
+        </member>
+        <member name="M:i20022.Utilities.Split(System.String)">
+            <summary>
+            Splits the specified the word.
+            </summary>
+            <param name="theWord">The word to split.</param>
+            <returns></returns>
+        </member>
+        <member name="M:i20022.Utilities.IsDigit(System.String)">
+            <summary>
+            Verify if a given word is a digit.
+            </summary>
+            <param name="word">The word.</param>
+            <returns>
+            	<c>true</c> if [the specified word is a digit]; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="T:i20022.MessageSet.Enumerations">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:i20022.MessageSet.Enumerations.#cctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:i20022.MessageSet.Enumerations"/> class.
+            </summary>
+        </member>
+        <member name="M:i20022.MessageSet.Enumerations.GetMeaning(System.String)">
+            <summary>
+            Gets the meaning.
+            </summary>
+            <param name="enumerationCode">The enumeration code.</param>
+            <returns></returns>
+        </member>
+        <member name="T:i20022.MessageSet.BusinessAreas">
+            <summary>
+            Utility class representing the messages business areas.
+            </summary>
+        </member>
+        <member name="M:i20022.MessageSet.BusinessAreas.#cctor">
+            <summary>
+            Initializes the <see cref="T:i20022.MessageSet.BusinessAreas"/> class.
+            </summary>
+        </member>
+        <member name="M:i20022.MessageSet.BusinessAreas.GetBusinessArea(System.String)">
+            <summary>
+            Gets the business area.
+            </summary>
+            <param name="messageName">The name of the message. <example>pacs.002.001.02</example></param>
+            <returns>The business area.</returns>
+        </member>
+        <member name="T:i20022.Reporting.ReportingType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:i20022.Reporting.ReportingType.PlainText">
+            <summary>
+            Indicates to the <b>MessageReporter</b> produce a plain text report.
+            </summary>
+        </member>
+        <member name="F:i20022.Reporting.ReportingType.Html">
+            <summary>
+            Indicates to the <b>MessageReporter</b> produce a html report.
+            </summary>
+        </member>
+        <member name="T:i20022.MessageObject">
+            <summary>
+            This is a convenience class responsible to
+            converting ISO 20022 message documents to message objects.
+            <example>
+            <code>
+            using i20022;               // references the convenience classes
+            using i20022.Reporting;     // references reporting 
+            using i20022.acmt00100102;  // references the messages to work on
+            
+            namespace SampleCode
+            {
+                class Program
+                {
+                    static void Main(string[] args)
+                    {
+                        // reads the xml message
+                        string xml = File.ReadAllText(".//acmt.001.001.02.xml");
+                        // converts it to an object
+                        MessageDocument md = new MessageDocument(xml);
+                        // it is ready to use programmatically
+                        Document messageObject = (Document) md.ToObject();
+                        :
+                        // converts the message object to xml...
+                        MessageObject mo = new MessageObject(messageObject);            
+                        // is simple like this!!!
+                        xml = mo.ToXml();
+                        :
+                    }
+                }
+            
+            </code>
+            </example>
+            </summary>
+        </member>
+        <member name="M:i20022.MessageObject.#ctor(System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:i20022.MessageObject"/> class.
+            </summary>
+            <param name="instance">The message object instance.</param>
+        </member>
+        <member name="M:i20022.MessageObject.ToXml">
+            <summary>
+            Converts an instance of a message object in a xml message document.
+            </summary>
+            <returns>The xml message document representing the message object instance.</returns>
+            <exception cref="T:System.InvalidOperationException"></exception>
+            <exception cref="T:System.NotSupportedException"></exception>
+            <exception cref="T:System.ObjectDisposedException"></exception>
+            <exception cref="T:System.IO.IOException"></exception>
+        </member>
+        <member name="M:i20022.MessageObject.Initialize(System.Type)">
+            <summary>
+            Initializes a new XmlSerializer.
+            </summary>
+            <param name="type">The datatype of an unifi message instance.</param>
+            <returns>The xml serializer.</returns>
+        </member>
+        <member name="M:i20022.MessageObject.serializer_UnknownNode(System.Object,System.Xml.Serialization.XmlNodeEventArgs)">
+            <summary>
+            Handles the UnknownNode event of the serializer control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Xml.Serialization.XmlNodeEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:i20022.MessageObject.serializer_UnknownAttribute(System.Object,System.Xml.Serialization.XmlAttributeEventArgs)">
+            <summary>
+            Handles the UnknownAttribute event of the serializer control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Xml.Serialization.XmlAttributeEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:i20022.MessageObject.serializer_UnknownElement(System.Object,System.Xml.Serialization.XmlElementEventArgs)">
+            <summary>
+            Handles the UnknownElement event of the serializer control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Xml.Serialization.XmlElementEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:i20022.MessageObject.serializer_UnreferencedObject(System.Object,System.Xml.Serialization.UnreferencedObjectEventArgs)">
+            <summary>
+            Handles the UnreferencedObject event of the serializer control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Xml.Serialization.UnreferencedObjectEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="P:i20022.MessageObject.ErrorText">
+            <summary>
+            Gets the error text.
+            </summary>
+            <value>The error text.</value>
+        </member>
+        <member name="P:i20022.MessageObject.MessageCode">
+            <summary>
+            Gets the message code.
+            </summary>
+            <value>The message code.</value>
+        </member>
+        <member name="P:i20022.MessageObject.MessageType">
+            <summary>
+            Gets the message type.
+            </summary>
+            <value>The message type.</value>
+        </member>
+        <member name="P:i20022.MessageObject.Instance">
+            <summary>
+            Gets the message object instance.
+            </summary>
+            <value>The message object instance.</value>
+        </member>
+        <member name="T:i20022.MessageSet.Message">
+            <summary>
+            This class represents an ISO 20022 UNIFI message.
+            The naming conventions for the UNIFI messages are 
+            based on a format of: xxxx.aaa.bbb.cc,  where:
+              xxxx - 4 char business area; e.g. pacs
+              aaa - 3 digit message type; e.g. 008
+              bbb - 3 digit variant number; e.g. 001
+              cc - 2 digit version number; e.g 01
+            <example>pacs.008.001.01</example>
+            </summary>
+        </member>
+        <member name="M:i20022.MessageSet.Message.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:i20022.MessageSet.Message"/> class.
+            </summary>
+            <param name="messageName">The name of the message.</param>
+            <param name="description">The description.</param>
+        </member>
+        <member name="M:i20022.MessageSet.Message.GetDescription">
+            <summary>
+            Gets the description.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:i20022.MessageSet.Message.GetBusinessArea(System.String)">
+            <summary>
+            Gets the business area of the message.
+            </summary>
+            <param name="messageName">Name of the message.</param>
+            <returns></returns>
+        </member>
+        <member name="M:i20022.MessageSet.Message.VerifyMessageName(System.String)">
+            <summary>
+            Verifies the message name.
+            </summary>
+            <param name="name">The name.</param>
+        </member>
+        <member name="M:i20022.MessageSet.Message.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents the current <see cref="T:System.Object"/>.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"/> that represents the current <see cref="T:System.Object"/>.
+            </returns>
+        </member>
+        <member name="P:i20022.MessageSet.Message.MessageName">
+            <summary>
+            Gets or sets the name of the message.
+            </summary>
+            <value>The name of the message.</value>
+        </member>
+        <member name="P:i20022.MessageSet.Message.Description">
+            <summary>
+            Gets the message description.
+            </summary>
+            <value>The message description.</value>
+        </member>
+        <member name="P:i20022.MessageSet.Message.BusinessArea">
+            <summary>
+            Gets or sets the business area of the message.
+            </summary>
+            <value>The business area of the message.</value>
+        </member>
+        <member name="T:i20022.MessageSet.Messages">
+            <summary>
+            Utility class that represents the set of messages.
+            </summary>
+        </member>
+        <member name="M:i20022.MessageSet.Messages.#cctor">
+            <summary>
+            Initializes the <see cref="T:i20022.MessageSet.Messages"/> class.
+            </summary>
+        </member>
+        <member name="M:i20022.MessageSet.Messages.GetMessage(System.String)">
+            <summary>
+            Gets a message object given its name.
+            </summary>
+            <param name="messageName">Name of the message.</param>
+            <returns></returns>
+        </member>
+        <member name="M:i20022.MessageSet.Messages.InferMessageType(System.Object)">
+            <summary>
+            Infers the type of the message.
+            </summary>
+            <param name="instance">The instance.</param>
+            <returns></returns>
+        </member>
+        <member name="T:i20022.MessageSet.Acronyms">
+            <summary>
+            Utility class responsible for give meanings to message fields and types.
+            </summary>
+        </member>
+        <member name="M:i20022.MessageSet.Acronyms.#cctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:i20022.MessageSet.Acronyms.BuildPhrase(System.String)">
+            <summary>
+            Build a phrase from a word.
+            </summary>
+            <param name="word"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

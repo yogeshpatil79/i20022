@@ -1,0 +1,4709 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ReferenceData</name>
+    </assembly>
+    <members>
+        <member name="T:i20022.reda00200103.Document">
+            <summary>
+            <b>Document</b> is the root class of the ISO 20022 message
+            with id reda.002.001.03 name PriceReportCancellationV03 from Reference Data business area.
+            Repository:R 6.8.0.1 v492 - 4 July 2008
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.Document.PricRptCxlV03">
+            <summary>
+            Element <b>PricRptCxlV03</b> (Price Report Cancellation V03) of type PriceReportCancellationV03.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.PriceReportCancellationV03">
+            <summary>
+            Class <b>PriceReportCancellationV03</b> (Price Report Cancellation V03).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PriceReportCancellationV03.MsgId">
+            <summary>
+            Element <b>MsgId</b> (Message Identification) of type MessageIdentification1.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PriceReportCancellationV03.PoolRef">
+            <summary>
+            Element <b>PoolRef</b> (Pool Reference) of type AdditionalReference3.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PriceReportCancellationV03.PrvsRef">
+            <summary>
+            Element <b>PrvsRef</b> (Previous Reference) of type AdditionalReference3.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PriceReportCancellationV03.MsgPgntn">
+            <summary>
+            Element <b>MsgPgntn</b> (Message Pagination) of type Pagination.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PriceReportCancellationV03.PricRptToBeCanc">
+            <summary>
+            Element <b>PricRptToBeCanc</b> (Price Report To Be Cancelled) of type PriceReport2.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.MessageIdentification1">
+            <summary>
+            Class <b>MessageIdentification1</b> (Message Identification 1).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.MessageIdentification1.Id">
+            <summary>
+            Element <b>Id</b> (Identification) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.MessageIdentification1.CreDtTm">
+            <summary>
+            Element <b>CreDtTm</b> (Creation Date Time) of type System.DateTime.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.Extension1">
+            <summary>
+            Class <b>Extension1</b> (Extension 1).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.Extension1.PlcAndNm">
+            <summary>
+            Element <b>PlcAndNm</b> (Place And Name) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.Extension1.Txt">
+            <summary>
+            Element <b>Txt</b> (Txt) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.PerformanceFactors1">
+            <summary>
+            Class <b>PerformanceFactors1</b> (Performance Factors 1).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PerformanceFactors1.CorpActnFctr">
+            <summary>
+            Element <b>CorpActnFctr</b> (Corporate Action Factor) of type decimal.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PerformanceFactors1.CorpActnFctrSpecified">
+            <summary>
+            Element <b>CorpActnFctrSpecified</b> (Corporate Action Factor Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PerformanceFactors1.CmltvCorpActnFctr">
+            <summary>
+            Element <b>CmltvCorpActnFctr</b> (Cmltv Corporate Action Factor) of type decimal.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PerformanceFactors1.CmltvCorpActnFctrSpecified">
+            <summary>
+            Element <b>CmltvCorpActnFctrSpecified</b> (Cmltv Corporate Action Factor Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PerformanceFactors1.AcmltnPrd">
+            <summary>
+            Element <b>AcmltnPrd</b> (Accumulation Period) of type DatePeriodDetails.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PerformanceFactors1.NrmlPrfrmnc">
+            <summary>
+            Element <b>NrmlPrfrmnc</b> (Nrml Prfrmnc) of type decimal.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PerformanceFactors1.NrmlPrfrmncSpecified">
+            <summary>
+            Element <b>NrmlPrfrmncSpecified</b> (Nrml Prfrmnc Specified) of type bool.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.DatePeriodDetails">
+            <summary>
+            Class <b>DatePeriodDetails</b> (Date Period Details).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.DatePeriodDetails.FrDt">
+            <summary>
+            Element <b>FrDt</b> (From Date) of type System.DateTime.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.DatePeriodDetails.ToDt">
+            <summary>
+            Element <b>ToDt</b> (To Date) of type System.DateTime.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.DateTimePeriodDetails">
+            <summary>
+            Class <b>DateTimePeriodDetails</b> (Date Time Period Details).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.DateTimePeriodDetails.FrDtTm">
+            <summary>
+            Element <b>FrDtTm</b> (From Date Time) of type System.DateTime.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.DateTimePeriodDetails.ToDtTm">
+            <summary>
+            Element <b>ToDtTm</b> (To Date Time) of type System.DateTime.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.DateOrDateTimePeriodChoice">
+            <summary>
+            Class <b>DateOrDateTimePeriodChoice</b> (Date Or Date Time Period Choice).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.DateOrDateTimePeriodChoice.Item">
+            <summary>
+            Element <b>Item</b> (Item) of type object.
+            This element can be:
+             Dt of type DatePeriodDetails 
+             DtTm of type DateTimePeriodDetails 
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.StatisticsByUserDefinedTimePeriod2">
+            <summary>
+            Class <b>StatisticsByUserDefinedTimePeriod2</b> (Statistics By User Defined Time Period 2).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.StatisticsByUserDefinedTimePeriod2.Prd">
+            <summary>
+            Element <b>Prd</b> (Period) of type DateOrDateTimePeriodChoice.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.StatisticsByUserDefinedTimePeriod2.HghstPricVal">
+            <summary>
+            Element <b>HghstPricVal</b> (Highest Price Value) of type PriceValue5.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.StatisticsByUserDefinedTimePeriod2.LwstPricVal">
+            <summary>
+            Element <b>LwstPricVal</b> (Lowest Price Value) of type PriceValue5.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.StatisticsByUserDefinedTimePeriod2.PricChng">
+            <summary>
+            Element <b>PricChng</b> (Price Change) of type PriceValueChange1.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.StatisticsByUserDefinedTimePeriod2.Yld">
+            <summary>
+            Element <b>Yld</b> (Yield) of type decimal.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.StatisticsByUserDefinedTimePeriod2.YldSpecified">
+            <summary>
+            Element <b>YldSpecified</b> (Yield Specified) of type bool.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.PriceValue5">
+            <summary>
+            Class <b>PriceValue5</b> (Price Value 5).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PriceValue5.Amt">
+            <summary>
+            Element <b>Amt</b> (Amount) of type ActiveOrHistoricCurrencyAnd13DecimalAmount.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.ActiveOrHistoricCurrencyAnd13DecimalAmount">
+            <summary>
+            Class <b>ActiveOrHistoricCurrencyAnd13DecimalAmount</b> (Active Or Historic Currency And 13 Decimal Amount).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ActiveOrHistoricCurrencyAnd13DecimalAmount.Ccy">
+            <summary>
+            Element <b>Ccy</b> (Currency) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ActiveOrHistoricCurrencyAnd13DecimalAmount.Value">
+            <summary>
+            Element <b>Value</b> (Value) of type decimal.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.PriceValueChange1">
+            <summary>
+            Class <b>PriceValueChange1</b> (Price Value Change 1).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PriceValueChange1.Amt">
+            <summary>
+            Element <b>Amt</b> (Amount) of type ActiveOrHistoricCurrencyAnd13DecimalAmount.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PriceValueChange1.AmtSgn">
+            <summary>
+            Element <b>AmtSgn</b> (Amount Sign) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PriceValueChange1.AmtSgnSpecified">
+            <summary>
+            Element <b>AmtSgnSpecified</b> (Amount Sign Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PriceValueChange1.Rate">
+            <summary>
+            Element <b>Rate</b> (Rate) of type decimal.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PriceValueChange1.RateSpecified">
+            <summary>
+            Element <b>RateSpecified</b> (Rate Specified) of type bool.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.StatisticsByPredefinedTimePeriods2">
+            <summary>
+            Class <b>StatisticsByPredefinedTimePeriods2</b> (Statistics By Predefined Time Periods 2).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.StatisticsByPredefinedTimePeriods2.HghstPricVal12Mnths">
+            <summary>
+            Element <b>HghstPricVal12Mnths</b> (Highest Price Value 12 Months) of type PriceValue5.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.StatisticsByPredefinedTimePeriods2.LwstPricVal12Mnths">
+            <summary>
+            Element <b>LwstPricVal12Mnths</b> (Lowest Price Value 12 Months) of type PriceValue5.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.StatisticsByPredefinedTimePeriods2.OneYrPricChng">
+            <summary>
+            Element <b>OneYrPricChng</b> (One Year Price Change) of type PriceValueChange1.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.StatisticsByPredefinedTimePeriods2.ThreeYrPricChng">
+            <summary>
+            Element <b>ThreeYrPricChng</b> (Three Year Price Change) of type PriceValueChange1.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.StatisticsByPredefinedTimePeriods2.FiveYrPricChng">
+            <summary>
+            Element <b>FiveYrPricChng</b> (Five Year Price Change) of type PriceValueChange1.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.PriceType2">
+            <summary>
+            Class <b>PriceType2</b> (Price Type 2).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PriceType2.Strd">
+            <summary>
+            Element <b>Strd</b> (Structured) of type TypeOfPrice6Code.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PriceType2.AddtlInf">
+            <summary>
+            Element <b>AddtlInf</b> (Additional Information) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.TypeOfPrice6Code">
+            <summary>
+            Enumeration <b>TypeOfPrice6Code</b> (Type Of Price 6Code).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TypeOfPrice6Code.BIDE">
+            <summary>
+            <b>BIDE - Bid</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TypeOfPrice6Code.OFFR">
+            <summary>
+            <b>OFFR - Offer</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TypeOfPrice6Code.NAVL">
+            <summary>
+            <b>NAVL - Net Asset Value</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TypeOfPrice6Code.CREA">
+            <summary>
+            <b>CREA - Creation</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TypeOfPrice6Code.CANC">
+            <summary>
+            <b>CANC - Request To Cancel</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TypeOfPrice6Code.INTE">
+            <summary>
+            <b>INTE - Interest</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TypeOfPrice6Code.SWNG">
+            <summary>
+            <b>SWNG - Swing</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TypeOfPrice6Code.OTHR">
+            <summary>
+            <b>OTHR - Other</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TypeOfPrice6Code.MIDD">
+            <summary>
+            <b>MIDD - Mid</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TypeOfPrice6Code.RINV">
+            <summary>
+            <b>RINV - Reinvestment</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TypeOfPrice6Code.SWIC">
+            <summary>
+            <b>SWIC - Switch</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TypeOfPrice6Code.DDVR">
+            <summary>
+            <b>DDVR - Daily Dividend Rate</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TypeOfPrice6Code.ACTU">
+            <summary>
+            <b>ACTU - Actual</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TypeOfPrice6Code.NAUP">
+            <summary>
+            <b>NAUP - Non Adjusted Unpublished</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.ValuationStatistics3">
+            <summary>
+            Class <b>ValuationStatistics3</b> (Valuation Statistics 3).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ValuationStatistics3.Ccy">
+            <summary>
+            Element <b>Ccy</b> (Currency) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ValuationStatistics3.PricTpChngBsis">
+            <summary>
+            Element <b>PricTpChngBsis</b> (Price Type Change Basis) of type PriceType2.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ValuationStatistics3.PricChng">
+            <summary>
+            Element <b>PricChng</b> (Price Change) of type PriceValueChange1.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ValuationStatistics3.Yld">
+            <summary>
+            Element <b>Yld</b> (Yield) of type decimal.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ValuationStatistics3.YldSpecified">
+            <summary>
+            Element <b>YldSpecified</b> (Yield Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ValuationStatistics3.ByPrdfndTmPrds">
+            <summary>
+            Element <b>ByPrdfndTmPrds</b> (By Predefined Time Periods) of type StatisticsByPredefinedTimePeriods2.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ValuationStatistics3.ByUsrDfndTmPrd">
+            <summary>
+            Element <b>ByUsrDfndTmPrd</b> (By User Defined Time Period) of type array of StatisticsByUserDefinedTimePeriod2.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.TaxCalculationInformation4">
+            <summary>
+            Class <b>TaxCalculationInformation4</b> (Tax Calculation Information 4).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TaxCalculationInformation4.Item">
+            <summary>
+            Element <b>Item</b> (Item) of type object.
+            This element can be:
+             EUCptlGn of type EUCapitalGain2Code 
+             XtndedEUCptlGn of type string 
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TaxCalculationInformation4.PctgOfDebtClm">
+            <summary>
+            Element <b>PctgOfDebtClm</b> (Percentage Of Debt Claim) of type decimal.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TaxCalculationInformation4.PctgOfDebtClmSpecified">
+            <summary>
+            Element <b>PctgOfDebtClmSpecified</b> (Percentage Of Debt Claim Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TaxCalculationInformation4.PctgGrdfthdDebt">
+            <summary>
+            Element <b>PctgGrdfthdDebt</b> (Percentage Grandfathered Debt) of type decimal.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TaxCalculationInformation4.PctgGrdfthdDebtSpecified">
+            <summary>
+            Element <b>PctgGrdfthdDebtSpecified</b> (Percentage Grandfathered Debt Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TaxCalculationInformation4.TaxblIncmPerDvdd">
+            <summary>
+            Element <b>TaxblIncmPerDvdd</b> (Taxable Income Per Dividend) of type ActiveOrHistoricCurrencyAnd13DecimalAmount.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TaxCalculationInformation4.Item1">
+            <summary>
+            Element <b>Item1</b> (Item 1) of type object.
+            This element can be:
+             EUDvddSts of type EUDividendStatus1Code 
+             XtndedEUDvddSts of type string 
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.EUCapitalGain2Code">
+            <summary>
+            Enumeration <b>EUCapitalGain2Code</b> (EUCapital Gain 2Code).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.EUCapitalGain2Code.EUSI">
+            <summary>
+            <b>EUSI - Capital Gain In Scope</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.EUCapitalGain2Code.EUSO">
+            <summary>
+            <b>EUSO - Capital Gain Out Scope</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.EUCapitalGain2Code.UKWN">
+            <summary>
+            <b>UKWN - Unknown</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.EUDividendStatus1Code">
+            <summary>
+            Enumeration <b>EUDividendStatus1Code</b> (EUDividend Status 1Code).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.EUDividendStatus1Code.DIVI">
+            <summary>
+            <b>DIVI - Dividend In Scope</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.EUDividendStatus1Code.DIVO">
+            <summary>
+            <b>DIVO - Dividend Out Scope</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.EUDividendStatus1Code.UKWN">
+            <summary>
+            <b>UKWN - Unknown</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.Tax17">
+            <summary>
+            Class <b>Tax17</b> (Tax 17).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.Tax17.Item">
+            <summary>
+            Element <b>Item</b> (Item) of type object.
+            This element can be:
+             Tp of type TaxType12Code 
+             XtndedTp of type string 
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.Tax17.Amt">
+            <summary>
+            Element <b>Amt</b> (Amount) of type array of ActiveOrHistoricCurrencyAnd13DecimalAmount.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.Tax17.Rate">
+            <summary>
+            Element <b>Rate</b> (Rate) of type decimal.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.Tax17.RateSpecified">
+            <summary>
+            Element <b>RateSpecified</b> (Rate Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.Tax17.Ctry">
+            <summary>
+            Element <b>Ctry</b> (Country) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.Tax17.TaxClctnDtls">
+            <summary>
+            Element <b>TaxClctnDtls</b> (Tax Calculation Details) of type TaxCalculationInformation4.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.TaxType12Code">
+            <summary>
+            Enumeration <b>TaxType12Code</b> (Tax Type 12 Code).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TaxType12Code.INPO">
+            <summary>
+            <b>INPO - Interim Profit Tax</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TaxType12Code.EUTR">
+            <summary>
+            <b>EUTR - EUTax Retention</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TaxType12Code.AKT1">
+            <summary>
+            <b>AKT1 - Aktiengewinn 1</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TaxType12Code.AKT2">
+            <summary>
+            <b>AKT2 - Aktiengewinn 2</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TaxType12Code.ZWIS">
+            <summary>
+            <b>ZWIS - Zwischengewinn</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TaxType12Code.MIET">
+            <summary>
+            <b>MIET - Mietgewinn</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.Charge15">
+            <summary>
+            Class <b>Charge15</b> (Charge 15).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.Charge15.Item">
+            <summary>
+            Element <b>Item</b> (Item) of type object.
+            This element can be:
+             Tp of type ChargeType9Code 
+             XtndedTp of type string 
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.Charge15.Item1">
+            <summary>
+            Element <b>Item1</b> (Item 1) of type object.
+            This element can be:
+             Amt of type ActiveCurrencyAnd13DecimalAmount 
+             Rate of type decimal 
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.Charge15.Item2">
+            <summary>
+            Element <b>Item2</b> (Item 2) of type object.
+            This element can be:
+             ClctnBsis of type CalculationBasis2Code 
+             XtndedClctnBsis of type string 
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.ChargeType9Code">
+            <summary>
+            Enumeration <b>ChargeType9Code</b> (Charge Type 9Code).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ChargeType9Code.MANF">
+            <summary>
+            <b>MANF - Management Fee</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ChargeType9Code.BEND">
+            <summary>
+            <b>BEND - Back End Load</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ChargeType9Code.FEND">
+            <summary>
+            <b>FEND - Front End Load</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ChargeType9Code.ADVI">
+            <summary>
+            <b>ADVI - Advisory Fee</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ChargeType9Code.CUST">
+            <summary>
+            <b>CUST - Custodial Account</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ChargeType9Code.PUBL">
+            <summary>
+            <b>PUBL - Publication Fee</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ChargeType9Code.ACCT">
+            <summary>
+            <b>ACCT - Accounting Fee</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ChargeType9Code.EQUL">
+            <summary>
+            <b>EQUL - Equalisation</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ChargeType9Code.PENA">
+            <summary>
+            <b>PENA - Penalty</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.ActiveCurrencyAnd13DecimalAmount">
+            <summary>
+            Class <b>ActiveCurrencyAnd13DecimalAmount</b> (Active Currency And 13 Decimal Amount).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ActiveCurrencyAnd13DecimalAmount.Ccy">
+            <summary>
+            Element <b>Ccy</b> (Currency) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ActiveCurrencyAnd13DecimalAmount.Value">
+            <summary>
+            Element <b>Value</b> (Value) of type decimal.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.CalculationBasis2Code">
+            <summary>
+            Enumeration <b>CalculationBasis2Code</b> (Calculation Basis 2Code).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.CalculationBasis2Code.AVER">
+            <summary>
+            <b>AVER - Average</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.CalculationBasis2Code.DAIL">
+            <summary>
+            <b>DAIL - Daily</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.CalculationBasis2Code.MNTH">
+            <summary>
+            <b>MNTH - Monthly</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.CalculationBasis2Code.YEAR">
+            <summary>
+            <b>YEAR - Annual</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.PriceValue1">
+            <summary>
+            Class <b>PriceValue1</b> (Price Value 1).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PriceValue1.Amt">
+            <summary>
+            Element <b>Amt</b> (Amount) of type ActiveCurrencyAnd13DecimalAmount.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.UnitPrice15">
+            <summary>
+            Class <b>UnitPrice15</b> (Unit Price 15).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.UnitPrice15.Item">
+            <summary>
+            Element <b>Item</b> (Item) of type object.
+            This element can be:
+             Tp of type TypeOfPrice9Code 
+             XtndedTp of type string 
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.UnitPrice15.PricMtd">
+            <summary>
+            Element <b>PricMtd</b> (Price Method) of type PriceMethod1Code.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.UnitPrice15.PricMtdSpecified">
+            <summary>
+            Element <b>PricMtdSpecified</b> (Price Method Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.UnitPrice15.ValInInvstmtCcy">
+            <summary>
+            Element <b>ValInInvstmtCcy</b> (Value In Investment Currency) of type array of PriceValue1.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.UnitPrice15.ValInAltrntvCcy">
+            <summary>
+            Element <b>ValInAltrntvCcy</b> (Value In Alternative Currency) of type array of PriceValue1.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.UnitPrice15.ForExctnInd">
+            <summary>
+            Element <b>ForExctnInd</b> (For Execution Indicator) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.UnitPrice15.CumDvddInd">
+            <summary>
+            Element <b>CumDvddInd</b> (Cum Dividend Indicator) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.UnitPrice15.ClctnBsis">
+            <summary>
+            Element <b>ClctnBsis</b> (Calculation Basis) of type decimal.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.UnitPrice15.ClctnBsisSpecified">
+            <summary>
+            Element <b>ClctnBsisSpecified</b> (Calculation Basis Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.UnitPrice15.EstmtdPricInd">
+            <summary>
+            Element <b>EstmtdPricInd</b> (Estimated Price Indicator) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.UnitPrice15.NbOfDaysAcrd">
+            <summary>
+            Element <b>NbOfDaysAcrd</b> (Number Of Days Accrued) of type decimal.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.UnitPrice15.NbOfDaysAcrdSpecified">
+            <summary>
+            Element <b>NbOfDaysAcrdSpecified</b> (Number Of Days Accrued Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.UnitPrice15.TaxblIncmPerShr">
+            <summary>
+            Element <b>TaxblIncmPerShr</b> (Taxable Income Per Share) of type ActiveOrHistoricCurrencyAnd13DecimalAmount.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.UnitPrice15.Item1">
+            <summary>
+            Element <b>Item1</b> (Item 1) of type object.
+            This element can be:
+             TaxblIncmPerShrClctd of type TaxableIncomePerShareCalculated2Code 
+             XtndedTaxblIncmPerShrClctd of type string 
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.UnitPrice15.TaxblIncmPerDvdd">
+            <summary>
+            Element <b>TaxblIncmPerDvdd</b> (Taxable Income Per Dividend) of type ActiveOrHistoricCurrencyAnd13DecimalAmount.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.UnitPrice15.Item2">
+            <summary>
+            Element <b>Item2</b> (Item 2) of type object.
+            This element can be:
+             EUDvddSts of type EUDividendStatus1Code 
+             XtndedEUDvddSts of type string 
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.UnitPrice15.ChrgDtls">
+            <summary>
+            Element <b>ChrgDtls</b> (Charge Details) of type array of Charge15.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.UnitPrice15.TaxLbltyDtls">
+            <summary>
+            Element <b>TaxLbltyDtls</b> (Tax Liability Details) of type array of Tax17.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.UnitPrice15.TaxRfndDtls">
+            <summary>
+            Element <b>TaxRfndDtls</b> (Tax Refund Details) of type array of Tax17.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.TypeOfPrice9Code">
+            <summary>
+            Enumeration <b>TypeOfPrice9Code</b> (Type Of Price 9Code).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TypeOfPrice9Code.BIDE">
+            <summary>
+            <b>BIDE - Bid</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TypeOfPrice9Code.OFFR">
+            <summary>
+            <b>OFFR - Offer</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TypeOfPrice9Code.NAVL">
+            <summary>
+            <b>NAVL - Net Asset Value</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TypeOfPrice9Code.CREA">
+            <summary>
+            <b>CREA - Creation</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TypeOfPrice9Code.CANC">
+            <summary>
+            <b>CANC - Request To Cancel</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TypeOfPrice9Code.INTE">
+            <summary>
+            <b>INTE - Interest</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TypeOfPrice9Code.SWNG">
+            <summary>
+            <b>SWNG - Swing</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TypeOfPrice9Code.MIDD">
+            <summary>
+            <b>MIDD - Mid</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TypeOfPrice9Code.RINV">
+            <summary>
+            <b>RINV - Reinvestment</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TypeOfPrice9Code.SWIC">
+            <summary>
+            <b>SWIC - Switch</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TypeOfPrice9Code.DDVR">
+            <summary>
+            <b>DDVR - Daily Dividend Rate</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TypeOfPrice9Code.ACTU">
+            <summary>
+            <b>ACTU - Actual</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TypeOfPrice9Code.NAUP">
+            <summary>
+            <b>NAUP - Non Adjusted Unpublished</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TypeOfPrice9Code.GUAR">
+            <summary>
+            <b>GUAR - Guaranteed</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TypeOfPrice9Code.ENAV">
+            <summary>
+            <b>ENAV - Estimated NAV</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.PriceMethod1Code">
+            <summary>
+            Enumeration <b>PriceMethod1Code</b> (Price Method 1Code).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PriceMethod1Code.FORW">
+            <summary>
+            <b>FORW - Forward Price</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PriceMethod1Code.HIST">
+            <summary>
+            <b>HIST - Historical Price</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.TaxableIncomePerShareCalculated2Code">
+            <summary>
+            Enumeration <b>TaxableIncomePerShareCalculated2Code</b> (Taxable Income Per Share Calculated 2Code).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TaxableIncomePerShareCalculated2Code.TSIY">
+            <summary>
+            <b>TSIY - Fund Calculates</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TaxableIncomePerShareCalculated2Code.TSIN">
+            <summary>
+            <b>TSIN - Fund Does Not Calculate</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.TaxableIncomePerShareCalculated2Code.UKWN">
+            <summary>
+            <b>UKWN - Unknown</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.FinancialInstrumentQuantity1">
+            <summary>
+            Class <b>FinancialInstrumentQuantity1</b> (Financial Instrument Quantity 1).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.FinancialInstrumentQuantity1.Unit">
+            <summary>
+            Element <b>Unit</b> (Unit) of type decimal.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.ActiveOrHistoricCurrencyAndAmount">
+            <summary>
+            Class <b>ActiveOrHistoricCurrencyAndAmount</b> (Active Or Historic Currency And Amount).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ActiveOrHistoricCurrencyAndAmount.Ccy">
+            <summary>
+            Element <b>Ccy</b> (Currency) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ActiveOrHistoricCurrencyAndAmount.Value">
+            <summary>
+            Element <b>Value</b> (Value) of type decimal.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.AlternateSecurityIdentification1">
+            <summary>
+            Class <b>AlternateSecurityIdentification1</b> (Alternate Security Identification 1).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.AlternateSecurityIdentification1.Id">
+            <summary>
+            Element <b>Id</b> (Identification) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.AlternateSecurityIdentification1.Item">
+            <summary>
+            Element <b>Item</b> (Item) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.AlternateSecurityIdentification1.ItemElementName">
+            <summary>
+            Element <b>ItemElementName</b> (Item Element Name) of type ItemChoiceType1.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.ItemChoiceType1">
+            <summary>
+            Enumeration <b>ItemChoiceType1</b> (Item Choice Type 1).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ItemChoiceType1.DmstIdSrc">
+            <summary>
+            <b>DmstIdSrc - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ItemChoiceType1.PrtryIdSrc">
+            <summary>
+            <b>PrtryIdSrc - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.SecurityIdentification3Choice">
+            <summary>
+            Class <b>SecurityIdentification3Choice</b> (Security Identification 3Choice).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.SecurityIdentification3Choice.Item">
+            <summary>
+            Element <b>Item</b> (Item) of type object.
+            This element can be:
+             Belgn of type string 
+             Blmbrg of type string 
+             CTA of type string 
+             CUSIP of type string 
+             Cmon of type string 
+             Dtch of type string 
+             ISIN of type string 
+             OthrPrtryId of type AlternateSecurityIdentification1 
+             QUICK of type string 
+             RIC of type string 
+             SCVM of type string 
+             SEDOL of type string 
+             TckrSymb of type string 
+             Vlrn of type string 
+             Wrtppr of type string 
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.SecurityIdentification3Choice.ItemElementName">
+            <summary>
+            Element <b>ItemElementName</b> (Item Element Name) of type ItemChoiceType2.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.ItemChoiceType2">
+            <summary>
+            Enumeration <b>ItemChoiceType2</b> (Item Choice Type 2).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ItemChoiceType2.Belgn">
+            <summary>
+            <b>Belgn - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ItemChoiceType2.Blmbrg">
+            <summary>
+            <b>Blmbrg - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ItemChoiceType2.CTA">
+            <summary>
+            <b>CTA - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ItemChoiceType2.CUSIP">
+            <summary>
+            <b>CUSIP - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ItemChoiceType2.Cmon">
+            <summary>
+            <b>Cmon - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ItemChoiceType2.Dtch">
+            <summary>
+            <b>Dtch - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ItemChoiceType2.ISIN">
+            <summary>
+            <b>ISIN - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ItemChoiceType2.OthrPrtryId">
+            <summary>
+            <b>OthrPrtryId - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ItemChoiceType2.QUICK">
+            <summary>
+            <b>QUICK - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ItemChoiceType2.RIC">
+            <summary>
+            <b>RIC - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ItemChoiceType2.SCVM">
+            <summary>
+            <b>SCVM - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ItemChoiceType2.SEDOL">
+            <summary>
+            <b>SEDOL - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ItemChoiceType2.TckrSymb">
+            <summary>
+            <b>TckrSymb - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ItemChoiceType2.Vlrn">
+            <summary>
+            <b>Vlrn - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ItemChoiceType2.Wrtppr">
+            <summary>
+            <b>Wrtppr - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.FinancialInstrument8">
+            <summary>
+            Class <b>FinancialInstrument8</b> (Financial Instrument 8).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.FinancialInstrument8.Id">
+            <summary>
+            Element <b>Id</b> (Identification) of type array of SecurityIdentification3Choice.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.FinancialInstrument8.Nm">
+            <summary>
+            Element <b>Nm</b> (Name) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.FinancialInstrument8.SplmtryId">
+            <summary>
+            Element <b>SplmtryId</b> (Supplementary Identification) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.FinancialInstrument8.DnmtnCcy">
+            <summary>
+            Element <b>DnmtnCcy</b> (Denomination Currency) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.FinancialInstrument8.ClssTp">
+            <summary>
+            Element <b>ClssTp</b> (Class Type) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.FinancialInstrument8.SctiesForm">
+            <summary>
+            Element <b>SctiesForm</b> (Securities Form) of type FormOfSecurity1Code.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.FinancialInstrument8.SctiesFormSpecified">
+            <summary>
+            Element <b>SctiesFormSpecified</b> (Securities Form Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.FinancialInstrument8.DstrbtnPlcy">
+            <summary>
+            Element <b>DstrbtnPlcy</b> (Distribution Policy) of type DistributionPolicy1Code.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.FinancialInstrument8.DstrbtnPlcySpecified">
+            <summary>
+            Element <b>DstrbtnPlcySpecified</b> (Distribution Policy Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.FinancialInstrument8.DualFndInd">
+            <summary>
+            Element <b>DualFndInd</b> (Dual Fund Indicator) of type bool.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.FormOfSecurity1Code">
+            <summary>
+            Enumeration <b>FormOfSecurity1Code</b> (Form Of Security 1Code).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.FormOfSecurity1Code.BEAR">
+            <summary>
+            <b>BEAR - Bearer</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.FormOfSecurity1Code.REGD">
+            <summary>
+            <b>REGD - Registered</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.DistributionPolicy1Code">
+            <summary>
+            Enumeration <b>DistributionPolicy1Code</b> (Distribution Policy 1Code).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.DistributionPolicy1Code.DIST">
+            <summary>
+            <b>DIST - Distribution</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.DistributionPolicy1Code.ACCU">
+            <summary>
+            <b>ACCU - Accumulation</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.DateAndDateTimeChoice">
+            <summary>
+            Class <b>DateAndDateTimeChoice</b> (Date And Date Time Choice).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.DateAndDateTimeChoice.Item">
+            <summary>
+            Element <b>Item</b> (Item) of type System.DateTime.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.DateAndDateTimeChoice.ItemElementName">
+            <summary>
+            Element <b>ItemElementName</b> (Item Element Name) of type ItemChoiceType.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.ItemChoiceType">
+            <summary>
+            Enumeration <b>ItemChoiceType</b> (Item Choice Type).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ItemChoiceType.Dt">
+            <summary>
+            <b>Dt - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ItemChoiceType.DtTm">
+            <summary>
+            <b>DtTm - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.PriceValuation3">
+            <summary>
+            Class <b>PriceValuation3</b> (Price Valuation 3).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PriceValuation3.Id">
+            <summary>
+            Element <b>Id</b> (Identification) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PriceValuation3.ValtnDtTm">
+            <summary>
+            Element <b>ValtnDtTm</b> (Valuation Date Time) of type DateAndDateTimeChoice.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PriceValuation3.NAVDtTm">
+            <summary>
+            Element <b>NAVDtTm</b> (NAVDate Time) of type DateAndDateTimeChoice.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PriceValuation3.FinInstrmDtls">
+            <summary>
+            Element <b>FinInstrmDtls</b> (Financial Instrument Details) of type FinancialInstrument8.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PriceValuation3.FndMgmtCpny">
+            <summary>
+            Element <b>FndMgmtCpny</b> (Fund Management Cpny) of type PartyIdentification2Choice.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PriceValuation3.TtlNAV">
+            <summary>
+            Element <b>TtlNAV</b> (Total NAV) of type array of ActiveOrHistoricCurrencyAndAmount.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PriceValuation3.TtlUnitsNb">
+            <summary>
+            Element <b>TtlUnitsNb</b> (Total Units Number) of type FinancialInstrumentQuantity1.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PriceValuation3.NxtValtnDtTm">
+            <summary>
+            Element <b>NxtValtnDtTm</b> (Next Valuation Date Time) of type DateAndDateTimeChoice.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PriceValuation3.PrvsValtnDtTm">
+            <summary>
+            Element <b>PrvsValtnDtTm</b> (Previous Valuation Date Time) of type DateAndDateTimeChoice.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PriceValuation3.ValtnTp">
+            <summary>
+            Element <b>ValtnTp</b> (Valuation Type) of type ValuationTiming1Code.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PriceValuation3.ValtnFrqcy">
+            <summary>
+            Element <b>ValtnFrqcy</b> (Valuation Frequency) of type EventFrequency1Code.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PriceValuation3.ValtnFrqcySpecified">
+            <summary>
+            Element <b>ValtnFrqcySpecified</b> (Valuation Frequency Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PriceValuation3.OffclValtnInd">
+            <summary>
+            Element <b>OffclValtnInd</b> (Offcl Valuation Indicator) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PriceValuation3.SspdInd">
+            <summary>
+            Element <b>SspdInd</b> (Suspended Indicator) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PriceValuation3.PricDtls">
+            <summary>
+            Element <b>PricDtls</b> (Price Details) of type array of UnitPrice15.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PriceValuation3.ValtnSttstcs">
+            <summary>
+            Element <b>ValtnSttstcs</b> (Valuation Statistics) of type array of ValuationStatistics3.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PriceValuation3.PrfrmncDtls">
+            <summary>
+            Element <b>PrfrmncDtls</b> (Prfrmnc Details) of type PerformanceFactors1.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.PartyIdentification2Choice">
+            <summary>
+            Class <b>PartyIdentification2Choice</b> (Party Identification 2Choice).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PartyIdentification2Choice.Item">
+            <summary>
+            Element <b>Item</b> (Item) of type object.
+            This element can be:
+             BICOrBEI of type string 
+             NmAndAdr of type NameAndAddress5 
+             PrtryId of type GenericIdentification1 
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.NameAndAddress5">
+            <summary>
+            Class <b>NameAndAddress5</b> (Name And Address 5).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.NameAndAddress5.Nm">
+            <summary>
+            Element <b>Nm</b> (Name) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.NameAndAddress5.Adr">
+            <summary>
+            Element <b>Adr</b> (Address) of type PostalAddress1.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.PostalAddress1">
+            <summary>
+            Class <b>PostalAddress1</b> (Postal Address 1).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PostalAddress1.AdrTp">
+            <summary>
+            Element <b>AdrTp</b> (Address Type) of type AddressType2Code.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PostalAddress1.AdrTpSpecified">
+            <summary>
+            Element <b>AdrTpSpecified</b> (Address Type Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PostalAddress1.AdrLine">
+            <summary>
+            Element <b>AdrLine</b> (Address Line) of type array of string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PostalAddress1.StrtNm">
+            <summary>
+            Element <b>StrtNm</b> (Street Name) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PostalAddress1.BldgNb">
+            <summary>
+            Element <b>BldgNb</b> (Building Number) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PostalAddress1.PstCd">
+            <summary>
+            Element <b>PstCd</b> (Post Code) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PostalAddress1.TwnNm">
+            <summary>
+            Element <b>TwnNm</b> (Town Name) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PostalAddress1.CtrySubDvsn">
+            <summary>
+            Element <b>CtrySubDvsn</b> (Country Sub Division) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PostalAddress1.Ctry">
+            <summary>
+            Element <b>Ctry</b> (Country) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.AddressType2Code">
+            <summary>
+            Enumeration <b>AddressType2Code</b> (Address Type 2Code).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.AddressType2Code.ADDR">
+            <summary>
+            <b>ADDR - Postal</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.AddressType2Code.PBOX">
+            <summary>
+            <b>PBOX - POBox</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.AddressType2Code.HOME">
+            <summary>
+            <b>HOME - Residential</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.AddressType2Code.BIZZ">
+            <summary>
+            <b>BIZZ - Business</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.AddressType2Code.MLTO">
+            <summary>
+            <b>MLTO - Mail To</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.AddressType2Code.DLVY">
+            <summary>
+            <b>DLVY - Delivery To</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.GenericIdentification1">
+            <summary>
+            Class <b>GenericIdentification1</b> (Generic Identification 1).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.GenericIdentification1.Id">
+            <summary>
+            Element <b>Id</b> (Identification) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.GenericIdentification1.SchmeNm">
+            <summary>
+            Element <b>SchmeNm</b> (Scheme Name) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.GenericIdentification1.Issr">
+            <summary>
+            Element <b>Issr</b> (Issuer) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.ValuationTiming1Code">
+            <summary>
+            Enumeration <b>ValuationTiming1Code</b> (Valuation Timing 1Code).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ValuationTiming1Code.EXCP">
+            <summary>
+            <b>EXCP - Exceptional</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ValuationTiming1Code.USUA">
+            <summary>
+            <b>USUA - Usual Transaction Time</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.ValuationTiming1Code.PATC">
+            <summary>
+            <b>PATC - Particular</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.EventFrequency1Code">
+            <summary>
+            Enumeration <b>EventFrequency1Code</b> (Event Frequency 1Code).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.EventFrequency1Code.YEAR">
+            <summary>
+            <b>YEAR - Annual</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.EventFrequency1Code.SEMI">
+            <summary>
+            <b>SEMI - Semi Annual</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.EventFrequency1Code.QUTR">
+            <summary>
+            <b>QUTR - Quarterly</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.EventFrequency1Code.TOMN">
+            <summary>
+            <b>TOMN - Every Two Months</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.EventFrequency1Code.MNTH">
+            <summary>
+            <b>MNTH - Monthly</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.EventFrequency1Code.TWMN">
+            <summary>
+            <b>TWMN - Twice AMonth</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.EventFrequency1Code.TOWK">
+            <summary>
+            <b>TOWK - Every Two Weeks</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.EventFrequency1Code.WEEK">
+            <summary>
+            <b>WEEK - Weekly</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.EventFrequency1Code.DAIL">
+            <summary>
+            <b>DAIL - Daily</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.EventFrequency1Code.ADHO">
+            <summary>
+            <b>ADHO - Adhoc</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.EventFrequency1Code.INDA">
+            <summary>
+            <b>INDA - Intra Day</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.EventFrequency1Code.OVNG">
+            <summary>
+            <b>OVNG - Overnight</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.EventFrequency1Code.ONDE">
+            <summary>
+            <b>ONDE - On Demand</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.PriceReport2">
+            <summary>
+            Class <b>PriceReport2</b> (Price Report 2).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PriceReport2.PricValtnDtls">
+            <summary>
+            Element <b>PricValtnDtls</b> (Price Valuation Details) of type array of PriceValuation3.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.PriceReport2.Xtnsn">
+            <summary>
+            Element <b>Xtnsn</b> (Extension) of type array of Extension1.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.Pagination">
+            <summary>
+            Class <b>Pagination</b> (Pagination).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.Pagination.PgNb">
+            <summary>
+            Element <b>PgNb</b> (Page Number) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.Pagination.LastPgInd">
+            <summary>
+            Element <b>LastPgInd</b> (Last Page Indicator) of type bool.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00200103.AdditionalReference3">
+            <summary>
+            Class <b>AdditionalReference3</b> (Additional Reference 3).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.AdditionalReference3.Ref">
+            <summary>
+            Element <b>Ref</b> (Reference) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.AdditionalReference3.RefIssr">
+            <summary>
+            Element <b>RefIssr</b> (Reference Issuer) of type PartyIdentification2Choice.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00200103.AdditionalReference3.MsgNm">
+            <summary>
+            Element <b>MsgNm</b> (Message Name) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.Document">
+            <summary>
+            <b>Document</b> is the root class of the ISO 20022 message
+            with id reda.001.001.03 name PriceReportV03 from Reference Data business area.
+            Repository:R 6.8.0.1 v492 - 4 July 2008
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.Document.PricRptV03">
+            <summary>
+            Element <b>PricRptV03</b> (Price Report V03) of type PriceReportV03.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.PriceReportV03">
+            <summary>
+            Class <b>PriceReportV03</b> (Price Report V03).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PriceReportV03.MsgId">
+            <summary>
+            Element <b>MsgId</b> (Message Identification) of type MessageIdentification1.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PriceReportV03.PoolRef">
+            <summary>
+            Element <b>PoolRef</b> (Pool Reference) of type AdditionalReference3.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PriceReportV03.PrvsRef">
+            <summary>
+            Element <b>PrvsRef</b> (Previous Reference) of type array of AdditionalReference3.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PriceReportV03.RltdRef">
+            <summary>
+            Element <b>RltdRef</b> (Related Reference) of type AdditionalReference3.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PriceReportV03.MsgPgntn">
+            <summary>
+            Element <b>MsgPgntn</b> (Message Pagination) of type Pagination.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PriceReportV03.PricValtnDtls">
+            <summary>
+            Element <b>PricValtnDtls</b> (Price Valuation Details) of type array of PriceValuation3.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PriceReportV03.Xtnsn">
+            <summary>
+            Element <b>Xtnsn</b> (Extension) of type array of Extension1.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.MessageIdentification1">
+            <summary>
+            Class <b>MessageIdentification1</b> (Message Identification 1).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.MessageIdentification1.Id">
+            <summary>
+            Element <b>Id</b> (Identification) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.MessageIdentification1.CreDtTm">
+            <summary>
+            Element <b>CreDtTm</b> (Creation Date Time) of type System.DateTime.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.Extension1">
+            <summary>
+            Class <b>Extension1</b> (Extension 1).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.Extension1.PlcAndNm">
+            <summary>
+            Element <b>PlcAndNm</b> (Place And Name) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.Extension1.Txt">
+            <summary>
+            Element <b>Txt</b> (Txt) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.PerformanceFactors1">
+            <summary>
+            Class <b>PerformanceFactors1</b> (Performance Factors 1).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PerformanceFactors1.CorpActnFctr">
+            <summary>
+            Element <b>CorpActnFctr</b> (Corporate Action Factor) of type decimal.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PerformanceFactors1.CorpActnFctrSpecified">
+            <summary>
+            Element <b>CorpActnFctrSpecified</b> (Corporate Action Factor Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PerformanceFactors1.CmltvCorpActnFctr">
+            <summary>
+            Element <b>CmltvCorpActnFctr</b> (Cmltv Corporate Action Factor) of type decimal.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PerformanceFactors1.CmltvCorpActnFctrSpecified">
+            <summary>
+            Element <b>CmltvCorpActnFctrSpecified</b> (Cmltv Corporate Action Factor Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PerformanceFactors1.AcmltnPrd">
+            <summary>
+            Element <b>AcmltnPrd</b> (Accumulation Period) of type DatePeriodDetails.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PerformanceFactors1.NrmlPrfrmnc">
+            <summary>
+            Element <b>NrmlPrfrmnc</b> (Nrml Prfrmnc) of type decimal.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PerformanceFactors1.NrmlPrfrmncSpecified">
+            <summary>
+            Element <b>NrmlPrfrmncSpecified</b> (Nrml Prfrmnc Specified) of type bool.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.DatePeriodDetails">
+            <summary>
+            Class <b>DatePeriodDetails</b> (Date Period Details).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.DatePeriodDetails.FrDt">
+            <summary>
+            Element <b>FrDt</b> (From Date) of type System.DateTime.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.DatePeriodDetails.ToDt">
+            <summary>
+            Element <b>ToDt</b> (To Date) of type System.DateTime.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.DateTimePeriodDetails">
+            <summary>
+            Class <b>DateTimePeriodDetails</b> (Date Time Period Details).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.DateTimePeriodDetails.FrDtTm">
+            <summary>
+            Element <b>FrDtTm</b> (From Date Time) of type System.DateTime.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.DateTimePeriodDetails.ToDtTm">
+            <summary>
+            Element <b>ToDtTm</b> (To Date Time) of type System.DateTime.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.DateOrDateTimePeriodChoice">
+            <summary>
+            Class <b>DateOrDateTimePeriodChoice</b> (Date Or Date Time Period Choice).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.DateOrDateTimePeriodChoice.Item">
+            <summary>
+            Element <b>Item</b> (Item) of type object.
+            This element can be:
+             Dt of type DatePeriodDetails 
+             DtTm of type DateTimePeriodDetails 
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.StatisticsByUserDefinedTimePeriod2">
+            <summary>
+            Class <b>StatisticsByUserDefinedTimePeriod2</b> (Statistics By User Defined Time Period 2).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.StatisticsByUserDefinedTimePeriod2.Prd">
+            <summary>
+            Element <b>Prd</b> (Period) of type DateOrDateTimePeriodChoice.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.StatisticsByUserDefinedTimePeriod2.HghstPricVal">
+            <summary>
+            Element <b>HghstPricVal</b> (Highest Price Value) of type PriceValue5.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.StatisticsByUserDefinedTimePeriod2.LwstPricVal">
+            <summary>
+            Element <b>LwstPricVal</b> (Lowest Price Value) of type PriceValue5.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.StatisticsByUserDefinedTimePeriod2.PricChng">
+            <summary>
+            Element <b>PricChng</b> (Price Change) of type PriceValueChange1.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.StatisticsByUserDefinedTimePeriod2.Yld">
+            <summary>
+            Element <b>Yld</b> (Yield) of type decimal.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.StatisticsByUserDefinedTimePeriod2.YldSpecified">
+            <summary>
+            Element <b>YldSpecified</b> (Yield Specified) of type bool.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.PriceValue5">
+            <summary>
+            Class <b>PriceValue5</b> (Price Value 5).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PriceValue5.Amt">
+            <summary>
+            Element <b>Amt</b> (Amount) of type ActiveOrHistoricCurrencyAnd13DecimalAmount.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.ActiveOrHistoricCurrencyAnd13DecimalAmount">
+            <summary>
+            Class <b>ActiveOrHistoricCurrencyAnd13DecimalAmount</b> (Active Or Historic Currency And 13 Decimal Amount).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ActiveOrHistoricCurrencyAnd13DecimalAmount.Ccy">
+            <summary>
+            Element <b>Ccy</b> (Currency) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ActiveOrHistoricCurrencyAnd13DecimalAmount.Value">
+            <summary>
+            Element <b>Value</b> (Value) of type decimal.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.PriceValueChange1">
+            <summary>
+            Class <b>PriceValueChange1</b> (Price Value Change 1).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PriceValueChange1.Amt">
+            <summary>
+            Element <b>Amt</b> (Amount) of type ActiveOrHistoricCurrencyAnd13DecimalAmount.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PriceValueChange1.AmtSgn">
+            <summary>
+            Element <b>AmtSgn</b> (Amount Sign) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PriceValueChange1.AmtSgnSpecified">
+            <summary>
+            Element <b>AmtSgnSpecified</b> (Amount Sign Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PriceValueChange1.Rate">
+            <summary>
+            Element <b>Rate</b> (Rate) of type decimal.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PriceValueChange1.RateSpecified">
+            <summary>
+            Element <b>RateSpecified</b> (Rate Specified) of type bool.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.StatisticsByPredefinedTimePeriods2">
+            <summary>
+            Class <b>StatisticsByPredefinedTimePeriods2</b> (Statistics By Predefined Time Periods 2).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.StatisticsByPredefinedTimePeriods2.HghstPricVal12Mnths">
+            <summary>
+            Element <b>HghstPricVal12Mnths</b> (Highest Price Value 12 Months) of type PriceValue5.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.StatisticsByPredefinedTimePeriods2.LwstPricVal12Mnths">
+            <summary>
+            Element <b>LwstPricVal12Mnths</b> (Lowest Price Value 12 Months) of type PriceValue5.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.StatisticsByPredefinedTimePeriods2.OneYrPricChng">
+            <summary>
+            Element <b>OneYrPricChng</b> (One Year Price Change) of type PriceValueChange1.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.StatisticsByPredefinedTimePeriods2.ThreeYrPricChng">
+            <summary>
+            Element <b>ThreeYrPricChng</b> (Three Year Price Change) of type PriceValueChange1.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.StatisticsByPredefinedTimePeriods2.FiveYrPricChng">
+            <summary>
+            Element <b>FiveYrPricChng</b> (Five Year Price Change) of type PriceValueChange1.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.PriceType2">
+            <summary>
+            Class <b>PriceType2</b> (Price Type 2).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PriceType2.Strd">
+            <summary>
+            Element <b>Strd</b> (Structured) of type TypeOfPrice6Code.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PriceType2.AddtlInf">
+            <summary>
+            Element <b>AddtlInf</b> (Additional Information) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.TypeOfPrice6Code">
+            <summary>
+            Enumeration <b>TypeOfPrice6Code</b> (Type Of Price 6Code).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TypeOfPrice6Code.BIDE">
+            <summary>
+            <b>BIDE - Bid</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TypeOfPrice6Code.OFFR">
+            <summary>
+            <b>OFFR - Offer</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TypeOfPrice6Code.NAVL">
+            <summary>
+            <b>NAVL - Net Asset Value</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TypeOfPrice6Code.CREA">
+            <summary>
+            <b>CREA - Creation</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TypeOfPrice6Code.CANC">
+            <summary>
+            <b>CANC - Request To Cancel</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TypeOfPrice6Code.INTE">
+            <summary>
+            <b>INTE - Interest</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TypeOfPrice6Code.SWNG">
+            <summary>
+            <b>SWNG - Swing</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TypeOfPrice6Code.OTHR">
+            <summary>
+            <b>OTHR - Other</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TypeOfPrice6Code.MIDD">
+            <summary>
+            <b>MIDD - Mid</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TypeOfPrice6Code.RINV">
+            <summary>
+            <b>RINV - Reinvestment</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TypeOfPrice6Code.SWIC">
+            <summary>
+            <b>SWIC - Switch</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TypeOfPrice6Code.DDVR">
+            <summary>
+            <b>DDVR - Daily Dividend Rate</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TypeOfPrice6Code.ACTU">
+            <summary>
+            <b>ACTU - Actual</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TypeOfPrice6Code.NAUP">
+            <summary>
+            <b>NAUP - Non Adjusted Unpublished</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.ValuationStatistics3">
+            <summary>
+            Class <b>ValuationStatistics3</b> (Valuation Statistics 3).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ValuationStatistics3.Ccy">
+            <summary>
+            Element <b>Ccy</b> (Currency) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ValuationStatistics3.PricTpChngBsis">
+            <summary>
+            Element <b>PricTpChngBsis</b> (Price Type Change Basis) of type PriceType2.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ValuationStatistics3.PricChng">
+            <summary>
+            Element <b>PricChng</b> (Price Change) of type PriceValueChange1.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ValuationStatistics3.Yld">
+            <summary>
+            Element <b>Yld</b> (Yield) of type decimal.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ValuationStatistics3.YldSpecified">
+            <summary>
+            Element <b>YldSpecified</b> (Yield Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ValuationStatistics3.ByPrdfndTmPrds">
+            <summary>
+            Element <b>ByPrdfndTmPrds</b> (By Predefined Time Periods) of type StatisticsByPredefinedTimePeriods2.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ValuationStatistics3.ByUsrDfndTmPrd">
+            <summary>
+            Element <b>ByUsrDfndTmPrd</b> (By User Defined Time Period) of type array of StatisticsByUserDefinedTimePeriod2.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.TaxCalculationInformation4">
+            <summary>
+            Class <b>TaxCalculationInformation4</b> (Tax Calculation Information 4).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TaxCalculationInformation4.Item">
+            <summary>
+            Element <b>Item</b> (Item) of type object.
+            This element can be:
+             EUCptlGn of type EUCapitalGain2Code 
+             XtndedEUCptlGn of type string 
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TaxCalculationInformation4.PctgOfDebtClm">
+            <summary>
+            Element <b>PctgOfDebtClm</b> (Percentage Of Debt Claim) of type decimal.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TaxCalculationInformation4.PctgOfDebtClmSpecified">
+            <summary>
+            Element <b>PctgOfDebtClmSpecified</b> (Percentage Of Debt Claim Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TaxCalculationInformation4.PctgGrdfthdDebt">
+            <summary>
+            Element <b>PctgGrdfthdDebt</b> (Percentage Grandfathered Debt) of type decimal.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TaxCalculationInformation4.PctgGrdfthdDebtSpecified">
+            <summary>
+            Element <b>PctgGrdfthdDebtSpecified</b> (Percentage Grandfathered Debt Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TaxCalculationInformation4.TaxblIncmPerDvdd">
+            <summary>
+            Element <b>TaxblIncmPerDvdd</b> (Taxable Income Per Dividend) of type ActiveOrHistoricCurrencyAnd13DecimalAmount.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TaxCalculationInformation4.Item1">
+            <summary>
+            Element <b>Item1</b> (Item 1) of type object.
+            This element can be:
+             EUDvddSts of type EUDividendStatus1Code 
+             XtndedEUDvddSts of type string 
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.EUCapitalGain2Code">
+            <summary>
+            Enumeration <b>EUCapitalGain2Code</b> (EUCapital Gain 2Code).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.EUCapitalGain2Code.EUSI">
+            <summary>
+            <b>EUSI - Capital Gain In Scope</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.EUCapitalGain2Code.EUSO">
+            <summary>
+            <b>EUSO - Capital Gain Out Scope</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.EUCapitalGain2Code.UKWN">
+            <summary>
+            <b>UKWN - Unknown</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.EUDividendStatus1Code">
+            <summary>
+            Enumeration <b>EUDividendStatus1Code</b> (EUDividend Status 1Code).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.EUDividendStatus1Code.DIVI">
+            <summary>
+            <b>DIVI - Dividend In Scope</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.EUDividendStatus1Code.DIVO">
+            <summary>
+            <b>DIVO - Dividend Out Scope</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.EUDividendStatus1Code.UKWN">
+            <summary>
+            <b>UKWN - Unknown</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.Tax17">
+            <summary>
+            Class <b>Tax17</b> (Tax 17).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.Tax17.Item">
+            <summary>
+            Element <b>Item</b> (Item) of type object.
+            This element can be:
+             Tp of type TaxType12Code 
+             XtndedTp of type string 
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.Tax17.Amt">
+            <summary>
+            Element <b>Amt</b> (Amount) of type array of ActiveOrHistoricCurrencyAnd13DecimalAmount.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.Tax17.Rate">
+            <summary>
+            Element <b>Rate</b> (Rate) of type decimal.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.Tax17.RateSpecified">
+            <summary>
+            Element <b>RateSpecified</b> (Rate Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.Tax17.Ctry">
+            <summary>
+            Element <b>Ctry</b> (Country) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.Tax17.TaxClctnDtls">
+            <summary>
+            Element <b>TaxClctnDtls</b> (Tax Calculation Details) of type TaxCalculationInformation4.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.TaxType12Code">
+            <summary>
+            Enumeration <b>TaxType12Code</b> (Tax Type 12 Code).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TaxType12Code.INPO">
+            <summary>
+            <b>INPO - Interim Profit Tax</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TaxType12Code.EUTR">
+            <summary>
+            <b>EUTR - EUTax Retention</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TaxType12Code.AKT1">
+            <summary>
+            <b>AKT1 - Aktiengewinn 1</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TaxType12Code.AKT2">
+            <summary>
+            <b>AKT2 - Aktiengewinn 2</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TaxType12Code.ZWIS">
+            <summary>
+            <b>ZWIS - Zwischengewinn</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TaxType12Code.MIET">
+            <summary>
+            <b>MIET - Mietgewinn</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.Charge15">
+            <summary>
+            Class <b>Charge15</b> (Charge 15).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.Charge15.Item">
+            <summary>
+            Element <b>Item</b> (Item) of type object.
+            This element can be:
+             Tp of type ChargeType9Code 
+             XtndedTp of type string 
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.Charge15.Item1">
+            <summary>
+            Element <b>Item1</b> (Item 1) of type object.
+            This element can be:
+             Amt of type ActiveCurrencyAnd13DecimalAmount 
+             Rate of type decimal 
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.Charge15.Item2">
+            <summary>
+            Element <b>Item2</b> (Item 2) of type object.
+            This element can be:
+             ClctnBsis of type CalculationBasis2Code 
+             XtndedClctnBsis of type string 
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.ChargeType9Code">
+            <summary>
+            Enumeration <b>ChargeType9Code</b> (Charge Type 9Code).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ChargeType9Code.MANF">
+            <summary>
+            <b>MANF - Management Fee</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ChargeType9Code.BEND">
+            <summary>
+            <b>BEND - Back End Load</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ChargeType9Code.FEND">
+            <summary>
+            <b>FEND - Front End Load</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ChargeType9Code.ADVI">
+            <summary>
+            <b>ADVI - Advisory Fee</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ChargeType9Code.CUST">
+            <summary>
+            <b>CUST - Custodial Account</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ChargeType9Code.PUBL">
+            <summary>
+            <b>PUBL - Publication Fee</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ChargeType9Code.ACCT">
+            <summary>
+            <b>ACCT - Accounting Fee</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ChargeType9Code.EQUL">
+            <summary>
+            <b>EQUL - Equalisation</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ChargeType9Code.PENA">
+            <summary>
+            <b>PENA - Penalty</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.ActiveCurrencyAnd13DecimalAmount">
+            <summary>
+            Class <b>ActiveCurrencyAnd13DecimalAmount</b> (Active Currency And 13 Decimal Amount).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ActiveCurrencyAnd13DecimalAmount.Ccy">
+            <summary>
+            Element <b>Ccy</b> (Currency) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ActiveCurrencyAnd13DecimalAmount.Value">
+            <summary>
+            Element <b>Value</b> (Value) of type decimal.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.CalculationBasis2Code">
+            <summary>
+            Enumeration <b>CalculationBasis2Code</b> (Calculation Basis 2Code).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.CalculationBasis2Code.AVER">
+            <summary>
+            <b>AVER - Average</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.CalculationBasis2Code.DAIL">
+            <summary>
+            <b>DAIL - Daily</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.CalculationBasis2Code.MNTH">
+            <summary>
+            <b>MNTH - Monthly</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.CalculationBasis2Code.YEAR">
+            <summary>
+            <b>YEAR - Annual</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.PriceValue1">
+            <summary>
+            Class <b>PriceValue1</b> (Price Value 1).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PriceValue1.Amt">
+            <summary>
+            Element <b>Amt</b> (Amount) of type ActiveCurrencyAnd13DecimalAmount.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.UnitPrice15">
+            <summary>
+            Class <b>UnitPrice15</b> (Unit Price 15).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.UnitPrice15.Item">
+            <summary>
+            Element <b>Item</b> (Item) of type object.
+            This element can be:
+             Tp of type TypeOfPrice9Code 
+             XtndedTp of type string 
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.UnitPrice15.PricMtd">
+            <summary>
+            Element <b>PricMtd</b> (Price Method) of type PriceMethod1Code.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.UnitPrice15.PricMtdSpecified">
+            <summary>
+            Element <b>PricMtdSpecified</b> (Price Method Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.UnitPrice15.ValInInvstmtCcy">
+            <summary>
+            Element <b>ValInInvstmtCcy</b> (Value In Investment Currency) of type array of PriceValue1.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.UnitPrice15.ValInAltrntvCcy">
+            <summary>
+            Element <b>ValInAltrntvCcy</b> (Value In Alternative Currency) of type array of PriceValue1.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.UnitPrice15.ForExctnInd">
+            <summary>
+            Element <b>ForExctnInd</b> (For Execution Indicator) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.UnitPrice15.CumDvddInd">
+            <summary>
+            Element <b>CumDvddInd</b> (Cum Dividend Indicator) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.UnitPrice15.ClctnBsis">
+            <summary>
+            Element <b>ClctnBsis</b> (Calculation Basis) of type decimal.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.UnitPrice15.ClctnBsisSpecified">
+            <summary>
+            Element <b>ClctnBsisSpecified</b> (Calculation Basis Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.UnitPrice15.EstmtdPricInd">
+            <summary>
+            Element <b>EstmtdPricInd</b> (Estimated Price Indicator) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.UnitPrice15.NbOfDaysAcrd">
+            <summary>
+            Element <b>NbOfDaysAcrd</b> (Number Of Days Accrued) of type decimal.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.UnitPrice15.NbOfDaysAcrdSpecified">
+            <summary>
+            Element <b>NbOfDaysAcrdSpecified</b> (Number Of Days Accrued Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.UnitPrice15.TaxblIncmPerShr">
+            <summary>
+            Element <b>TaxblIncmPerShr</b> (Taxable Income Per Share) of type ActiveOrHistoricCurrencyAnd13DecimalAmount.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.UnitPrice15.Item1">
+            <summary>
+            Element <b>Item1</b> (Item 1) of type object.
+            This element can be:
+             TaxblIncmPerShrClctd of type TaxableIncomePerShareCalculated2Code 
+             XtndedTaxblIncmPerShrClctd of type string 
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.UnitPrice15.TaxblIncmPerDvdd">
+            <summary>
+            Element <b>TaxblIncmPerDvdd</b> (Taxable Income Per Dividend) of type ActiveOrHistoricCurrencyAnd13DecimalAmount.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.UnitPrice15.Item2">
+            <summary>
+            Element <b>Item2</b> (Item 2) of type object.
+            This element can be:
+             EUDvddSts of type EUDividendStatus1Code 
+             XtndedEUDvddSts of type string 
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.UnitPrice15.ChrgDtls">
+            <summary>
+            Element <b>ChrgDtls</b> (Charge Details) of type array of Charge15.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.UnitPrice15.TaxLbltyDtls">
+            <summary>
+            Element <b>TaxLbltyDtls</b> (Tax Liability Details) of type array of Tax17.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.UnitPrice15.TaxRfndDtls">
+            <summary>
+            Element <b>TaxRfndDtls</b> (Tax Refund Details) of type array of Tax17.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.TypeOfPrice9Code">
+            <summary>
+            Enumeration <b>TypeOfPrice9Code</b> (Type Of Price 9Code).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TypeOfPrice9Code.BIDE">
+            <summary>
+            <b>BIDE - Bid</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TypeOfPrice9Code.OFFR">
+            <summary>
+            <b>OFFR - Offer</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TypeOfPrice9Code.NAVL">
+            <summary>
+            <b>NAVL - Net Asset Value</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TypeOfPrice9Code.CREA">
+            <summary>
+            <b>CREA - Creation</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TypeOfPrice9Code.CANC">
+            <summary>
+            <b>CANC - Request To Cancel</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TypeOfPrice9Code.INTE">
+            <summary>
+            <b>INTE - Interest</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TypeOfPrice9Code.SWNG">
+            <summary>
+            <b>SWNG - Swing</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TypeOfPrice9Code.MIDD">
+            <summary>
+            <b>MIDD - Mid</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TypeOfPrice9Code.RINV">
+            <summary>
+            <b>RINV - Reinvestment</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TypeOfPrice9Code.SWIC">
+            <summary>
+            <b>SWIC - Switch</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TypeOfPrice9Code.DDVR">
+            <summary>
+            <b>DDVR - Daily Dividend Rate</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TypeOfPrice9Code.ACTU">
+            <summary>
+            <b>ACTU - Actual</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TypeOfPrice9Code.NAUP">
+            <summary>
+            <b>NAUP - Non Adjusted Unpublished</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TypeOfPrice9Code.GUAR">
+            <summary>
+            <b>GUAR - Guaranteed</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TypeOfPrice9Code.ENAV">
+            <summary>
+            <b>ENAV - Estimated NAV</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.PriceMethod1Code">
+            <summary>
+            Enumeration <b>PriceMethod1Code</b> (Price Method 1Code).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PriceMethod1Code.FORW">
+            <summary>
+            <b>FORW - Forward Price</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PriceMethod1Code.HIST">
+            <summary>
+            <b>HIST - Historical Price</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.TaxableIncomePerShareCalculated2Code">
+            <summary>
+            Enumeration <b>TaxableIncomePerShareCalculated2Code</b> (Taxable Income Per Share Calculated 2Code).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TaxableIncomePerShareCalculated2Code.TSIY">
+            <summary>
+            <b>TSIY - Fund Calculates</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TaxableIncomePerShareCalculated2Code.TSIN">
+            <summary>
+            <b>TSIN - Fund Does Not Calculate</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.TaxableIncomePerShareCalculated2Code.UKWN">
+            <summary>
+            <b>UKWN - Unknown</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.FinancialInstrumentQuantity1">
+            <summary>
+            Class <b>FinancialInstrumentQuantity1</b> (Financial Instrument Quantity 1).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.FinancialInstrumentQuantity1.Unit">
+            <summary>
+            Element <b>Unit</b> (Unit) of type decimal.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.ActiveOrHistoricCurrencyAndAmount">
+            <summary>
+            Class <b>ActiveOrHistoricCurrencyAndAmount</b> (Active Or Historic Currency And Amount).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ActiveOrHistoricCurrencyAndAmount.Ccy">
+            <summary>
+            Element <b>Ccy</b> (Currency) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ActiveOrHistoricCurrencyAndAmount.Value">
+            <summary>
+            Element <b>Value</b> (Value) of type decimal.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.AlternateSecurityIdentification1">
+            <summary>
+            Class <b>AlternateSecurityIdentification1</b> (Alternate Security Identification 1).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.AlternateSecurityIdentification1.Id">
+            <summary>
+            Element <b>Id</b> (Identification) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.AlternateSecurityIdentification1.Item">
+            <summary>
+            Element <b>Item</b> (Item) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.AlternateSecurityIdentification1.ItemElementName">
+            <summary>
+            Element <b>ItemElementName</b> (Item Element Name) of type ItemChoiceType1.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.ItemChoiceType1">
+            <summary>
+            Enumeration <b>ItemChoiceType1</b> (Item Choice Type 1).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ItemChoiceType1.DmstIdSrc">
+            <summary>
+            <b>DmstIdSrc - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ItemChoiceType1.PrtryIdSrc">
+            <summary>
+            <b>PrtryIdSrc - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.SecurityIdentification3Choice">
+            <summary>
+            Class <b>SecurityIdentification3Choice</b> (Security Identification 3Choice).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.SecurityIdentification3Choice.Item">
+            <summary>
+            Element <b>Item</b> (Item) of type object.
+            This element can be:
+             Belgn of type string 
+             Blmbrg of type string 
+             CTA of type string 
+             CUSIP of type string 
+             Cmon of type string 
+             Dtch of type string 
+             ISIN of type string 
+             OthrPrtryId of type AlternateSecurityIdentification1 
+             QUICK of type string 
+             RIC of type string 
+             SCVM of type string 
+             SEDOL of type string 
+             TckrSymb of type string 
+             Vlrn of type string 
+             Wrtppr of type string 
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.SecurityIdentification3Choice.ItemElementName">
+            <summary>
+            Element <b>ItemElementName</b> (Item Element Name) of type ItemChoiceType2.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.ItemChoiceType2">
+            <summary>
+            Enumeration <b>ItemChoiceType2</b> (Item Choice Type 2).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ItemChoiceType2.Belgn">
+            <summary>
+            <b>Belgn - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ItemChoiceType2.Blmbrg">
+            <summary>
+            <b>Blmbrg - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ItemChoiceType2.CTA">
+            <summary>
+            <b>CTA - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ItemChoiceType2.CUSIP">
+            <summary>
+            <b>CUSIP - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ItemChoiceType2.Cmon">
+            <summary>
+            <b>Cmon - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ItemChoiceType2.Dtch">
+            <summary>
+            <b>Dtch - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ItemChoiceType2.ISIN">
+            <summary>
+            <b>ISIN - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ItemChoiceType2.OthrPrtryId">
+            <summary>
+            <b>OthrPrtryId - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ItemChoiceType2.QUICK">
+            <summary>
+            <b>QUICK - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ItemChoiceType2.RIC">
+            <summary>
+            <b>RIC - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ItemChoiceType2.SCVM">
+            <summary>
+            <b>SCVM - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ItemChoiceType2.SEDOL">
+            <summary>
+            <b>SEDOL - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ItemChoiceType2.TckrSymb">
+            <summary>
+            <b>TckrSymb - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ItemChoiceType2.Vlrn">
+            <summary>
+            <b>Vlrn - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ItemChoiceType2.Wrtppr">
+            <summary>
+            <b>Wrtppr - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.FinancialInstrument8">
+            <summary>
+            Class <b>FinancialInstrument8</b> (Financial Instrument 8).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.FinancialInstrument8.Id">
+            <summary>
+            Element <b>Id</b> (Identification) of type array of SecurityIdentification3Choice.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.FinancialInstrument8.Nm">
+            <summary>
+            Element <b>Nm</b> (Name) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.FinancialInstrument8.SplmtryId">
+            <summary>
+            Element <b>SplmtryId</b> (Supplementary Identification) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.FinancialInstrument8.DnmtnCcy">
+            <summary>
+            Element <b>DnmtnCcy</b> (Denomination Currency) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.FinancialInstrument8.ClssTp">
+            <summary>
+            Element <b>ClssTp</b> (Class Type) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.FinancialInstrument8.SctiesForm">
+            <summary>
+            Element <b>SctiesForm</b> (Securities Form) of type FormOfSecurity1Code.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.FinancialInstrument8.SctiesFormSpecified">
+            <summary>
+            Element <b>SctiesFormSpecified</b> (Securities Form Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.FinancialInstrument8.DstrbtnPlcy">
+            <summary>
+            Element <b>DstrbtnPlcy</b> (Distribution Policy) of type DistributionPolicy1Code.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.FinancialInstrument8.DstrbtnPlcySpecified">
+            <summary>
+            Element <b>DstrbtnPlcySpecified</b> (Distribution Policy Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.FinancialInstrument8.DualFndInd">
+            <summary>
+            Element <b>DualFndInd</b> (Dual Fund Indicator) of type bool.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.FormOfSecurity1Code">
+            <summary>
+            Enumeration <b>FormOfSecurity1Code</b> (Form Of Security 1Code).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.FormOfSecurity1Code.BEAR">
+            <summary>
+            <b>BEAR - Bearer</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.FormOfSecurity1Code.REGD">
+            <summary>
+            <b>REGD - Registered</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.DistributionPolicy1Code">
+            <summary>
+            Enumeration <b>DistributionPolicy1Code</b> (Distribution Policy 1Code).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.DistributionPolicy1Code.DIST">
+            <summary>
+            <b>DIST - Distribution</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.DistributionPolicy1Code.ACCU">
+            <summary>
+            <b>ACCU - Accumulation</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.DateAndDateTimeChoice">
+            <summary>
+            Class <b>DateAndDateTimeChoice</b> (Date And Date Time Choice).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.DateAndDateTimeChoice.Item">
+            <summary>
+            Element <b>Item</b> (Item) of type System.DateTime.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.DateAndDateTimeChoice.ItemElementName">
+            <summary>
+            Element <b>ItemElementName</b> (Item Element Name) of type ItemChoiceType.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.ItemChoiceType">
+            <summary>
+            Enumeration <b>ItemChoiceType</b> (Item Choice Type).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ItemChoiceType.Dt">
+            <summary>
+            <b>Dt - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ItemChoiceType.DtTm">
+            <summary>
+            <b>DtTm - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.PriceValuation3">
+            <summary>
+            Class <b>PriceValuation3</b> (Price Valuation 3).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PriceValuation3.Id">
+            <summary>
+            Element <b>Id</b> (Identification) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PriceValuation3.ValtnDtTm">
+            <summary>
+            Element <b>ValtnDtTm</b> (Valuation Date Time) of type DateAndDateTimeChoice.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PriceValuation3.NAVDtTm">
+            <summary>
+            Element <b>NAVDtTm</b> (NAVDate Time) of type DateAndDateTimeChoice.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PriceValuation3.FinInstrmDtls">
+            <summary>
+            Element <b>FinInstrmDtls</b> (Financial Instrument Details) of type FinancialInstrument8.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PriceValuation3.FndMgmtCpny">
+            <summary>
+            Element <b>FndMgmtCpny</b> (Fund Management Cpny) of type PartyIdentification2Choice.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PriceValuation3.TtlNAV">
+            <summary>
+            Element <b>TtlNAV</b> (Total NAV) of type array of ActiveOrHistoricCurrencyAndAmount.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PriceValuation3.TtlUnitsNb">
+            <summary>
+            Element <b>TtlUnitsNb</b> (Total Units Number) of type FinancialInstrumentQuantity1.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PriceValuation3.NxtValtnDtTm">
+            <summary>
+            Element <b>NxtValtnDtTm</b> (Next Valuation Date Time) of type DateAndDateTimeChoice.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PriceValuation3.PrvsValtnDtTm">
+            <summary>
+            Element <b>PrvsValtnDtTm</b> (Previous Valuation Date Time) of type DateAndDateTimeChoice.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PriceValuation3.ValtnTp">
+            <summary>
+            Element <b>ValtnTp</b> (Valuation Type) of type ValuationTiming1Code.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PriceValuation3.ValtnFrqcy">
+            <summary>
+            Element <b>ValtnFrqcy</b> (Valuation Frequency) of type EventFrequency1Code.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PriceValuation3.ValtnFrqcySpecified">
+            <summary>
+            Element <b>ValtnFrqcySpecified</b> (Valuation Frequency Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PriceValuation3.OffclValtnInd">
+            <summary>
+            Element <b>OffclValtnInd</b> (Offcl Valuation Indicator) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PriceValuation3.SspdInd">
+            <summary>
+            Element <b>SspdInd</b> (Suspended Indicator) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PriceValuation3.PricDtls">
+            <summary>
+            Element <b>PricDtls</b> (Price Details) of type array of UnitPrice15.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PriceValuation3.ValtnSttstcs">
+            <summary>
+            Element <b>ValtnSttstcs</b> (Valuation Statistics) of type array of ValuationStatistics3.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PriceValuation3.PrfrmncDtls">
+            <summary>
+            Element <b>PrfrmncDtls</b> (Prfrmnc Details) of type PerformanceFactors1.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.PartyIdentification2Choice">
+            <summary>
+            Class <b>PartyIdentification2Choice</b> (Party Identification 2Choice).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PartyIdentification2Choice.Item">
+            <summary>
+            Element <b>Item</b> (Item) of type object.
+            This element can be:
+             BICOrBEI of type string 
+             NmAndAdr of type NameAndAddress5 
+             PrtryId of type GenericIdentification1 
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.NameAndAddress5">
+            <summary>
+            Class <b>NameAndAddress5</b> (Name And Address 5).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.NameAndAddress5.Nm">
+            <summary>
+            Element <b>Nm</b> (Name) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.NameAndAddress5.Adr">
+            <summary>
+            Element <b>Adr</b> (Address) of type PostalAddress1.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.PostalAddress1">
+            <summary>
+            Class <b>PostalAddress1</b> (Postal Address 1).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PostalAddress1.AdrTp">
+            <summary>
+            Element <b>AdrTp</b> (Address Type) of type AddressType2Code.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PostalAddress1.AdrTpSpecified">
+            <summary>
+            Element <b>AdrTpSpecified</b> (Address Type Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PostalAddress1.AdrLine">
+            <summary>
+            Element <b>AdrLine</b> (Address Line) of type array of string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PostalAddress1.StrtNm">
+            <summary>
+            Element <b>StrtNm</b> (Street Name) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PostalAddress1.BldgNb">
+            <summary>
+            Element <b>BldgNb</b> (Building Number) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PostalAddress1.PstCd">
+            <summary>
+            Element <b>PstCd</b> (Post Code) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PostalAddress1.TwnNm">
+            <summary>
+            Element <b>TwnNm</b> (Town Name) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PostalAddress1.CtrySubDvsn">
+            <summary>
+            Element <b>CtrySubDvsn</b> (Country Sub Division) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.PostalAddress1.Ctry">
+            <summary>
+            Element <b>Ctry</b> (Country) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.AddressType2Code">
+            <summary>
+            Enumeration <b>AddressType2Code</b> (Address Type 2Code).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.AddressType2Code.ADDR">
+            <summary>
+            <b>ADDR - Postal</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.AddressType2Code.PBOX">
+            <summary>
+            <b>PBOX - POBox</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.AddressType2Code.HOME">
+            <summary>
+            <b>HOME - Residential</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.AddressType2Code.BIZZ">
+            <summary>
+            <b>BIZZ - Business</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.AddressType2Code.MLTO">
+            <summary>
+            <b>MLTO - Mail To</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.AddressType2Code.DLVY">
+            <summary>
+            <b>DLVY - Delivery To</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.GenericIdentification1">
+            <summary>
+            Class <b>GenericIdentification1</b> (Generic Identification 1).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.GenericIdentification1.Id">
+            <summary>
+            Element <b>Id</b> (Identification) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.GenericIdentification1.SchmeNm">
+            <summary>
+            Element <b>SchmeNm</b> (Scheme Name) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.GenericIdentification1.Issr">
+            <summary>
+            Element <b>Issr</b> (Issuer) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.ValuationTiming1Code">
+            <summary>
+            Enumeration <b>ValuationTiming1Code</b> (Valuation Timing 1Code).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ValuationTiming1Code.EXCP">
+            <summary>
+            <b>EXCP - Exceptional</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ValuationTiming1Code.USUA">
+            <summary>
+            <b>USUA - Usual Transaction Time</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.ValuationTiming1Code.PATC">
+            <summary>
+            <b>PATC - Particular</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.EventFrequency1Code">
+            <summary>
+            Enumeration <b>EventFrequency1Code</b> (Event Frequency 1Code).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.EventFrequency1Code.YEAR">
+            <summary>
+            <b>YEAR - Annual</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.EventFrequency1Code.SEMI">
+            <summary>
+            <b>SEMI - Semi Annual</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.EventFrequency1Code.QUTR">
+            <summary>
+            <b>QUTR - Quarterly</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.EventFrequency1Code.TOMN">
+            <summary>
+            <b>TOMN - Every Two Months</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.EventFrequency1Code.MNTH">
+            <summary>
+            <b>MNTH - Monthly</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.EventFrequency1Code.TWMN">
+            <summary>
+            <b>TWMN - Twice AMonth</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.EventFrequency1Code.TOWK">
+            <summary>
+            <b>TOWK - Every Two Weeks</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.EventFrequency1Code.WEEK">
+            <summary>
+            <b>WEEK - Weekly</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.EventFrequency1Code.DAIL">
+            <summary>
+            <b>DAIL - Daily</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.EventFrequency1Code.ADHO">
+            <summary>
+            <b>ADHO - Adhoc</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.EventFrequency1Code.INDA">
+            <summary>
+            <b>INDA - Intra Day</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.EventFrequency1Code.OVNG">
+            <summary>
+            <b>OVNG - Overnight</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.EventFrequency1Code.ONDE">
+            <summary>
+            <b>ONDE - On Demand</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.Pagination">
+            <summary>
+            Class <b>Pagination</b> (Pagination).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.Pagination.PgNb">
+            <summary>
+            Element <b>PgNb</b> (Page Number) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.Pagination.LastPgInd">
+            <summary>
+            Element <b>LastPgInd</b> (Last Page Indicator) of type bool.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00100103.AdditionalReference3">
+            <summary>
+            Class <b>AdditionalReference3</b> (Additional Reference 3).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.AdditionalReference3.Ref">
+            <summary>
+            Element <b>Ref</b> (Reference) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.AdditionalReference3.RefIssr">
+            <summary>
+            Element <b>RefIssr</b> (Reference Issuer) of type PartyIdentification2Choice.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00100103.AdditionalReference3.MsgNm">
+            <summary>
+            Element <b>MsgNm</b> (Message Name) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.Document">
+            <summary>
+            <b>Document</b> is the root class of the ISO 20022 message
+            with id reda.003.001.03 name PriceReportCorrectionV03 from Reference Data business area.
+            Repository:R 6.8.0.1 v492 - 4 July 2008
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.Document.PricRptCrrctnV03">
+            <summary>
+            Element <b>PricRptCrrctnV03</b> (Price Report Crrctn V03) of type PriceReportCorrectionV03.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.PriceReportCorrectionV03">
+            <summary>
+            Class <b>PriceReportCorrectionV03</b> (Price Report Correction V03).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PriceReportCorrectionV03.MsgId">
+            <summary>
+            Element <b>MsgId</b> (Message Identification) of type MessageIdentification1.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PriceReportCorrectionV03.PoolRef">
+            <summary>
+            Element <b>PoolRef</b> (Pool Reference) of type AdditionalReference3.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PriceReportCorrectionV03.PrvsRef">
+            <summary>
+            Element <b>PrvsRef</b> (Previous Reference) of type AdditionalReference3.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PriceReportCorrectionV03.MsgPgntn">
+            <summary>
+            Element <b>MsgPgntn</b> (Message Pagination) of type Pagination.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PriceReportCorrectionV03.PricCrrctnDtls">
+            <summary>
+            Element <b>PricCrrctnDtls</b> (Price Crrctn Details) of type array of PriceCorrection3.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.MessageIdentification1">
+            <summary>
+            Class <b>MessageIdentification1</b> (Message Identification 1).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.MessageIdentification1.Id">
+            <summary>
+            Element <b>Id</b> (Identification) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.MessageIdentification1.CreDtTm">
+            <summary>
+            Element <b>CreDtTm</b> (Creation Date Time) of type System.DateTime.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.Extension1">
+            <summary>
+            Class <b>Extension1</b> (Extension 1).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.Extension1.PlcAndNm">
+            <summary>
+            Element <b>PlcAndNm</b> (Place And Name) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.Extension1.Txt">
+            <summary>
+            Element <b>Txt</b> (Txt) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.PerformanceFactors1">
+            <summary>
+            Class <b>PerformanceFactors1</b> (Performance Factors 1).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PerformanceFactors1.CorpActnFctr">
+            <summary>
+            Element <b>CorpActnFctr</b> (Corporate Action Factor) of type decimal.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PerformanceFactors1.CorpActnFctrSpecified">
+            <summary>
+            Element <b>CorpActnFctrSpecified</b> (Corporate Action Factor Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PerformanceFactors1.CmltvCorpActnFctr">
+            <summary>
+            Element <b>CmltvCorpActnFctr</b> (Cmltv Corporate Action Factor) of type decimal.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PerformanceFactors1.CmltvCorpActnFctrSpecified">
+            <summary>
+            Element <b>CmltvCorpActnFctrSpecified</b> (Cmltv Corporate Action Factor Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PerformanceFactors1.AcmltnPrd">
+            <summary>
+            Element <b>AcmltnPrd</b> (Accumulation Period) of type DatePeriodDetails.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PerformanceFactors1.NrmlPrfrmnc">
+            <summary>
+            Element <b>NrmlPrfrmnc</b> (Nrml Prfrmnc) of type decimal.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PerformanceFactors1.NrmlPrfrmncSpecified">
+            <summary>
+            Element <b>NrmlPrfrmncSpecified</b> (Nrml Prfrmnc Specified) of type bool.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.DatePeriodDetails">
+            <summary>
+            Class <b>DatePeriodDetails</b> (Date Period Details).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.DatePeriodDetails.FrDt">
+            <summary>
+            Element <b>FrDt</b> (From Date) of type System.DateTime.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.DatePeriodDetails.ToDt">
+            <summary>
+            Element <b>ToDt</b> (To Date) of type System.DateTime.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.DateTimePeriodDetails">
+            <summary>
+            Class <b>DateTimePeriodDetails</b> (Date Time Period Details).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.DateTimePeriodDetails.FrDtTm">
+            <summary>
+            Element <b>FrDtTm</b> (From Date Time) of type System.DateTime.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.DateTimePeriodDetails.ToDtTm">
+            <summary>
+            Element <b>ToDtTm</b> (To Date Time) of type System.DateTime.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.DateOrDateTimePeriodChoice">
+            <summary>
+            Class <b>DateOrDateTimePeriodChoice</b> (Date Or Date Time Period Choice).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.DateOrDateTimePeriodChoice.Item">
+            <summary>
+            Element <b>Item</b> (Item) of type object.
+            This element can be:
+             Dt of type DatePeriodDetails 
+             DtTm of type DateTimePeriodDetails 
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.StatisticsByUserDefinedTimePeriod2">
+            <summary>
+            Class <b>StatisticsByUserDefinedTimePeriod2</b> (Statistics By User Defined Time Period 2).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.StatisticsByUserDefinedTimePeriod2.Prd">
+            <summary>
+            Element <b>Prd</b> (Period) of type DateOrDateTimePeriodChoice.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.StatisticsByUserDefinedTimePeriod2.HghstPricVal">
+            <summary>
+            Element <b>HghstPricVal</b> (Highest Price Value) of type PriceValue5.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.StatisticsByUserDefinedTimePeriod2.LwstPricVal">
+            <summary>
+            Element <b>LwstPricVal</b> (Lowest Price Value) of type PriceValue5.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.StatisticsByUserDefinedTimePeriod2.PricChng">
+            <summary>
+            Element <b>PricChng</b> (Price Change) of type PriceValueChange1.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.StatisticsByUserDefinedTimePeriod2.Yld">
+            <summary>
+            Element <b>Yld</b> (Yield) of type decimal.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.StatisticsByUserDefinedTimePeriod2.YldSpecified">
+            <summary>
+            Element <b>YldSpecified</b> (Yield Specified) of type bool.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.PriceValue5">
+            <summary>
+            Class <b>PriceValue5</b> (Price Value 5).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PriceValue5.Amt">
+            <summary>
+            Element <b>Amt</b> (Amount) of type ActiveOrHistoricCurrencyAnd13DecimalAmount.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.ActiveOrHistoricCurrencyAnd13DecimalAmount">
+            <summary>
+            Class <b>ActiveOrHistoricCurrencyAnd13DecimalAmount</b> (Active Or Historic Currency And 13 Decimal Amount).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ActiveOrHistoricCurrencyAnd13DecimalAmount.Ccy">
+            <summary>
+            Element <b>Ccy</b> (Currency) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ActiveOrHistoricCurrencyAnd13DecimalAmount.Value">
+            <summary>
+            Element <b>Value</b> (Value) of type decimal.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.PriceValueChange1">
+            <summary>
+            Class <b>PriceValueChange1</b> (Price Value Change 1).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PriceValueChange1.Amt">
+            <summary>
+            Element <b>Amt</b> (Amount) of type ActiveOrHistoricCurrencyAnd13DecimalAmount.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PriceValueChange1.AmtSgn">
+            <summary>
+            Element <b>AmtSgn</b> (Amount Sign) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PriceValueChange1.AmtSgnSpecified">
+            <summary>
+            Element <b>AmtSgnSpecified</b> (Amount Sign Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PriceValueChange1.Rate">
+            <summary>
+            Element <b>Rate</b> (Rate) of type decimal.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PriceValueChange1.RateSpecified">
+            <summary>
+            Element <b>RateSpecified</b> (Rate Specified) of type bool.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.StatisticsByPredefinedTimePeriods2">
+            <summary>
+            Class <b>StatisticsByPredefinedTimePeriods2</b> (Statistics By Predefined Time Periods 2).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.StatisticsByPredefinedTimePeriods2.HghstPricVal12Mnths">
+            <summary>
+            Element <b>HghstPricVal12Mnths</b> (Highest Price Value 12 Months) of type PriceValue5.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.StatisticsByPredefinedTimePeriods2.LwstPricVal12Mnths">
+            <summary>
+            Element <b>LwstPricVal12Mnths</b> (Lowest Price Value 12 Months) of type PriceValue5.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.StatisticsByPredefinedTimePeriods2.OneYrPricChng">
+            <summary>
+            Element <b>OneYrPricChng</b> (One Year Price Change) of type PriceValueChange1.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.StatisticsByPredefinedTimePeriods2.ThreeYrPricChng">
+            <summary>
+            Element <b>ThreeYrPricChng</b> (Three Year Price Change) of type PriceValueChange1.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.StatisticsByPredefinedTimePeriods2.FiveYrPricChng">
+            <summary>
+            Element <b>FiveYrPricChng</b> (Five Year Price Change) of type PriceValueChange1.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.PriceType2">
+            <summary>
+            Class <b>PriceType2</b> (Price Type 2).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PriceType2.Strd">
+            <summary>
+            Element <b>Strd</b> (Structured) of type TypeOfPrice6Code.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PriceType2.AddtlInf">
+            <summary>
+            Element <b>AddtlInf</b> (Additional Information) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.TypeOfPrice6Code">
+            <summary>
+            Enumeration <b>TypeOfPrice6Code</b> (Type Of Price 6Code).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TypeOfPrice6Code.BIDE">
+            <summary>
+            <b>BIDE - Bid</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TypeOfPrice6Code.OFFR">
+            <summary>
+            <b>OFFR - Offer</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TypeOfPrice6Code.NAVL">
+            <summary>
+            <b>NAVL - Net Asset Value</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TypeOfPrice6Code.CREA">
+            <summary>
+            <b>CREA - Creation</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TypeOfPrice6Code.CANC">
+            <summary>
+            <b>CANC - Request To Cancel</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TypeOfPrice6Code.INTE">
+            <summary>
+            <b>INTE - Interest</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TypeOfPrice6Code.SWNG">
+            <summary>
+            <b>SWNG - Swing</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TypeOfPrice6Code.OTHR">
+            <summary>
+            <b>OTHR - Other</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TypeOfPrice6Code.MIDD">
+            <summary>
+            <b>MIDD - Mid</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TypeOfPrice6Code.RINV">
+            <summary>
+            <b>RINV - Reinvestment</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TypeOfPrice6Code.SWIC">
+            <summary>
+            <b>SWIC - Switch</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TypeOfPrice6Code.DDVR">
+            <summary>
+            <b>DDVR - Daily Dividend Rate</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TypeOfPrice6Code.ACTU">
+            <summary>
+            <b>ACTU - Actual</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TypeOfPrice6Code.NAUP">
+            <summary>
+            <b>NAUP - Non Adjusted Unpublished</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.ValuationStatistics3">
+            <summary>
+            Class <b>ValuationStatistics3</b> (Valuation Statistics 3).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ValuationStatistics3.Ccy">
+            <summary>
+            Element <b>Ccy</b> (Currency) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ValuationStatistics3.PricTpChngBsis">
+            <summary>
+            Element <b>PricTpChngBsis</b> (Price Type Change Basis) of type PriceType2.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ValuationStatistics3.PricChng">
+            <summary>
+            Element <b>PricChng</b> (Price Change) of type PriceValueChange1.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ValuationStatistics3.Yld">
+            <summary>
+            Element <b>Yld</b> (Yield) of type decimal.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ValuationStatistics3.YldSpecified">
+            <summary>
+            Element <b>YldSpecified</b> (Yield Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ValuationStatistics3.ByPrdfndTmPrds">
+            <summary>
+            Element <b>ByPrdfndTmPrds</b> (By Predefined Time Periods) of type StatisticsByPredefinedTimePeriods2.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ValuationStatistics3.ByUsrDfndTmPrd">
+            <summary>
+            Element <b>ByUsrDfndTmPrd</b> (By User Defined Time Period) of type array of StatisticsByUserDefinedTimePeriod2.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.TaxCalculationInformation4">
+            <summary>
+            Class <b>TaxCalculationInformation4</b> (Tax Calculation Information 4).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TaxCalculationInformation4.Item">
+            <summary>
+            Element <b>Item</b> (Item) of type object.
+            This element can be:
+             EUCptlGn of type EUCapitalGain2Code 
+             XtndedEUCptlGn of type string 
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TaxCalculationInformation4.PctgOfDebtClm">
+            <summary>
+            Element <b>PctgOfDebtClm</b> (Percentage Of Debt Claim) of type decimal.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TaxCalculationInformation4.PctgOfDebtClmSpecified">
+            <summary>
+            Element <b>PctgOfDebtClmSpecified</b> (Percentage Of Debt Claim Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TaxCalculationInformation4.PctgGrdfthdDebt">
+            <summary>
+            Element <b>PctgGrdfthdDebt</b> (Percentage Grandfathered Debt) of type decimal.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TaxCalculationInformation4.PctgGrdfthdDebtSpecified">
+            <summary>
+            Element <b>PctgGrdfthdDebtSpecified</b> (Percentage Grandfathered Debt Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TaxCalculationInformation4.TaxblIncmPerDvdd">
+            <summary>
+            Element <b>TaxblIncmPerDvdd</b> (Taxable Income Per Dividend) of type ActiveOrHistoricCurrencyAnd13DecimalAmount.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TaxCalculationInformation4.Item1">
+            <summary>
+            Element <b>Item1</b> (Item 1) of type object.
+            This element can be:
+             EUDvddSts of type EUDividendStatus1Code 
+             XtndedEUDvddSts of type string 
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.EUCapitalGain2Code">
+            <summary>
+            Enumeration <b>EUCapitalGain2Code</b> (EUCapital Gain 2Code).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.EUCapitalGain2Code.EUSI">
+            <summary>
+            <b>EUSI - Capital Gain In Scope</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.EUCapitalGain2Code.EUSO">
+            <summary>
+            <b>EUSO - Capital Gain Out Scope</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.EUCapitalGain2Code.UKWN">
+            <summary>
+            <b>UKWN - Unknown</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.EUDividendStatus1Code">
+            <summary>
+            Enumeration <b>EUDividendStatus1Code</b> (EUDividend Status 1Code).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.EUDividendStatus1Code.DIVI">
+            <summary>
+            <b>DIVI - Dividend In Scope</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.EUDividendStatus1Code.DIVO">
+            <summary>
+            <b>DIVO - Dividend Out Scope</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.EUDividendStatus1Code.UKWN">
+            <summary>
+            <b>UKWN - Unknown</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.Tax17">
+            <summary>
+            Class <b>Tax17</b> (Tax 17).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.Tax17.Item">
+            <summary>
+            Element <b>Item</b> (Item) of type object.
+            This element can be:
+             Tp of type TaxType12Code 
+             XtndedTp of type string 
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.Tax17.Amt">
+            <summary>
+            Element <b>Amt</b> (Amount) of type array of ActiveOrHistoricCurrencyAnd13DecimalAmount.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.Tax17.Rate">
+            <summary>
+            Element <b>Rate</b> (Rate) of type decimal.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.Tax17.RateSpecified">
+            <summary>
+            Element <b>RateSpecified</b> (Rate Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.Tax17.Ctry">
+            <summary>
+            Element <b>Ctry</b> (Country) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.Tax17.TaxClctnDtls">
+            <summary>
+            Element <b>TaxClctnDtls</b> (Tax Calculation Details) of type TaxCalculationInformation4.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.TaxType12Code">
+            <summary>
+            Enumeration <b>TaxType12Code</b> (Tax Type 12 Code).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TaxType12Code.INPO">
+            <summary>
+            <b>INPO - Interim Profit Tax</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TaxType12Code.EUTR">
+            <summary>
+            <b>EUTR - EUTax Retention</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TaxType12Code.AKT1">
+            <summary>
+            <b>AKT1 - Aktiengewinn 1</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TaxType12Code.AKT2">
+            <summary>
+            <b>AKT2 - Aktiengewinn 2</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TaxType12Code.ZWIS">
+            <summary>
+            <b>ZWIS - Zwischengewinn</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TaxType12Code.MIET">
+            <summary>
+            <b>MIET - Mietgewinn</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.Charge15">
+            <summary>
+            Class <b>Charge15</b> (Charge 15).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.Charge15.Item">
+            <summary>
+            Element <b>Item</b> (Item) of type object.
+            This element can be:
+             Tp of type ChargeType9Code 
+             XtndedTp of type string 
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.Charge15.Item1">
+            <summary>
+            Element <b>Item1</b> (Item 1) of type object.
+            This element can be:
+             Amt of type ActiveCurrencyAnd13DecimalAmount 
+             Rate of type decimal 
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.Charge15.Item2">
+            <summary>
+            Element <b>Item2</b> (Item 2) of type object.
+            This element can be:
+             ClctnBsis of type CalculationBasis2Code 
+             XtndedClctnBsis of type string 
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.ChargeType9Code">
+            <summary>
+            Enumeration <b>ChargeType9Code</b> (Charge Type 9Code).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ChargeType9Code.MANF">
+            <summary>
+            <b>MANF - Management Fee</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ChargeType9Code.BEND">
+            <summary>
+            <b>BEND - Back End Load</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ChargeType9Code.FEND">
+            <summary>
+            <b>FEND - Front End Load</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ChargeType9Code.ADVI">
+            <summary>
+            <b>ADVI - Advisory Fee</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ChargeType9Code.CUST">
+            <summary>
+            <b>CUST - Custodial Account</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ChargeType9Code.PUBL">
+            <summary>
+            <b>PUBL - Publication Fee</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ChargeType9Code.ACCT">
+            <summary>
+            <b>ACCT - Accounting Fee</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ChargeType9Code.EQUL">
+            <summary>
+            <b>EQUL - Equalisation</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ChargeType9Code.PENA">
+            <summary>
+            <b>PENA - Penalty</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.ActiveCurrencyAnd13DecimalAmount">
+            <summary>
+            Class <b>ActiveCurrencyAnd13DecimalAmount</b> (Active Currency And 13 Decimal Amount).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ActiveCurrencyAnd13DecimalAmount.Ccy">
+            <summary>
+            Element <b>Ccy</b> (Currency) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ActiveCurrencyAnd13DecimalAmount.Value">
+            <summary>
+            Element <b>Value</b> (Value) of type decimal.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.CalculationBasis2Code">
+            <summary>
+            Enumeration <b>CalculationBasis2Code</b> (Calculation Basis 2Code).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.CalculationBasis2Code.AVER">
+            <summary>
+            <b>AVER - Average</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.CalculationBasis2Code.DAIL">
+            <summary>
+            <b>DAIL - Daily</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.CalculationBasis2Code.MNTH">
+            <summary>
+            <b>MNTH - Monthly</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.CalculationBasis2Code.YEAR">
+            <summary>
+            <b>YEAR - Annual</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.PriceValue1">
+            <summary>
+            Class <b>PriceValue1</b> (Price Value 1).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PriceValue1.Amt">
+            <summary>
+            Element <b>Amt</b> (Amount) of type ActiveCurrencyAnd13DecimalAmount.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.UnitPrice15">
+            <summary>
+            Class <b>UnitPrice15</b> (Unit Price 15).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.UnitPrice15.Item">
+            <summary>
+            Element <b>Item</b> (Item) of type object.
+            This element can be:
+             Tp of type TypeOfPrice9Code 
+             XtndedTp of type string 
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.UnitPrice15.PricMtd">
+            <summary>
+            Element <b>PricMtd</b> (Price Method) of type PriceMethod1Code.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.UnitPrice15.PricMtdSpecified">
+            <summary>
+            Element <b>PricMtdSpecified</b> (Price Method Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.UnitPrice15.ValInInvstmtCcy">
+            <summary>
+            Element <b>ValInInvstmtCcy</b> (Value In Investment Currency) of type array of PriceValue1.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.UnitPrice15.ValInAltrntvCcy">
+            <summary>
+            Element <b>ValInAltrntvCcy</b> (Value In Alternative Currency) of type array of PriceValue1.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.UnitPrice15.ForExctnInd">
+            <summary>
+            Element <b>ForExctnInd</b> (For Execution Indicator) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.UnitPrice15.CumDvddInd">
+            <summary>
+            Element <b>CumDvddInd</b> (Cum Dividend Indicator) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.UnitPrice15.ClctnBsis">
+            <summary>
+            Element <b>ClctnBsis</b> (Calculation Basis) of type decimal.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.UnitPrice15.ClctnBsisSpecified">
+            <summary>
+            Element <b>ClctnBsisSpecified</b> (Calculation Basis Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.UnitPrice15.EstmtdPricInd">
+            <summary>
+            Element <b>EstmtdPricInd</b> (Estimated Price Indicator) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.UnitPrice15.NbOfDaysAcrd">
+            <summary>
+            Element <b>NbOfDaysAcrd</b> (Number Of Days Accrued) of type decimal.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.UnitPrice15.NbOfDaysAcrdSpecified">
+            <summary>
+            Element <b>NbOfDaysAcrdSpecified</b> (Number Of Days Accrued Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.UnitPrice15.TaxblIncmPerShr">
+            <summary>
+            Element <b>TaxblIncmPerShr</b> (Taxable Income Per Share) of type ActiveOrHistoricCurrencyAnd13DecimalAmount.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.UnitPrice15.Item1">
+            <summary>
+            Element <b>Item1</b> (Item 1) of type object.
+            This element can be:
+             TaxblIncmPerShrClctd of type TaxableIncomePerShareCalculated2Code 
+             XtndedTaxblIncmPerShrClctd of type string 
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.UnitPrice15.TaxblIncmPerDvdd">
+            <summary>
+            Element <b>TaxblIncmPerDvdd</b> (Taxable Income Per Dividend) of type ActiveOrHistoricCurrencyAnd13DecimalAmount.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.UnitPrice15.Item2">
+            <summary>
+            Element <b>Item2</b> (Item 2) of type object.
+            This element can be:
+             EUDvddSts of type EUDividendStatus1Code 
+             XtndedEUDvddSts of type string 
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.UnitPrice15.ChrgDtls">
+            <summary>
+            Element <b>ChrgDtls</b> (Charge Details) of type array of Charge15.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.UnitPrice15.TaxLbltyDtls">
+            <summary>
+            Element <b>TaxLbltyDtls</b> (Tax Liability Details) of type array of Tax17.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.UnitPrice15.TaxRfndDtls">
+            <summary>
+            Element <b>TaxRfndDtls</b> (Tax Refund Details) of type array of Tax17.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.TypeOfPrice9Code">
+            <summary>
+            Enumeration <b>TypeOfPrice9Code</b> (Type Of Price 9Code).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TypeOfPrice9Code.BIDE">
+            <summary>
+            <b>BIDE - Bid</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TypeOfPrice9Code.OFFR">
+            <summary>
+            <b>OFFR - Offer</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TypeOfPrice9Code.NAVL">
+            <summary>
+            <b>NAVL - Net Asset Value</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TypeOfPrice9Code.CREA">
+            <summary>
+            <b>CREA - Creation</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TypeOfPrice9Code.CANC">
+            <summary>
+            <b>CANC - Request To Cancel</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TypeOfPrice9Code.INTE">
+            <summary>
+            <b>INTE - Interest</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TypeOfPrice9Code.SWNG">
+            <summary>
+            <b>SWNG - Swing</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TypeOfPrice9Code.MIDD">
+            <summary>
+            <b>MIDD - Mid</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TypeOfPrice9Code.RINV">
+            <summary>
+            <b>RINV - Reinvestment</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TypeOfPrice9Code.SWIC">
+            <summary>
+            <b>SWIC - Switch</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TypeOfPrice9Code.DDVR">
+            <summary>
+            <b>DDVR - Daily Dividend Rate</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TypeOfPrice9Code.ACTU">
+            <summary>
+            <b>ACTU - Actual</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TypeOfPrice9Code.NAUP">
+            <summary>
+            <b>NAUP - Non Adjusted Unpublished</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TypeOfPrice9Code.GUAR">
+            <summary>
+            <b>GUAR - Guaranteed</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TypeOfPrice9Code.ENAV">
+            <summary>
+            <b>ENAV - Estimated NAV</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.PriceMethod1Code">
+            <summary>
+            Enumeration <b>PriceMethod1Code</b> (Price Method 1Code).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PriceMethod1Code.FORW">
+            <summary>
+            <b>FORW - Forward Price</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PriceMethod1Code.HIST">
+            <summary>
+            <b>HIST - Historical Price</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.TaxableIncomePerShareCalculated2Code">
+            <summary>
+            Enumeration <b>TaxableIncomePerShareCalculated2Code</b> (Taxable Income Per Share Calculated 2Code).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TaxableIncomePerShareCalculated2Code.TSIY">
+            <summary>
+            <b>TSIY - Fund Calculates</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TaxableIncomePerShareCalculated2Code.TSIN">
+            <summary>
+            <b>TSIN - Fund Does Not Calculate</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.TaxableIncomePerShareCalculated2Code.UKWN">
+            <summary>
+            <b>UKWN - Unknown</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.FinancialInstrumentQuantity1">
+            <summary>
+            Class <b>FinancialInstrumentQuantity1</b> (Financial Instrument Quantity 1).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.FinancialInstrumentQuantity1.Unit">
+            <summary>
+            Element <b>Unit</b> (Unit) of type decimal.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.ActiveOrHistoricCurrencyAndAmount">
+            <summary>
+            Class <b>ActiveOrHistoricCurrencyAndAmount</b> (Active Or Historic Currency And Amount).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ActiveOrHistoricCurrencyAndAmount.Ccy">
+            <summary>
+            Element <b>Ccy</b> (Currency) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ActiveOrHistoricCurrencyAndAmount.Value">
+            <summary>
+            Element <b>Value</b> (Value) of type decimal.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.AlternateSecurityIdentification1">
+            <summary>
+            Class <b>AlternateSecurityIdentification1</b> (Alternate Security Identification 1).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.AlternateSecurityIdentification1.Id">
+            <summary>
+            Element <b>Id</b> (Identification) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.AlternateSecurityIdentification1.Item">
+            <summary>
+            Element <b>Item</b> (Item) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.AlternateSecurityIdentification1.ItemElementName">
+            <summary>
+            Element <b>ItemElementName</b> (Item Element Name) of type ItemChoiceType1.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.ItemChoiceType1">
+            <summary>
+            Enumeration <b>ItemChoiceType1</b> (Item Choice Type 1).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ItemChoiceType1.DmstIdSrc">
+            <summary>
+            <b>DmstIdSrc - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ItemChoiceType1.PrtryIdSrc">
+            <summary>
+            <b>PrtryIdSrc - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.SecurityIdentification3Choice">
+            <summary>
+            Class <b>SecurityIdentification3Choice</b> (Security Identification 3Choice).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.SecurityIdentification3Choice.Item">
+            <summary>
+            Element <b>Item</b> (Item) of type object.
+            This element can be:
+             Belgn of type string 
+             Blmbrg of type string 
+             CTA of type string 
+             CUSIP of type string 
+             Cmon of type string 
+             Dtch of type string 
+             ISIN of type string 
+             OthrPrtryId of type AlternateSecurityIdentification1 
+             QUICK of type string 
+             RIC of type string 
+             SCVM of type string 
+             SEDOL of type string 
+             TckrSymb of type string 
+             Vlrn of type string 
+             Wrtppr of type string 
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.SecurityIdentification3Choice.ItemElementName">
+            <summary>
+            Element <b>ItemElementName</b> (Item Element Name) of type ItemChoiceType2.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.ItemChoiceType2">
+            <summary>
+            Enumeration <b>ItemChoiceType2</b> (Item Choice Type 2).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ItemChoiceType2.Belgn">
+            <summary>
+            <b>Belgn - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ItemChoiceType2.Blmbrg">
+            <summary>
+            <b>Blmbrg - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ItemChoiceType2.CTA">
+            <summary>
+            <b>CTA - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ItemChoiceType2.CUSIP">
+            <summary>
+            <b>CUSIP - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ItemChoiceType2.Cmon">
+            <summary>
+            <b>Cmon - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ItemChoiceType2.Dtch">
+            <summary>
+            <b>Dtch - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ItemChoiceType2.ISIN">
+            <summary>
+            <b>ISIN - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ItemChoiceType2.OthrPrtryId">
+            <summary>
+            <b>OthrPrtryId - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ItemChoiceType2.QUICK">
+            <summary>
+            <b>QUICK - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ItemChoiceType2.RIC">
+            <summary>
+            <b>RIC - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ItemChoiceType2.SCVM">
+            <summary>
+            <b>SCVM - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ItemChoiceType2.SEDOL">
+            <summary>
+            <b>SEDOL - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ItemChoiceType2.TckrSymb">
+            <summary>
+            <b>TckrSymb - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ItemChoiceType2.Vlrn">
+            <summary>
+            <b>Vlrn - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ItemChoiceType2.Wrtppr">
+            <summary>
+            <b>Wrtppr - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.FinancialInstrument8">
+            <summary>
+            Class <b>FinancialInstrument8</b> (Financial Instrument 8).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.FinancialInstrument8.Id">
+            <summary>
+            Element <b>Id</b> (Identification) of type array of SecurityIdentification3Choice.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.FinancialInstrument8.Nm">
+            <summary>
+            Element <b>Nm</b> (Name) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.FinancialInstrument8.SplmtryId">
+            <summary>
+            Element <b>SplmtryId</b> (Supplementary Identification) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.FinancialInstrument8.DnmtnCcy">
+            <summary>
+            Element <b>DnmtnCcy</b> (Denomination Currency) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.FinancialInstrument8.ClssTp">
+            <summary>
+            Element <b>ClssTp</b> (Class Type) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.FinancialInstrument8.SctiesForm">
+            <summary>
+            Element <b>SctiesForm</b> (Securities Form) of type FormOfSecurity1Code.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.FinancialInstrument8.SctiesFormSpecified">
+            <summary>
+            Element <b>SctiesFormSpecified</b> (Securities Form Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.FinancialInstrument8.DstrbtnPlcy">
+            <summary>
+            Element <b>DstrbtnPlcy</b> (Distribution Policy) of type DistributionPolicy1Code.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.FinancialInstrument8.DstrbtnPlcySpecified">
+            <summary>
+            Element <b>DstrbtnPlcySpecified</b> (Distribution Policy Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.FinancialInstrument8.DualFndInd">
+            <summary>
+            Element <b>DualFndInd</b> (Dual Fund Indicator) of type bool.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.FormOfSecurity1Code">
+            <summary>
+            Enumeration <b>FormOfSecurity1Code</b> (Form Of Security 1Code).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.FormOfSecurity1Code.BEAR">
+            <summary>
+            <b>BEAR - Bearer</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.FormOfSecurity1Code.REGD">
+            <summary>
+            <b>REGD - Registered</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.DistributionPolicy1Code">
+            <summary>
+            Enumeration <b>DistributionPolicy1Code</b> (Distribution Policy 1Code).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.DistributionPolicy1Code.DIST">
+            <summary>
+            <b>DIST - Distribution</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.DistributionPolicy1Code.ACCU">
+            <summary>
+            <b>ACCU - Accumulation</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.DateAndDateTimeChoice">
+            <summary>
+            Class <b>DateAndDateTimeChoice</b> (Date And Date Time Choice).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.DateAndDateTimeChoice.Item">
+            <summary>
+            Element <b>Item</b> (Item) of type System.DateTime.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.DateAndDateTimeChoice.ItemElementName">
+            <summary>
+            Element <b>ItemElementName</b> (Item Element Name) of type ItemChoiceType.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.ItemChoiceType">
+            <summary>
+            Enumeration <b>ItemChoiceType</b> (Item Choice Type).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ItemChoiceType.Dt">
+            <summary>
+            <b>Dt - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ItemChoiceType.DtTm">
+            <summary>
+            <b>DtTm - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.PriceValuation3">
+            <summary>
+            Class <b>PriceValuation3</b> (Price Valuation 3).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PriceValuation3.Id">
+            <summary>
+            Element <b>Id</b> (Identification) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PriceValuation3.ValtnDtTm">
+            <summary>
+            Element <b>ValtnDtTm</b> (Valuation Date Time) of type DateAndDateTimeChoice.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PriceValuation3.NAVDtTm">
+            <summary>
+            Element <b>NAVDtTm</b> (NAVDate Time) of type DateAndDateTimeChoice.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PriceValuation3.FinInstrmDtls">
+            <summary>
+            Element <b>FinInstrmDtls</b> (Financial Instrument Details) of type FinancialInstrument8.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PriceValuation3.FndMgmtCpny">
+            <summary>
+            Element <b>FndMgmtCpny</b> (Fund Management Cpny) of type PartyIdentification2Choice.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PriceValuation3.TtlNAV">
+            <summary>
+            Element <b>TtlNAV</b> (Total NAV) of type array of ActiveOrHistoricCurrencyAndAmount.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PriceValuation3.TtlUnitsNb">
+            <summary>
+            Element <b>TtlUnitsNb</b> (Total Units Number) of type FinancialInstrumentQuantity1.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PriceValuation3.NxtValtnDtTm">
+            <summary>
+            Element <b>NxtValtnDtTm</b> (Next Valuation Date Time) of type DateAndDateTimeChoice.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PriceValuation3.PrvsValtnDtTm">
+            <summary>
+            Element <b>PrvsValtnDtTm</b> (Previous Valuation Date Time) of type DateAndDateTimeChoice.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PriceValuation3.ValtnTp">
+            <summary>
+            Element <b>ValtnTp</b> (Valuation Type) of type ValuationTiming1Code.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PriceValuation3.ValtnFrqcy">
+            <summary>
+            Element <b>ValtnFrqcy</b> (Valuation Frequency) of type EventFrequency1Code.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PriceValuation3.ValtnFrqcySpecified">
+            <summary>
+            Element <b>ValtnFrqcySpecified</b> (Valuation Frequency Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PriceValuation3.OffclValtnInd">
+            <summary>
+            Element <b>OffclValtnInd</b> (Offcl Valuation Indicator) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PriceValuation3.SspdInd">
+            <summary>
+            Element <b>SspdInd</b> (Suspended Indicator) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PriceValuation3.PricDtls">
+            <summary>
+            Element <b>PricDtls</b> (Price Details) of type array of UnitPrice15.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PriceValuation3.ValtnSttstcs">
+            <summary>
+            Element <b>ValtnSttstcs</b> (Valuation Statistics) of type array of ValuationStatistics3.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PriceValuation3.PrfrmncDtls">
+            <summary>
+            Element <b>PrfrmncDtls</b> (Prfrmnc Details) of type PerformanceFactors1.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.PartyIdentification2Choice">
+            <summary>
+            Class <b>PartyIdentification2Choice</b> (Party Identification 2Choice).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PartyIdentification2Choice.Item">
+            <summary>
+            Element <b>Item</b> (Item) of type object.
+            This element can be:
+             BICOrBEI of type string 
+             NmAndAdr of type NameAndAddress5 
+             PrtryId of type GenericIdentification1 
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.NameAndAddress5">
+            <summary>
+            Class <b>NameAndAddress5</b> (Name And Address 5).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.NameAndAddress5.Nm">
+            <summary>
+            Element <b>Nm</b> (Name) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.NameAndAddress5.Adr">
+            <summary>
+            Element <b>Adr</b> (Address) of type PostalAddress1.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.PostalAddress1">
+            <summary>
+            Class <b>PostalAddress1</b> (Postal Address 1).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PostalAddress1.AdrTp">
+            <summary>
+            Element <b>AdrTp</b> (Address Type) of type AddressType2Code.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PostalAddress1.AdrTpSpecified">
+            <summary>
+            Element <b>AdrTpSpecified</b> (Address Type Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PostalAddress1.AdrLine">
+            <summary>
+            Element <b>AdrLine</b> (Address Line) of type array of string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PostalAddress1.StrtNm">
+            <summary>
+            Element <b>StrtNm</b> (Street Name) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PostalAddress1.BldgNb">
+            <summary>
+            Element <b>BldgNb</b> (Building Number) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PostalAddress1.PstCd">
+            <summary>
+            Element <b>PstCd</b> (Post Code) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PostalAddress1.TwnNm">
+            <summary>
+            Element <b>TwnNm</b> (Town Name) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PostalAddress1.CtrySubDvsn">
+            <summary>
+            Element <b>CtrySubDvsn</b> (Country Sub Division) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PostalAddress1.Ctry">
+            <summary>
+            Element <b>Ctry</b> (Country) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.AddressType2Code">
+            <summary>
+            Enumeration <b>AddressType2Code</b> (Address Type 2Code).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.AddressType2Code.ADDR">
+            <summary>
+            <b>ADDR - Postal</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.AddressType2Code.PBOX">
+            <summary>
+            <b>PBOX - POBox</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.AddressType2Code.HOME">
+            <summary>
+            <b>HOME - Residential</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.AddressType2Code.BIZZ">
+            <summary>
+            <b>BIZZ - Business</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.AddressType2Code.MLTO">
+            <summary>
+            <b>MLTO - Mail To</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.AddressType2Code.DLVY">
+            <summary>
+            <b>DLVY - Delivery To</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.GenericIdentification1">
+            <summary>
+            Class <b>GenericIdentification1</b> (Generic Identification 1).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.GenericIdentification1.Id">
+            <summary>
+            Element <b>Id</b> (Identification) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.GenericIdentification1.SchmeNm">
+            <summary>
+            Element <b>SchmeNm</b> (Scheme Name) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.GenericIdentification1.Issr">
+            <summary>
+            Element <b>Issr</b> (Issuer) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.ValuationTiming1Code">
+            <summary>
+            Enumeration <b>ValuationTiming1Code</b> (Valuation Timing 1Code).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ValuationTiming1Code.EXCP">
+            <summary>
+            <b>EXCP - Exceptional</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ValuationTiming1Code.USUA">
+            <summary>
+            <b>USUA - Usual Transaction Time</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.ValuationTiming1Code.PATC">
+            <summary>
+            <b>PATC - Particular</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.EventFrequency1Code">
+            <summary>
+            Enumeration <b>EventFrequency1Code</b> (Event Frequency 1Code).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.EventFrequency1Code.YEAR">
+            <summary>
+            <b>YEAR - Annual</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.EventFrequency1Code.SEMI">
+            <summary>
+            <b>SEMI - Semi Annual</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.EventFrequency1Code.QUTR">
+            <summary>
+            <b>QUTR - Quarterly</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.EventFrequency1Code.TOMN">
+            <summary>
+            <b>TOMN - Every Two Months</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.EventFrequency1Code.MNTH">
+            <summary>
+            <b>MNTH - Monthly</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.EventFrequency1Code.TWMN">
+            <summary>
+            <b>TWMN - Twice AMonth</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.EventFrequency1Code.TOWK">
+            <summary>
+            <b>TOWK - Every Two Weeks</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.EventFrequency1Code.WEEK">
+            <summary>
+            <b>WEEK - Weekly</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.EventFrequency1Code.DAIL">
+            <summary>
+            <b>DAIL - Daily</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.EventFrequency1Code.ADHO">
+            <summary>
+            <b>ADHO - Adhoc</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.EventFrequency1Code.INDA">
+            <summary>
+            <b>INDA - Intra Day</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.EventFrequency1Code.OVNG">
+            <summary>
+            <b>OVNG - Overnight</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.EventFrequency1Code.ONDE">
+            <summary>
+            <b>ONDE - On Demand</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.PriceCorrection3">
+            <summary>
+            Class <b>PriceCorrection3</b> (Price Correction 3).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PriceCorrection3.PrevslySntPricDtls">
+            <summary>
+            Element <b>PrevslySntPricDtls</b> (Previously Sent Price Details) of type PriceValuation3.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PriceCorrection3.CrrctdPricDtls">
+            <summary>
+            Element <b>CrrctdPricDtls</b> (Corrected Price Details) of type PriceValuation3.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.PriceCorrection3.Xtnsn">
+            <summary>
+            Element <b>Xtnsn</b> (Extension) of type array of Extension1.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.Pagination">
+            <summary>
+            Class <b>Pagination</b> (Pagination).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.Pagination.PgNb">
+            <summary>
+            Element <b>PgNb</b> (Page Number) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.Pagination.LastPgInd">
+            <summary>
+            Element <b>LastPgInd</b> (Last Page Indicator) of type bool.
+            </summary>
+        </member>
+        <member name="T:i20022.reda00300103.AdditionalReference3">
+            <summary>
+            Class <b>AdditionalReference3</b> (Additional Reference 3).
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.AdditionalReference3.Ref">
+            <summary>
+            Element <b>Ref</b> (Reference) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.AdditionalReference3.RefIssr">
+            <summary>
+            Element <b>RefIssr</b> (Reference Issuer) of type PartyIdentification2Choice.
+            </summary>
+        </member>
+        <member name="F:i20022.reda00300103.AdditionalReference3.MsgNm">
+            <summary>
+            Element <b>MsgNm</b> (Message Name) of type string.
+            </summary>
+        </member>
+    </members>
+</doc>

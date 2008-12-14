@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Administration</name>
+    </assembly>
+    <members>
+        <member name="T:i20022.admi00200101.Document">
+            <summary>
+            <b>Document</b> is the root class of the ISO 20022 message
+            with id admi.002.001.01 name MessageRejectV01 from Administration business area.
+            Repository:R 6.8.0.1 v492 - 4 July 2008
+            </summary>
+        </member>
+        <member name="F:i20022.admi00200101.Document.admi00200101">
+            <summary>
+            Element <b>admi00200101</b> (0020 01 01) of type admi00200101.
+            </summary>
+        </member>
+        <member name="T:i20022.admi00200101.admi00200101">
+            <summary>
+            Class <b>admi00200101</b> (0020 01 01).
+            </summary>
+        </member>
+        <member name="F:i20022.admi00200101.admi00200101.RltdRef">
+            <summary>
+            Element <b>RltdRef</b> (Related Reference) of type MessageReference.
+            </summary>
+        </member>
+        <member name="F:i20022.admi00200101.admi00200101.Rsn">
+            <summary>
+            Element <b>Rsn</b> (Reason) of type RejectionReason2.
+            </summary>
+        </member>
+        <member name="T:i20022.admi00200101.MessageReference">
+            <summary>
+            Class <b>MessageReference</b> (Message Reference).
+            </summary>
+        </member>
+        <member name="F:i20022.admi00200101.MessageReference.Ref">
+            <summary>
+            Element <b>Ref</b> (Reference) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.admi00200101.RejectionReason2">
+            <summary>
+            Class <b>RejectionReason2</b> (Rejection Reason 2).
+            </summary>
+        </member>
+        <member name="F:i20022.admi00200101.RejectionReason2.RjctgPtyRsn">
+            <summary>
+            Element <b>RjctgPtyRsn</b> (Rejecting Party Reason) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.admi00200101.RejectionReason2.RjctnDtTm">
+            <summary>
+            Element <b>RjctnDtTm</b> (Rejection Date Time) of type System.DateTime.
+            </summary>
+        </member>
+        <member name="F:i20022.admi00200101.RejectionReason2.RjctnDtTmSpecified">
+            <summary>
+            Element <b>RjctnDtTmSpecified</b> (Rejection Date Time Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.admi00200101.RejectionReason2.ErrLctn">
+            <summary>
+            Element <b>ErrLctn</b> (Error Location) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.admi00200101.RejectionReason2.RsnDesc">
+            <summary>
+            Element <b>RsnDesc</b> (Reason Description) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.admi00200101.RejectionReason2.AddtlData">
+            <summary>
+            Element <b>AddtlData</b> (Additional Data) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.admi00400101.Document">
+            <summary>
+            <b>Document</b> is the root class of the ISO 20022 message
+            with id admi.004.001.01 name SystemEventNotificationV01 from Administration business area.
+            Repository:R 6.8.0.1 v492 - 4 July 2008
+            </summary>
+        </member>
+        <member name="F:i20022.admi00400101.Document.admi00400101">
+            <summary>
+            Element <b>admi00400101</b> (0040 01 01) of type admi00400101.
+            </summary>
+        </member>
+        <member name="T:i20022.admi00400101.admi00400101">
+            <summary>
+            Class <b>admi00400101</b> (0040 01 01).
+            </summary>
+        </member>
+        <member name="F:i20022.admi00400101.admi00400101.EvtInf">
+            <summary>
+            Element <b>EvtInf</b> (Event Information) of type Event1.
+            </summary>
+        </member>
+        <member name="T:i20022.admi00400101.Event1">
+            <summary>
+            Class <b>Event1</b> (Event 1).
+            </summary>
+        </member>
+        <member name="F:i20022.admi00400101.Event1.EvtCd">
+            <summary>
+            Element <b>EvtCd</b> (Event Code) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.admi00400101.Event1.EvtParam">
+            <summary>
+            Element <b>EvtParam</b> (Event Parameter) of type array of string.
+            </summary>
+        </member>
+        <member name="F:i20022.admi00400101.Event1.EvtDesc">
+            <summary>
+            Element <b>EvtDesc</b> (Event Description) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.admi00400101.Event1.EvtTm">
+            <summary>
+            Element <b>EvtTm</b> (Event Time) of type System.DateTime.
+            </summary>
+        </member>
+        <member name="F:i20022.admi00400101.Event1.EvtTmSpecified">
+            <summary>
+            Element <b>EvtTmSpecified</b> (Event Time Specified) of type bool.
+            </summary>
+        </member>
+    </members>
+</doc>

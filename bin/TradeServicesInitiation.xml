@@ -1,0 +1,2956 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TradeServicesInitiation</name>
+    </assembly>
+    <members>
+        <member name="T:i20022.tsin00200101.Document">
+            <summary>
+            <b>Document</b> is the root class of the ISO 20022 message
+            with id tsin.002.001.01 name InvoiceFinancingRequestStatusV01 from Trade Services Initiation business area.
+            Repository:R 6.8.0.1 v492 - 4 July 2008
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.Document.InvcFincgReqSts">
+            <summary>
+            Element <b>InvcFincgReqSts</b> (Invc Fincg Request Status) of type InvoiceFinancingRequestStatusV01.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00200101.InvoiceFinancingRequestStatusV01">
+            <summary>
+            Class <b>InvoiceFinancingRequestStatusV01</b> (Invoice Financing Request Status V01).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.InvoiceFinancingRequestStatusV01.StsId">
+            <summary>
+            Element <b>StsId</b> (Status Identification) of type MessageIdentification1.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.InvoiceFinancingRequestStatusV01.OrgnlReqInfAndSts">
+            <summary>
+            Element <b>OrgnlReqInfAndSts</b> (Original Request Information And Status) of type OriginalRequestInformation1.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.InvoiceFinancingRequestStatusV01.FincgInfAndSts">
+            <summary>
+            Element <b>FincgInfAndSts</b> (Fincg Information And Status) of type FinancingInformationAndStatus1.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00200101.MessageIdentification1">
+            <summary>
+            Class <b>MessageIdentification1</b> (Message Identification 1).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.MessageIdentification1.Id">
+            <summary>
+            Element <b>Id</b> (Identification) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.MessageIdentification1.CreDtTm">
+            <summary>
+            Element <b>CreDtTm</b> (Creation Date Time) of type System.DateTime.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00200101.InstalmentFinancingInformation1">
+            <summary>
+            Class <b>InstalmentFinancingInformation1</b> (Instalment Financing Information 1).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.InstalmentFinancingInformation1.InstlmtSeqId">
+            <summary>
+            Element <b>InstlmtSeqId</b> (Instalment Sequence Identification) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.InstalmentFinancingInformation1.InstlmtTtlAmt">
+            <summary>
+            Element <b>InstlmtTtlAmt</b> (Instalment Total Amount) of type ActiveCurrencyAndAmount.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.InstalmentFinancingInformation1.InstlmtFincgRslt">
+            <summary>
+            Element <b>InstlmtFincgRslt</b> (Instalment Fincg Result) of type FinancingResult1.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00200101.ActiveCurrencyAndAmount">
+            <summary>
+            Class <b>ActiveCurrencyAndAmount</b> (Active Currency And Amount).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ActiveCurrencyAndAmount.Ccy">
+            <summary>
+            Element <b>Ccy</b> (Currency) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ActiveCurrencyAndAmount.Value">
+            <summary>
+            Element <b>Value</b> (Value) of type decimal.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00200101.FinancingResult1">
+            <summary>
+            Class <b>FinancingResult1</b> (Financing Result 1).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.FinancingResult1.FincgReqSts">
+            <summary>
+            Element <b>FincgReqSts</b> (Fincg Request Status) of type RequestStatus1Code.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.FinancingResult1.StsRsn">
+            <summary>
+            Element <b>StsRsn</b> (Status Reason) of type StatusReason4Choice.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.FinancingResult1.AddtlStsRsnInf">
+            <summary>
+            Element <b>AddtlStsRsnInf</b> (Additional Status Reason Information) of type array of string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.FinancingResult1.FincdAmt">
+            <summary>
+            Element <b>FincdAmt</b> (Fincd Amount) of type FinancingRateOrAmountChoice.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00200101.RequestStatus1Code">
+            <summary>
+            Enumeration <b>RequestStatus1Code</b> (Request Status 1Code).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.RequestStatus1Code.FNCD">
+            <summary>
+            <b>FNCD - Financed</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.RequestStatus1Code.PDNG">
+            <summary>
+            <b>PDNG - Pending</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.RequestStatus1Code.NTFD">
+            <summary>
+            <b>NTFD - Not Financed</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00200101.StatusReason4Choice">
+            <summary>
+            Class <b>StatusReason4Choice</b> (Status Reason 4Choice).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.StatusReason4Choice.Item">
+            <summary>
+            Element <b>Item</b> (Item) of type object.
+            This element can be:
+             Cd of type FinancingStatusReason1Code 
+             Prtry of type string 
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00200101.FinancingStatusReason1Code">
+            <summary>
+            Enumeration <b>FinancingStatusReason1Code</b> (Financing Status Reason 1Code).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.FinancingStatusReason1Code.CA01">
+            <summary>
+            <b>CA01 - Cancellation Request Out Of Time</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.FinancingStatusReason1Code.CA02">
+            <summary>
+            <b>CA02 - No Matching Financing Request</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.FinancingStatusReason1Code.AC01">
+            <summary>
+            <b>AC01 - Incorrect Account Number</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.FinancingStatusReason1Code.AC04">
+            <summary>
+            <b>AC04 - Closed Account Number</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.FinancingStatusReason1Code.AC06">
+            <summary>
+            <b>AC06 - Blocked Account</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.FinancingStatusReason1Code.BE08">
+            <summary>
+            <b>BE08 - Unrecognised Financing Requestor</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.FinancingStatusReason1Code.BE09">
+            <summary>
+            <b>BE09 - Unrecognised Intermediary Agent</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.FinancingStatusReason1Code.BE10">
+            <summary>
+            <b>BE10 - Unexpected Intermediary Agent</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.FinancingStatusReason1Code.BE11">
+            <summary>
+            <b>BE11 - Unrecognised Party</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.FinancingStatusReason1Code.DT02">
+            <summary>
+            <b>DT02 - Invalid Payment Due Date</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.FinancingStatusReason1Code.ID01">
+            <summary>
+            <b>ID01 - Duplicated Request Message</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.FinancingStatusReason1Code.ID02">
+            <summary>
+            <b>ID02 - Wrong Identification</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.FinancingStatusReason1Code.ID03">
+            <summary>
+            <b>ID03 - Invalid Document Number</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.FinancingStatusReason1Code.MI01">
+            <summary>
+            <b>MI01 - Missing Mandatory Information</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.FinancingStatusReason1Code.NA01">
+            <summary>
+            <b>NA01 - Narrative</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.FinancingStatusReason1Code.CA03">
+            <summary>
+            <b>CA03 - Financing Process Already Initiated</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00200101.FinancingRateOrAmountChoice">
+            <summary>
+            Class <b>FinancingRateOrAmountChoice</b> (Financing Rate Or Amount Choice).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.FinancingRateOrAmountChoice.Item">
+            <summary>
+            Element <b>Item</b> (Item) of type object.
+            This element can be:
+             Amt of type ActiveCurrencyAndAmount 
+             Rate of type decimal 
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00200101.DateAndPlaceOfBirth">
+            <summary>
+            Class <b>DateAndPlaceOfBirth</b> (Date And Place Of Birth).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.DateAndPlaceOfBirth.BirthDt">
+            <summary>
+            Element <b>BirthDt</b> (Birth Date) of type System.DateTime.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.DateAndPlaceOfBirth.PrvcOfBirth">
+            <summary>
+            Element <b>PrvcOfBirth</b> (Province Of Birth) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.DateAndPlaceOfBirth.CityOfBirth">
+            <summary>
+            Element <b>CityOfBirth</b> (City Of Birth) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.DateAndPlaceOfBirth.CtryOfBirth">
+            <summary>
+            Element <b>CtryOfBirth</b> (Country Of Birth) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00200101.PersonIdentification3">
+            <summary>
+            Class <b>PersonIdentification3</b> (Person Identification 3).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.PersonIdentification3.Item">
+            <summary>
+            Element <b>Item</b> (Item) of type object.
+            This element can be:
+             AlnRegnNb of type string 
+             CstmrNb of type string 
+             DrvrsLicNb of type string 
+             DtAndPlcOfBirth of type DateAndPlaceOfBirth 
+             IdntyCardNb of type string 
+             MplyrIdNb of type string 
+             OthrId of type GenericIdentification4 
+             PsptNb of type string 
+             SclSctyNb of type string 
+             TaxIdNb of type string 
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.PersonIdentification3.ItemElementName">
+            <summary>
+            Element <b>ItemElementName</b> (Item Element Name) of type ItemChoiceType2.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.PersonIdentification3.Issr">
+            <summary>
+            Element <b>Issr</b> (Issuer) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00200101.GenericIdentification4">
+            <summary>
+            Class <b>GenericIdentification4</b> (Generic Identification 4).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.GenericIdentification4.Id">
+            <summary>
+            Element <b>Id</b> (Identification) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.GenericIdentification4.IdTp">
+            <summary>
+            Element <b>IdTp</b> (Identification Type) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00200101.ItemChoiceType2">
+            <summary>
+            Enumeration <b>ItemChoiceType2</b> (Item Choice Type 2).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ItemChoiceType2.AlnRegnNb">
+            <summary>
+            <b>AlnRegnNb - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ItemChoiceType2.CstmrNb">
+            <summary>
+            <b>CstmrNb - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ItemChoiceType2.DrvrsLicNb">
+            <summary>
+            <b>DrvrsLicNb - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ItemChoiceType2.DtAndPlcOfBirth">
+            <summary>
+            <b>DtAndPlcOfBirth - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ItemChoiceType2.IdntyCardNb">
+            <summary>
+            <b>IdntyCardNb - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ItemChoiceType2.MplyrIdNb">
+            <summary>
+            <b>MplyrIdNb - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ItemChoiceType2.OthrId">
+            <summary>
+            <b>OthrId - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ItemChoiceType2.PsptNb">
+            <summary>
+            <b>PsptNb - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ItemChoiceType2.SclSctyNb">
+            <summary>
+            <b>SclSctyNb - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ItemChoiceType2.TaxIdNb">
+            <summary>
+            <b>TaxIdNb - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00200101.GenericIdentification3">
+            <summary>
+            Class <b>GenericIdentification3</b> (Generic Identification 3).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.GenericIdentification3.Id">
+            <summary>
+            Element <b>Id</b> (Identification) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.GenericIdentification3.Issr">
+            <summary>
+            Element <b>Issr</b> (Issuer) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00200101.OrganisationIdentification2">
+            <summary>
+            Class <b>OrganisationIdentification2</b> (Organisation Identification 2).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.OrganisationIdentification2.BIC">
+            <summary>
+            Element <b>BIC</b> (BIC) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.OrganisationIdentification2.IBEI">
+            <summary>
+            Element <b>IBEI</b> (IBEI) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.OrganisationIdentification2.BEI">
+            <summary>
+            Element <b>BEI</b> (BEI) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.OrganisationIdentification2.EANGLN">
+            <summary>
+            Element <b>EANGLN</b> (EANGLN) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.OrganisationIdentification2.USCHU">
+            <summary>
+            Element <b>USCHU</b> (USCHU) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.OrganisationIdentification2.DUNS">
+            <summary>
+            Element <b>DUNS</b> (DUNS) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.OrganisationIdentification2.BkPtyId">
+            <summary>
+            Element <b>BkPtyId</b> (Bank Party Identification) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.OrganisationIdentification2.TaxIdNb">
+            <summary>
+            Element <b>TaxIdNb</b> (Tax Identification Number) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.OrganisationIdentification2.PrtryId">
+            <summary>
+            Element <b>PrtryId</b> (Proprietary Identification) of type GenericIdentification3.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00200101.Party2Choice">
+            <summary>
+            Class <b>Party2Choice</b> (Party 2Choice).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.Party2Choice.Items">
+            <summary>
+            Element <b>Items</b> (Items) of type array of object.
+            This element can be:
+             OrgId of type OrganisationIdentification2 
+             PrvtId of type PersonIdentification3 
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00200101.PostalAddress1">
+            <summary>
+            Class <b>PostalAddress1</b> (Postal Address 1).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.PostalAddress1.AdrTp">
+            <summary>
+            Element <b>AdrTp</b> (Address Type) of type AddressType2Code.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.PostalAddress1.AdrTpSpecified">
+            <summary>
+            Element <b>AdrTpSpecified</b> (Address Type Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.PostalAddress1.AdrLine">
+            <summary>
+            Element <b>AdrLine</b> (Address Line) of type array of string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.PostalAddress1.StrtNm">
+            <summary>
+            Element <b>StrtNm</b> (Street Name) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.PostalAddress1.BldgNb">
+            <summary>
+            Element <b>BldgNb</b> (Building Number) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.PostalAddress1.PstCd">
+            <summary>
+            Element <b>PstCd</b> (Post Code) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.PostalAddress1.TwnNm">
+            <summary>
+            Element <b>TwnNm</b> (Town Name) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.PostalAddress1.CtrySubDvsn">
+            <summary>
+            Element <b>CtrySubDvsn</b> (Country Sub Division) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.PostalAddress1.Ctry">
+            <summary>
+            Element <b>Ctry</b> (Country) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00200101.AddressType2Code">
+            <summary>
+            Enumeration <b>AddressType2Code</b> (Address Type 2Code).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.AddressType2Code.ADDR">
+            <summary>
+            <b>ADDR - Postal</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.AddressType2Code.PBOX">
+            <summary>
+            <b>PBOX - POBox</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.AddressType2Code.HOME">
+            <summary>
+            <b>HOME - Residential</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.AddressType2Code.BIZZ">
+            <summary>
+            <b>BIZZ - Business</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.AddressType2Code.MLTO">
+            <summary>
+            <b>MLTO - Mail To</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.AddressType2Code.DLVY">
+            <summary>
+            <b>DLVY - Delivery To</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00200101.PartyIdentification8">
+            <summary>
+            Class <b>PartyIdentification8</b> (Party Identification 8).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.PartyIdentification8.Nm">
+            <summary>
+            Element <b>Nm</b> (Name) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.PartyIdentification8.PstlAdr">
+            <summary>
+            Element <b>PstlAdr</b> (Postal Address) of type PostalAddress1.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.PartyIdentification8.Id">
+            <summary>
+            Element <b>Id</b> (Identification) of type Party2Choice.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.PartyIdentification8.CtryOfRes">
+            <summary>
+            Element <b>CtryOfRes</b> (Country Of Residence) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00200101.OriginalInvoiceInformation1">
+            <summary>
+            Class <b>OriginalInvoiceInformation1</b> (Original Invoice Information 1).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.OriginalInvoiceInformation1.DocNb">
+            <summary>
+            Element <b>DocNb</b> (Document Number) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.OriginalInvoiceInformation1.TtlInvcAmt">
+            <summary>
+            Element <b>TtlInvcAmt</b> (Total Invc Amount) of type ActiveCurrencyAndAmount.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.OriginalInvoiceInformation1.IsseDt">
+            <summary>
+            Element <b>IsseDt</b> (Issue Date) of type System.DateTime.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.OriginalInvoiceInformation1.PmtDueDt">
+            <summary>
+            Element <b>PmtDueDt</b> (Payment Due Date) of type System.DateTime.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00200101.InvoiceFinancingDetails1">
+            <summary>
+            Class <b>InvoiceFinancingDetails1</b> (Invoice Financing Details 1).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.InvoiceFinancingDetails1.OrgnlInvcInf">
+            <summary>
+            Element <b>OrgnlInvcInf</b> (Original Invc Information) of type OriginalInvoiceInformation1.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.InvoiceFinancingDetails1.Spplr">
+            <summary>
+            Element <b>Spplr</b> (Spplr) of type PartyIdentification8.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.InvoiceFinancingDetails1.InvcFincgRslt">
+            <summary>
+            Element <b>InvcFincgRslt</b> (Invc Fincg Result) of type FinancingResult1.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.InvoiceFinancingDetails1.InstlmtFincgInf">
+            <summary>
+            Element <b>InstlmtFincgInf</b> (Instalment Fincg Information) of type array of InstalmentFinancingInformation1.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00200101.FinancingDateDetails1">
+            <summary>
+            Class <b>FinancingDateDetails1</b> (Financing Date Details 1).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.FinancingDateDetails1.BookDt">
+            <summary>
+            Element <b>BookDt</b> (Book Date) of type array of System.DateTime.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.FinancingDateDetails1.CdtDt">
+            <summary>
+            Element <b>CdtDt</b> (Credit Date) of type System.DateTime.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.FinancingDateDetails1.DbtDt">
+            <summary>
+            Element <b>DbtDt</b> (Debit Date) of type System.DateTime.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.FinancingDateDetails1.DbtDtSpecified">
+            <summary>
+            Element <b>DbtDtSpecified</b> (Debit Date Specified) of type bool.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00200101.FinancingAllowedSummary1">
+            <summary>
+            Class <b>FinancingAllowedSummary1</b> (Financing Allowed Summary 1).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.FinancingAllowedSummary1.FincdItmNb">
+            <summary>
+            Element <b>FincdItmNb</b> (Fincd Item Number) of type decimal.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.FinancingAllowedSummary1.TtlAccptdItmsAmt">
+            <summary>
+            Element <b>TtlAccptdItmsAmt</b> (Total Accepted Items Amount) of type ActiveCurrencyAndAmount.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.FinancingAllowedSummary1.ApldPctg">
+            <summary>
+            Element <b>ApldPctg</b> (Applied Percentage) of type decimal.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.FinancingAllowedSummary1.ApldPctgSpecified">
+            <summary>
+            Element <b>ApldPctgSpecified</b> (Applied Percentage Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.FinancingAllowedSummary1.TtlFincdAmt">
+            <summary>
+            Element <b>TtlFincdAmt</b> (Total Fincd Amount) of type ActiveCurrencyAndAmount.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.FinancingAllowedSummary1.FincgDtDtls">
+            <summary>
+            Element <b>FincgDtDtls</b> (Fincg Date Details) of type FinancingDateDetails1.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.FinancingAllowedSummary1.CdtAcct">
+            <summary>
+            Element <b>CdtAcct</b> (Credit Account) of type CashAccount7.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.FinancingAllowedSummary1.FincgAcct">
+            <summary>
+            Element <b>FincgAcct</b> (Fincg Account) of type CashAccount7.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00200101.CashAccount7">
+            <summary>
+            Class <b>CashAccount7</b> (Cash Account 7).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.CashAccount7.Id">
+            <summary>
+            Element <b>Id</b> (Identification) of type AccountIdentification3Choice.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.CashAccount7.Tp">
+            <summary>
+            Element <b>Tp</b> (Type) of type CashAccountType2.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.CashAccount7.Ccy">
+            <summary>
+            Element <b>Ccy</b> (Currency) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.CashAccount7.Nm">
+            <summary>
+            Element <b>Nm</b> (Name) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00200101.AccountIdentification3Choice">
+            <summary>
+            Class <b>AccountIdentification3Choice</b> (Account Identification 3Choice).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.AccountIdentification3Choice.Item">
+            <summary>
+            Element <b>Item</b> (Item) of type object.
+            This element can be:
+             BBAN of type string 
+             IBAN of type string 
+             PrtryAcct of type SimpleIdentificationInformation2 
+             UPIC of type string 
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.AccountIdentification3Choice.ItemElementName">
+            <summary>
+            Element <b>ItemElementName</b> (Item Element Name) of type ItemChoiceType.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00200101.SimpleIdentificationInformation2">
+            <summary>
+            Class <b>SimpleIdentificationInformation2</b> (Simple Identification Information 2).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.SimpleIdentificationInformation2.Id">
+            <summary>
+            Element <b>Id</b> (Identification) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00200101.ItemChoiceType">
+            <summary>
+            Enumeration <b>ItemChoiceType</b> (Item Choice Type).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ItemChoiceType.BBAN">
+            <summary>
+            <b>BBAN - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ItemChoiceType.IBAN">
+            <summary>
+            <b>IBAN - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ItemChoiceType.PrtryAcct">
+            <summary>
+            <b>PrtryAcct - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ItemChoiceType.UPIC">
+            <summary>
+            <b>UPIC - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00200101.CashAccountType2">
+            <summary>
+            Class <b>CashAccountType2</b> (Cash Account Type 2).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.CashAccountType2.Item">
+            <summary>
+            Element <b>Item</b> (Item) of type object.
+            This element can be:
+             Cd of type CashAccountType4Code 
+             Prtry of type string 
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00200101.CashAccountType4Code">
+            <summary>
+            Enumeration <b>CashAccountType4Code</b> (Cash Account Type 4Code).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.CashAccountType4Code.CASH">
+            <summary>
+            <b>CASH - Cash Payment</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.CashAccountType4Code.CHAR">
+            <summary>
+            <b>CHAR - Charges</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.CashAccountType4Code.COMM">
+            <summary>
+            <b>COMM - Commission</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.CashAccountType4Code.TAXE">
+            <summary>
+            <b>TAXE - Tax</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.CashAccountType4Code.CISH">
+            <summary>
+            <b>CISH - Cash Income</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.CashAccountType4Code.TRAS">
+            <summary>
+            <b>TRAS - Cash Trading</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.CashAccountType4Code.SACC">
+            <summary>
+            <b>SACC - Settlement</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.CashAccountType4Code.CACC">
+            <summary>
+            <b>CACC - Current</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.CashAccountType4Code.SVGS">
+            <summary>
+            <b>SVGS - Savings</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.CashAccountType4Code.ONDP">
+            <summary>
+            <b>ONDP - Over Night Deposit</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.CashAccountType4Code.MGLD">
+            <summary>
+            <b>MGLD - Marginal Lending</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.CashAccountType4Code.NREX">
+            <summary>
+            <b>NREX - Non Resident External</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.CashAccountType4Code.MOMA">
+            <summary>
+            <b>MOMA - Money Market</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.CashAccountType4Code.LOAN">
+            <summary>
+            <b>LOAN - Loan</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.CashAccountType4Code.SLRY">
+            <summary>
+            <b>SLRY - Salary</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.CashAccountType4Code.ODFT">
+            <summary>
+            <b>ODFT - Overdraft</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00200101.FinancingInformationAndStatus1">
+            <summary>
+            Class <b>FinancingInformationAndStatus1</b> (Financing Information And Status 1).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.FinancingInformationAndStatus1.FincgAllwdSummry">
+            <summary>
+            Element <b>FincgAllwdSummry</b> (Fincg Allowed Summary) of type FinancingAllowedSummary1.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.FinancingInformationAndStatus1.InvcFincgDtls">
+            <summary>
+            Element <b>InvcFincgDtls</b> (Invc Fincg Details) of type array of InvoiceFinancingDetails1.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00200101.CancellationStatusInformation1">
+            <summary>
+            Class <b>CancellationStatusInformation1</b> (Cancellation Status Information 1).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.CancellationStatusInformation1.Sts">
+            <summary>
+            Element <b>Sts</b> (Status) of type CancellationStatus4Code.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.CancellationStatusInformation1.StsRsn">
+            <summary>
+            Element <b>StsRsn</b> (Status Reason) of type StatusReason4Choice.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.CancellationStatusInformation1.AddtlStsRsnInf">
+            <summary>
+            Element <b>AddtlStsRsnInf</b> (Additional Status Reason Information) of type array of string.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00200101.CancellationStatus4Code">
+            <summary>
+            Enumeration <b>CancellationStatus4Code</b> (Cancellation Status 4Code).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.CancellationStatus4Code.PACK">
+            <summary>
+            <b>PACK - Accepted</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.CancellationStatus4Code.REJT">
+            <summary>
+            <b>REJT - Rejected</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00200101.ValidationStatusInformation1">
+            <summary>
+            Class <b>ValidationStatusInformation1</b> (Validation Status Information 1).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ValidationStatusInformation1.Sts">
+            <summary>
+            Element <b>Sts</b> (Status) of type TechnicalValidationStatus1Code.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ValidationStatusInformation1.StsRsn">
+            <summary>
+            Element <b>StsRsn</b> (Status Reason) of type StatusReason4Choice.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ValidationStatusInformation1.AddtlStsRsnInf">
+            <summary>
+            Element <b>AddtlStsRsnInf</b> (Additional Status Reason Information) of type array of string.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00200101.TechnicalValidationStatus1Code">
+            <summary>
+            Enumeration <b>TechnicalValidationStatus1Code</b> (Technical Validation Status 1Code).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.TechnicalValidationStatus1Code.RCCF">
+            <summary>
+            <b>RCCF - Reception Confirmation</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.TechnicalValidationStatus1Code.RCER">
+            <summary>
+            <b>RCER - Reception Error</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00200101.ClearingSystemMemberIdentification2Choice">
+            <summary>
+            Class <b>ClearingSystemMemberIdentification2Choice</b> (Clearing System Member Identification 2Choice).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ClearingSystemMemberIdentification2Choice.Item">
+            <summary>
+            Element <b>Item</b> (Item) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ClearingSystemMemberIdentification2Choice.ItemElementName">
+            <summary>
+            Element <b>ItemElementName</b> (Item Element Name) of type ItemChoiceType1.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00200101.ItemChoiceType1">
+            <summary>
+            Enumeration <b>ItemChoiceType1</b> (Item Choice Type 1).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ItemChoiceType1.ATBLZ">
+            <summary>
+            <b>ATBLZ - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ItemChoiceType1.AUBSBs">
+            <summary>
+            <b>AUBSBs - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ItemChoiceType1.AUBSBx">
+            <summary>
+            <b>AUBSBx - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ItemChoiceType1.CACPA">
+            <summary>
+            <b>CACPA - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ItemChoiceType1.CHBC">
+            <summary>
+            <b>CHBC - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ItemChoiceType1.CHSIC">
+            <summary>
+            <b>CHSIC - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ItemChoiceType1.DEBLZ">
+            <summary>
+            <b>DEBLZ - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ItemChoiceType1.ESNCC">
+            <summary>
+            <b>ESNCC - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ItemChoiceType1.GBSC">
+            <summary>
+            <b>GBSC - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ItemChoiceType1.GRHEBIC">
+            <summary>
+            <b>GRHEBIC - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ItemChoiceType1.HKNCC">
+            <summary>
+            <b>HKNCC - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ItemChoiceType1.IENSC">
+            <summary>
+            <b>IENSC - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ItemChoiceType1.INIFSC">
+            <summary>
+            <b>INIFSC - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ItemChoiceType1.ITNCC">
+            <summary>
+            <b>ITNCC - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ItemChoiceType1.NZNCC">
+            <summary>
+            <b>NZNCC - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ItemChoiceType1.OthrClrCdId">
+            <summary>
+            <b>OthrClrCdId - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ItemChoiceType1.PLKNR">
+            <summary>
+            <b>PLKNR - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ItemChoiceType1.PTNCC">
+            <summary>
+            <b>PTNCC - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ItemChoiceType1.RUCB">
+            <summary>
+            <b>RUCB - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ItemChoiceType1.USCH">
+            <summary>
+            <b>USCH - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ItemChoiceType1.USCHU">
+            <summary>
+            <b>USCHU - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ItemChoiceType1.USFW">
+            <summary>
+            <b>USFW - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.ItemChoiceType1.ZANCC">
+            <summary>
+            <b>ZANCC - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00200101.FinancialInstitutionIdentification6">
+            <summary>
+            Class <b>FinancialInstitutionIdentification6</b> (Financial Institution Identification 6).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.FinancialInstitutionIdentification6.ClrSysMmbId">
+            <summary>
+            Element <b>ClrSysMmbId</b> (Clearing System Member Identification) of type ClearingSystemMemberIdentification2Choice.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.FinancialInstitutionIdentification6.PrtryId">
+            <summary>
+            Element <b>PrtryId</b> (Proprietary Identification) of type GenericIdentification4.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.FinancialInstitutionIdentification6.BIC">
+            <summary>
+            Element <b>BIC</b> (BIC) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00200101.PartyIdentification25">
+            <summary>
+            Class <b>PartyIdentification25</b> (Party Identification 25).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.PartyIdentification25.Nm">
+            <summary>
+            Element <b>Nm</b> (Name) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.PartyIdentification25.PrtryId">
+            <summary>
+            Element <b>PrtryId</b> (Proprietary Identification) of type GenericIdentification4.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.PartyIdentification25.BEI">
+            <summary>
+            Element <b>BEI</b> (BEI) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00200101.PartyIdentificationAndAccount6">
+            <summary>
+            Class <b>PartyIdentificationAndAccount6</b> (Party Identification And Account 6).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.PartyIdentificationAndAccount6.PtyId">
+            <summary>
+            Element <b>PtyId</b> (Party Identification) of type PartyIdentification25.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.PartyIdentificationAndAccount6.CdtAcct">
+            <summary>
+            Element <b>CdtAcct</b> (Credit Account) of type CashAccount7.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.PartyIdentificationAndAccount6.FincgAcct">
+            <summary>
+            Element <b>FincgAcct</b> (Fincg Account) of type CashAccount7.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00200101.OriginalRequestInformation1">
+            <summary>
+            Class <b>OriginalRequestInformation1</b> (Original Request Information 1).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.OriginalRequestInformation1.Id">
+            <summary>
+            Element <b>Id</b> (Identification) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.OriginalRequestInformation1.CreDtTm">
+            <summary>
+            Element <b>CreDtTm</b> (Creation Date Time) of type System.DateTime.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.OriginalRequestInformation1.FincgRqstr">
+            <summary>
+            Element <b>FincgRqstr</b> (Fincg Rqstr) of type PartyIdentificationAndAccount6.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.OriginalRequestInformation1.IntrmyAgt">
+            <summary>
+            Element <b>IntrmyAgt</b> (Intermediary Agent) of type FinancialInstitutionIdentification6.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.OriginalRequestInformation1.FrstAgt">
+            <summary>
+            Element <b>FrstAgt</b> (First Agent) of type FinancialInstitutionIdentification6.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.OriginalRequestInformation1.VldtnStsInf">
+            <summary>
+            Element <b>VldtnStsInf</b> (Vldtn Status Information) of type ValidationStatusInformation1.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00200101.OriginalRequestInformation1.CxlStsInf">
+            <summary>
+            Element <b>CxlStsInf</b> (Cancellation Status Information) of type CancellationStatusInformation1.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.Document">
+            <summary>
+            <b>Document</b> is the root class of the ISO 20022 message
+            with id tsin.001.001.01 name InvoiceFinancingRequestV01 from Trade Services Initiation business area.
+            Repository:R 6.8.0.1 v492 - 4 July 2008
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.Document.InvcFincgReq">
+            <summary>
+            Element <b>InvcFincgReq</b> (Invc Fincg Request) of type InvoiceFinancingRequestV01.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.InvoiceFinancingRequestV01">
+            <summary>
+            Class <b>InvoiceFinancingRequestV01</b> (Invoice Financing Request V01).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.InvoiceFinancingRequestV01.ReqGrpInf">
+            <summary>
+            Element <b>ReqGrpInf</b> (Request Group Information) of type RequestGroupInformation1.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.InvoiceFinancingRequestV01.InvcReqInf">
+            <summary>
+            Element <b>InvcReqInf</b> (Invc Request Information) of type array of InvoiceRequestInformation1.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.RequestGroupInformation1">
+            <summary>
+            Class <b>RequestGroupInformation1</b> (Request Group Information 1).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.RequestGroupInformation1.GrpId">
+            <summary>
+            Element <b>GrpId</b> (Group Identification) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.RequestGroupInformation1.CreDtTm">
+            <summary>
+            Element <b>CreDtTm</b> (Creation Date Time) of type System.DateTime.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.RequestGroupInformation1.Authstn">
+            <summary>
+            Element <b>Authstn</b> (Authorisation) of type array of string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.RequestGroupInformation1.NbOfInvcReqs">
+            <summary>
+            Element <b>NbOfInvcReqs</b> (Number Of Invc Reqs) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.RequestGroupInformation1.TtlBlkInvcAmt">
+            <summary>
+            Element <b>TtlBlkInvcAmt</b> (Total Bulk Invc Amount) of type ActiveCurrencyAndAmount.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.RequestGroupInformation1.Ccy">
+            <summary>
+            Element <b>Ccy</b> (Currency) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.RequestGroupInformation1.FincgAgrmt">
+            <summary>
+            Element <b>FincgAgrmt</b> (Fincg Agreement) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.RequestGroupInformation1.FincgRqstr">
+            <summary>
+            Element <b>FincgRqstr</b> (Fincg Rqstr) of type PartyIdentificationAndAccount6.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.RequestGroupInformation1.IntrmyAgt">
+            <summary>
+            Element <b>IntrmyAgt</b> (Intermediary Agent) of type FinancialInstitutionIdentification6.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.RequestGroupInformation1.FrstAgt">
+            <summary>
+            Element <b>FrstAgt</b> (First Agent) of type FinancialInstitutionIdentification6.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.RequestGroupInformation1.AgrmtClauses">
+            <summary>
+            Element <b>AgrmtClauses</b> (Agreement Clauses) of type array of AgreementClauses1.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.RequestGroupInformation1.AddtlInf">
+            <summary>
+            Element <b>AddtlInf</b> (Additional Information) of type array of AdditionalInformation1.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.ActiveCurrencyAndAmount">
+            <summary>
+            Class <b>ActiveCurrencyAndAmount</b> (Active Currency And Amount).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ActiveCurrencyAndAmount.Ccy">
+            <summary>
+            Element <b>Ccy</b> (Currency) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ActiveCurrencyAndAmount.Value">
+            <summary>
+            Element <b>Value</b> (Value) of type decimal.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.ReferredDocumentType1">
+            <summary>
+            Class <b>ReferredDocumentType1</b> (Referred Document Type 1).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ReferredDocumentType1.Item">
+            <summary>
+            Element <b>Item</b> (Item) of type object.
+            This element can be:
+             Cd of type DocumentType2Code 
+             Prtry of type string 
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ReferredDocumentType1.Issr">
+            <summary>
+            Element <b>Issr</b> (Issuer) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.DocumentType2Code">
+            <summary>
+            Enumeration <b>DocumentType2Code</b> (Document Type 2Code).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.DocumentType2Code.MSIN">
+            <summary>
+            <b>MSIN - Metered Service Invoice</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.DocumentType2Code.CNFA">
+            <summary>
+            <b>CNFA - Credit Note Related To Financial Adjustment</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.DocumentType2Code.DNFA">
+            <summary>
+            <b>DNFA - Debit Note Related To Financial Adjustment</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.DocumentType2Code.CINV">
+            <summary>
+            <b>CINV - Commercial Invoice</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.DocumentType2Code.CREN">
+            <summary>
+            <b>CREN - Credit Note</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.DocumentType2Code.DEBN">
+            <summary>
+            <b>DEBN - Debit Note</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.DocumentType2Code.HIRI">
+            <summary>
+            <b>HIRI - Hire Invoice</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.DocumentType2Code.SBIN">
+            <summary>
+            <b>SBIN - Self Billed Invoice</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.DocumentType2Code.CMCN">
+            <summary>
+            <b>CMCN - Commercial Contract</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.DocumentType2Code.SOAC">
+            <summary>
+            <b>SOAC - Statement Of Account</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.DocumentType2Code.DISP">
+            <summary>
+            <b>DISP - Dispatch Advice</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.ReferredDocumentInformation2">
+            <summary>
+            Class <b>ReferredDocumentInformation2</b> (Referred Document Information 2).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ReferredDocumentInformation2.Tp">
+            <summary>
+            Element <b>Tp</b> (Type) of type ReferredDocumentType1.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ReferredDocumentInformation2.DocNb">
+            <summary>
+            Element <b>DocNb</b> (Document Number) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ReferredDocumentInformation2.RltdDt">
+            <summary>
+            Element <b>RltdDt</b> (Related Date) of type System.DateTime.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ReferredDocumentInformation2.RltdDtSpecified">
+            <summary>
+            Element <b>RltdDtSpecified</b> (Related Date Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ReferredDocumentInformation2.DocAmt">
+            <summary>
+            Element <b>DocAmt</b> (Document Amount) of type ActiveCurrencyAndAmount.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.PaymentInformation15">
+            <summary>
+            Class <b>PaymentInformation15</b> (Payment Information 15).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.PaymentInformation15.PmtMtd">
+            <summary>
+            Element <b>PmtMtd</b> (Payment Method) of type PaymentMethod4Code.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.PaymentInformation15.PmtAcct">
+            <summary>
+            Element <b>PmtAcct</b> (Payment Account) of type CashAccount7.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.PaymentMethod4Code">
+            <summary>
+            Enumeration <b>PaymentMethod4Code</b> (Payment Method 4Code).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.PaymentMethod4Code.CHK">
+            <summary>
+            <b>CHK - Cheque</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.PaymentMethod4Code.TRF">
+            <summary>
+            <b>TRF - Credit Transfer</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.PaymentMethod4Code.DD">
+            <summary>
+            <b>DD - Direct Debit</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.PaymentMethod4Code.TRA">
+            <summary>
+            <b>TRA - Transfer Advice</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.CashAccount7">
+            <summary>
+            Class <b>CashAccount7</b> (Cash Account 7).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.CashAccount7.Id">
+            <summary>
+            Element <b>Id</b> (Identification) of type AccountIdentification3Choice.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.CashAccount7.Tp">
+            <summary>
+            Element <b>Tp</b> (Type) of type CashAccountType2.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.CashAccount7.Ccy">
+            <summary>
+            Element <b>Ccy</b> (Currency) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.CashAccount7.Nm">
+            <summary>
+            Element <b>Nm</b> (Name) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.AccountIdentification3Choice">
+            <summary>
+            Class <b>AccountIdentification3Choice</b> (Account Identification 3Choice).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.AccountIdentification3Choice.Item">
+            <summary>
+            Element <b>Item</b> (Item) of type object.
+            This element can be:
+             BBAN of type string 
+             IBAN of type string 
+             PrtryAcct of type SimpleIdentificationInformation2 
+             UPIC of type string 
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.AccountIdentification3Choice.ItemElementName">
+            <summary>
+            Element <b>ItemElementName</b> (Item Element Name) of type ItemChoiceType.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.SimpleIdentificationInformation2">
+            <summary>
+            Class <b>SimpleIdentificationInformation2</b> (Simple Identification Information 2).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.SimpleIdentificationInformation2.Id">
+            <summary>
+            Element <b>Id</b> (Identification) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.ItemChoiceType">
+            <summary>
+            Enumeration <b>ItemChoiceType</b> (Item Choice Type).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ItemChoiceType.BBAN">
+            <summary>
+            <b>BBAN - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ItemChoiceType.IBAN">
+            <summary>
+            <b>IBAN - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ItemChoiceType.PrtryAcct">
+            <summary>
+            <b>PrtryAcct - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ItemChoiceType.UPIC">
+            <summary>
+            <b>UPIC - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.CashAccountType2">
+            <summary>
+            Class <b>CashAccountType2</b> (Cash Account Type 2).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.CashAccountType2.Item">
+            <summary>
+            Element <b>Item</b> (Item) of type object.
+            This element can be:
+             Cd of type CashAccountType4Code 
+             Prtry of type string 
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.CashAccountType4Code">
+            <summary>
+            Enumeration <b>CashAccountType4Code</b> (Cash Account Type 4Code).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.CashAccountType4Code.CASH">
+            <summary>
+            <b>CASH - Cash Payment</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.CashAccountType4Code.CHAR">
+            <summary>
+            <b>CHAR - Charges</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.CashAccountType4Code.COMM">
+            <summary>
+            <b>COMM - Commission</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.CashAccountType4Code.TAXE">
+            <summary>
+            <b>TAXE - Tax</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.CashAccountType4Code.CISH">
+            <summary>
+            <b>CISH - Cash Income</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.CashAccountType4Code.TRAS">
+            <summary>
+            <b>TRAS - Cash Trading</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.CashAccountType4Code.SACC">
+            <summary>
+            <b>SACC - Settlement</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.CashAccountType4Code.CACC">
+            <summary>
+            <b>CACC - Current</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.CashAccountType4Code.SVGS">
+            <summary>
+            <b>SVGS - Savings</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.CashAccountType4Code.ONDP">
+            <summary>
+            <b>ONDP - Over Night Deposit</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.CashAccountType4Code.MGLD">
+            <summary>
+            <b>MGLD - Marginal Lending</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.CashAccountType4Code.NREX">
+            <summary>
+            <b>NREX - Non Resident External</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.CashAccountType4Code.MOMA">
+            <summary>
+            <b>MOMA - Money Market</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.CashAccountType4Code.LOAN">
+            <summary>
+            <b>LOAN - Loan</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.CashAccountType4Code.SLRY">
+            <summary>
+            <b>SLRY - Salary</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.CashAccountType4Code.ODFT">
+            <summary>
+            <b>ODFT - Overdraft</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.PartyIdentificationAndContactInformation1">
+            <summary>
+            Class <b>PartyIdentificationAndContactInformation1</b> (Party Identification And Contact Information 1).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.PartyIdentificationAndContactInformation1.PtyId">
+            <summary>
+            Element <b>PtyId</b> (Party Identification) of type PartyIdentification8.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.PartyIdentificationAndContactInformation1.CtctInf">
+            <summary>
+            Element <b>CtctInf</b> (Contact Information) of type ContactIdentification1.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.PartyIdentification8">
+            <summary>
+            Class <b>PartyIdentification8</b> (Party Identification 8).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.PartyIdentification8.Nm">
+            <summary>
+            Element <b>Nm</b> (Name) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.PartyIdentification8.PstlAdr">
+            <summary>
+            Element <b>PstlAdr</b> (Postal Address) of type PostalAddress1.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.PartyIdentification8.Id">
+            <summary>
+            Element <b>Id</b> (Identification) of type Party2Choice.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.PartyIdentification8.CtryOfRes">
+            <summary>
+            Element <b>CtryOfRes</b> (Country Of Residence) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.PostalAddress1">
+            <summary>
+            Class <b>PostalAddress1</b> (Postal Address 1).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.PostalAddress1.AdrTp">
+            <summary>
+            Element <b>AdrTp</b> (Address Type) of type AddressType2Code.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.PostalAddress1.AdrTpSpecified">
+            <summary>
+            Element <b>AdrTpSpecified</b> (Address Type Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.PostalAddress1.AdrLine">
+            <summary>
+            Element <b>AdrLine</b> (Address Line) of type array of string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.PostalAddress1.StrtNm">
+            <summary>
+            Element <b>StrtNm</b> (Street Name) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.PostalAddress1.BldgNb">
+            <summary>
+            Element <b>BldgNb</b> (Building Number) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.PostalAddress1.PstCd">
+            <summary>
+            Element <b>PstCd</b> (Post Code) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.PostalAddress1.TwnNm">
+            <summary>
+            Element <b>TwnNm</b> (Town Name) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.PostalAddress1.CtrySubDvsn">
+            <summary>
+            Element <b>CtrySubDvsn</b> (Country Sub Division) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.PostalAddress1.Ctry">
+            <summary>
+            Element <b>Ctry</b> (Country) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.AddressType2Code">
+            <summary>
+            Enumeration <b>AddressType2Code</b> (Address Type 2Code).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.AddressType2Code.ADDR">
+            <summary>
+            <b>ADDR - Postal</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.AddressType2Code.PBOX">
+            <summary>
+            <b>PBOX - POBox</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.AddressType2Code.HOME">
+            <summary>
+            <b>HOME - Residential</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.AddressType2Code.BIZZ">
+            <summary>
+            <b>BIZZ - Business</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.AddressType2Code.MLTO">
+            <summary>
+            <b>MLTO - Mail To</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.AddressType2Code.DLVY">
+            <summary>
+            <b>DLVY - Delivery To</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.Party2Choice">
+            <summary>
+            Class <b>Party2Choice</b> (Party 2Choice).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.Party2Choice.Items">
+            <summary>
+            Element <b>Items</b> (Items) of type array of object.
+            This element can be:
+             OrgId of type OrganisationIdentification2 
+             PrvtId of type PersonIdentification3 
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.OrganisationIdentification2">
+            <summary>
+            Class <b>OrganisationIdentification2</b> (Organisation Identification 2).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.OrganisationIdentification2.BIC">
+            <summary>
+            Element <b>BIC</b> (BIC) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.OrganisationIdentification2.IBEI">
+            <summary>
+            Element <b>IBEI</b> (IBEI) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.OrganisationIdentification2.BEI">
+            <summary>
+            Element <b>BEI</b> (BEI) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.OrganisationIdentification2.EANGLN">
+            <summary>
+            Element <b>EANGLN</b> (EANGLN) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.OrganisationIdentification2.USCHU">
+            <summary>
+            Element <b>USCHU</b> (USCHU) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.OrganisationIdentification2.DUNS">
+            <summary>
+            Element <b>DUNS</b> (DUNS) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.OrganisationIdentification2.BkPtyId">
+            <summary>
+            Element <b>BkPtyId</b> (Bank Party Identification) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.OrganisationIdentification2.TaxIdNb">
+            <summary>
+            Element <b>TaxIdNb</b> (Tax Identification Number) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.OrganisationIdentification2.PrtryId">
+            <summary>
+            Element <b>PrtryId</b> (Proprietary Identification) of type GenericIdentification3.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.GenericIdentification3">
+            <summary>
+            Class <b>GenericIdentification3</b> (Generic Identification 3).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.GenericIdentification3.Id">
+            <summary>
+            Element <b>Id</b> (Identification) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.GenericIdentification3.Issr">
+            <summary>
+            Element <b>Issr</b> (Issuer) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.PersonIdentification3">
+            <summary>
+            Class <b>PersonIdentification3</b> (Person Identification 3).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.PersonIdentification3.Item">
+            <summary>
+            Element <b>Item</b> (Item) of type object.
+            This element can be:
+             AlnRegnNb of type string 
+             CstmrNb of type string 
+             DrvrsLicNb of type string 
+             DtAndPlcOfBirth of type DateAndPlaceOfBirth 
+             IdntyCardNb of type string 
+             MplyrIdNb of type string 
+             OthrId of type GenericIdentification4 
+             PsptNb of type string 
+             SclSctyNb of type string 
+             TaxIdNb of type string 
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.PersonIdentification3.ItemElementName">
+            <summary>
+            Element <b>ItemElementName</b> (Item Element Name) of type ItemChoiceType2.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.PersonIdentification3.Issr">
+            <summary>
+            Element <b>Issr</b> (Issuer) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.DateAndPlaceOfBirth">
+            <summary>
+            Class <b>DateAndPlaceOfBirth</b> (Date And Place Of Birth).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.DateAndPlaceOfBirth.BirthDt">
+            <summary>
+            Element <b>BirthDt</b> (Birth Date) of type System.DateTime.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.DateAndPlaceOfBirth.PrvcOfBirth">
+            <summary>
+            Element <b>PrvcOfBirth</b> (Province Of Birth) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.DateAndPlaceOfBirth.CityOfBirth">
+            <summary>
+            Element <b>CityOfBirth</b> (City Of Birth) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.DateAndPlaceOfBirth.CtryOfBirth">
+            <summary>
+            Element <b>CtryOfBirth</b> (Country Of Birth) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.GenericIdentification4">
+            <summary>
+            Class <b>GenericIdentification4</b> (Generic Identification 4).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.GenericIdentification4.Id">
+            <summary>
+            Element <b>Id</b> (Identification) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.GenericIdentification4.IdTp">
+            <summary>
+            Element <b>IdTp</b> (Identification Type) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.ItemChoiceType2">
+            <summary>
+            Enumeration <b>ItemChoiceType2</b> (Item Choice Type 2).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ItemChoiceType2.AlnRegnNb">
+            <summary>
+            <b>AlnRegnNb - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ItemChoiceType2.CstmrNb">
+            <summary>
+            <b>CstmrNb - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ItemChoiceType2.DrvrsLicNb">
+            <summary>
+            <b>DrvrsLicNb - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ItemChoiceType2.DtAndPlcOfBirth">
+            <summary>
+            <b>DtAndPlcOfBirth - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ItemChoiceType2.IdntyCardNb">
+            <summary>
+            <b>IdntyCardNb - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ItemChoiceType2.MplyrIdNb">
+            <summary>
+            <b>MplyrIdNb - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ItemChoiceType2.OthrId">
+            <summary>
+            <b>OthrId - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ItemChoiceType2.PsptNb">
+            <summary>
+            <b>PsptNb - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ItemChoiceType2.SclSctyNb">
+            <summary>
+            <b>SclSctyNb - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ItemChoiceType2.TaxIdNb">
+            <summary>
+            <b>TaxIdNb - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.ContactIdentification1">
+            <summary>
+            Class <b>ContactIdentification1</b> (Contact Identification 1).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ContactIdentification1.Nm">
+            <summary>
+            Element <b>Nm</b> (Name) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ContactIdentification1.NmPrfx">
+            <summary>
+            Element <b>NmPrfx</b> (Name Prefix) of type NamePrefix1Code.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ContactIdentification1.NmPrfxSpecified">
+            <summary>
+            Element <b>NmPrfxSpecified</b> (Name Prefix Specified) of type bool.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ContactIdentification1.GvnNm">
+            <summary>
+            Element <b>GvnNm</b> (Given Name) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ContactIdentification1.Role">
+            <summary>
+            Element <b>Role</b> (Role) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ContactIdentification1.PhneNb">
+            <summary>
+            Element <b>PhneNb</b> (Phone Number) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ContactIdentification1.FaxNb">
+            <summary>
+            Element <b>FaxNb</b> (Fax Number) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ContactIdentification1.EmailAdr">
+            <summary>
+            Element <b>EmailAdr</b> (Email Address) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.NamePrefix1Code">
+            <summary>
+            Enumeration <b>NamePrefix1Code</b> (Name Prefix 1Code).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.NamePrefix1Code.DOCT">
+            <summary>
+            <b>DOCT - Doctor</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.NamePrefix1Code.MIST">
+            <summary>
+            <b>MIST - Mister</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.NamePrefix1Code.MISS">
+            <summary>
+            <b>MISS - Miss</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.NamePrefix1Code.MADM">
+            <summary>
+            <b>MADM - Madam</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.PartyAndAccountIdentificationAndContactInformation1">
+            <summary>
+            Class <b>PartyAndAccountIdentificationAndContactInformation1</b> (Party And Account Identification And Contact Information 1).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.PartyAndAccountIdentificationAndContactInformation1.PtyId">
+            <summary>
+            Element <b>PtyId</b> (Party Identification) of type PartyIdentification8.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.PartyAndAccountIdentificationAndContactInformation1.AcctId">
+            <summary>
+            Element <b>AcctId</b> (Account Identification) of type CashAccount7.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.PartyAndAccountIdentificationAndContactInformation1.CtctInf">
+            <summary>
+            Element <b>CtctInf</b> (Contact Information) of type ContactIdentification1.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.FinancingRateOrAmountChoice">
+            <summary>
+            Class <b>FinancingRateOrAmountChoice</b> (Financing Rate Or Amount Choice).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.FinancingRateOrAmountChoice.Item">
+            <summary>
+            Element <b>Item</b> (Item) of type object.
+            This element can be:
+             Amt of type ActiveCurrencyAndAmount 
+             Rate of type decimal 
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.Instalment1">
+            <summary>
+            Class <b>Instalment1</b> (Instalment 1).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.Instalment1.SeqId">
+            <summary>
+            Element <b>SeqId</b> (Sequence Identification) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.Instalment1.PmtDueDt">
+            <summary>
+            Element <b>PmtDueDt</b> (Payment Due Date) of type System.DateTime.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.Instalment1.Amt">
+            <summary>
+            Element <b>Amt</b> (Amount) of type ActiveCurrencyAndAmount.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.Adjustment5">
+            <summary>
+            Class <b>Adjustment5</b> (Adjustment 5).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.Adjustment5.Drctn">
+            <summary>
+            Element <b>Drctn</b> (Direction) of type AdjustmentDirection1Code.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.Adjustment5.Amt">
+            <summary>
+            Element <b>Amt</b> (Amount) of type ActiveCurrencyAndAmount.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.AdjustmentDirection1Code">
+            <summary>
+            Enumeration <b>AdjustmentDirection1Code</b> (Adjustment Direction 1Code).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.AdjustmentDirection1Code.ADDD">
+            <summary>
+            <b>ADDD - Added</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.AdjustmentDirection1Code.SUBS">
+            <summary>
+            <b>SUBS - Substracted</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.InvoiceTotals1">
+            <summary>
+            Class <b>InvoiceTotals1</b> (Invoice Totals 1).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.InvoiceTotals1.TtlTaxblAmt">
+            <summary>
+            Element <b>TtlTaxblAmt</b> (Total Taxable Amount) of type ActiveCurrencyAndAmount.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.InvoiceTotals1.TtlTaxAmt">
+            <summary>
+            Element <b>TtlTaxAmt</b> (Total Tax Amount) of type ActiveCurrencyAndAmount.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.InvoiceTotals1.Adjstmnt">
+            <summary>
+            Element <b>Adjstmnt</b> (Adjustment) of type Adjustment5.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.InvoiceTotals1.TtlInvcAmt">
+            <summary>
+            Element <b>TtlInvcAmt</b> (Total Invc Amount) of type ActiveCurrencyAndAmount.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.InvoiceTotals1.PmtDueDt">
+            <summary>
+            Element <b>PmtDueDt</b> (Payment Due Date) of type System.DateTime.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.DocumentGeneralInformation1">
+            <summary>
+            Class <b>DocumentGeneralInformation1</b> (Document General Information 1).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.DocumentGeneralInformation1.DocTp">
+            <summary>
+            Element <b>DocTp</b> (Document Type) of type DocumentType4Code.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.DocumentGeneralInformation1.DocNb">
+            <summary>
+            Element <b>DocNb</b> (Document Number) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.DocumentGeneralInformation1.SndrRcvrSeqId">
+            <summary>
+            Element <b>SndrRcvrSeqId</b> (Sender Receiver Sequence Identification) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.DocumentGeneralInformation1.IsseDt">
+            <summary>
+            Element <b>IsseDt</b> (Issue Date) of type System.DateTime.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.DocumentGeneralInformation1.URL">
+            <summary>
+            Element <b>URL</b> (URL) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.DocumentType4Code">
+            <summary>
+            Enumeration <b>DocumentType4Code</b> (Document Type 4Code).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.DocumentType4Code.CINV">
+            <summary>
+            <b>CINV - Commercial Invoice</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.InvoiceRequestInformation1">
+            <summary>
+            Class <b>InvoiceRequestInformation1</b> (Invoice Request Information 1).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.InvoiceRequestInformation1.InvcGnlInf">
+            <summary>
+            Element <b>InvcGnlInf</b> (Invc General Information) of type DocumentGeneralInformation1.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.InvoiceRequestInformation1.InvcTtlsInf">
+            <summary>
+            Element <b>InvcTtlsInf</b> (Invc Ttls Information) of type InvoiceTotals1.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.InvoiceRequestInformation1.CdtDbtNoteAmt">
+            <summary>
+            Element <b>CdtDbtNoteAmt</b> (Credit Debit Note Amount) of type ActiveCurrencyAndAmount.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.InvoiceRequestInformation1.InstlmtInf">
+            <summary>
+            Element <b>InstlmtInf</b> (Instalment Information) of type array of Instalment1.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.InvoiceRequestInformation1.ReqdAmt">
+            <summary>
+            Element <b>ReqdAmt</b> (Requested Amount) of type FinancingRateOrAmountChoice.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.InvoiceRequestInformation1.Spplr">
+            <summary>
+            Element <b>Spplr</b> (Spplr) of type PartyAndAccountIdentificationAndContactInformation1.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.InvoiceRequestInformation1.Buyr">
+            <summary>
+            Element <b>Buyr</b> (Buyer) of type PartyIdentificationAndContactInformation1.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.InvoiceRequestInformation1.InvcPmtInf">
+            <summary>
+            Element <b>InvcPmtInf</b> (Invc Payment Information) of type PaymentInformation15.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.InvoiceRequestInformation1.RfrdDoc">
+            <summary>
+            Element <b>RfrdDoc</b> (Referred Document) of type array of ReferredDocumentInformation2.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.InformationType1Choice">
+            <summary>
+            Class <b>InformationType1Choice</b> (Information Type 1Choice).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.InformationType1Choice.Item">
+            <summary>
+            Element <b>Item</b> (Item) of type object.
+            This element can be:
+             Cd of type InformationType1Code 
+             Prtry of type string 
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.InformationType1Code">
+            <summary>
+            Enumeration <b>InformationType1Code</b> (Information Type 1Code).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.InformationType1Code.INST">
+            <summary>
+            <b>INST - Processing Instructions</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.InformationType1Code.RELY">
+            <summary>
+            <b>RELY - Relay Instructions</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.AdditionalInformation1">
+            <summary>
+            Class <b>AdditionalInformation1</b> (Additional Information 1).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.AdditionalInformation1.InfTp">
+            <summary>
+            Element <b>InfTp</b> (Information Type) of type InformationType1Choice.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.AdditionalInformation1.InfVal">
+            <summary>
+            Element <b>InfVal</b> (Information Value) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.AgreementClauses1">
+            <summary>
+            Class <b>AgreementClauses1</b> (Agreement Clauses 1).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.AgreementClauses1.Desc">
+            <summary>
+            Element <b>Desc</b> (Description) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.AgreementClauses1.DocURL">
+            <summary>
+            Element <b>DocURL</b> (Document URL) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.ClearingSystemMemberIdentification2Choice">
+            <summary>
+            Class <b>ClearingSystemMemberIdentification2Choice</b> (Clearing System Member Identification 2Choice).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ClearingSystemMemberIdentification2Choice.Item">
+            <summary>
+            Element <b>Item</b> (Item) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ClearingSystemMemberIdentification2Choice.ItemElementName">
+            <summary>
+            Element <b>ItemElementName</b> (Item Element Name) of type ItemChoiceType1.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.ItemChoiceType1">
+            <summary>
+            Enumeration <b>ItemChoiceType1</b> (Item Choice Type 1).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ItemChoiceType1.ATBLZ">
+            <summary>
+            <b>ATBLZ - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ItemChoiceType1.AUBSBs">
+            <summary>
+            <b>AUBSBs - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ItemChoiceType1.AUBSBx">
+            <summary>
+            <b>AUBSBx - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ItemChoiceType1.CACPA">
+            <summary>
+            <b>CACPA - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ItemChoiceType1.CHBC">
+            <summary>
+            <b>CHBC - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ItemChoiceType1.CHSIC">
+            <summary>
+            <b>CHSIC - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ItemChoiceType1.DEBLZ">
+            <summary>
+            <b>DEBLZ - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ItemChoiceType1.ESNCC">
+            <summary>
+            <b>ESNCC - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ItemChoiceType1.GBSC">
+            <summary>
+            <b>GBSC - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ItemChoiceType1.GRHEBIC">
+            <summary>
+            <b>GRHEBIC - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ItemChoiceType1.HKNCC">
+            <summary>
+            <b>HKNCC - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ItemChoiceType1.IENSC">
+            <summary>
+            <b>IENSC - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ItemChoiceType1.INIFSC">
+            <summary>
+            <b>INIFSC - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ItemChoiceType1.ITNCC">
+            <summary>
+            <b>ITNCC - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ItemChoiceType1.NZNCC">
+            <summary>
+            <b>NZNCC - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ItemChoiceType1.OthrClrCdId">
+            <summary>
+            <b>OthrClrCdId - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ItemChoiceType1.PLKNR">
+            <summary>
+            <b>PLKNR - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ItemChoiceType1.PTNCC">
+            <summary>
+            <b>PTNCC - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ItemChoiceType1.RUCB">
+            <summary>
+            <b>RUCB - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ItemChoiceType1.USCH">
+            <summary>
+            <b>USCH - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ItemChoiceType1.USCHU">
+            <summary>
+            <b>USCHU - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ItemChoiceType1.USFW">
+            <summary>
+            <b>USFW - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.ItemChoiceType1.ZANCC">
+            <summary>
+            <b>ZANCC - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.FinancialInstitutionIdentification6">
+            <summary>
+            Class <b>FinancialInstitutionIdentification6</b> (Financial Institution Identification 6).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.FinancialInstitutionIdentification6.ClrSysMmbId">
+            <summary>
+            Element <b>ClrSysMmbId</b> (Clearing System Member Identification) of type ClearingSystemMemberIdentification2Choice.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.FinancialInstitutionIdentification6.PrtryId">
+            <summary>
+            Element <b>PrtryId</b> (Proprietary Identification) of type GenericIdentification4.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.FinancialInstitutionIdentification6.BIC">
+            <summary>
+            Element <b>BIC</b> (BIC) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.PartyIdentification25">
+            <summary>
+            Class <b>PartyIdentification25</b> (Party Identification 25).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.PartyIdentification25.Nm">
+            <summary>
+            Element <b>Nm</b> (Name) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.PartyIdentification25.PrtryId">
+            <summary>
+            Element <b>PrtryId</b> (Proprietary Identification) of type GenericIdentification4.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.PartyIdentification25.BEI">
+            <summary>
+            Element <b>BEI</b> (BEI) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00100101.PartyIdentificationAndAccount6">
+            <summary>
+            Class <b>PartyIdentificationAndAccount6</b> (Party Identification And Account 6).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.PartyIdentificationAndAccount6.PtyId">
+            <summary>
+            Element <b>PtyId</b> (Party Identification) of type PartyIdentification25.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.PartyIdentificationAndAccount6.CdtAcct">
+            <summary>
+            Element <b>CdtAcct</b> (Credit Account) of type CashAccount7.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00100101.PartyIdentificationAndAccount6.FincgAcct">
+            <summary>
+            Element <b>FincgAcct</b> (Fincg Account) of type CashAccount7.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00300101.Document">
+            <summary>
+            <b>Document</b> is the root class of the ISO 20022 message
+            with id tsin.003.001.01 name InvoiceFinancingCancellationRequestV01 from Trade Services Initiation business area.
+            Repository:R 6.8.0.1 v492 - 4 July 2008
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.Document.InvcFincgCxlReq">
+            <summary>
+            Element <b>InvcFincgCxlReq</b> (Invc Fincg Cancellation Request) of type InvoiceFinancingCancellationRequestV01.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00300101.InvoiceFinancingCancellationRequestV01">
+            <summary>
+            Class <b>InvoiceFinancingCancellationRequestV01</b> (Invoice Financing Cancellation Request V01).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.InvoiceFinancingCancellationRequestV01.CxlReqId">
+            <summary>
+            Element <b>CxlReqId</b> (Cancellation Request Identification) of type MessageIdentification1.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.InvoiceFinancingCancellationRequestV01.CxlReqInf">
+            <summary>
+            Element <b>CxlReqInf</b> (Cancellation Request Information) of type CancellationRequestInformation1.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00300101.MessageIdentification1">
+            <summary>
+            Class <b>MessageIdentification1</b> (Message Identification 1).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.MessageIdentification1.Id">
+            <summary>
+            Element <b>Id</b> (Identification) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.MessageIdentification1.CreDtTm">
+            <summary>
+            Element <b>CreDtTm</b> (Creation Date Time) of type System.DateTime.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00300101.ClearingSystemMemberIdentification2Choice">
+            <summary>
+            Class <b>ClearingSystemMemberIdentification2Choice</b> (Clearing System Member Identification 2Choice).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.ClearingSystemMemberIdentification2Choice.Item">
+            <summary>
+            Element <b>Item</b> (Item) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.ClearingSystemMemberIdentification2Choice.ItemElementName">
+            <summary>
+            Element <b>ItemElementName</b> (Item Element Name) of type ItemChoiceType1.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00300101.ItemChoiceType1">
+            <summary>
+            Enumeration <b>ItemChoiceType1</b> (Item Choice Type 1).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.ItemChoiceType1.ATBLZ">
+            <summary>
+            <b>ATBLZ - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.ItemChoiceType1.AUBSBs">
+            <summary>
+            <b>AUBSBs - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.ItemChoiceType1.AUBSBx">
+            <summary>
+            <b>AUBSBx - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.ItemChoiceType1.CACPA">
+            <summary>
+            <b>CACPA - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.ItemChoiceType1.CHBC">
+            <summary>
+            <b>CHBC - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.ItemChoiceType1.CHSIC">
+            <summary>
+            <b>CHSIC - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.ItemChoiceType1.DEBLZ">
+            <summary>
+            <b>DEBLZ - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.ItemChoiceType1.ESNCC">
+            <summary>
+            <b>ESNCC - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.ItemChoiceType1.GBSC">
+            <summary>
+            <b>GBSC - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.ItemChoiceType1.GRHEBIC">
+            <summary>
+            <b>GRHEBIC - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.ItemChoiceType1.HKNCC">
+            <summary>
+            <b>HKNCC - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.ItemChoiceType1.IENSC">
+            <summary>
+            <b>IENSC - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.ItemChoiceType1.INIFSC">
+            <summary>
+            <b>INIFSC - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.ItemChoiceType1.ITNCC">
+            <summary>
+            <b>ITNCC - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.ItemChoiceType1.NZNCC">
+            <summary>
+            <b>NZNCC - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.ItemChoiceType1.OthrClrCdId">
+            <summary>
+            <b>OthrClrCdId - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.ItemChoiceType1.PLKNR">
+            <summary>
+            <b>PLKNR - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.ItemChoiceType1.PTNCC">
+            <summary>
+            <b>PTNCC - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.ItemChoiceType1.RUCB">
+            <summary>
+            <b>RUCB - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.ItemChoiceType1.USCH">
+            <summary>
+            <b>USCH - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.ItemChoiceType1.USCHU">
+            <summary>
+            <b>USCHU - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.ItemChoiceType1.USFW">
+            <summary>
+            <b>USFW - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.ItemChoiceType1.ZANCC">
+            <summary>
+            <b>ZANCC - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00300101.FinancialInstitutionIdentification6">
+            <summary>
+            Class <b>FinancialInstitutionIdentification6</b> (Financial Institution Identification 6).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.FinancialInstitutionIdentification6.ClrSysMmbId">
+            <summary>
+            Element <b>ClrSysMmbId</b> (Clearing System Member Identification) of type ClearingSystemMemberIdentification2Choice.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.FinancialInstitutionIdentification6.PrtryId">
+            <summary>
+            Element <b>PrtryId</b> (Proprietary Identification) of type GenericIdentification4.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.FinancialInstitutionIdentification6.BIC">
+            <summary>
+            Element <b>BIC</b> (BIC) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00300101.GenericIdentification4">
+            <summary>
+            Class <b>GenericIdentification4</b> (Generic Identification 4).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.GenericIdentification4.Id">
+            <summary>
+            Element <b>Id</b> (Identification) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.GenericIdentification4.IdTp">
+            <summary>
+            Element <b>IdTp</b> (Identification Type) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00300101.CashAccountType2">
+            <summary>
+            Class <b>CashAccountType2</b> (Cash Account Type 2).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.CashAccountType2.Item">
+            <summary>
+            Element <b>Item</b> (Item) of type object.
+            This element can be:
+             Cd of type CashAccountType4Code 
+             Prtry of type string 
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00300101.CashAccountType4Code">
+            <summary>
+            Enumeration <b>CashAccountType4Code</b> (Cash Account Type 4Code).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.CashAccountType4Code.CASH">
+            <summary>
+            <b>CASH - Cash Payment</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.CashAccountType4Code.CHAR">
+            <summary>
+            <b>CHAR - Charges</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.CashAccountType4Code.COMM">
+            <summary>
+            <b>COMM - Commission</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.CashAccountType4Code.TAXE">
+            <summary>
+            <b>TAXE - Tax</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.CashAccountType4Code.CISH">
+            <summary>
+            <b>CISH - Cash Income</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.CashAccountType4Code.TRAS">
+            <summary>
+            <b>TRAS - Cash Trading</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.CashAccountType4Code.SACC">
+            <summary>
+            <b>SACC - Settlement</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.CashAccountType4Code.CACC">
+            <summary>
+            <b>CACC - Current</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.CashAccountType4Code.SVGS">
+            <summary>
+            <b>SVGS - Savings</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.CashAccountType4Code.ONDP">
+            <summary>
+            <b>ONDP - Over Night Deposit</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.CashAccountType4Code.MGLD">
+            <summary>
+            <b>MGLD - Marginal Lending</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.CashAccountType4Code.NREX">
+            <summary>
+            <b>NREX - Non Resident External</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.CashAccountType4Code.MOMA">
+            <summary>
+            <b>MOMA - Money Market</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.CashAccountType4Code.LOAN">
+            <summary>
+            <b>LOAN - Loan</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.CashAccountType4Code.SLRY">
+            <summary>
+            <b>SLRY - Salary</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.CashAccountType4Code.ODFT">
+            <summary>
+            <b>ODFT - Overdraft</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00300101.SimpleIdentificationInformation2">
+            <summary>
+            Class <b>SimpleIdentificationInformation2</b> (Simple Identification Information 2).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.SimpleIdentificationInformation2.Id">
+            <summary>
+            Element <b>Id</b> (Identification) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00300101.AccountIdentification3Choice">
+            <summary>
+            Class <b>AccountIdentification3Choice</b> (Account Identification 3Choice).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.AccountIdentification3Choice.Item">
+            <summary>
+            Element <b>Item</b> (Item) of type object.
+            This element can be:
+             BBAN of type string 
+             IBAN of type string 
+             PrtryAcct of type SimpleIdentificationInformation2 
+             UPIC of type string 
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.AccountIdentification3Choice.ItemElementName">
+            <summary>
+            Element <b>ItemElementName</b> (Item Element Name) of type ItemChoiceType.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00300101.ItemChoiceType">
+            <summary>
+            Enumeration <b>ItemChoiceType</b> (Item Choice Type).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.ItemChoiceType.BBAN">
+            <summary>
+            <b>BBAN - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.ItemChoiceType.IBAN">
+            <summary>
+            <b>IBAN - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.ItemChoiceType.PrtryAcct">
+            <summary>
+            <b>PrtryAcct - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.ItemChoiceType.UPIC">
+            <summary>
+            <b>UPIC - ?undefined</b>.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00300101.CashAccount7">
+            <summary>
+            Class <b>CashAccount7</b> (Cash Account 7).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.CashAccount7.Id">
+            <summary>
+            Element <b>Id</b> (Identification) of type AccountIdentification3Choice.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.CashAccount7.Tp">
+            <summary>
+            Element <b>Tp</b> (Type) of type CashAccountType2.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.CashAccount7.Ccy">
+            <summary>
+            Element <b>Ccy</b> (Currency) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.CashAccount7.Nm">
+            <summary>
+            Element <b>Nm</b> (Name) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00300101.PartyIdentification25">
+            <summary>
+            Class <b>PartyIdentification25</b> (Party Identification 25).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.PartyIdentification25.Nm">
+            <summary>
+            Element <b>Nm</b> (Name) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.PartyIdentification25.PrtryId">
+            <summary>
+            Element <b>PrtryId</b> (Proprietary Identification) of type GenericIdentification4.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.PartyIdentification25.BEI">
+            <summary>
+            Element <b>BEI</b> (BEI) of type string.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00300101.PartyIdentificationAndAccount6">
+            <summary>
+            Class <b>PartyIdentificationAndAccount6</b> (Party Identification And Account 6).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.PartyIdentificationAndAccount6.PtyId">
+            <summary>
+            Element <b>PtyId</b> (Party Identification) of type PartyIdentification25.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.PartyIdentificationAndAccount6.CdtAcct">
+            <summary>
+            Element <b>CdtAcct</b> (Credit Account) of type CashAccount7.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.PartyIdentificationAndAccount6.FincgAcct">
+            <summary>
+            Element <b>FincgAcct</b> (Fincg Account) of type CashAccount7.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00300101.ActiveCurrencyAndAmount">
+            <summary>
+            Class <b>ActiveCurrencyAndAmount</b> (Active Currency And Amount).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.ActiveCurrencyAndAmount.Ccy">
+            <summary>
+            Element <b>Ccy</b> (Currency) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.ActiveCurrencyAndAmount.Value">
+            <summary>
+            Element <b>Value</b> (Value) of type decimal.
+            </summary>
+        </member>
+        <member name="T:i20022.tsin00300101.CancellationRequestInformation1">
+            <summary>
+            Class <b>CancellationRequestInformation1</b> (Cancellation Request Information 1).
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.CancellationRequestInformation1.OrgnlGrpId">
+            <summary>
+            Element <b>OrgnlGrpId</b> (Original Group Identification) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.CancellationRequestInformation1.OrgnlCreDtTm">
+            <summary>
+            Element <b>OrgnlCreDtTm</b> (Original Creation Date Time) of type System.DateTime.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.CancellationRequestInformation1.NbOfInvcReqs">
+            <summary>
+            Element <b>NbOfInvcReqs</b> (Number Of Invc Reqs) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.CancellationRequestInformation1.TtlBlkInvcAmt">
+            <summary>
+            Element <b>TtlBlkInvcAmt</b> (Total Bulk Invc Amount) of type ActiveCurrencyAndAmount.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.CancellationRequestInformation1.CxlRsn">
+            <summary>
+            Element <b>CxlRsn</b> (Cancellation Reason) of type string.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.CancellationRequestInformation1.FincgRqstr">
+            <summary>
+            Element <b>FincgRqstr</b> (Fincg Rqstr) of type PartyIdentificationAndAccount6.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.CancellationRequestInformation1.IntrmyAgt">
+            <summary>
+            Element <b>IntrmyAgt</b> (Intermediary Agent) of type FinancialInstitutionIdentification6.
+            </summary>
+        </member>
+        <member name="F:i20022.tsin00300101.CancellationRequestInformation1.FrstAgt">
+            <summary>
+            Element <b>FrstAgt</b> (First Agent) of type FinancialInstitutionIdentification6.
+            </summary>
+        </member>
+    </members>
+</doc>
