@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{48034ACF-8E6C-4BAA-954F-4DAEA78FEF79}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TradeServicesManagement</RootNamespace>
+    <AssemblyName>TradeServicesManagement</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>unifi.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\TradeServicesManagement.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\TradeServicesManagement.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tsmt_001_001_03.cs" />
+    <Compile Include="tsmt_002_001_03.cs" />
+    <Compile Include="tsmt_003_001_03.cs" />
+    <Compile Include="tsmt_004_001_02.cs" />
+    <Compile Include="tsmt_005_001_02.cs" />
+    <Compile Include="tsmt_006_001_03.cs" />
+    <Compile Include="tsmt_007_001_02.cs" />
+    <Compile Include="tsmt_008_001_03.cs" />
+    <Compile Include="tsmt_009_001_03.cs" />
+    <Compile Include="tsmt_010_001_03.cs" />
+    <Compile Include="tsmt_011_001_03.cs" />
+    <Compile Include="tsmt_012_001_03.cs" />
+    <Compile Include="tsmt_013_001_03.cs" />
+    <Compile Include="tsmt_014_001_03.cs" />
+    <Compile Include="tsmt_015_001_03.cs" />
+    <Compile Include="tsmt_016_001_03.cs" />
+    <Compile Include="tsmt_017_001_03.cs" />
+    <Compile Include="tsmt_018_001_03.cs" />
+    <Compile Include="tsmt_019_001_03.cs" />
+    <Compile Include="tsmt_020_001_02.cs" />
+    <Compile Include="tsmt_021_001_03.cs" />
+    <Compile Include="tsmt_022_001_02.cs" />
+    <Compile Include="tsmt_023_001_03.cs" />
+    <Compile Include="tsmt_024_001_03.cs" />
+    <Compile Include="tsmt_025_001_03.cs" />
+    <Compile Include="tsmt_026_001_02.cs" />
+    <Compile Include="tsmt_027_001_02.cs" />
+    <Compile Include="tsmt_028_001_03.cs" />
+    <Compile Include="tsmt_029_001_02.cs" />
+    <Compile Include="tsmt_030_001_03.cs" />
+    <Compile Include="tsmt_031_001_03.cs" />
+    <Compile Include="tsmt_032_001_03.cs" />
+    <Compile Include="tsmt_033_001_03.cs" />
+    <Compile Include="tsmt_034_001_03.cs" />
+    <Compile Include="tsmt_035_001_03.cs" />
+    <Compile Include="tsmt_036_001_03.cs" />
+    <Compile Include="tsmt_037_001_03.cs" />
+    <Compile Include="tsmt_038_001_03.cs" />
+    <Compile Include="tsmt_040_001_03.cs" />
+    <Compile Include="tsmt_041_001_03.cs" />
+    <Compile Include="tsmt_042_001_03.cs" />
+    <Compile Include="tsmt_044_001_01.cs" />
+    <Compile Include="tsmt_045_001_01.cs" />
+    <Compile Include="tsmt_046_001_01.cs" />
+    <Compile Include="tsmt_047_001_01.cs" />
+    <Compile Include="tsmt_048_001_01.cs" />
+    <Compile Include="tsmt_049_001_01.cs" />
+    <Compile Include="tsmt_050_001_01.cs" />
+    <Compile Include="tsmt_051_001_01.cs" />
+    <Compile Include="tsmt_052_001_01.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="unifi.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
