@@ -1,25 +1,25 @@
 
-//                                      ______    ____  
-//                                     |____  | "|__  | 
-//                                      _   | |     | | 
-//                                     | |  | |   __| | 
+//                                      ______    ____   
+//                                     |____  | "|__  |  
+//                                      _   | |     | |  
+//                                     | |  | |   __| |  
 //                                     |_|  |_|  |_____| 
-//
-//  --------------------------------------------------- 
-// |     _   ____     ___     ___    ____    ____      |
-// |    (_) |___ \   / _ \   / _ \  |___ \  |___ \     |
-// |    | |   __) | | | | | | | | |   __) |   __) |    |
-// |    | |  / __/  | |_| | | |_| |  / __/   / __/     |
-// |    |_| |_____|  \___/   \___/  |_____| |_____|    |
-// |                                                   |
-// |    AN ISO 20022 OPEN-SOURCE .NET CLASS LIBRARY    |
-// |            FOR MESSAGING APPLICATIONS             |
-// |                                                   |
-// |        Copyright (C) 2008 Mauricio Leventer       |
-// |                mleventer@i20022.com               |
-// |                                                   |
-//  ---------------------------------------------------
-//
+//                                                       
+//  ---------------------------------------------------  
+// |     _   ____     ___     ___    ____    ____      | 
+// |    (_) |___ \   / _ \   / _ \  |___ \  |___ \     | 
+// |    | |   __) | | | | | | | | |   __) |   __) |    | 
+// |    | |  / __/  | |_| | | |_| |  / __/   / __/     | 
+// |    |_| |_____|  \___/   \___/  |_____| |_____|    | 
+// |                                                   | 
+// |    AN ISO 20022 OPEN-SOURCE .NET CLASS LIBRARY    | 
+// |            FOR MESSAGING APPLICATIONS             | 
+// |                                                   | 
+// |        Copyright (C) 2008 Mauricio Leventer       | 
+// |                mleventer@i20022.com               | 
+// |                                                   | 
+//  ---------------------------------------------------  
+//                                                       
 // L I C E N S E                                         
 //                                                       
 // This program is free software; you can redistribute it
@@ -39,13 +39,19 @@
 // to the Free Software Foundation, Inc.,                
 // 59 Temple Place, Suite 330, Boston, MA                
 // 02111-1307 USA.                                       
-//                                                       
 //
+//
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Text;
 using System.Xml.Serialization;
 
- 
-namespace i20022.pain00600101 {
 
+
+namespace i20022.pain00600101
+{
     
     
     /// <summary>
@@ -53,26 +59,28 @@ namespace i20022.pain00600101 {
     /// with id pain.006.001.01 name PaymentCancellationRequestV01 from Payments Initiation business area.
     /// Repository:R 6.8.0.1 v492 - 4 July 2008
     /// </summary>
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
     [XmlRootAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01", IsNullable=false)]
-    public class Document {
+    public class Document
+    {
         
         /// <summary>
-        /// Element <b>pain00600101</b> (0060 01 01) of type pain00600101.
+        /// Element <b>pain00600101</b> (pain 00600101) of type pain00600101.
         /// </summary>
         [XmlElementAttribute("pain.006.001.01", Order=0)]
         public pain00600101 pain00600101;
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>pain00600101</b> (pain 00600101).
     /// </summary>
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(TypeName="pain.006.001.01", Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public class pain00600101 {
+    public class pain00600101
+    {
         
         /// <summary>
         /// Element <b>GrpHdr</b> (Group Header) of type GroupHeader7.
@@ -94,12 +102,13 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>GroupHeader7</b> (Group Header 7).
     /// </summary>
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public class GroupHeader7 {
+    public class GroupHeader7
+    {
         
         /// <summary>
         /// Element <b>MsgId</b> (Message Identification) of type string.
@@ -128,7 +137,7 @@ namespace i20022.pain00600101 {
         /// <summary>
         /// Element <b>CtrlSumSpecified</b> (Control Sum Specified) of type bool.
         /// </summary>
-        [XmlIgnoreAttribute()]
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool CtrlSumSpecified;
         
         /// <summary>
@@ -140,7 +149,7 @@ namespace i20022.pain00600101 {
         /// <summary>
         /// Element <b>GrpCxlSpecified</b> (Group Cancellation Specified) of type bool.
         /// </summary>
-        [XmlIgnoreAttribute()]
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool GrpCxlSpecified;
         
         /// <summary>
@@ -181,12 +190,13 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>PartyIdentification8</b> (Party Identification 8).
     /// </summary>
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public class PartyIdentification8 {
+    public class PartyIdentification8
+    {
         
         /// <summary>
         /// Element <b>Nm</b> (Name) of type string.
@@ -214,12 +224,13 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>PostalAddress1</b> (Postal Address 1).
     /// </summary>
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public class PostalAddress1 {
+    public class PostalAddress1
+    {
         
         /// <summary>
         /// Element <b>AdrTp</b> (Address Type) of type AddressType2Code.
@@ -230,7 +241,7 @@ namespace i20022.pain00600101 {
         /// <summary>
         /// Element <b>AdrTpSpecified</b> (Address Type Specified) of type bool.
         /// </summary>
-        [XmlIgnoreAttribute()]
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool AdrTpSpecified;
         
         /// <summary>
@@ -277,11 +288,12 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Enumeration <b>{</b> ({).
+    /// Enumeration <b>AddressType2Code</b> (Address Type 2Code).
     /// </summary>
-    [System.SerializableAttribute()]
+    [SerializableAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public enum AddressType2Code {
+    public enum AddressType2Code
+    {
         
         /// <summary>
         /// <b>ADDR - Postal</b>.
@@ -315,18 +327,19 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>CreditorReferenceType1</b> (Creditor Reference Type 1).
     /// </summary>
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public class CreditorReferenceType1 {
+    public class CreditorReferenceType1
+    {
         
         /// <summary>
         /// Element <b>Item</b> (Item) of type object.
-        /// This element can be:
-        /// Cd of typeDocumentType3Code
-        /// Prtry of typestring
+        /// [XOR] This element can be:
+        /// Cd (Code) of type DocumentType3Code 
+        /// Prtry (Proprietary) of type string 
         /// </summary>
         [XmlElementAttribute("Cd", typeof(DocumentType3Code), Order=0)]
         [XmlElementAttribute("Prtry", typeof(string), Order=0)]
@@ -340,11 +353,12 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Enumeration <b>{</b> ({).
+    /// Enumeration <b>DocumentType3Code</b> (Document Type 3Code).
     /// </summary>
-    [System.SerializableAttribute()]
+    [SerializableAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public enum DocumentType3Code {
+    public enum DocumentType3Code
+    {
         
         /// <summary>
         /// <b>RADM - Remittance Advice Message</b>.
@@ -378,12 +392,13 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>CreditorReferenceInformation1</b> (Creditor Reference Information 1).
     /// </summary>
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public class CreditorReferenceInformation1 {
+    public class CreditorReferenceInformation1
+    {
         
         /// <summary>
         /// Element <b>CdtrRefTp</b> (Creditor Reference Type) of type CreditorReferenceType1.
@@ -399,12 +414,13 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>ReferredDocumentAmount1Choice</b> (Referred Document Amount 1Choice).
     /// </summary>
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public class ReferredDocumentAmount1Choice {
+    public class ReferredDocumentAmount1Choice
+    {
         
         /// <summary>
         /// Element <b>Item</b> (Item) of type CurrencyAndAmount.
@@ -414,84 +430,87 @@ namespace i20022.pain00600101 {
         [XmlElementAttribute("DuePyblAmt", typeof(CurrencyAndAmount), Order=0)]
         [XmlElementAttribute("RmtdAmt", typeof(CurrencyAndAmount), Order=0)]
         [XmlElementAttribute("TaxAmt", typeof(CurrencyAndAmount), Order=0)]
-        [XmlChoiceIdentifierAttribute("ItemElementName")]
+        [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemElementName")]
         public CurrencyAndAmount Item;
         
         /// <summary>
         /// Element <b>ItemElementName</b> (Item Element Name) of type ItemChoiceType5.
         /// </summary>
         [XmlElementAttribute(Order=1)]
-        [XmlIgnoreAttribute()]
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemChoiceType5 ItemElementName;
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>CurrencyAndAmount</b> (Currency And Amount).
     /// </summary>
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public class CurrencyAndAmount {
+    public class CurrencyAndAmount
+    {
         
         /// <summary>
         /// Element <b>Ccy</b> (Currency) of type string.
         /// </summary>
-        [XmlAttributeAttribute()]
+        [System.Xml.Serialization.XmlAttributeAttribute()]
         public string Ccy;
         
         /// <summary>
         /// Element <b>Value</b> (Value) of type decimal.
         /// </summary>
-        [XmlTextAttribute()]
+        [System.Xml.Serialization.XmlTextAttribute()]
         public decimal Value;
     }
     
     /// <summary>
-    /// Enumeration <b>{</b> ({).
+    /// Enumeration <b>ItemChoiceType5</b> (Item Choice Type 5).
     /// </summary>
-    [System.SerializableAttribute()]
+    [SerializableAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01", IncludeInSchema=false)]
-    public enum ItemChoiceType5 {
+    public enum ItemChoiceType5
+    {
         
         /// <summary>
-        /// <b>CdtNoteAmt - ?undefined</b>.
+        /// <b>CdtNoteAmt - Credit Note Amount</b>.
         /// </summary>
         CdtNoteAmt,
         
         /// <summary>
-        /// <b>DscntApldAmt - ?undefined</b>.
+        /// <b>DscntApldAmt - Discount Applied Amount</b>.
         /// </summary>
         DscntApldAmt,
         
         /// <summary>
-        /// <b>DuePyblAmt - ?undefined</b>.
+        /// <b>DuePyblAmt - Due Payable Amount</b>.
         /// </summary>
         DuePyblAmt,
         
         /// <summary>
-        /// <b>RmtdAmt - ?undefined</b>.
+        /// <b>RmtdAmt - Remitted Amount</b>.
         /// </summary>
         RmtdAmt,
         
         /// <summary>
-        /// <b>TaxAmt - ?undefined</b>.
+        /// <b>TaxAmt - Tax Amount</b>.
         /// </summary>
         TaxAmt,
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>ReferredDocumentType1</b> (Referred Document Type 1).
     /// </summary>
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public class ReferredDocumentType1 {
+    public class ReferredDocumentType1
+    {
         
         /// <summary>
         /// Element <b>Item</b> (Item) of type object.
-        /// This element can be:
-        /// Cd of typeDocumentType2Code
-        /// Prtry of typestring
+        /// [XOR] This element can be:
+        /// Cd (Code) of type DocumentType2Code 
+        /// Prtry (Proprietary) of type string 
         /// </summary>
         [XmlElementAttribute("Cd", typeof(DocumentType2Code), Order=0)]
         [XmlElementAttribute("Prtry", typeof(string), Order=0)]
@@ -505,11 +524,12 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Enumeration <b>{</b> ({).
+    /// Enumeration <b>DocumentType2Code</b> (Document Type 2Code).
     /// </summary>
-    [System.SerializableAttribute()]
+    [SerializableAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public enum DocumentType2Code {
+    public enum DocumentType2Code
+    {
         
         /// <summary>
         /// <b>MSIN - Metered Service Invoice</b>.
@@ -568,12 +588,13 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>ReferredDocumentInformation1</b> (Referred Document Information 1).
     /// </summary>
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public class ReferredDocumentInformation1 {
+    public class ReferredDocumentInformation1
+    {
         
         /// <summary>
         /// Element <b>RfrdDocTp</b> (Referred Document Type) of type ReferredDocumentType1.
@@ -589,12 +610,13 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>StructuredRemittanceInformation6</b> (Structured Remittance Information 6).
     /// </summary>
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public class StructuredRemittanceInformation6 {
+    public class StructuredRemittanceInformation6
+    {
         
         /// <summary>
         /// Element <b>RfrdDocInf</b> (Referred Document Information) of type ReferredDocumentInformation1.
@@ -611,7 +633,7 @@ namespace i20022.pain00600101 {
         /// <summary>
         /// Element <b>RfrdDocRltdDtSpecified</b> (Referred Document Related Date Specified) of type bool.
         /// </summary>
-        [XmlIgnoreAttribute()]
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool RfrdDocRltdDtSpecified;
         
         /// <summary>
@@ -627,13 +649,13 @@ namespace i20022.pain00600101 {
         public CreditorReferenceInformation1 CdtrRefInf;
         
         /// <summary>
-        /// Element <b>Invcr</b> (Invcr) of type PartyIdentification8.
+        /// Element <b>Invcr</b> (Invoicer) of type PartyIdentification8.
         /// </summary>
         [XmlElementAttribute(Order=4)]
         public PartyIdentification8 Invcr;
         
         /// <summary>
-        /// Element <b>Invcee</b> (Invcee) of type PartyIdentification8.
+        /// Element <b>Invcee</b> (Invoicee) of type PartyIdentification8.
         /// </summary>
         [XmlElementAttribute(Order=5)]
         public PartyIdentification8 Invcee;
@@ -646,15 +668,16 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>RemittanceInformation1</b> (Remittance Information 1).
     /// </summary>
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public class RemittanceInformation1 {
+    public class RemittanceInformation1
+    {
         
         /// <summary>
-        /// Element <b>Ustrd</b> (Ustrd) of type array of string.
+        /// Element <b>Ustrd</b> (Unstructured) of type array of string.
         /// </summary>
         [XmlElementAttribute("Ustrd", Order=0)]
         public string[] Ustrd;
@@ -667,12 +690,13 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>AmendmentInformationDetails1</b> (Amendment Information Details 1).
     /// </summary>
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public class AmendmentInformationDetails1 {
+    public class AmendmentInformationDetails1
+    {
         
         /// <summary>
         /// Element <b>OrgnlMndtId</b> (Original Mandate Identification) of type string.
@@ -731,7 +755,7 @@ namespace i20022.pain00600101 {
         /// <summary>
         /// Element <b>OrgnlFnlColltnDtSpecified</b> (Original Final Collection Date Specified) of type bool.
         /// </summary>
-        [XmlIgnoreAttribute()]
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool OrgnlFnlColltnDtSpecified;
         
         /// <summary>
@@ -743,17 +767,18 @@ namespace i20022.pain00600101 {
         /// <summary>
         /// Element <b>OrgnlFrqcySpecified</b> (Original Frequency Specified) of type bool.
         /// </summary>
-        [XmlIgnoreAttribute()]
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool OrgnlFrqcySpecified;
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>BranchAndFinancialInstitutionIdentification3</b> (Branch And Financial Institution Identification 3).
     /// </summary>
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public class BranchAndFinancialInstitutionIdentification3 {
+    public class BranchAndFinancialInstitutionIdentification3
+    {
         
         /// <summary>
         /// Element <b>FinInstnId</b> (Financial Institution Identification) of type FinancialInstitutionIdentification5Choice.
@@ -769,21 +794,22 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>FinancialInstitutionIdentification5Choice</b> (Financial Institution Identification 5Choice).
     /// </summary>
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public class FinancialInstitutionIdentification5Choice {
+    public class FinancialInstitutionIdentification5Choice
+    {
         
         /// <summary>
         /// Element <b>Item</b> (Item) of type object.
-        /// This element can be:
-        /// BIC of typestring
-        /// ClrSysMmbId of typeClearingSystemMemberIdentification3Choice
-        /// CmbndId of typeFinancialInstitutionIdentification3
-        /// NmAndAdr of typeNameAndAddress7
-        /// PrtryId of typeGenericIdentification3
+        /// [XOR] This element can be:
+        /// BIC (BIC) of type string 
+        /// ClrSysMmbId (Clearing System Member Identification) of type ClearingSystemMemberIdentification3Choice 
+        /// CmbndId (Combined Identification) of type FinancialInstitutionIdentification3 
+        /// NmAndAdr (Name And Address) of type NameAndAddress7 
+        /// PrtryId (Proprietary Identification) of type GenericIdentification3 
         /// </summary>
         [XmlElementAttribute("BIC", typeof(string), Order=0)]
         [XmlElementAttribute("ClrSysMmbId", typeof(ClearingSystemMemberIdentification3Choice), Order=0)]
@@ -794,54 +820,57 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>ClearingSystemMemberIdentification3Choice</b> (Clearing System Member Identification 3Choice).
     /// </summary>
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public class ClearingSystemMemberIdentification3Choice {
+    public class ClearingSystemMemberIdentification3Choice
+    {
         
         /// <summary>
         /// Element <b>Item</b> (Item) of type string.
         /// </summary>
         [XmlElementAttribute("Id", typeof(string), Order=0)]
         [XmlElementAttribute("Prtry", typeof(string), Order=0)]
-        [XmlChoiceIdentifierAttribute("ItemElementName")]
+        [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemElementName")]
         public string Item;
         
         /// <summary>
         /// Element <b>ItemElementName</b> (Item Element Name) of type ItemChoiceType1.
         /// </summary>
         [XmlElementAttribute(Order=1)]
-        [XmlIgnoreAttribute()]
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemChoiceType1 ItemElementName;
     }
     
     /// <summary>
-    /// Enumeration <b>{</b> ({).
+    /// Enumeration <b>ItemChoiceType1</b> (Item Choice Type 1).
     /// </summary>
-    [System.SerializableAttribute()]
+    [SerializableAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01", IncludeInSchema=false)]
-    public enum ItemChoiceType1 {
+    public enum ItemChoiceType1
+    {
         
         /// <summary>
-        /// <b>Id - ?undefined</b>.
+        /// <b>Id - Identification</b>.
         /// </summary>
         Id,
         
         /// <summary>
-        /// <b>Prtry - ?undefined</b>.
+        /// <b>Prtry - Proprietary</b>.
         /// </summary>
         Prtry,
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>FinancialInstitutionIdentification3</b> (Financial Institution Identification 3).
     /// </summary>
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public class FinancialInstitutionIdentification3 {
+    public class FinancialInstitutionIdentification3
+    {
         
         /// <summary>
         /// Element <b>BIC</b> (BIC) of type string.
@@ -875,12 +904,13 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>GenericIdentification3</b> (Generic Identification 3).
     /// </summary>
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public class GenericIdentification3 {
+    public class GenericIdentification3
+    {
         
         /// <summary>
         /// Element <b>Id</b> (Identification) of type string.
@@ -896,12 +926,13 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>NameAndAddress7</b> (Name And Address 7).
     /// </summary>
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public class NameAndAddress7 {
+    public class NameAndAddress7
+    {
         
         /// <summary>
         /// Element <b>Nm</b> (Name) of type string.
@@ -917,12 +948,13 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>BranchData</b> (Branch Data).
     /// </summary>
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public class BranchData {
+    public class BranchData
+    {
         
         /// <summary>
         /// Element <b>Id</b> (Identification) of type string.
@@ -944,12 +976,13 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>CashAccount7</b> (Cash Account 7).
     /// </summary>
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public class CashAccount7 {
+    public class CashAccount7
+    {
         
         /// <summary>
         /// Element <b>Id</b> (Identification) of type AccountIdentification3Choice.
@@ -977,43 +1010,45 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>AccountIdentification3Choice</b> (Account Identification 3Choice).
     /// </summary>
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public class AccountIdentification3Choice {
+    public class AccountIdentification3Choice
+    {
         
         /// <summary>
         /// Element <b>Item</b> (Item) of type object.
-        /// This element can be:
-        /// BBAN of typestring
-        /// IBAN of typestring
-        /// PrtryAcct of typeSimpleIdentificationInformation2
-        /// UPIC of typestring
+        /// [XOR] This element can be:
+        /// BBAN (BBAN) of type string 
+        /// IBAN (IBAN) of type string 
+        /// PrtryAcct (Proprietary Account) of type SimpleIdentificationInformation2 
+        /// UPIC (UPIC) of type string 
         /// </summary>
         [XmlElementAttribute("BBAN", typeof(string), Order=0)]
         [XmlElementAttribute("IBAN", typeof(string), Order=0)]
         [XmlElementAttribute("PrtryAcct", typeof(SimpleIdentificationInformation2), Order=0)]
         [XmlElementAttribute("UPIC", typeof(string), Order=0)]
-        [XmlChoiceIdentifierAttribute("ItemElementName")]
+        [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemElementName")]
         public object Item;
         
         /// <summary>
         /// Element <b>ItemElementName</b> (Item Element Name) of type ItemChoiceType3.
         /// </summary>
         [XmlElementAttribute(Order=1)]
-        [XmlIgnoreAttribute()]
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemChoiceType3 ItemElementName;
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>SimpleIdentificationInformation2</b> (Simple Identification Information 2).
     /// </summary>
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public class SimpleIdentificationInformation2 {
+    public class SimpleIdentificationInformation2
+    {
         
         /// <summary>
         /// Element <b>Id</b> (Identification) of type string.
@@ -1023,46 +1058,48 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Enumeration <b>{</b> ({).
+    /// Enumeration <b>ItemChoiceType3</b> (Item Choice Type 3).
     /// </summary>
-    [System.SerializableAttribute()]
+    [SerializableAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01", IncludeInSchema=false)]
-    public enum ItemChoiceType3 {
+    public enum ItemChoiceType3
+    {
         
         /// <summary>
-        /// <b>BBAN - ?undefined</b>.
+        /// <b>BBAN - Basic Bank Account Number</b>.
         /// </summary>
         BBAN,
         
         /// <summary>
-        /// <b>IBAN - ?undefined</b>.
+        /// <b>IBAN - International Bank Account Number</b>.
         /// </summary>
         IBAN,
         
         /// <summary>
-        /// <b>PrtryAcct - ?undefined</b>.
+        /// <b>PrtryAcct - Proprietary Account</b>.
         /// </summary>
         PrtryAcct,
         
         /// <summary>
-        /// <b>UPIC - ?undefined</b>.
+        /// <b>UPIC - Universal Promotional Identification Code</b>.
         /// </summary>
         UPIC,
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>CashAccountType2</b> (Cash Account Type 2).
     /// </summary>
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public class CashAccountType2 {
+    public class CashAccountType2
+    {
         
         /// <summary>
         /// Element <b>Item</b> (Item) of type object.
-        /// This element can be:
-        /// Cd of typeCashAccountType4Code
-        /// Prtry of typestring
+        /// [XOR] This element can be:
+        /// Cd (Code) of type CashAccountType4Code 
+        /// Prtry (Proprietary) of type string 
         /// </summary>
         [XmlElementAttribute("Cd", typeof(CashAccountType4Code), Order=0)]
         [XmlElementAttribute("Prtry", typeof(string), Order=0)]
@@ -1070,14 +1107,15 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Enumeration <b>{</b> ({).
+    /// Enumeration <b>CashAccountType4Code</b> (Cash Account Type 4Code).
     /// </summary>
-    [System.SerializableAttribute()]
+    [SerializableAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public enum CashAccountType4Code {
+    public enum CashAccountType4Code
+    {
         
         /// <summary>
-        /// <b>CASH - Cash Payment</b>.
+        /// <b>CASH - Cash</b>.
         /// </summary>
         CASH,
         
@@ -1158,11 +1196,12 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Enumeration <b>{</b> ({).
+    /// Enumeration <b>Frequency1Code</b> (Frequency 1Code).
     /// </summary>
-    [System.SerializableAttribute()]
+    [SerializableAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public enum Frequency1Code {
+    public enum Frequency1Code
+    {
         
         /// <summary>
         /// <b>YEAR - Annual</b>.
@@ -1206,12 +1245,13 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>MandateRelatedInformation1</b> (Mandate Related Information 1).
     /// </summary>
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public class MandateRelatedInformation1 {
+    public class MandateRelatedInformation1
+    {
         
         /// <summary>
         /// Element <b>MndtId</b> (Mandate Identification) of type string.
@@ -1228,7 +1268,7 @@ namespace i20022.pain00600101 {
         /// <summary>
         /// Element <b>DtOfSgntrSpecified</b> (Date Of Signature Specified) of type bool.
         /// </summary>
-        [XmlIgnoreAttribute()]
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool DtOfSgntrSpecified;
         
         /// <summary>
@@ -1240,7 +1280,7 @@ namespace i20022.pain00600101 {
         /// <summary>
         /// Element <b>AmdmntIndSpecified</b> (Amendment Indicator Specified) of type bool.
         /// </summary>
-        [XmlIgnoreAttribute()]
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool AmdmntIndSpecified;
         
         /// <summary>
@@ -1264,7 +1304,7 @@ namespace i20022.pain00600101 {
         /// <summary>
         /// Element <b>FrstColltnDtSpecified</b> (First Collection Date Specified) of type bool.
         /// </summary>
-        [XmlIgnoreAttribute()]
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool FrstColltnDtSpecified;
         
         /// <summary>
@@ -1276,7 +1316,7 @@ namespace i20022.pain00600101 {
         /// <summary>
         /// Element <b>FnlColltnDtSpecified</b> (Final Collection Date Specified) of type bool.
         /// </summary>
-        [XmlIgnoreAttribute()]
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool FnlColltnDtSpecified;
         
         /// <summary>
@@ -1288,65 +1328,68 @@ namespace i20022.pain00600101 {
         /// <summary>
         /// Element <b>FrqcySpecified</b> (Frequency Specified) of type bool.
         /// </summary>
-        [XmlIgnoreAttribute()]
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool FrqcySpecified;
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>LocalInstrument1Choice</b> (Local Instrument 1Choice).
     /// </summary>
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public class LocalInstrument1Choice {
+    public class LocalInstrument1Choice
+    {
         
         /// <summary>
         /// Element <b>Item</b> (Item) of type string.
         /// </summary>
         [XmlElementAttribute("Cd", typeof(string), Order=0)]
         [XmlElementAttribute("Prtry", typeof(string), Order=0)]
-        [XmlChoiceIdentifierAttribute("ItemElementName")]
+        [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemElementName")]
         public string Item;
         
         /// <summary>
         /// Element <b>ItemElementName</b> (Item Element Name) of type ItemChoiceType4.
         /// </summary>
         [XmlElementAttribute(Order=1)]
-        [XmlIgnoreAttribute()]
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemChoiceType4 ItemElementName;
     }
     
     /// <summary>
-    /// Enumeration <b>{</b> ({).
+    /// Enumeration <b>ItemChoiceType4</b> (Item Choice Type 4).
     /// </summary>
-    [System.SerializableAttribute()]
+    [SerializableAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01", IncludeInSchema=false)]
-    public enum ItemChoiceType4 {
+    public enum ItemChoiceType4
+    {
         
         /// <summary>
-        /// <b>Cd - ?undefined</b>.
+        /// <b>Cd - Code</b>.
         /// </summary>
         Cd,
         
         /// <summary>
-        /// <b>Prtry - ?undefined</b>.
+        /// <b>Prtry - Proprietary</b>.
         /// </summary>
         Prtry,
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>ServiceLevel2Choice</b> (Service Level 2Choice).
     /// </summary>
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public class ServiceLevel2Choice {
+    public class ServiceLevel2Choice
+    {
         
         /// <summary>
         /// Element <b>Item</b> (Item) of type object.
-        /// This element can be:
-        /// Cd of typeServiceLevel1Code
-        /// Prtry of typestring
+        /// [XOR] This element can be:
+        /// Cd (Code) of type ServiceLevel1Code 
+        /// Prtry (Proprietary) of type string 
         /// </summary>
         [XmlElementAttribute("Cd", typeof(ServiceLevel1Code), Order=0)]
         [XmlElementAttribute("Prtry", typeof(string), Order=0)]
@@ -1354,11 +1397,12 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Enumeration <b>{</b> ({).
+    /// Enumeration <b>ServiceLevel1Code</b> (Service Level 1Code).
     /// </summary>
-    [System.SerializableAttribute()]
+    [SerializableAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public enum ServiceLevel1Code {
+    public enum ServiceLevel1Code
+    {
         
         /// <summary>
         /// <b>SEPA - Single Euro Payments Area</b>.
@@ -1371,18 +1415,19 @@ namespace i20022.pain00600101 {
         SDVA,
         
         /// <summary>
-        /// <b>PRPT - EBAPriority Service</b>.
+        /// <b>PRPT - EBA Priority Service</b>.
         /// </summary>
         PRPT,
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>PaymentTypeInformation6</b> (Payment Type Information 6).
     /// </summary>
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public class PaymentTypeInformation6 {
+    public class PaymentTypeInformation6
+    {
         
         /// <summary>
         /// Element <b>InstrPrty</b> (Instruction Priority) of type Priority2Code.
@@ -1393,14 +1438,14 @@ namespace i20022.pain00600101 {
         /// <summary>
         /// Element <b>InstrPrtySpecified</b> (Instruction Priority Specified) of type bool.
         /// </summary>
-        [XmlIgnoreAttribute()]
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool InstrPrtySpecified;
         
         /// <summary>
         /// Element <b>Item</b> (Item) of type object.
-        /// This element can be:
-        /// ClrChanl of typeClearingChannel2Code
-        /// SvcLvl of typeServiceLevel2Choice
+        /// [XOR] This element can be:
+        /// ClrChanl (Clearing Channel) of type ClearingChannel2Code 
+        /// SvcLvl (Service Level) of type ServiceLevel2Choice 
         /// </summary>
         [XmlElementAttribute("ClrChanl", typeof(ClearingChannel2Code), Order=1)]
         [XmlElementAttribute("SvcLvl", typeof(ServiceLevel2Choice), Order=1)]
@@ -1421,7 +1466,7 @@ namespace i20022.pain00600101 {
         /// <summary>
         /// Element <b>SeqTpSpecified</b> (Sequence Type Specified) of type bool.
         /// </summary>
-        [XmlIgnoreAttribute()]
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool SeqTpSpecified;
         
         /// <summary>
@@ -1433,16 +1478,17 @@ namespace i20022.pain00600101 {
         /// <summary>
         /// Element <b>CtgyPurpSpecified</b> (Category Purpose Specified) of type bool.
         /// </summary>
-        [XmlIgnoreAttribute()]
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool CtgyPurpSpecified;
     }
     
     /// <summary>
-    /// Enumeration <b>{</b> ({).
+    /// Enumeration <b>Priority2Code</b> (Priority 2Code).
     /// </summary>
-    [System.SerializableAttribute()]
+    [SerializableAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public enum Priority2Code {
+    public enum Priority2Code
+    {
         
         /// <summary>
         /// <b>HIGH - High</b>.
@@ -1456,11 +1502,12 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Enumeration <b>{</b> ({).
+    /// Enumeration <b>ClearingChannel2Code</b> (Clearing Channel 2Code).
     /// </summary>
-    [System.SerializableAttribute()]
+    [SerializableAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public enum ClearingChannel2Code {
+    public enum ClearingChannel2Code
+    {
         
         /// <summary>
         /// <b>RTGS - Real Time Gross Settlement System</b>.
@@ -1484,11 +1531,12 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Enumeration <b>{</b> ({).
+    /// Enumeration <b>SequenceType1Code</b> (Sequence Type 1Code).
     /// </summary>
-    [System.SerializableAttribute()]
+    [SerializableAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public enum SequenceType1Code {
+    public enum SequenceType1Code
+    {
         
         /// <summary>
         /// <b>FRST - First</b>.
@@ -1512,11 +1560,12 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Enumeration <b>{</b> ({).
+    /// Enumeration <b>PaymentCategoryPurpose1Code</b> (Payment Category Purpose 1Code).
     /// </summary>
-    [System.SerializableAttribute()]
+    [SerializableAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public enum PaymentCategoryPurpose1Code {
+    public enum PaymentCategoryPurpose1Code
+    {
         
         /// <summary>
         /// <b>CORT - Court</b>.
@@ -1534,7 +1583,7 @@ namespace i20022.pain00600101 {
         TREA,
         
         /// <summary>
-        /// <b>CASH - Cash Payment</b>.
+        /// <b>CASH - Cash</b>.
         /// </summary>
         CASH,
         
@@ -1564,7 +1613,7 @@ namespace i20022.pain00600101 {
         PENS,
         
         /// <summary>
-        /// <b>SECU - Security Charge</b>.
+        /// <b>SECU - Security Charge / Securities Option</b>.
         /// </summary>
         SECU,
         
@@ -1610,18 +1659,19 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>ClearingSystemIdentification1Choice</b> (Clearing System Identification 1Choice).
     /// </summary>
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public class ClearingSystemIdentification1Choice {
+    public class ClearingSystemIdentification1Choice
+    {
         
         /// <summary>
         /// Element <b>Item</b> (Item) of type object.
-        /// This element can be:
-        /// ClrSysId of typeCashClearingSystem3Code
-        /// Prtry of typestring
+        /// [XOR] This element can be:
+        /// ClrSysId (Clearing System Identification) of type CashClearingSystem3Code 
+        /// Prtry (Proprietary) of type string 
         /// </summary>
         [XmlElementAttribute("ClrSysId", typeof(CashClearingSystem3Code), Order=0)]
         [XmlElementAttribute("Prtry", typeof(string), Order=0)]
@@ -1629,14 +1679,15 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Enumeration <b>{</b> ({).
+    /// Enumeration <b>CashClearingSystem3Code</b> (Cash Clearing System 3Code).
     /// </summary>
-    [System.SerializableAttribute()]
+    [SerializableAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public enum CashClearingSystem3Code {
+    public enum CashClearingSystem3Code
+    {
         
         /// <summary>
-        /// <b>ABE - EBAEuro 1Step 1</b>.
+        /// <b>ABE - EBA Euro 1 Step 1</b>.
         /// </summary>
         ABE,
         
@@ -1721,7 +1772,7 @@ namespace i20022.pain00600101 {
         ERP,
         
         /// <summary>
-        /// <b>XCT - EBAStep 2</b>.
+        /// <b>XCT - EBA Step 2</b>.
         /// </summary>
         XCT,
         
@@ -2001,7 +2052,7 @@ namespace i20022.pain00600101 {
         ZIS,
         
         /// <summary>
-        /// <b>CHI - USChips</b>.
+        /// <b>CHI - US Chips</b>.
         /// </summary>
         CHI,
         
@@ -2012,12 +2063,13 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>SettlementInformation3</b> (Settlement Information 3).
     /// </summary>
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public class SettlementInformation3 {
+    public class SettlementInformation3
+    {
         
         /// <summary>
         /// Element <b>SttlmMtd</b> (Settlement Method) of type SettlementMethod1Code.
@@ -2075,11 +2127,12 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Enumeration <b>{</b> ({).
+    /// Enumeration <b>SettlementMethod1Code</b> (Settlement Method 1Code).
     /// </summary>
-    [System.SerializableAttribute()]
+    [SerializableAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public enum SettlementMethod1Code {
+    public enum SettlementMethod1Code
+    {
         
         /// <summary>
         /// <b>INDA - Intra Day</b>.
@@ -2103,12 +2156,13 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>EquivalentAmount</b> (Equivalent Amount).
     /// </summary>
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public class EquivalentAmount {
+    public class EquivalentAmount
+    {
         
         /// <summary>
         /// Element <b>Amt</b> (Amount) of type CurrencyAndAmount.
@@ -2124,18 +2178,19 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>AmountType2Choice</b> (Amount Type 2Choice).
     /// </summary>
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public class AmountType2Choice {
+    public class AmountType2Choice
+    {
         
         /// <summary>
         /// Element <b>Item</b> (Item) of type object.
-        /// This element can be:
-        /// EqvtAmt of typeEquivalentAmount
-        /// InstdAmt of typeCurrencyAndAmount
+        /// [XOR] This element can be:
+        /// EqvtAmt (Equivalent Amount) of type EquivalentAmount 
+        /// InstdAmt (Instructed Amount) of type CurrencyAndAmount 
         /// </summary>
         [XmlElementAttribute("EqvtAmt", typeof(EquivalentAmount), Order=0)]
         [XmlElementAttribute("InstdAmt", typeof(CurrencyAndAmount), Order=0)]
@@ -2143,15 +2198,16 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>OriginalTransactionReference1</b> (Original Transaction Reference 1).
     /// </summary>
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public class OriginalTransactionReference1 {
+    public class OriginalTransactionReference1
+    {
         
         /// <summary>
-        /// Element <b>IntrBkSttlmAmt</b> (Intr Bank Settlement Amount) of type CurrencyAndAmount.
+        /// Element <b>IntrBkSttlmAmt</b> (Inter Bank Settlement Amount) of type CurrencyAndAmount.
         /// </summary>
         [XmlElementAttribute(Order=0)]
         public CurrencyAndAmount IntrBkSttlmAmt;
@@ -2163,15 +2219,15 @@ namespace i20022.pain00600101 {
         public AmountType2Choice Amt;
         
         /// <summary>
-        /// Element <b>IntrBkSttlmDt</b> (Intr Bank Settlement Date) of type System.DateTime.
+        /// Element <b>IntrBkSttlmDt</b> (Inter Bank Settlement Date) of type System.DateTime.
         /// </summary>
         [XmlElementAttribute(DataType="date", Order=2)]
         public System.DateTime IntrBkSttlmDt;
         
         /// <summary>
-        /// Element <b>IntrBkSttlmDtSpecified</b> (Intr Bank Settlement Date Specified) of type bool.
+        /// Element <b>IntrBkSttlmDtSpecified</b> (Inter Bank Settlement Date Specified) of type bool.
         /// </summary>
-        [XmlIgnoreAttribute()]
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool IntrBkSttlmDtSpecified;
         
         /// <summary>
@@ -2179,14 +2235,14 @@ namespace i20022.pain00600101 {
         /// </summary>
         [XmlElementAttribute("ReqdColltnDt", typeof(System.DateTime), DataType="date", Order=3)]
         [XmlElementAttribute("ReqdExctnDt", typeof(System.DateTime), DataType="date", Order=3)]
-        [XmlChoiceIdentifierAttribute("ItemElementName")]
+        [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemElementName")]
         public System.DateTime Item;
         
         /// <summary>
         /// Element <b>ItemElementName</b> (Item Element Name) of type ItemChoiceType2.
         /// </summary>
         [XmlElementAttribute(Order=4)]
-        [XmlIgnoreAttribute()]
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemChoiceType2 ItemElementName;
         
         /// <summary>
@@ -2216,7 +2272,7 @@ namespace i20022.pain00600101 {
         /// <summary>
         /// Element <b>PmtMtdSpecified</b> (Payment Method Specified) of type bool.
         /// </summary>
-        [XmlIgnoreAttribute()]
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool PmtMtdSpecified;
         
         /// <summary>
@@ -2293,29 +2349,31 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Enumeration <b>{</b> ({).
+    /// Enumeration <b>ItemChoiceType2</b> (Item Choice Type 2).
     /// </summary>
-    [System.SerializableAttribute()]
+    [SerializableAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01", IncludeInSchema=false)]
-    public enum ItemChoiceType2 {
+    public enum ItemChoiceType2
+    {
         
         /// <summary>
-        /// <b>ReqdColltnDt - ?undefined</b>.
+        /// <b>ReqdColltnDt - Requested Collection Date</b>.
         /// </summary>
         ReqdColltnDt,
         
         /// <summary>
-        /// <b>ReqdExctnDt - ?undefined</b>.
+        /// <b>ReqdExctnDt - Requested Execution Date</b>.
         /// </summary>
         ReqdExctnDt,
     }
     
     /// <summary>
-    /// Enumeration <b>{</b> ({).
+    /// Enumeration <b>PaymentMethod4Code</b> (Payment Method 4Code).
     /// </summary>
-    [System.SerializableAttribute()]
+    [SerializableAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public enum PaymentMethod4Code {
+    public enum PaymentMethod4Code
+    {
         
         /// <summary>
         /// <b>CHK - Cheque</b>.
@@ -2339,12 +2397,13 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>PaymentTransactionInformation3</b> (Payment Transaction Information 3).
     /// </summary>
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public class PaymentTransactionInformation3 {
+    public class PaymentTransactionInformation3
+    {
         
         /// <summary>
         /// Element <b>CxlId</b> (Cancellation Identification) of type string.
@@ -2377,7 +2436,7 @@ namespace i20022.pain00600101 {
         public string OrgnlTxId;
         
         /// <summary>
-        /// Element <b>OrgnlIntrBkSttlmAmt</b> (Original Intr Bank Settlement Amount) of type CurrencyAndAmount.
+        /// Element <b>OrgnlIntrBkSttlmAmt</b> (Original Inter Bank Settlement Amount) of type CurrencyAndAmount.
         /// </summary>
         [XmlElementAttribute(Order=5)]
         public CurrencyAndAmount OrgnlIntrBkSttlmAmt;
@@ -2414,12 +2473,13 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>CancellationReasonInformation1</b> (Cancellation Reason Information 1).
     /// </summary>
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public class CancellationReasonInformation1 {
+    public class CancellationReasonInformation1
+    {
         
         /// <summary>
         /// Element <b>CxlOrgtr</b> (Cancellation Originator) of type PartyIdentification8.
@@ -2441,18 +2501,19 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>CancellationReason1Choice</b> (Cancellation Reason 1Choice).
     /// </summary>
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public class CancellationReason1Choice {
+    public class CancellationReason1Choice
+    {
         
         /// <summary>
         /// Element <b>Item</b> (Item) of type object.
-        /// This element can be:
-        /// Cd of typeCancellationReason2Code
-        /// Prtry of typestring
+        /// [XOR] This element can be:
+        /// Cd (Code) of type CancellationReason2Code 
+        /// Prtry (Proprietary) of type string 
         /// </summary>
         [XmlElementAttribute("Cd", typeof(CancellationReason2Code), Order=0)]
         [XmlElementAttribute("Prtry", typeof(string), Order=0)]
@@ -2460,11 +2521,12 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Enumeration <b>{</b> ({).
+    /// Enumeration <b>CancellationReason2Code</b> (Cancellation Reason 2Code).
     /// </summary>
-    [System.SerializableAttribute()]
+    [SerializableAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public enum CancellationReason2Code {
+    public enum CancellationReason2Code
+    {
         
         /// <summary>
         /// <b>CUST - Custodial Account</b>.
@@ -2498,12 +2560,13 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>OriginalGroupInformation4</b> (Original Group Information 4).
     /// </summary>
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public class OriginalGroupInformation4 {
+    public class OriginalGroupInformation4
+    {
         
         /// <summary>
         /// Element <b>OrgnlMsgId</b> (Original Message Identification) of type string.
@@ -2526,7 +2589,7 @@ namespace i20022.pain00600101 {
         /// <summary>
         /// Element <b>OrgnlCreDtTmSpecified</b> (Original Creation Date Time Specified) of type bool.
         /// </summary>
-        [XmlIgnoreAttribute()]
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool OrgnlCreDtTmSpecified;
         
         /// <summary>
@@ -2537,12 +2600,13 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>GenericIdentification4</b> (Generic Identification 4).
     /// </summary>
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public class GenericIdentification4 {
+    public class GenericIdentification4
+    {
         
         /// <summary>
         /// Element <b>Id</b> (Identification) of type string.
@@ -2558,12 +2622,13 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>DateAndPlaceOfBirth</b> (Date And Place Of Birth).
     /// </summary>
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public class DateAndPlaceOfBirth {
+    public class DateAndPlaceOfBirth
+    {
         
         /// <summary>
         /// Element <b>BirthDt</b> (Birth Date) of type System.DateTime.
@@ -2591,26 +2656,27 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>PersonIdentification3</b> (Person Identification 3).
     /// </summary>
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public class PersonIdentification3 {
+    public class PersonIdentification3
+    {
         
         /// <summary>
         /// Element <b>Item</b> (Item) of type object.
-        /// This element can be:
-        /// AlnRegnNb of typestring
-        /// CstmrNb of typestring
-        /// DrvrsLicNb of typestring
-        /// DtAndPlcOfBirth of typeDateAndPlaceOfBirth
-        /// IdntyCardNb of typestring
-        /// MplyrIdNb of typestring
-        /// OthrId of typeGenericIdentification4
-        /// PsptNb of typestring
-        /// SclSctyNb of typestring
-        /// TaxIdNb of typestring
+        /// [XOR] This element can be:
+        /// AlnRegnNb (Alien Registration Number) of type string 
+        /// CstmrNb (Customer Number) of type string 
+        /// DrvrsLicNb (Drivers License Number) of type string 
+        /// DtAndPlcOfBirth (Date And Place Of Birth) of type DateAndPlaceOfBirth 
+        /// IdntyCardNb (Identity Card Number) of type string 
+        /// MplyrIdNb (Employer Identification Number) of type string 
+        /// OthrId (Other Identification) of type GenericIdentification4 
+        /// PsptNb (Passport Number) of type string 
+        /// SclSctyNb (Social Security Number) of type string 
+        /// TaxIdNb (Tax Identification Number) of type string 
         /// </summary>
         [XmlElementAttribute("AlnRegnNb", typeof(string), Order=0)]
         [XmlElementAttribute("CstmrNb", typeof(string), Order=0)]
@@ -2622,14 +2688,14 @@ namespace i20022.pain00600101 {
         [XmlElementAttribute("PsptNb", typeof(string), Order=0)]
         [XmlElementAttribute("SclSctyNb", typeof(string), Order=0)]
         [XmlElementAttribute("TaxIdNb", typeof(string), Order=0)]
-        [XmlChoiceIdentifierAttribute("ItemElementName")]
+        [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemElementName")]
         public object Item;
         
         /// <summary>
         /// Element <b>ItemElementName</b> (Item Element Name) of type ItemChoiceType.
         /// </summary>
         [XmlElementAttribute(Order=1)]
-        [XmlIgnoreAttribute()]
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemChoiceType ItemElementName;
         
         /// <summary>
@@ -2640,70 +2706,72 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Enumeration <b>{</b> ({).
+    /// Enumeration <b>ItemChoiceType</b> (Item Choice Type).
     /// </summary>
-    [System.SerializableAttribute()]
+    [SerializableAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01", IncludeInSchema=false)]
-    public enum ItemChoiceType {
+    public enum ItemChoiceType
+    {
         
         /// <summary>
-        /// <b>AlnRegnNb - ?undefined</b>.
+        /// <b>AlnRegnNb - Alien Registration Number</b>.
         /// </summary>
         AlnRegnNb,
         
         /// <summary>
-        /// <b>CstmrNb - ?undefined</b>.
+        /// <b>CstmrNb - Customer Number</b>.
         /// </summary>
         CstmrNb,
         
         /// <summary>
-        /// <b>DrvrsLicNb - ?undefined</b>.
+        /// <b>DrvrsLicNb - Drivers License Number</b>.
         /// </summary>
         DrvrsLicNb,
         
         /// <summary>
-        /// <b>DtAndPlcOfBirth - ?undefined</b>.
+        /// <b>DtAndPlcOfBirth - Date And Place Of Birth</b>.
         /// </summary>
         DtAndPlcOfBirth,
         
         /// <summary>
-        /// <b>IdntyCardNb - ?undefined</b>.
+        /// <b>IdntyCardNb - Identity Card Number</b>.
         /// </summary>
         IdntyCardNb,
         
         /// <summary>
-        /// <b>MplyrIdNb - ?undefined</b>.
+        /// <b>MplyrIdNb - Employer Identification Number</b>.
         /// </summary>
         MplyrIdNb,
         
         /// <summary>
-        /// <b>OthrId - ?undefined</b>.
+        /// <b>OthrId - Other Identification</b>.
         /// </summary>
         OthrId,
         
         /// <summary>
-        /// <b>PsptNb - ?undefined</b>.
+        /// <b>PsptNb - Passport Number</b>.
         /// </summary>
         PsptNb,
         
         /// <summary>
-        /// <b>SclSctyNb - ?undefined</b>.
+        /// <b>SclSctyNb - Social Security Number</b>.
         /// </summary>
         SclSctyNb,
         
         /// <summary>
-        /// <b>TaxIdNb - ?undefined</b>.
+        /// <b>TaxIdNb - Tax Identification Number</b>.
         /// </summary>
         TaxIdNb,
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>OrganisationIdentification2</b> (Organisation Identification 2).
     /// </summary>
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public class OrganisationIdentification2 {
+    public class OrganisationIdentification2
+    {
         
         /// <summary>
         /// Element <b>BIC</b> (BIC) of type string.
@@ -2730,7 +2798,7 @@ namespace i20022.pain00600101 {
         public string EANGLN;
         
         /// <summary>
-        /// Element <b>USCHU</b> (USCHU) of type string.
+        /// Element <b>USCHU</b> (CHIPSUniversalIdentification) of type string.
         /// </summary>
         [XmlElementAttribute(Order=4)]
         public string USCHU;
@@ -2761,18 +2829,19 @@ namespace i20022.pain00600101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>Party2Choice</b> (Party 2Choice).
     /// </summary>
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:pain.006.001.01")]
-    public class Party2Choice {
+    public class Party2Choice
+    {
         
         /// <summary>
         /// Element <b>Items</b> (Items) of type array of object.
-        /// This element can be:
-        /// OrgId of typeOrganisationIdentification2
-        /// PrvtId of typePersonIdentification3
+        /// [XOR] This element can be:
+        /// OrgId (Organisation Identification) of type OrganisationIdentification2 
+        /// PrvtId (Private Identification) of type PersonIdentification3 
         /// </summary>
         [XmlElementAttribute("OrgId", typeof(OrganisationIdentification2), Order=0)]
         [XmlElementAttribute("PrvtId", typeof(PersonIdentification3), Order=0)]
