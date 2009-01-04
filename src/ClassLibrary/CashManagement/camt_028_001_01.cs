@@ -1,25 +1,25 @@
 
-//                                      ______    ____  
-//                                     |____  | "|__  | 
-//                                      _   | |     | | 
-//                                     | |  | |   __| | 
+//                                      ______    ____   
+//                                     |____  | "|__  |  
+//                                      _   | |     | |  
+//                                     | |  | |   __| |  
 //                                     |_|  |_|  |_____| 
-//
-//  --------------------------------------------------- 
-// |     _   ____     ___     ___    ____    ____      |
-// |    (_) |___ \   / _ \   / _ \  |___ \  |___ \     |
-// |    | |   __) | | | | | | | | |   __) |   __) |    |
-// |    | |  / __/  | |_| | | |_| |  / __/   / __/     |
-// |    |_| |_____|  \___/   \___/  |_____| |_____|    |
-// |                                                   |
-// |    AN ISO 20022 OPEN-SOURCE .NET CLASS LIBRARY    |
-// |            FOR MESSAGING APPLICATIONS             |
-// |                                                   |
-// |        Copyright (C) 2008 Mauricio Leventer       |
-// |                mleventer@i20022.com               |
-// |                                                   |
-//  ---------------------------------------------------
-//
+//                                                       
+//  ---------------------------------------------------  
+// |     _   ____     ___     ___    ____    ____      | 
+// |    (_) |___ \   / _ \   / _ \  |___ \  |___ \     | 
+// |    | |   __) | | | | | | | | |   __) |   __) |    | 
+// |    | |  / __/  | |_| | | |_| |  / __/   / __/     | 
+// |    |_| |_____|  \___/   \___/  |_____| |_____|    | 
+// |                                                   | 
+// |    AN ISO 20022 OPEN-SOURCE .NET CLASS LIBRARY    | 
+// |            FOR MESSAGING APPLICATIONS             | 
+// |                                                   | 
+// |        Copyright (C) 2008 Mauricio Leventer       | 
+// |                mleventer@i20022.com               | 
+// |                                                   | 
+//  ---------------------------------------------------  
+//                                                       
 // L I C E N S E                                         
 //                                                       
 // This program is free software; you can redistribute it
@@ -39,7 +39,7 @@
 // to the Free Software Foundation, Inc.,                
 // 59 Temple Place, Suite 330, Boston, MA                
 // 02111-1307 USA.                                       
-//                                                       
+//
 //
 using System;
 using System.Collections.Generic;
@@ -48,9 +48,10 @@ using System.Linq;
 using System.Text;
 using System.Xml.Serialization;
 
- 
-namespace i20022.camt02800101 {
 
+
+namespace i20022.camt02800101
+{
     
     
     /// <summary>
@@ -62,22 +63,24 @@ namespace i20022.camt02800101 {
     [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:camt.028.001.01")]
     [XmlRootAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:camt.028.001.01", IsNullable=false)]
-    public class Document {
+    public class Document
+    {
         
         /// <summary>
-        /// Element <b>camt02800101</b> (0280 01 01) of type camt02800101.
+        /// Element <b>camt02800101</b> (camt 02800101) of type camt02800101.
         /// </summary>
         [XmlElementAttribute("camt.028.001.01", Order=0)]
         public camt02800101 camt02800101;
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>camt02800101</b> (camt 02800101).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(TypeName="camt.028.001.01", Namespace="urn:iso:std:iso:20022:tech:xsd:camt.028.001.01")]
-    public class camt02800101 {
+    public class camt02800101
+    {
         
         /// <summary>
         /// Element <b>Assgnmt</b> (Assignment) of type CaseAssignment.
@@ -105,12 +108,13 @@ namespace i20022.camt02800101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>CaseAssignment</b> (Case Assignment).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:camt.028.001.01")]
-    public class CaseAssignment {
+    public class CaseAssignment
+    {
         
         /// <summary>
         /// Element <b>Id</b> (Identification) of type string.
@@ -138,12 +142,13 @@ namespace i20022.camt02800101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>AccountIdentification1</b> (Account Identification 1).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:camt.028.001.01")]
-    public class AccountIdentification1 {
+    public class AccountIdentification1
+    {
         
         /// <summary>
         /// Element <b>Prtry</b> (Proprietary) of type SimpleIdentificationInformation.
@@ -153,12 +158,13 @@ namespace i20022.camt02800101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>SimpleIdentificationInformation</b> (Simple Identification Information).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:camt.028.001.01")]
-    public class SimpleIdentificationInformation {
+    public class SimpleIdentificationInformation
+    {
         
         /// <summary>
         /// Element <b>Id</b> (Identification) of type string.
@@ -168,12 +174,13 @@ namespace i20022.camt02800101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>Account1</b> (Account 1).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:camt.028.001.01")]
-    public class Account1 {
+    public class Account1
+    {
         
         /// <summary>
         /// Element <b>Id</b> (Identification) of type AccountIdentification1.
@@ -189,19 +196,20 @@ namespace i20022.camt02800101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>PartyIdentification1Choice</b> (Party Identification 1Choice).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:camt.028.001.01")]
-    public class PartyIdentification1Choice {
+    public class PartyIdentification1Choice
+    {
         
         /// <summary>
         /// Element <b>Item</b> (Item) of type object.
-        /// This element can be:
-        /// BICOrBEI of typestring
-        /// NmAndAdr of typeNameAndAddress2
-        /// PrtryId of typeGenericIdentification1
+        /// [XOR] This element can be:
+        /// BICOrBEI (BIC Or BEI) of type string 
+        /// NmAndAdr (Name And Address) of type NameAndAddress2 
+        /// PrtryId (Proprietary Identification) of type GenericIdentification1 
         /// </summary>
         [XmlElementAttribute("BICOrBEI", typeof(string), Order=0)]
         [XmlElementAttribute("NmAndAdr", typeof(NameAndAddress2), Order=0)]
@@ -210,12 +218,13 @@ namespace i20022.camt02800101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>NameAndAddress2</b> (Name And Address 2).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:camt.028.001.01")]
-    public class NameAndAddress2 {
+    public class NameAndAddress2
+    {
         
         /// <summary>
         /// Element <b>Nm</b> (Name) of type string.
@@ -231,18 +240,19 @@ namespace i20022.camt02800101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>LongPostalAddress1Choice</b> (Long Postal Address 1Choice).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:camt.028.001.01")]
-    public class LongPostalAddress1Choice {
+    public class LongPostalAddress1Choice
+    {
         
         /// <summary>
         /// Element <b>Item</b> (Item) of type object.
-        /// This element can be:
-        /// Strd of typeStructuredLongPostalAddress1
-        /// Ustrd of typestring
+        /// [XOR] This element can be:
+        /// Strd (Structured) of type StructuredLongPostalAddress1 
+        /// Ustrd (Unstructured) of type string 
         /// </summary>
         [XmlElementAttribute("Strd", typeof(StructuredLongPostalAddress1), Order=0)]
         [XmlElementAttribute("Ustrd", typeof(string), Order=0)]
@@ -250,12 +260,13 @@ namespace i20022.camt02800101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>StructuredLongPostalAddress1</b> (Structured Long Postal Address 1).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:camt.028.001.01")]
-    public class StructuredLongPostalAddress1 {
+    public class StructuredLongPostalAddress1
+    {
         
         /// <summary>
         /// Element <b>BldgNm</b> (Building Name) of type string.
@@ -300,7 +311,7 @@ namespace i20022.camt02800101 {
         public string RgnId;
         
         /// <summary>
-        /// Element <b>Stat</b> (Stat) of type string.
+        /// Element <b>Stat</b> (State) of type string.
         /// </summary>
         [XmlElementAttribute(Order=7)]
         public string Stat;
@@ -324,19 +335,20 @@ namespace i20022.camt02800101 {
         public string PstCdId;
         
         /// <summary>
-        /// Element <b>POB</b> (POB) of type string.
+        /// Element <b>POB</b> (PostOfficeBox) of type string.
         /// </summary>
         [XmlElementAttribute(Order=11)]
         public string POB;
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>GenericIdentification1</b> (Generic Identification 1).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:camt.028.001.01")]
-    public class GenericIdentification1 {
+    public class GenericIdentification1
+    {
         
         /// <summary>
         /// Element <b>Id</b> (Identification) of type string.
@@ -358,12 +370,13 @@ namespace i20022.camt02800101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>Intermediary1</b> (Intermediary 1).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:camt.028.001.01")]
-    public class Intermediary1 {
+    public class Intermediary1
+    {
         
         /// <summary>
         /// Element <b>Id</b> (Identification) of type PartyIdentification1Choice.
@@ -385,12 +398,13 @@ namespace i20022.camt02800101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>EquivalentAmount</b> (Equivalent Amount).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:camt.028.001.01")]
-    public class EquivalentAmount {
+    public class EquivalentAmount
+    {
         
         /// <summary>
         /// Element <b>Amt</b> (Amount) of type CurrencyAndAmount.
@@ -406,39 +420,41 @@ namespace i20022.camt02800101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>CurrencyAndAmount</b> (Currency And Amount).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:camt.028.001.01")]
-    public class CurrencyAndAmount {
+    public class CurrencyAndAmount
+    {
         
         /// <summary>
         /// Element <b>Ccy</b> (Currency) of type string.
         /// </summary>
-        [XmlAttributeAttribute()]
+        [System.Xml.Serialization.XmlAttributeAttribute()]
         public string Ccy;
         
         /// <summary>
         /// Element <b>Value</b> (Value) of type decimal.
         /// </summary>
-        [XmlTextAttribute()]
+        [System.Xml.Serialization.XmlTextAttribute()]
         public decimal Value;
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>AmountType1Choice</b> (Amount Type 1Choice).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:camt.028.001.01")]
-    public class AmountType1Choice {
+    public class AmountType1Choice
+    {
         
         /// <summary>
         /// Element <b>Item</b> (Item) of type object.
-        /// This element can be:
-        /// EqvtAmt of typeEquivalentAmount
-        /// InstdAmt of typeCurrencyAndAmount
+        /// [XOR] This element can be:
+        /// EqvtAmt (Equivalent Amount) of type EquivalentAmount 
+        /// InstdAmt (Instructed Amount) of type CurrencyAndAmount 
         /// </summary>
         [XmlElementAttribute("EqvtAmt", typeof(EquivalentAmount), Order=0)]
         [XmlElementAttribute("InstdAmt", typeof(CurrencyAndAmount), Order=0)]
@@ -446,12 +462,13 @@ namespace i20022.camt02800101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>BranchData</b> (Branch Data).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:camt.028.001.01")]
-    public class BranchData {
+    public class BranchData
+    {
         
         /// <summary>
         /// Element <b>Id</b> (Identification) of type string.
@@ -473,12 +490,13 @@ namespace i20022.camt02800101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>PostalAddress1</b> (Postal Address 1).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:camt.028.001.01")]
-    public class PostalAddress1 {
+    public class PostalAddress1
+    {
         
         /// <summary>
         /// Element <b>AdrTp</b> (Address Type) of type AddressType2Code.
@@ -489,7 +507,7 @@ namespace i20022.camt02800101 {
         /// <summary>
         /// Element <b>AdrTpSpecified</b> (Address Type Specified) of type bool.
         /// </summary>
-        [XmlIgnoreAttribute()]
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool AdrTpSpecified;
         
         /// <summary>
@@ -536,11 +554,12 @@ namespace i20022.camt02800101 {
     }
     
     /// <summary>
-    /// Enumeration <b>{</b> ({).
+    /// Enumeration <b>AddressType2Code</b> (Address Type 2Code).
     /// </summary>
     [SerializableAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:camt.028.001.01")]
-    public enum AddressType2Code {
+    public enum AddressType2Code
+    {
         
         /// <summary>
         /// <b>ADDR - Postal</b>.
@@ -574,12 +593,13 @@ namespace i20022.camt02800101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>ClearingSystemMemberIdentificationChoice</b> (Clearing System Member Identification Choice).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:camt.028.001.01")]
-    public class ClearingSystemMemberIdentificationChoice {
+    public class ClearingSystemMemberIdentificationChoice
+    {
         
         /// <summary>
         /// Element <b>Item</b> (Item) of type string.
@@ -603,127 +623,129 @@ namespace i20022.camt02800101 {
         [XmlElementAttribute("USCHU", typeof(string), Order=0)]
         [XmlElementAttribute("USFW", typeof(string), Order=0)]
         [XmlElementAttribute("ZANCC", typeof(string), Order=0)]
-        [XmlChoiceIdentifierAttribute("ItemElementName")]
+        [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemElementName")]
         public string Item;
         
         /// <summary>
         /// Element <b>ItemElementName</b> (Item Element Name) of type ItemChoiceType3.
         /// </summary>
         [XmlElementAttribute(Order=1)]
-        [XmlIgnoreAttribute()]
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemChoiceType3 ItemElementName;
     }
     
     /// <summary>
-    /// Enumeration <b>{</b> ({).
+    /// Enumeration <b>ItemChoiceType3</b> (Item Choice Type 3).
     /// </summary>
     [SerializableAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:camt.028.001.01", IncludeInSchema=false)]
-    public enum ItemChoiceType3 {
+    public enum ItemChoiceType3
+    {
         
         /// <summary>
-        /// <b>ATBLZ - ?undefined</b>.
+        /// <b>ATBLZ - Austrian Bankleitzahl Identifier</b>.
         /// </summary>
         ATBLZ,
         
         /// <summary>
-        /// <b>AUBSBs - ?undefined</b>.
+        /// <b>AUBSBs - Small Network Identifier</b>.
         /// </summary>
         AUBSBs,
         
         /// <summary>
-        /// <b>AUBSBx - ?undefined</b>.
+        /// <b>AUBSBx - Extensive Branch Network Identifier</b>.
         /// </summary>
         AUBSBx,
         
         /// <summary>
-        /// <b>CACPA - ?undefined</b>.
+        /// <b>CACPA - Canadian Payments ARN Identifier</b>.
         /// </summary>
         CACPA,
         
         /// <summary>
-        /// <b>CHBC - ?undefined</b>.
+        /// <b>CHBC - Swiss BC Identifier</b>.
         /// </summary>
         CHBC,
         
         /// <summary>
-        /// <b>CHSIC - ?undefined</b>.
+        /// <b>CHSIC - Swiss SIC Identifier</b>.
         /// </summary>
         CHSIC,
         
         /// <summary>
-        /// <b>DEBLZ - ?undefined</b>.
+        /// <b>DEBLZ - German Bankleitzahl Identifier</b>.
         /// </summary>
         DEBLZ,
         
         /// <summary>
-        /// <b>ESNCC - ?undefined</b>.
+        /// <b>ESNCC - Spanish Domestic Interbanking Identifier</b>.
         /// </summary>
         ESNCC,
         
         /// <summary>
-        /// <b>GBSC - ?undefined</b>.
+        /// <b>GBSC - UK Domestic Sort Code Identifier</b>.
         /// </summary>
         GBSC,
         
         /// <summary>
-        /// <b>HKNCC - ?undefined</b>.
+        /// <b>HKNCC - Hong Kong Bank Identifier</b>.
         /// </summary>
         HKNCC,
         
         /// <summary>
-        /// <b>IENSC - ?undefined</b>.
+        /// <b>IENSC - Irish NSC Identifier</b>.
         /// </summary>
         IENSC,
         
         /// <summary>
-        /// <b>ITNCC - ?undefined</b>.
+        /// <b>ITNCC - Italian Domestic Identifier</b>.
         /// </summary>
         ITNCC,
         
         /// <summary>
-        /// <b>NZNCC - ?undefined</b>.
+        /// <b>NZNCC - New Zealand NCC Identifier</b>.
         /// </summary>
         NZNCC,
         
         /// <summary>
-        /// <b>PTNCC - ?undefined</b>.
+        /// <b>PTNCC - Portuguese NCC Identifier</b>.
         /// </summary>
         PTNCC,
         
         /// <summary>
-        /// <b>RUCB - ?undefined</b>.
+        /// <b>RUCB - Russian Central Bank Identification Code Identifier</b>.
         /// </summary>
         RUCB,
         
         /// <summary>
-        /// <b>USCH - ?undefined</b>.
+        /// <b>USCH - CHIPS Participant Identifier</b>.
         /// </summary>
         USCH,
         
         /// <summary>
-        /// <b>USCHU - ?undefined</b>.
+        /// <b>USCHU - CHIPS Universal Identifier</b>.
         /// </summary>
         USCHU,
         
         /// <summary>
-        /// <b>USFW - ?undefined</b>.
+        /// <b>USFW - Fedwire Routing Number Identifier</b>.
         /// </summary>
         USFW,
         
         /// <summary>
-        /// <b>ZANCC - ?undefined</b>.
+        /// <b>ZANCC - South African NCC Identifier</b>.
         /// </summary>
         ZANCC,
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>FinancialInstitutionIdentification1</b> (Financial Institution Identification 1).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:camt.028.001.01")]
-    public class FinancialInstitutionIdentification1 {
+    public class FinancialInstitutionIdentification1
+    {
         
         /// <summary>
         /// Element <b>BIC</b> (BIC) of type string.
@@ -757,12 +779,13 @@ namespace i20022.camt02800101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>GenericIdentification3</b> (Generic Identification 3).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:camt.028.001.01")]
-    public class GenericIdentification3 {
+    public class GenericIdentification3
+    {
         
         /// <summary>
         /// Element <b>Id</b> (Identification) of type string.
@@ -778,12 +801,13 @@ namespace i20022.camt02800101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>BranchAndFinancialInstitutionIdentification</b> (Branch And Financial Institution Identification).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:camt.028.001.01")]
-    public class BranchAndFinancialInstitutionIdentification {
+    public class BranchAndFinancialInstitutionIdentification
+    {
         
         /// <summary>
         /// Element <b>FinInstnId</b> (Financial Institution Identification) of type FinancialInstitutionIdentification1.
@@ -799,71 +823,74 @@ namespace i20022.camt02800101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>AccountIdentification1Choice</b> (Account Identification 1Choice).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:camt.028.001.01")]
-    public class AccountIdentification1Choice {
+    public class AccountIdentification1Choice
+    {
         
         /// <summary>
         /// Element <b>Item</b> (Item) of type object.
-        /// This element can be:
-        /// BBAN of typestring
-        /// DmstAcct of typeSimpleIdentificationInformation
-        /// IBAN of typestring
-        /// UPIC of typestring
+        /// [XOR] This element can be:
+        /// BBAN (BBAN) of type string 
+        /// DmstAcct (Domestic Account) of type SimpleIdentificationInformation 
+        /// IBAN (IBAN) of type string 
+        /// UPIC (UPIC) of type string 
         /// </summary>
         [XmlElementAttribute("BBAN", typeof(string), Order=0)]
         [XmlElementAttribute("DmstAcct", typeof(SimpleIdentificationInformation), Order=0)]
         [XmlElementAttribute("IBAN", typeof(string), Order=0)]
         [XmlElementAttribute("UPIC", typeof(string), Order=0)]
-        [XmlChoiceIdentifierAttribute("ItemElementName")]
+        [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemElementName")]
         public object Item;
         
         /// <summary>
         /// Element <b>ItemElementName</b> (Item Element Name) of type ItemChoiceType2.
         /// </summary>
         [XmlElementAttribute(Order=1)]
-        [XmlIgnoreAttribute()]
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemChoiceType2 ItemElementName;
     }
     
     /// <summary>
-    /// Enumeration <b>{</b> ({).
+    /// Enumeration <b>ItemChoiceType2</b> (Item Choice Type 2).
     /// </summary>
     [SerializableAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:camt.028.001.01", IncludeInSchema=false)]
-    public enum ItemChoiceType2 {
+    public enum ItemChoiceType2
+    {
         
         /// <summary>
-        /// <b>BBAN - ?undefined</b>.
+        /// <b>BBAN - Basic Bank Account Number</b>.
         /// </summary>
         BBAN,
         
         /// <summary>
-        /// <b>DmstAcct - ?undefined</b>.
+        /// <b>DmstAcct - Domestic Account</b>.
         /// </summary>
         DmstAcct,
         
         /// <summary>
-        /// <b>IBAN - ?undefined</b>.
+        /// <b>IBAN - International Bank Account Number</b>.
         /// </summary>
         IBAN,
         
         /// <summary>
-        /// <b>UPIC - ?undefined</b>.
+        /// <b>UPIC - Universal Promotional Identification Code</b>.
         /// </summary>
         UPIC,
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>CashAccount3</b> (Cash Account 3).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:camt.028.001.01")]
-    public class CashAccount3 {
+    public class CashAccount3
+    {
         
         /// <summary>
         /// Element <b>Id</b> (Identification) of type AccountIdentification1Choice.
@@ -880,7 +907,7 @@ namespace i20022.camt02800101 {
         /// <summary>
         /// Element <b>TpSpecified</b> (Type Specified) of type bool.
         /// </summary>
-        [XmlIgnoreAttribute()]
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool TpSpecified;
         
         /// <summary>
@@ -897,14 +924,15 @@ namespace i20022.camt02800101 {
     }
     
     /// <summary>
-    /// Enumeration <b>{</b> ({).
+    /// Enumeration <b>CashAccountType3Code</b> (Cash Account Type 3Code).
     /// </summary>
     [SerializableAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:camt.028.001.01")]
-    public enum CashAccountType3Code {
+    public enum CashAccountType3Code
+    {
         
         /// <summary>
-        /// <b>CASH - Cash Payment</b>.
+        /// <b>CASH - Cash</b>.
         /// </summary>
         CASH,
         
@@ -930,12 +958,13 @@ namespace i20022.camt02800101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>GenericIdentification4</b> (Generic Identification 4).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:camt.028.001.01")]
-    public class GenericIdentification4 {
+    public class GenericIdentification4
+    {
         
         /// <summary>
         /// Element <b>Id</b> (Identification) of type string.
@@ -951,24 +980,25 @@ namespace i20022.camt02800101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>PersonIdentification2</b> (Person Identification 2).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:camt.028.001.01")]
-    public class PersonIdentification2 {
+    public class PersonIdentification2
+    {
         
         /// <summary>
         /// Element <b>Item</b> (Item) of type object.
-        /// This element can be:
-        /// AlnRegnNb of typestring
-        /// DrvrsLicNb of typestring
-        /// IdntyCardNb of typestring
-        /// MplyrIdNb of typestring
-        /// OthrId of typeGenericIdentification4
-        /// PsptNb of typestring
-        /// SclSctyNb of typestring
-        /// TaxIdNb of typestring
+        /// [XOR] This element can be:
+        /// AlnRegnNb (Alien Registration Number) of type string 
+        /// DrvrsLicNb (Drivers License Number) of type string 
+        /// IdntyCardNb (Identity Card Number) of type string 
+        /// MplyrIdNb (Employer Identification Number) of type string 
+        /// OthrId (Other Identification) of type GenericIdentification4 
+        /// PsptNb (Passport Number) of type string 
+        /// SclSctyNb (Social Security Number) of type string 
+        /// TaxIdNb (Tax Identification Number) of type string 
         /// </summary>
         [XmlElementAttribute("AlnRegnNb", typeof(string), Order=0)]
         [XmlElementAttribute("DrvrsLicNb", typeof(string), Order=0)]
@@ -978,14 +1008,14 @@ namespace i20022.camt02800101 {
         [XmlElementAttribute("PsptNb", typeof(string), Order=0)]
         [XmlElementAttribute("SclSctyNb", typeof(string), Order=0)]
         [XmlElementAttribute("TaxIdNb", typeof(string), Order=0)]
-        [XmlChoiceIdentifierAttribute("ItemElementName")]
+        [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemElementName")]
         public object Item;
         
         /// <summary>
         /// Element <b>ItemElementName</b> (Item Element Name) of type ItemChoiceType1.
         /// </summary>
         [XmlElementAttribute(Order=1)]
-        [XmlIgnoreAttribute()]
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemChoiceType1 ItemElementName;
         
         /// <summary>
@@ -996,60 +1026,62 @@ namespace i20022.camt02800101 {
     }
     
     /// <summary>
-    /// Enumeration <b>{</b> ({).
+    /// Enumeration <b>ItemChoiceType1</b> (Item Choice Type 1).
     /// </summary>
     [SerializableAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:camt.028.001.01", IncludeInSchema=false)]
-    public enum ItemChoiceType1 {
+    public enum ItemChoiceType1
+    {
         
         /// <summary>
-        /// <b>AlnRegnNb - ?undefined</b>.
+        /// <b>AlnRegnNb - Alien Registration Number</b>.
         /// </summary>
         AlnRegnNb,
         
         /// <summary>
-        /// <b>DrvrsLicNb - ?undefined</b>.
+        /// <b>DrvrsLicNb - Drivers License Number</b>.
         /// </summary>
         DrvrsLicNb,
         
         /// <summary>
-        /// <b>IdntyCardNb - ?undefined</b>.
+        /// <b>IdntyCardNb - Identity Card Number</b>.
         /// </summary>
         IdntyCardNb,
         
         /// <summary>
-        /// <b>MplyrIdNb - ?undefined</b>.
+        /// <b>MplyrIdNb - Employer Identification Number</b>.
         /// </summary>
         MplyrIdNb,
         
         /// <summary>
-        /// <b>OthrId - ?undefined</b>.
+        /// <b>OthrId - Other Identification</b>.
         /// </summary>
         OthrId,
         
         /// <summary>
-        /// <b>PsptNb - ?undefined</b>.
+        /// <b>PsptNb - Passport Number</b>.
         /// </summary>
         PsptNb,
         
         /// <summary>
-        /// <b>SclSctyNb - ?undefined</b>.
+        /// <b>SclSctyNb - Social Security Number</b>.
         /// </summary>
         SclSctyNb,
         
         /// <summary>
-        /// <b>TaxIdNb - ?undefined</b>.
+        /// <b>TaxIdNb - Tax Identification Number</b>.
         /// </summary>
         TaxIdNb,
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>NonFinancialInstitutionIdentification1</b> (Non Financial Institution Identification 1).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:camt.028.001.01")]
-    public class NonFinancialInstitutionIdentification1 {
+    public class NonFinancialInstitutionIdentification1
+    {
         
         /// <summary>
         /// Element <b>BEI</b> (BEI) of type string.
@@ -1064,7 +1096,7 @@ namespace i20022.camt02800101 {
         public string EANGLN;
         
         /// <summary>
-        /// Element <b>USCHU</b> (USCHU) of type string.
+        /// Element <b>USCHU</b> (CHIPSUniversalIdentification) of type string.
         /// </summary>
         [XmlElementAttribute(Order=2)]
         public string USCHU;
@@ -1095,18 +1127,19 @@ namespace i20022.camt02800101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>Party1Choice</b> (Party 1Choice).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:camt.028.001.01")]
-    public class Party1Choice {
+    public class Party1Choice
+    {
         
         /// <summary>
         /// Element <b>Items</b> (Items) of type array of object.
-        /// This element can be:
-        /// OrgId of typeNonFinancialInstitutionIdentification1
-        /// PrvtId of typePersonIdentification2
+        /// [XOR] This element can be:
+        /// OrgId (Organisation Identification) of type NonFinancialInstitutionIdentification1 
+        /// PrvtId (Private Identification) of type PersonIdentification2 
         /// </summary>
         [XmlElementAttribute("OrgId", typeof(NonFinancialInstitutionIdentification1), Order=0)]
         [XmlElementAttribute("PrvtId", typeof(PersonIdentification2), Order=0)]
@@ -1114,12 +1147,13 @@ namespace i20022.camt02800101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>PartyIdentification1</b> (Party Identification 1).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:camt.028.001.01")]
-    public class PartyIdentification1 {
+    public class PartyIdentification1
+    {
         
         /// <summary>
         /// Element <b>Nm</b> (Name) of type string.
@@ -1141,12 +1175,13 @@ namespace i20022.camt02800101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>ReferredDocumentAmount1Choice</b> (Referred Document Amount 1Choice).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:camt.028.001.01")]
-    public class ReferredDocumentAmount1Choice {
+    public class ReferredDocumentAmount1Choice
+    {
         
         /// <summary>
         /// Element <b>Item</b> (Item) of type CurrencyAndAmount.
@@ -1156,57 +1191,59 @@ namespace i20022.camt02800101 {
         [XmlElementAttribute("DuePyblAmt", typeof(CurrencyAndAmount), Order=0)]
         [XmlElementAttribute("RmtdAmt", typeof(CurrencyAndAmount), Order=0)]
         [XmlElementAttribute("TaxAmt", typeof(CurrencyAndAmount), Order=0)]
-        [XmlChoiceIdentifierAttribute("ItemElementName")]
+        [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemElementName")]
         public CurrencyAndAmount Item;
         
         /// <summary>
         /// Element <b>ItemElementName</b> (Item Element Name) of type ItemChoiceType.
         /// </summary>
         [XmlElementAttribute(Order=1)]
-        [XmlIgnoreAttribute()]
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemChoiceType ItemElementName;
     }
     
     /// <summary>
-    /// Enumeration <b>{</b> ({).
+    /// Enumeration <b>ItemChoiceType</b> (Item Choice Type).
     /// </summary>
     [SerializableAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:camt.028.001.01", IncludeInSchema=false)]
-    public enum ItemChoiceType {
+    public enum ItemChoiceType
+    {
         
         /// <summary>
-        /// <b>CdtNoteAmt - ?undefined</b>.
+        /// <b>CdtNoteAmt - Credit Note Amount</b>.
         /// </summary>
         CdtNoteAmt,
         
         /// <summary>
-        /// <b>DscntApldAmt - ?undefined</b>.
+        /// <b>DscntApldAmt - Discount Applied Amount</b>.
         /// </summary>
         DscntApldAmt,
         
         /// <summary>
-        /// <b>DuePyblAmt - ?undefined</b>.
+        /// <b>DuePyblAmt - Due Payable Amount</b>.
         /// </summary>
         DuePyblAmt,
         
         /// <summary>
-        /// <b>RmtdAmt - ?undefined</b>.
+        /// <b>RmtdAmt - Remitted Amount</b>.
         /// </summary>
         RmtdAmt,
         
         /// <summary>
-        /// <b>TaxAmt - ?undefined</b>.
+        /// <b>TaxAmt - Tax Amount</b>.
         /// </summary>
         TaxAmt,
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>StructuredRemittanceInformation2</b> (Structured Remittance Information 2).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:camt.028.001.01")]
-    public class StructuredRemittanceInformation2 {
+    public class StructuredRemittanceInformation2
+    {
         
         /// <summary>
         /// Element <b>RfrdDocTp</b> (Referred Document Type) of type DocumentType1Code.
@@ -1217,7 +1254,7 @@ namespace i20022.camt02800101 {
         /// <summary>
         /// Element <b>RfrdDocTpSpecified</b> (Referred Document Type Specified) of type bool.
         /// </summary>
-        [XmlIgnoreAttribute()]
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool RfrdDocTpSpecified;
         
         /// <summary>
@@ -1229,7 +1266,7 @@ namespace i20022.camt02800101 {
         /// <summary>
         /// Element <b>RfrdDocRltdDtSpecified</b> (Referred Document Related Date Specified) of type bool.
         /// </summary>
-        [XmlIgnoreAttribute()]
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool RfrdDocRltdDtSpecified;
         
         /// <summary>
@@ -1251,24 +1288,25 @@ namespace i20022.camt02800101 {
         public string CdtrRef;
         
         /// <summary>
-        /// Element <b>Invcr</b> (Invcr) of type PartyIdentification1.
+        /// Element <b>Invcr</b> (Invoicer) of type PartyIdentification1.
         /// </summary>
         [XmlElementAttribute(Order=5)]
         public PartyIdentification1 Invcr;
         
         /// <summary>
-        /// Element <b>Invcee</b> (Invcee) of type PartyIdentification1.
+        /// Element <b>Invcee</b> (Invoicee) of type PartyIdentification1.
         /// </summary>
         [XmlElementAttribute(Order=6)]
         public PartyIdentification1 Invcee;
     }
     
     /// <summary>
-    /// Enumeration <b>{</b> ({).
+    /// Enumeration <b>DocumentType1Code</b> (Document Type 1Code).
     /// </summary>
     [SerializableAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:camt.028.001.01")]
-    public enum DocumentType1Code {
+    public enum DocumentType1Code
+    {
         
         /// <summary>
         /// <b>MSIN - Metered Service Invoice</b>.
@@ -1337,18 +1375,19 @@ namespace i20022.camt02800101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>RemittanceInformation3Choice</b> (Remittance Information 3Choice).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:camt.028.001.01")]
-    public class RemittanceInformation3Choice {
+    public class RemittanceInformation3Choice
+    {
         
         /// <summary>
         /// Element <b>Item</b> (Item) of type object.
-        /// This element can be:
-        /// Strd of typeStructuredRemittanceInformation2
-        /// Ustrd of typestring
+        /// [XOR] This element can be:
+        /// Strd (Structured) of type StructuredRemittanceInformation2 
+        /// Ustrd (Unstructured) of type string 
         /// </summary>
         [XmlElementAttribute("Strd", typeof(StructuredRemittanceInformation2), Order=0)]
         [XmlElementAttribute("Ustrd", typeof(string), Order=0)]
@@ -1356,12 +1395,13 @@ namespace i20022.camt02800101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>PaymentComplementaryInformation</b> (Payment Complementary Information).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:camt.028.001.01")]
-    public class PaymentComplementaryInformation {
+    public class PaymentComplementaryInformation
+    {
         
         /// <summary>
         /// Element <b>RmtChc</b> (Remittance Choice) of type RemittanceInformation3Choice.
@@ -1443,12 +1483,13 @@ namespace i20022.camt02800101 {
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>PaymentInstructionExtract</b> (Payment Instruction Extract).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:camt.028.001.01")]
-    public class PaymentInstructionExtract {
+    public class PaymentInstructionExtract
+    {
         
         /// <summary>
         /// Element <b>AssgnrInstrId</b> (Assigner Instruction Identification) of type string.
@@ -1477,17 +1518,18 @@ namespace i20022.camt02800101 {
         /// <summary>
         /// Element <b>ValDtSpecified</b> (Value Date Specified) of type bool.
         /// </summary>
-        [XmlIgnoreAttribute()]
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool ValDtSpecified;
     }
     
     /// <summary>
-    /// Class <b>{</b> ({).
+    /// Class <b>Case</b> (Case).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
     [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:camt.028.001.01")]
-    public class Case {
+    public class Case
+    {
         
         /// <summary>
         /// Element <b>Id</b> (Identification) of type string.
@@ -1496,7 +1538,7 @@ namespace i20022.camt02800101 {
         public string Id;
         
         /// <summary>
-        /// Element <b>Cretr</b> (Cretr) of type string.
+        /// Element <b>Cretr</b> (Creator) of type string.
         /// </summary>
         [XmlElementAttribute(Order=1)]
         public string Cretr;
@@ -1510,7 +1552,7 @@ namespace i20022.camt02800101 {
         /// <summary>
         /// Element <b>ReopCaseIndctnSpecified</b> (Reopen Case Indication Specified) of type bool.
         /// </summary>
-        [XmlIgnoreAttribute()]
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool ReopCaseIndctnSpecified;
     }
 }
