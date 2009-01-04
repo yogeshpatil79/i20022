@@ -91,7 +91,6 @@ namespace i20022
         private string _errorText;
         private string _messageCode;
         private Type _messageType;
-        private object _instance;
         private string _xml;
 
         #endregion

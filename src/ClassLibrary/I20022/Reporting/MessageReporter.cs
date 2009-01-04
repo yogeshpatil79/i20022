@@ -132,8 +132,9 @@ namespace i20022.Reporting
         /// Traverses the message.
         /// </summary>
         /// <param name="member">The member.</param>
-        /// <param name="concat">The reporting type.</param>
-        /// <param name="indent">The indent value.</param>
+        /// <param name="reportingType">Type of the reporting.</param>
+        /// <param name="concat">The concat.</param>
+        /// <param name="indent">The indent.</param>
         private static void TraverseMessage( IMessageMember member, ReportingType reportingType, ref StringBuilder concat, ref int indent )
         {
 
@@ -289,11 +290,11 @@ namespace i20022.Reporting
 
 
         /// <summary>
-        /// Determines whether [is value tyype] [the specified t].
+        /// Determines whether [is value type] [the specified type].
         /// </summary>
-        /// <param name="t">The t.</param>
+        /// <param name="type">The type.</param>
         /// <returns>
-        /// 	<c>true</c> if [is value tyype] [the specified t]; otherwise, <c>false</c>.
+        /// 	<c>true</c> if [is value tyype] [the specified type]; otherwise, <c>false</c>.
         /// </returns>
         internal static bool IsValueType(Type type)
         {
