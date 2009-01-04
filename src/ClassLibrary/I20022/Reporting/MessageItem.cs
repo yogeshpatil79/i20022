@@ -61,7 +61,7 @@ namespace i20022.Reporting
 
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Item"/> class.
+        /// Initializes a new instance of the <see cref="MessageItem"/> class.
         /// </summary>
         protected MessageItem()
         {
@@ -69,7 +69,7 @@ namespace i20022.Reporting
 
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Item"/> class.
+        /// Initializes a new instance of the <see cref="MessageItem"/> class.
         /// </summary>
         /// <param name="source">The source.</param>
         public MessageItem(object source)
