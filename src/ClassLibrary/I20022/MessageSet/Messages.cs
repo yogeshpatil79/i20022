@@ -1,4 +1,4 @@
-﻿//                                      ______    ____  
+//                                      ______    ____  
 //                                     |____  | "|__  | 
 //                                      _   | |     | | 
 //                                     | |  | |   __| | 
@@ -125,6 +125,30 @@ namespace i20022.MessageSet
             _messages.Add("seev.006.001.02", new Message("seev.006.001.02", "MeetingInstructionStatusV02"));
             _messages.Add("seev.007.001.02", new Message("seev.007.001.02", "MeetingVoteExecutionConfirmationV02"));
             _messages.Add("seev.008.001.02", new Message("seev.008.001.02", "MeetingResultDisseminationV02"));
+            
+            _messages.Add("seev.009.001.01", new Message("seev.009.001.01", "AgentCANotificationAdviceV01"));
+            _messages.Add("seev.010.001.01", new Message("seev.010.001.01", "AgentCANotificationCancellationRequestV01"));
+            _messages.Add("seev.011.001.01", new Message("seev.011.001.01", "AgentCANotificationStatusAdviceV01"));
+            _messages.Add("seev.012.001.01", new Message("seev.012.001.01", "AgentCAElectionAdviceV01"));
+            _messages.Add("seev.013.001.01", new Message("seev.013.001.01", "AgentCAElectionAmendmentRequestV01"));
+            _messages.Add("seev.014.001.01", new Message("seev.014.001.01", "AgentCAElectionCancellationRequestV01"));
+            _messages.Add("seev.015.001.01", new Message("seev.015.001.01", "AgentCAElectionStatusAdviceV01"));
+            _messages.Add("seev.016.001.01", new Message("seev.016.001.01", "AgentCADistributionBreakdownAdviceV01"));
+            _messages.Add("seev.017.001.01", new Message("seev.017.001.01", "AgentCAGlobalDistributionAuthorisationRequestV01"));
+            _messages.Add("seev.018.001.01", new Message("seev.018.001.01", "AgentCAGlobalDistributionStatusAdviceV01"));
+            _messages.Add("seev.019.001.01", new Message("seev.019.001.01", "AgentCAMovementInstructionV01"));
+            _messages.Add("seev.020.001.01", new Message("seev.020.001.01", "AgentCAMovementCancellationRequestV01"));
+            _messages.Add("seev.021.001.01", new Message("seev.021.001.01", "AgentCAMovementConfirmationV01"));
+            _messages.Add("seev.022.001.01", new Message("seev.022.001.01", "AgentCAMovementStatusAdviceV01"));
+            _messages.Add("seev.023.001.01", new Message("seev.023.001.01", "AgentCAInformationAdviceV01"));
+            _messages.Add("seev.024.001.01", new Message("seev.024.001.01", "AgentCAInformationStatusAdviceV01"));
+            _messages.Add("seev.025.001.01", new Message("seev.025.001.01", "AgentCAStandingInstructionRequestV01"));
+            _messages.Add("seev.026.001.01", new Message("seev.026.001.01", "AgentCAStandingInstructionCancellationRequestV01"));
+            _messages.Add("seev.027.001.01", new Message("seev.027.001.01", "AgentCAStandingInstructionStatusAdviceV01"));
+            _messages.Add("seev.028.001.01", new Message("seev.028.001.01", "AgentCADeactivationInstructionV01"));
+            _messages.Add("seev.029.001.01", new Message("seev.029.001.01", "AgentCADeactivationCancellationRequestV01"));
+            _messages.Add("seev.030.001.01", new Message("seev.030.001.01", "AgentCADeactivationStatusAdviceV01"));            
+            
             _messages.Add("semt.001.001.02", new Message("semt.001.001.02", "SecuritiesMessageRejectionV02"));
             _messages.Add("semt.002.001.02", new Message("semt.002.001.02", "CustodyStatementOfHoldingsV02"));
             _messages.Add("semt.003.001.02", new Message("semt.003.001.02", "AccountingStatementOfHoldingsV02"));
