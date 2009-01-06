@@ -15,5 +15,11 @@ There are two methods of installation:
 
 = Setup Wizard install =
 
+Download the Setup_CoreClassesVVVV.zip (VVVV = version number) archive and 
+
 
 = File Copy install =
+
+
+
+The only thing that you have to make sure of in both cases is that all assembly files (.dll) of this module MUST be located on the same directory.
