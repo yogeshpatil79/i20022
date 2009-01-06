@@ -21,7 +21,7 @@ There are two methods of installation:
 = Setup Wizard Install =
 
 1)Download the {{{Setup_CoreClasses1001.zip}}} (1001 = version number) archive and decompress it to a temporary directory;<br>
-2)Run the setup program Setup1001.msi;<br>
+2)Run the setup program {{{Setup1001.msi}}};<br>
 3)Select a destination directory to the assemblies (.dll);<br>
 4)Choose Everyone.
 
