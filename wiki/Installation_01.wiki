@@ -3,30 +3,30 @@
 
 = Introduction =
 
-The core classes module contain the implementations of the message objects and convenience classes to provide persistence 'todo', transformations and reporting. 
-This page shows how to install this module.
+The core classes module contain the implementation of messages and classes that provide persistence*, transformations and reporting. This page shows how to install this module.
 
 = Pre-requisites =
 
-System Requirements: 
+== System Requirements == 
 Supported Operating Systems: Windows Server 2003; Windows Server 2008; Windows Vista; Windows XP 
 Installed Software: Visual Studio 2008 Enterprise Edition (.NET Framework version 3.5 Service Pack 1)
 
 = Installation =
 
 There are two methods of installation:
-
 * Via Setup Wizard
-* File Copy
+* Via simple File Copy
 
 = Setup Wizard install =
 
-# Download the Setup_CoreClassesVVVV.zip (VVVV = version number) archive and decompress it in a temporary directory.  
-# Run the setup program Setup1001.msi.
-# 
+# Download the Setup_CoreClassesVVVV.zip (VVVV = version number) archive and decompress it to a temporary directory;
+# Run the setup program Setup1001.msi;
+# Select a destination directory to the assemblies (.dll);
+# Choose Everyone.
 
 = File Copy install =
 
+# Download the binVVVV.zip (VVVV = version number) archive and decompress it to the installation directory.
 
 = Remarks =
 
