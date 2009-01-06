@@ -20,7 +20,7 @@ There are two methods of installation:
 
 = Setup Wizard install =
 
-1)Download the Setup_CoreClasses*nnnn*.zip (*nnnn* = version number) archive and decompress it to a temporary directory;
+1)Download the Setup_CoreClasses<b>nnnn</b>.zip (<b>nnnn</b> = version number) archive and decompress it to a temporary directory;
 
 2)Run the setup program Setup1001.msi;
 
