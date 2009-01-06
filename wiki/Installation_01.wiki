@@ -14,8 +14,10 @@ Installed Software: Visual Studio 2008 Enterprise Edition (.NET Framework versio
 = Installation =
 
 There are two methods of installation:
-* Via Setup Wizard
-* Via simple File Copy
+
+* Via Setup Wizard;
+
+* Via simple File Copy.
 
 = Setup Wizard install =
 
