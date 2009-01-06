@@ -15,19 +15,22 @@ Installed Software: Visual Studio 2008 Enterprise Edition (.NET Framework versio
 
 There are two methods of installation:
 
-* Via Setup Wizard;
-* Via simple File Copy.
+  * Via Setup Wizard;
+  * Via simple File Copy.
 
 = Setup Wizard install =
 
-1)Download the Setup_CoreClassesVVVV.zip (VVVV = version number) archive and decompress it to a temporary directory;
+1)Download the Setup_CoreClasses*nnnn*.zip (*nnnn* = version number) archive and decompress it to a temporary directory;
+
 2)Run the setup program Setup1001.msi;
+
 3)Select a destination directory to the assemblies (.dll);
+
 4)Choose Everyone.
 
 = File Copy install =
 
-Download the binVVVV.zip (VVVV = version number) archive and decompress it to the installation directory.
+Download the bin*nnnn*.zip (*nnnn* = version number) archive and decompress it to the installation directory.
 
 = Remarks =
 
