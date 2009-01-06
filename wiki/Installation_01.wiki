@@ -3,7 +3,7 @@
 
 = Introduction =
 
-The core classes module contain the implementation of messages and classes that provide persistence, transformations and reporting. This page shows how to install this module.
+The core classes module contain the implementation of messages and classes that provide persistence^(todo)^, transformations and reporting. This page shows how to install this module.
 
 = Pre-requisites =
 
@@ -15,22 +15,22 @@ Installed Software: Visual Studio 2008 Enterprise Edition (.NET Framework versio
 
 There are two methods of installation:
 
-  * Via Setup Wizard;
-  * Via simple File Copy.
+* Via Setup Wizard;
+* Via simple File Copy.
 
 = Setup Wizard install =
 
-  1 Download the Setup_CoreClassesVVVV.zip (VVVV = version number) archive and decompress it to a temporary directory;
-  2 Run the setup program Setup1001.msi;
-  3 Select a destination directory to the assemblies (.dll);
-  4 Choose Everyone.
+1)Download the Setup_CoreClassesVVVV.zip (VVVV = version number) archive and decompress it to a temporary directory;
+2)Run the setup program Setup1001.msi;
+3)Select a destination directory to the assemblies (.dll);
+4)Choose Everyone.
 
 = File Copy install =
 
-  Download the binVVVV.zip (VVVV = version number) archive and decompress it to the installation directory.
+Download the binVVVV.zip (VVVV = version number) archive and decompress it to the installation directory.
 
 = Remarks =
 
-  1 If your program executes in a directory other that the installation directory, the assemblies must be installed on the GAC (Global Assembly Cache).  This may be done by using the .NET Framework 2.0 Configuration tool located on the Administrative Tools Menu, or by using gacutil.exe (Microsoft^(R)^ .NET Global Assembly Cache Utility);
+1)If your program executes in a directory other that the installation directory, the assemblies must be installed on the GAC (Global Assembly Cache).  This may be done by using the .NET Framework 2.0 Configuration tool located on the Administrative Tools Menu, or by using gacutil.exe (Microsoft^(R)^ .NET Global Assembly Cache Utility);
   
-  2 The only thing that you have to make sure of in both cases is that all assembly files (.dll) of this module MUST be located on the same directory.
+2)The only thing that you have to make sure of in both cases is that all assembly files (.dll) of this module MUST be located on the same directory.
