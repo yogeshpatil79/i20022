@@ -1,0 +1,19 @@
+#summary HOWTO install the class libraries.
+#labels Phase-Deploy
+
+= Introduction =
+
+The class libraries contains the implementations of the message objects and convenience classes to provide transformations and reporting. This page shows how to install this module.
+
+
+= Details =
+
+There are two methods of installation:
+
+* Via Setup Wizard
+* File Copy
+
+= Setup Wizard install =
+
+
+= File Copy install =
