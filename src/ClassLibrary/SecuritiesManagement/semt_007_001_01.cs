@@ -50,113 +50,235 @@ using System.Xml.Serialization;
 
 
 
-namespace i20022.semt00600102
+namespace i20022.semt00700101
 {
     
     
     /// <summary>
     /// <b>Document</b> is the root class of the ISO 20022 message
-    /// with id semt.006.001.02 name StatementOfInvestmentFundTransactionsV02 from Securities Management business area.
+    /// with id semt.007.001.01 name StatementOfInvestmentFundTransactionsCancellationV01 from Securities Management business area.
     /// Repository:R 6.14.4.1 v524 - 8 December 2008
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
-    [XmlRootAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02", IsNullable=false)]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
+    [XmlRootAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01", IsNullable=false)]
     public class Document
     {
         
         /// <summary>
-        /// Element <b>StmtOfInvstmtFndTxsV02</b> (Statement Of Investment Fund Transactions V02) of type StatementOfInvestmentFundTransactionsV02.
+        /// Element <b>semt00700101</b> (semt 00700101) of type semt00700101.
         /// </summary>
-        [XmlElementAttribute(Order=0)]
-        public StatementOfInvestmentFundTransactionsV02 StmtOfInvstmtFndTxsV02;
+        [XmlElementAttribute("semt.007.001.01", Order=0)]
+        public semt00700101 semt00700101;
     }
     
     /// <summary>
-    /// Class <b>StatementOfInvestmentFundTransactionsV02</b> (Statement Of Investment Fund Transactions V02).
+    /// Class <b>semt00700101</b> (semt 00700101).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
-    public class StatementOfInvestmentFundTransactionsV02
+    [XmlTypeAttribute(TypeName="semt.007.001.01", Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
+    public class semt00700101
     {
         
         /// <summary>
-        /// Element <b>MsgId</b> (Message Identification) of type MessageIdentification1.
+        /// Element <b>PrvsRef</b> (Previous Reference) of type AdditionalReference2.
         /// </summary>
         [XmlElementAttribute(Order=0)]
-        public MessageIdentification1 MsgId;
+        public AdditionalReference2 PrvsRef;
         
         /// <summary>
-        /// Element <b>PrvsRef</b> (Previous Reference) of type array of AdditionalReference2.
+        /// Element <b>RltdRef</b> (Related Reference) of type AdditionalReference2.
         /// </summary>
-        [XmlElementAttribute("PrvsRef", Order=1)]
-        public AdditionalReference2[] PrvsRef;
-        
-        /// <summary>
-        /// Element <b>RltdRef</b> (Related Reference) of type array of AdditionalReference2.
-        /// </summary>
-        [XmlElementAttribute("RltdRef", Order=2)]
-        public AdditionalReference2[] RltdRef;
+        [XmlElementAttribute(Order=1)]
+        public AdditionalReference2 RltdRef;
         
         /// <summary>
         /// Element <b>MsgPgntn</b> (Message Pagination) of type Pagination.
         /// </summary>
-        [XmlElementAttribute(Order=3)]
+        [XmlElementAttribute(Order=2)]
         public Pagination MsgPgntn;
         
         /// <summary>
-        /// Element <b>StmtGnlDtls</b> (Statement General Details) of type Statement8.
+        /// Element <b>StmtToBeCanc</b> (Statement To Be Cancelled) of type StatementOfInvestmentFundTransactions1.
         /// </summary>
-        [XmlElementAttribute(Order=4)]
-        public Statement8 StmtGnlDtls;
-        
-        /// <summary>
-        /// Element <b>InvstmtAcctDtls</b> (Investment Account Details) of type InvestmentAccount25.
-        /// </summary>
-        [XmlElementAttribute(Order=5)]
-        public InvestmentAccount25 InvstmtAcctDtls;
-        
-        /// <summary>
-        /// Element <b>TxOnAcct</b> (Transaction On Account) of type array of InvestmentFundTransactionsByFund2.
-        /// </summary>
-        [XmlElementAttribute("TxOnAcct", Order=6)]
-        public InvestmentFundTransactionsByFund2[] TxOnAcct;
-        
-        /// <summary>
-        /// Element <b>SubAcctDtls</b> (Sub Account Details) of type array of SubAccountIdentification6.
-        /// </summary>
-        [XmlElementAttribute("SubAcctDtls", Order=7)]
-        public SubAccountIdentification6[] SubAcctDtls;
-        
-        /// <summary>
-        /// Element <b>Xtnsn</b> (Extension) of type array of Extension1.
-        /// </summary>
-        [XmlElementAttribute("Xtnsn", Order=8)]
-        public Extension1[] Xtnsn;
+        [XmlElementAttribute(Order=3)]
+        public StatementOfInvestmentFundTransactions1 StmtToBeCanc;
     }
     
     /// <summary>
-    /// Class <b>MessageIdentification1</b> (Message Identification 1).
+    /// Class <b>AdditionalReference2</b> (Additional Reference 2).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
-    public class MessageIdentification1
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
+    public class AdditionalReference2
     {
         
         /// <summary>
-        /// Element <b>Id</b> (Identification) of type string.
+        /// Element <b>Ref</b> (Reference) of type string.
         /// </summary>
         [XmlElementAttribute(Order=0)]
-        public string Id;
+        public string Ref;
         
         /// <summary>
-        /// Element <b>CreDtTm</b> (Creation Date Time) of type System.DateTime.
+        /// Element <b>RefIssr</b> (Reference Issuer) of type PartyIdentification1Choice.
         /// </summary>
         [XmlElementAttribute(Order=1)]
-        public System.DateTime CreDtTm;
+        public PartyIdentification1Choice RefIssr;
+        
+        /// <summary>
+        /// Element <b>MsgNm</b> (Message Name) of type string.
+        /// </summary>
+        [XmlElementAttribute(Order=2)]
+        public string MsgNm;
+    }
+    
+    /// <summary>
+    /// Class <b>PartyIdentification1Choice</b> (Party Identification 1Choice).
+    /// </summary>
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
+    public class PartyIdentification1Choice
+    {
+        
+        /// <summary>
+        /// Element <b>Item</b> (Item) of type object.
+        /// [XOR] This element can be:
+        /// BICOrBEI (BIC Or BEI) of type string 
+        /// NmAndAdr (Name And Address) of type NameAndAddress2 
+        /// PrtryId (Proprietary Identification) of type GenericIdentification1 
+        /// </summary>
+        [XmlElementAttribute("BICOrBEI", typeof(string), Order=0)]
+        [XmlElementAttribute("NmAndAdr", typeof(NameAndAddress2), Order=0)]
+        [XmlElementAttribute("PrtryId", typeof(GenericIdentification1), Order=0)]
+        public object Item;
+    }
+    
+    /// <summary>
+    /// Class <b>NameAndAddress2</b> (Name And Address 2).
+    /// </summary>
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
+    public class NameAndAddress2
+    {
+        
+        /// <summary>
+        /// Element <b>Nm</b> (Name) of type string.
+        /// </summary>
+        [XmlElementAttribute(Order=0)]
+        public string Nm;
+        
+        /// <summary>
+        /// Element <b>Adr</b> (Address) of type LongPostalAddress1Choice.
+        /// </summary>
+        [XmlElementAttribute(Order=1)]
+        public LongPostalAddress1Choice Adr;
+    }
+    
+    /// <summary>
+    /// Class <b>LongPostalAddress1Choice</b> (Long Postal Address 1Choice).
+    /// </summary>
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
+    public class LongPostalAddress1Choice
+    {
+        
+        /// <summary>
+        /// Element <b>Item</b> (Item) of type object.
+        /// [XOR] This element can be:
+        /// Strd (Structured) of type StructuredLongPostalAddress1 
+        /// Ustrd (Unstructured) of type string 
+        /// </summary>
+        [XmlElementAttribute("Strd", typeof(StructuredLongPostalAddress1), Order=0)]
+        [XmlElementAttribute("Ustrd", typeof(string), Order=0)]
+        public object Item;
+    }
+    
+    /// <summary>
+    /// Class <b>StructuredLongPostalAddress1</b> (Structured Long Postal Address 1).
+    /// </summary>
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
+    public class StructuredLongPostalAddress1
+    {
+        
+        /// <summary>
+        /// Element <b>BldgNm</b> (Building Name) of type string.
+        /// </summary>
+        [XmlElementAttribute(Order=0)]
+        public string BldgNm;
+        
+        /// <summary>
+        /// Element <b>StrtNm</b> (Street Name) of type string.
+        /// </summary>
+        [XmlElementAttribute(Order=1)]
+        public string StrtNm;
+        
+        /// <summary>
+        /// Element <b>StrtBldgId</b> (Street Building Identification) of type string.
+        /// </summary>
+        [XmlElementAttribute(Order=2)]
+        public string StrtBldgId;
+        
+        /// <summary>
+        /// Element <b>Flr</b> (Floor) of type string.
+        /// </summary>
+        [XmlElementAttribute(Order=3)]
+        public string Flr;
+        
+        /// <summary>
+        /// Element <b>TwnNm</b> (Town Name) of type string.
+        /// </summary>
+        [XmlElementAttribute(Order=4)]
+        public string TwnNm;
+        
+        /// <summary>
+        /// Element <b>DstrctNm</b> (District Name) of type string.
+        /// </summary>
+        [XmlElementAttribute(Order=5)]
+        public string DstrctNm;
+        
+        /// <summary>
+        /// Element <b>RgnId</b> (Region Identification) of type string.
+        /// </summary>
+        [XmlElementAttribute(Order=6)]
+        public string RgnId;
+        
+        /// <summary>
+        /// Element <b>Stat</b> (State) of type string.
+        /// </summary>
+        [XmlElementAttribute(Order=7)]
+        public string Stat;
+        
+        /// <summary>
+        /// Element <b>CtyId</b> (County Identification) of type string.
+        /// </summary>
+        [XmlElementAttribute(Order=8)]
+        public string CtyId;
+        
+        /// <summary>
+        /// Element <b>Ctry</b> (Country) of type string.
+        /// </summary>
+        [XmlElementAttribute(Order=9)]
+        public string Ctry;
+        
+        /// <summary>
+        /// Element <b>PstCdId</b> (Post Code Identification) of type string.
+        /// </summary>
+        [XmlElementAttribute(Order=10)]
+        public string PstCdId;
+        
+        /// <summary>
+        /// Element <b>POB</b> (PostOfficeBox) of type string.
+        /// </summary>
+        [XmlElementAttribute(Order=11)]
+        public string POB;
     }
     
     /// <summary>
@@ -164,7 +286,7 @@ namespace i20022.semt00600102
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
     public class Extension1
     {
         
@@ -186,7 +308,7 @@ namespace i20022.semt00600102
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
     public class AccountIdentification3
     {
         
@@ -214,7 +336,7 @@ namespace i20022.semt00600102
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
     public class AccountIdentification1
     {
         
@@ -230,7 +352,7 @@ namespace i20022.semt00600102
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
     public class SimpleIdentificationInformation
     {
         
@@ -246,7 +368,7 @@ namespace i20022.semt00600102
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
     public class AccountIdentificationAndPurpose
     {
         
@@ -267,7 +389,7 @@ namespace i20022.semt00600102
     /// Enumeration <b>SecuritiesAccountPurposeType1Code</b> (Securities Account Purpose Type 1Code).
     /// </summary>
     [SerializableAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
     public enum SecuritiesAccountPurposeType1Code
     {
         
@@ -307,7 +429,7 @@ namespace i20022.semt00600102
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
     public class AccountIdentificationFormatChoice
     {
         
@@ -325,12 +447,12 @@ namespace i20022.semt00600102
     }
     
     /// <summary>
-    /// Class <b>SubAccountIdentification6</b> (Sub Account Identification 6).
+    /// Class <b>SubAccountIdentification4</b> (Sub Account Identification 4).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
-    public class SubAccountIdentification6
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
+    public class SubAccountIdentification4
     {
         
         /// <summary>
@@ -346,26 +468,26 @@ namespace i20022.semt00600102
         public bool ActvtyInd;
         
         /// <summary>
-        /// Element <b>TxOnSubAcct</b> (Transaction On Sub Account) of type array of InvestmentFundTransactionsByFund2.
+        /// Element <b>TxOnSubAcct</b> (Transaction On Sub Account) of type array of InvestmentFundTransactionsByFund1.
         /// </summary>
         [XmlElementAttribute("TxOnSubAcct", Order=2)]
-        public InvestmentFundTransactionsByFund2[] TxOnSubAcct;
+        public InvestmentFundTransactionsByFund1[] TxOnSubAcct;
     }
     
     /// <summary>
-    /// Class <b>InvestmentFundTransactionsByFund2</b> (Investment Fund Transactions By Fund 2).
+    /// Class <b>InvestmentFundTransactionsByFund1</b> (Investment Fund Transactions By Fund 1).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
-    public class InvestmentFundTransactionsByFund2
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
+    public class InvestmentFundTransactionsByFund1
     {
         
         /// <summary>
-        /// Element <b>Id</b> (Identification) of type SecurityIdentification3Choice.
+        /// Element <b>Id</b> (Identification) of type SecurityIdentification1Choice.
         /// </summary>
         [XmlElementAttribute(Order=0)]
-        public SecurityIdentification3Choice Id;
+        public SecurityIdentification1Choice Id;
         
         /// <summary>
         /// Element <b>Nm</b> (Name) of type string.
@@ -380,16 +502,16 @@ namespace i20022.semt00600102
         public string SplmtryId;
         
         /// <summary>
-        /// Element <b>SctiesForm</b> (Securities Form) of type FormOfSecurity1Code.
+        /// Element <b>Form</b> (Form) of type FormOfSecurity1Code.
         /// </summary>
         [XmlElementAttribute(Order=3)]
-        public FormOfSecurity1Code SctiesForm;
+        public FormOfSecurity1Code Form;
         
         /// <summary>
-        /// Element <b>SctiesFormSpecified</b> (Securities Form Specified) of type bool.
+        /// Element <b>FormSpecified</b> (Form Specified) of type bool.
         /// </summary>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool SctiesFormSpecified;
+        public bool FormSpecified;
         
         /// <summary>
         /// Element <b>ClssTp</b> (Class Type) of type string.
@@ -410,10 +532,10 @@ namespace i20022.semt00600102
         public bool DstrbtnPlcySpecified;
         
         /// <summary>
-        /// Element <b>TxDtls</b> (Transaction Details) of type array of InvestmentFundTransaction3.
+        /// Element <b>TxDtls</b> (Transaction Details) of type array of InvestmentFundTransaction2.
         /// </summary>
         [XmlElementAttribute("TxDtls", Order=6)]
-        public InvestmentFundTransaction3[] TxDtls;
+        public InvestmentFundTransaction2[] TxDtls;
         
         /// <summary>
         /// Element <b>BalByPg</b> (Balance By Page) of type PaginationBalance1.
@@ -423,48 +545,32 @@ namespace i20022.semt00600102
     }
     
     /// <summary>
-    /// Class <b>SecurityIdentification3Choice</b> (Security Identification 3Choice).
+    /// Class <b>SecurityIdentification1Choice</b> (Security Identification 1Choice).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
-    public class SecurityIdentification3Choice
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
+    public class SecurityIdentification1Choice
     {
         
         /// <summary>
         /// Element <b>Item</b> (Item) of type object.
         /// [XOR] This element can be:
-        /// Belgn (Belgian) of type string 
+        /// AltrnId (Alternate Identification) of type AlternateSecurityIdentification1 
         /// Blmbrg (Bloomberg) of type string 
         /// CTA (CTA) of type string 
-        /// CUSIP (CUSIP) of type string 
         /// Cmon (Common) of type string 
-        /// Dtch (Dutch) of type string 
         /// ISIN (ISIN) of type string 
-        /// OthrPrtryId (Other Proprietary Identification) of type AlternateSecurityIdentification1 
-        /// QUICK (QUICK) of type string 
         /// RIC (RIC) of type string 
-        /// SCVM (Sicovam) of type string 
-        /// SEDOL (SEDOL) of type string 
         /// TckrSymb (Ticker Symbol) of type string 
-        /// Vlrn (Valoren) of type string 
-        /// Wrtppr (Wertpapier) of type string 
         /// </summary>
-        [XmlElementAttribute("Belgn", typeof(string), Order=0)]
+        [XmlElementAttribute("AltrnId", typeof(AlternateSecurityIdentification1), Order=0)]
         [XmlElementAttribute("Blmbrg", typeof(string), Order=0)]
         [XmlElementAttribute("CTA", typeof(string), Order=0)]
-        [XmlElementAttribute("CUSIP", typeof(string), Order=0)]
         [XmlElementAttribute("Cmon", typeof(string), Order=0)]
-        [XmlElementAttribute("Dtch", typeof(string), Order=0)]
         [XmlElementAttribute("ISIN", typeof(string), Order=0)]
-        [XmlElementAttribute("OthrPrtryId", typeof(AlternateSecurityIdentification1), Order=0)]
-        [XmlElementAttribute("QUICK", typeof(string), Order=0)]
         [XmlElementAttribute("RIC", typeof(string), Order=0)]
-        [XmlElementAttribute("SCVM", typeof(string), Order=0)]
-        [XmlElementAttribute("SEDOL", typeof(string), Order=0)]
         [XmlElementAttribute("TckrSymb", typeof(string), Order=0)]
-        [XmlElementAttribute("Vlrn", typeof(string), Order=0)]
-        [XmlElementAttribute("Wrtppr", typeof(string), Order=0)]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemElementName")]
         public object Item;
         
@@ -481,7 +587,7 @@ namespace i20022.semt00600102
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
     public class AlternateSecurityIdentification1
     {
         
@@ -511,7 +617,7 @@ namespace i20022.semt00600102
     /// Enumeration <b>ItemChoiceType1</b> (Item Choice Type 1).
     /// </summary>
     [SerializableAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02", IncludeInSchema=false)]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01", IncludeInSchema=false)]
     public enum ItemChoiceType1
     {
         
@@ -530,14 +636,14 @@ namespace i20022.semt00600102
     /// Enumeration <b>ItemChoiceType2</b> (Item Choice Type 2).
     /// </summary>
     [SerializableAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02", IncludeInSchema=false)]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01", IncludeInSchema=false)]
     public enum ItemChoiceType2
     {
         
         /// <summary>
-        /// <b>Belgn - Belgiam</b>.
+        /// <b>AltrnId - Alternate Identification</b>.
         /// </summary>
-        Belgn,
+        AltrnId,
         
         /// <summary>
         /// <b>Blmbrg - Bloomberg Symbol</b>.
@@ -550,19 +656,9 @@ namespace i20022.semt00600102
         CTA,
         
         /// <summary>
-        /// <b>CUSIP - Committee on Uniform Security Identification Procedures</b>.
-        /// </summary>
-        CUSIP,
-        
-        /// <summary>
         /// <b>Cmon - Common</b>.
         /// </summary>
         Cmon,
-        
-        /// <summary>
-        /// <b>Dtch - Dutch</b>.
-        /// </summary>
-        Dtch,
         
         /// <summary>
         /// <b>ISIN - International Securities Identification Number</b>.
@@ -570,51 +666,21 @@ namespace i20022.semt00600102
         ISIN,
         
         /// <summary>
-        /// <b>OthrPrtryId - Other Proprietary Identification</b>.
-        /// </summary>
-        OthrPrtryId,
-        
-        /// <summary>
-        /// <b>QUICK - QUICK Security Id</b>.
-        /// </summary>
-        QUICK,
-        
-        /// <summary>
         /// <b>RIC - RIC Security Id</b>.
         /// </summary>
         RIC,
         
         /// <summary>
-        /// <b>SCVM - Sicovam</b>.
-        /// </summary>
-        SCVM,
-        
-        /// <summary>
-        /// <b>SEDOL - Stock Exchange Daily Official List</b>.
-        /// </summary>
-        SEDOL,
-        
-        /// <summary>
         /// <b>TckrSymb - Ticker Symbol</b>.
         /// </summary>
         TckrSymb,
-        
-        /// <summary>
-        /// <b>Vlrn - Valoren</b>.
-        /// </summary>
-        Vlrn,
-        
-        /// <summary>
-        /// <b>Wrtppr - Wertpapier</b>.
-        /// </summary>
-        Wrtppr,
     }
     
     /// <summary>
     /// Enumeration <b>FormOfSecurity1Code</b> (Form Of Security 1Code).
     /// </summary>
     [SerializableAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
     public enum FormOfSecurity1Code
     {
         
@@ -633,7 +699,7 @@ namespace i20022.semt00600102
     /// Enumeration <b>DistributionPolicy1Code</b> (Distribution Policy 1Code).
     /// </summary>
     [SerializableAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
     public enum DistributionPolicy1Code
     {
         
@@ -649,40 +715,28 @@ namespace i20022.semt00600102
     }
     
     /// <summary>
-    /// Class <b>InvestmentFundTransaction3</b> (Investment Fund Transaction 3).
+    /// Class <b>InvestmentFundTransaction2</b> (Investment Fund Transaction 2).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
-    public class InvestmentFundTransaction3
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
+    public class InvestmentFundTransaction2
     {
         
         /// <summary>
         /// Element <b>Item</b> (Item) of type object.
         /// [XOR] This element can be:
-        /// CorpActnEvtTp (Corporate Action Event Type) of type CorporateActionEventType1Code 
-        /// TxTp (Transaction Type) of type TransactionType2Code 
-        /// XtndedCorpActnEvtTp (Extended Corporate Action Event Type) of type string 
-        /// XtndedTxTp (Extended Transaction Type) of type string 
+        /// CorpActnEvtTp (Corporate Action Event Type) of type CorporateActionEventType1CodeChoice 
+        /// TxTp (Transaction Type) of type TransactionType1CodeChoice 
         /// </summary>
-        [XmlElementAttribute("CorpActnEvtTp", typeof(CorporateActionEventType1Code), Order=0)]
-        [XmlElementAttribute("TxTp", typeof(TransactionType2Code), Order=0)]
-        [XmlElementAttribute("XtndedCorpActnEvtTp", typeof(string), Order=0)]
-        [XmlElementAttribute("XtndedTxTp", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemElementName")]
+        [XmlElementAttribute("CorpActnEvtTp", typeof(CorporateActionEventType1CodeChoice), Order=0)]
+        [XmlElementAttribute("TxTp", typeof(TransactionType1CodeChoice), Order=0)]
         public object Item;
-        
-        /// <summary>
-        /// Element <b>ItemElementName</b> (Item Element Name) of type ItemChoiceType3.
-        /// </summary>
-        [XmlElementAttribute(Order=1)]
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public ItemChoiceType3 ItemElementName;
         
         /// <summary>
         /// Element <b>BookgSts</b> (Booking Status) of type TransactionStatus1Code.
         /// </summary>
-        [XmlElementAttribute(Order=2)]
+        [XmlElementAttribute(Order=1)]
         public TransactionStatus1Code BookgSts;
         
         /// <summary>
@@ -694,43 +748,37 @@ namespace i20022.semt00600102
         /// <summary>
         /// Element <b>MstrRef</b> (Master Reference) of type string.
         /// </summary>
-        [XmlElementAttribute(Order=3)]
+        [XmlElementAttribute(Order=2)]
         public string MstrRef;
         
         /// <summary>
         /// Element <b>OrdrRef</b> (Order Reference) of type string.
         /// </summary>
-        [XmlElementAttribute(Order=4)]
+        [XmlElementAttribute(Order=3)]
         public string OrdrRef;
-        
-        /// <summary>
-        /// Element <b>ClntRef</b> (Client Reference) of type string.
-        /// </summary>
-        [XmlElementAttribute(Order=5)]
-        public string ClntRef;
         
         /// <summary>
         /// Element <b>DealRef</b> (Deal Reference) of type string.
         /// </summary>
-        [XmlElementAttribute(Order=6)]
+        [XmlElementAttribute(Order=4)]
         public string DealRef;
         
         /// <summary>
         /// Element <b>LegId</b> (Leg Identification) of type string.
         /// </summary>
-        [XmlElementAttribute(Order=7)]
+        [XmlElementAttribute(Order=5)]
         public string LegId;
         
         /// <summary>
         /// Element <b>LegExctnId</b> (Leg Execution Identification) of type string.
         /// </summary>
-        [XmlElementAttribute(Order=8)]
+        [XmlElementAttribute(Order=6)]
         public string LegExctnId;
         
         /// <summary>
         /// Element <b>OrdrDtTm</b> (Order Date Time) of type System.DateTime.
         /// </summary>
-        [XmlElementAttribute(Order=9)]
+        [XmlElementAttribute(Order=7)]
         public System.DateTime OrdrDtTm;
         
         /// <summary>
@@ -742,31 +790,31 @@ namespace i20022.semt00600102
         /// <summary>
         /// Element <b>SttldTxInd</b> (Settled Transaction Indicator) of type bool.
         /// </summary>
-        [XmlElementAttribute(Order=10)]
+        [XmlElementAttribute(Order=8)]
         public bool SttldTxInd;
         
         /// <summary>
         /// Element <b>RegdTxInd</b> (Registered Transaction Indicator) of type bool.
         /// </summary>
-        [XmlElementAttribute(Order=11)]
+        [XmlElementAttribute(Order=9)]
         public bool RegdTxInd;
         
         /// <summary>
         /// Element <b>UnitsQty</b> (Units Quantity) of type FinancialInstrumentQuantity1.
         /// </summary>
-        [XmlElementAttribute(Order=12)]
+        [XmlElementAttribute(Order=10)]
         public FinancialInstrumentQuantity1 UnitsQty;
         
         /// <summary>
         /// Element <b>CdtDbt</b> (Credit Debit) of type CreditDebitCode.
         /// </summary>
-        [XmlElementAttribute(Order=13)]
+        [XmlElementAttribute(Order=11)]
         public CreditDebitCode CdtDbt;
         
         /// <summary>
         /// Element <b>Rvsl</b> (Reversal) of type ReversalCode.
         /// </summary>
-        [XmlElementAttribute(Order=14)]
+        [XmlElementAttribute(Order=12)]
         public ReversalCode Rvsl;
         
         /// <summary>
@@ -776,15 +824,15 @@ namespace i20022.semt00600102
         public bool RvslSpecified;
         
         /// <summary>
-        /// Element <b>SttlmAmt</b> (Settlement Amount) of type ActiveCurrencyAndAmount.
+        /// Element <b>GrssSttlmAmt</b> (Gross Settlement Amount) of type ActiveCurrencyAndAmount.
         /// </summary>
-        [XmlElementAttribute(Order=15)]
-        public ActiveCurrencyAndAmount SttlmAmt;
+        [XmlElementAttribute(Order=13)]
+        public ActiveCurrencyAndAmount GrssSttlmAmt;
         
         /// <summary>
         /// Element <b>SttlmDt</b> (Settlement Date) of type System.DateTime.
         /// </summary>
-        [XmlElementAttribute(DataType="date", Order=16)]
+        [XmlElementAttribute(DataType="date", Order=14)]
         public System.DateTime SttlmDt;
         
         /// <summary>
@@ -796,33 +844,53 @@ namespace i20022.semt00600102
         /// <summary>
         /// Element <b>TradDtTm</b> (Trade Date Time) of type DateAndDateTimeChoice.
         /// </summary>
-        [XmlElementAttribute(Order=17)]
+        [XmlElementAttribute(Order=15)]
         public DateAndDateTimeChoice TradDtTm;
         
         /// <summary>
         /// Element <b>CumDvddInd</b> (Cum Dividend Indicator) of type bool.
         /// </summary>
-        [XmlElementAttribute(Order=18)]
+        [XmlElementAttribute(Order=16)]
         public bool CumDvddInd;
         
         /// <summary>
         /// Element <b>PrtlyExctdInd</b> (Partially Executed Indicator) of type bool.
         /// </summary>
-        [XmlElementAttribute(Order=19)]
+        [XmlElementAttribute(Order=17)]
         public bool PrtlyExctdInd;
         
         /// <summary>
-        /// Element <b>PricDtls</b> (Price Details) of type UnitPrice11.
+        /// Element <b>PricDtls</b> (Price Details) of type UnitPrice1.
         /// </summary>
-        [XmlElementAttribute(Order=20)]
-        public UnitPrice11 PricDtls;
+        [XmlElementAttribute(Order=18)]
+        public UnitPrice1 PricDtls;
+    }
+    
+    /// <summary>
+    /// Class <b>CorporateActionEventType1CodeChoice</b> (Corporate Action Event Type 1Code Choice).
+    /// </summary>
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
+    public class CorporateActionEventType1CodeChoice
+    {
+        
+        /// <summary>
+        /// Element <b>Item</b> (Item) of type object.
+        /// [XOR] This element can be:
+        /// Strd (Structured) of type CorporateActionEventType1Code 
+        /// Ustrd (Unstructured) of type string 
+        /// </summary>
+        [XmlElementAttribute("Strd", typeof(CorporateActionEventType1Code), Order=0)]
+        [XmlElementAttribute("Ustrd", typeof(string), Order=0)]
+        public object Item;
     }
     
     /// <summary>
     /// Enumeration <b>CorporateActionEventType1Code</b> (Corporate Action Event Type 1Code).
     /// </summary>
     [SerializableAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
     public enum CorporateActionEventType1Code
     {
         
@@ -928,10 +996,30 @@ namespace i20022.semt00600102
     }
     
     /// <summary>
+    /// Class <b>TransactionType1CodeChoice</b> (Transaction Type 1Code Choice).
+    /// </summary>
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
+    public class TransactionType1CodeChoice
+    {
+        
+        /// <summary>
+        /// Element <b>Item</b> (Item) of type object.
+        /// [XOR] This element can be:
+        /// Strd (Structured) of type TransactionType2Code 
+        /// Ustrd (Unstructured) of type string 
+        /// </summary>
+        [XmlElementAttribute("Strd", typeof(TransactionType2Code), Order=0)]
+        [XmlElementAttribute("Ustrd", typeof(string), Order=0)]
+        public object Item;
+    }
+    
+    /// <summary>
     /// Enumeration <b>TransactionType2Code</b> (Transaction Type 2Code).
     /// </summary>
     [SerializableAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
     public enum TransactionType2Code
     {
         
@@ -987,39 +1075,10 @@ namespace i20022.semt00600102
     }
     
     /// <summary>
-    /// Enumeration <b>ItemChoiceType3</b> (Item Choice Type 3).
-    /// </summary>
-    [SerializableAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02", IncludeInSchema=false)]
-    public enum ItemChoiceType3
-    {
-        
-        /// <summary>
-        /// <b>CorpActnEvtTp - Corporate Action Event Type</b>.
-        /// </summary>
-        CorpActnEvtTp,
-        
-        /// <summary>
-        /// <b>TxTp - Transaction Type</b>.
-        /// </summary>
-        TxTp,
-        
-        /// <summary>
-        /// <b>XtndedCorpActnEvtTp - Extended Corporate Action Event Type</b>.
-        /// </summary>
-        XtndedCorpActnEvtTp,
-        
-        /// <summary>
-        /// <b>XtndedTxTp - Extended Transaction Type</b>.
-        /// </summary>
-        XtndedTxTp,
-    }
-    
-    /// <summary>
     /// Enumeration <b>TransactionStatus1Code</b> (Transaction Status 1Code).
     /// </summary>
     [SerializableAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
     public enum TransactionStatus1Code
     {
         
@@ -1044,7 +1103,7 @@ namespace i20022.semt00600102
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
     public class FinancialInstrumentQuantity1
     {
         
@@ -1059,7 +1118,7 @@ namespace i20022.semt00600102
     /// Enumeration <b>CreditDebitCode</b> (Credit Debit Code).
     /// </summary>
     [SerializableAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
     public enum CreditDebitCode
     {
         
@@ -1078,7 +1137,7 @@ namespace i20022.semt00600102
     /// Enumeration <b>ReversalCode</b> (Reversal Code).
     /// </summary>
     [SerializableAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
     public enum ReversalCode
     {
         
@@ -1098,7 +1157,7 @@ namespace i20022.semt00600102
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
     public class ActiveCurrencyAndAmount
     {
         
@@ -1120,7 +1179,7 @@ namespace i20022.semt00600102
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
     public class DateAndDateTimeChoice
     {
         
@@ -1144,7 +1203,7 @@ namespace i20022.semt00600102
     /// Enumeration <b>ItemChoiceType</b> (Item Choice Type).
     /// </summary>
     [SerializableAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02", IncludeInSchema=false)]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01", IncludeInSchema=false)]
     public enum ItemChoiceType
     {
         
@@ -1160,23 +1219,19 @@ namespace i20022.semt00600102
     }
     
     /// <summary>
-    /// Class <b>UnitPrice11</b> (Unit Price 11).
+    /// Class <b>UnitPrice1</b> (Unit Price 1).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
-    public class UnitPrice11
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
+    public class UnitPrice1
     {
         
         /// <summary>
-        /// Element <b>Item</b> (Item) of type object.
-        /// [XOR] This element can be:
-        /// Tp (Type) of type TypeOfPrice10Code 
-        /// XtndedTp (Extended Type) of type string 
+        /// Element <b>Tp</b> (Type) of type TypeOfPrice2Code.
         /// </summary>
-        [XmlElementAttribute("Tp", typeof(TypeOfPrice10Code), Order=0)]
-        [XmlElementAttribute("XtndedTp", typeof(string), Order=0)]
-        public object Item;
+        [XmlElementAttribute(Order=0)]
+        public TypeOfPrice2Code Tp;
         
         /// <summary>
         /// Element <b>Val</b> (Value) of type PriceValue1.
@@ -1198,11 +1253,11 @@ namespace i20022.semt00600102
     }
     
     /// <summary>
-    /// Enumeration <b>TypeOfPrice10Code</b> (Type Of Price 10 Code).
+    /// Enumeration <b>TypeOfPrice2Code</b> (Type Of Price 2Code).
     /// </summary>
     [SerializableAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
-    public enum TypeOfPrice10Code
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
+    public enum TypeOfPrice2Code
     {
         
         /// <summary>
@@ -1241,6 +1296,11 @@ namespace i20022.semt00600102
         SWNG,
         
         /// <summary>
+        /// <b>OTHR - Other</b>.
+        /// </summary>
+        OTHR,
+        
+        /// <summary>
         /// <b>MIDD - Mid</b>.
         /// </summary>
         MIDD,
@@ -1254,16 +1314,6 @@ namespace i20022.semt00600102
         /// <b>SWIC - Switch</b>.
         /// </summary>
         SWIC,
-        
-        /// <summary>
-        /// <b>DDVR - Daily Dividend Rate</b>.
-        /// </summary>
-        DDVR,
-        
-        /// <summary>
-        /// <b>ACTU - Actual</b>.
-        /// </summary>
-        ACTU,
     }
     
     /// <summary>
@@ -1271,7 +1321,7 @@ namespace i20022.semt00600102
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
     public class PriceValue1
     {
         
@@ -1287,7 +1337,7 @@ namespace i20022.semt00600102
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
     public class ActiveCurrencyAnd13DecimalAmount
     {
         
@@ -1308,7 +1358,7 @@ namespace i20022.semt00600102
     /// Enumeration <b>PriceMethod1Code</b> (Price Method 1Code).
     /// </summary>
     [SerializableAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
     public enum PriceMethod1Code
     {
         
@@ -1328,7 +1378,7 @@ namespace i20022.semt00600102
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
     public class PaginationBalance1
     {
         
@@ -1341,11 +1391,11 @@ namespace i20022.semt00600102
         public FinancialInstrumentQuantity1 Item;
         
         /// <summary>
-        /// Element <b>ItemElementName</b> (Item Element Name) of type ItemChoiceType4.
+        /// Element <b>ItemElementName</b> (Item Element Name) of type ItemChoiceType3.
         /// </summary>
         [XmlElementAttribute(Order=1)]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public ItemChoiceType4 ItemElementName;
+        public ItemChoiceType3 ItemElementName;
         
         /// <summary>
         /// Element <b>Item1</b> (Item 1) of type FinancialInstrumentQuantity1.
@@ -1364,11 +1414,11 @@ namespace i20022.semt00600102
     }
     
     /// <summary>
-    /// Enumeration <b>ItemChoiceType4</b> (Item Choice Type 4).
+    /// Enumeration <b>ItemChoiceType3</b> (Item Choice Type 3).
     /// </summary>
     [SerializableAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02", IncludeInSchema=false)]
-    public enum ItemChoiceType4
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01", IncludeInSchema=false)]
+    public enum ItemChoiceType3
     {
         
         /// <summary>
@@ -1386,7 +1436,7 @@ namespace i20022.semt00600102
     /// Enumeration <b>Item1ChoiceType</b> (Item 1Choice Type).
     /// </summary>
     [SerializableAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02", IncludeInSchema=false)]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01", IncludeInSchema=false)]
     public enum Item1ChoiceType
     {
         
@@ -1402,12 +1452,12 @@ namespace i20022.semt00600102
     }
     
     /// <summary>
-    /// Class <b>Account7</b> (Account 7).
+    /// Class <b>Account1</b> (Account 1).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
-    public class Account7
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
+    public class Account1
     {
         
         /// <summary>
@@ -1417,280 +1467,47 @@ namespace i20022.semt00600102
         public AccountIdentification1 Id;
         
         /// <summary>
-        /// Element <b>AcctSvcr</b> (Account Servicer) of type PartyIdentification2Choice.
+        /// Element <b>AcctSvcr</b> (Account Servicer) of type PartyIdentification1Choice.
         /// </summary>
         [XmlElementAttribute(Order=1)]
-        public PartyIdentification2Choice AcctSvcr;
+        public PartyIdentification1Choice AcctSvcr;
     }
     
     /// <summary>
-    /// Class <b>PartyIdentification2Choice</b> (Party Identification 2Choice).
+    /// Class <b>Intermediary1</b> (Intermediary 1).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
-    public class PartyIdentification2Choice
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
+    public class Intermediary1
     {
         
         /// <summary>
-        /// Element <b>Item</b> (Item) of type object.
-        /// [XOR] This element can be:
-        /// BICOrBEI (BIC Or BEI) of type string 
-        /// NmAndAdr (Name And Address) of type NameAndAddress5 
-        /// PrtryId (Proprietary Identification) of type GenericIdentification1 
-        /// </summary>
-        [XmlElementAttribute("BICOrBEI", typeof(string), Order=0)]
-        [XmlElementAttribute("NmAndAdr", typeof(NameAndAddress5), Order=0)]
-        [XmlElementAttribute("PrtryId", typeof(GenericIdentification1), Order=0)]
-        public object Item;
-    }
-    
-    /// <summary>
-    /// Class <b>NameAndAddress5</b> (Name And Address 5).
-    /// </summary>
-    [SerializableAttribute()]
-    [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
-    public class NameAndAddress5
-    {
-        
-        /// <summary>
-        /// Element <b>Nm</b> (Name) of type string.
+        /// Element <b>Id</b> (Identification) of type PartyIdentification1Choice.
         /// </summary>
         [XmlElementAttribute(Order=0)]
-        public string Nm;
+        public PartyIdentification1Choice Id;
         
         /// <summary>
-        /// Element <b>Adr</b> (Address) of type PostalAddress1.
+        /// Element <b>Acct</b> (Account) of type Account1.
         /// </summary>
         [XmlElementAttribute(Order=1)]
-        public PostalAddress1 Adr;
-    }
-    
-    /// <summary>
-    /// Class <b>PostalAddress1</b> (Postal Address 1).
-    /// </summary>
-    [SerializableAttribute()]
-    [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
-    public class PostalAddress1
-    {
+        public Account1 Acct;
         
         /// <summary>
-        /// Element <b>AdrTp</b> (Address Type) of type AddressType2Code.
-        /// </summary>
-        [XmlElementAttribute(Order=0)]
-        public AddressType2Code AdrTp;
-        
-        /// <summary>
-        /// Element <b>AdrTpSpecified</b> (Address Type Specified) of type bool.
-        /// </summary>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool AdrTpSpecified;
-        
-        /// <summary>
-        /// Element <b>AdrLine</b> (Address Line) of type array of string.
-        /// </summary>
-        [XmlElementAttribute("AdrLine", Order=1)]
-        public string[] AdrLine;
-        
-        /// <summary>
-        /// Element <b>StrtNm</b> (Street Name) of type string.
+        /// Element <b>Role</b> (Role) of type string.
         /// </summary>
         [XmlElementAttribute(Order=2)]
-        public string StrtNm;
-        
-        /// <summary>
-        /// Element <b>BldgNb</b> (Building Number) of type string.
-        /// </summary>
-        [XmlElementAttribute(Order=3)]
-        public string BldgNb;
-        
-        /// <summary>
-        /// Element <b>PstCd</b> (Post Code) of type string.
-        /// </summary>
-        [XmlElementAttribute(Order=4)]
-        public string PstCd;
-        
-        /// <summary>
-        /// Element <b>TwnNm</b> (Town Name) of type string.
-        /// </summary>
-        [XmlElementAttribute(Order=5)]
-        public string TwnNm;
-        
-        /// <summary>
-        /// Element <b>CtrySubDvsn</b> (Country Sub Division) of type string.
-        /// </summary>
-        [XmlElementAttribute(Order=6)]
-        public string CtrySubDvsn;
-        
-        /// <summary>
-        /// Element <b>Ctry</b> (Country) of type string.
-        /// </summary>
-        [XmlElementAttribute(Order=7)]
-        public string Ctry;
+        public string Role;
     }
     
     /// <summary>
-    /// Enumeration <b>AddressType2Code</b> (Address Type 2Code).
-    /// </summary>
-    [SerializableAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
-    public enum AddressType2Code
-    {
-        
-        /// <summary>
-        /// <b>ADDR - Postal</b>.
-        /// </summary>
-        ADDR,
-        
-        /// <summary>
-        /// <b>PBOX - POBox</b>.
-        /// </summary>
-        PBOX,
-        
-        /// <summary>
-        /// <b>HOME - Residential</b>.
-        /// </summary>
-        HOME,
-        
-        /// <summary>
-        /// <b>BIZZ - Business</b>.
-        /// </summary>
-        BIZZ,
-        
-        /// <summary>
-        /// <b>MLTO - Mail To</b>.
-        /// </summary>
-        MLTO,
-        
-        /// <summary>
-        /// <b>DLVY - Delivery To</b>.
-        /// </summary>
-        DLVY,
-    }
-    
-    /// <summary>
-    /// Class <b>GenericIdentification1</b> (Generic Identification 1).
+    /// Class <b>InvestmentAccount12</b> (Investment Account 12).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
-    public class GenericIdentification1
-    {
-        
-        /// <summary>
-        /// Element <b>Id</b> (Identification) of type string.
-        /// </summary>
-        [XmlElementAttribute(Order=0)]
-        public string Id;
-        
-        /// <summary>
-        /// Element <b>SchmeNm</b> (Scheme Name) of type string.
-        /// </summary>
-        [XmlElementAttribute(Order=1)]
-        public string SchmeNm;
-        
-        /// <summary>
-        /// Element <b>Issr</b> (Issuer) of type string.
-        /// </summary>
-        [XmlElementAttribute(Order=2)]
-        public string Issr;
-    }
-    
-    /// <summary>
-    /// Class <b>Intermediary11</b> (Intermediary 11).
-    /// </summary>
-    [SerializableAttribute()]
-    [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
-    public class Intermediary11
-    {
-        
-        /// <summary>
-        /// Element <b>Id</b> (Identification) of type PartyIdentification2Choice.
-        /// </summary>
-        [XmlElementAttribute(Order=0)]
-        public PartyIdentification2Choice Id;
-        
-        /// <summary>
-        /// Element <b>Acct</b> (Account) of type Account7.
-        /// </summary>
-        [XmlElementAttribute(Order=1)]
-        public Account7 Acct;
-        
-        /// <summary>
-        /// Element <b>Item</b> (Item) of type object.
-        /// [XOR] This element can be:
-        /// Role (Role) of type InvestmentFundRole2Code 
-        /// XtndedRole (Extended Role) of type string 
-        /// </summary>
-        [XmlElementAttribute("Role", typeof(InvestmentFundRole2Code), Order=2)]
-        [XmlElementAttribute("XtndedRole", typeof(string), Order=2)]
-        public object Item;
-    }
-    
-    /// <summary>
-    /// Enumeration <b>InvestmentFundRole2Code</b> (Investment Fund Role 2Code).
-    /// </summary>
-    [SerializableAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
-    public enum InvestmentFundRole2Code
-    {
-        
-        /// <summary>
-        /// <b>FMCO - Fund Management Company</b>.
-        /// </summary>
-        FMCO,
-        
-        /// <summary>
-        /// <b>REGI - Registrar</b>.
-        /// </summary>
-        REGI,
-        
-        /// <summary>
-        /// <b>TRAG - Transfer Agent</b>.
-        /// </summary>
-        TRAG,
-        
-        /// <summary>
-        /// <b>INTR - Intermediary / Interest Payment</b>.
-        /// </summary>
-        INTR,
-        
-        /// <summary>
-        /// <b>DIST - Distribution</b>.
-        /// </summary>
-        DIST,
-        
-        /// <summary>
-        /// <b>CONC - Concentrator</b>.
-        /// </summary>
-        CONC,
-        
-        /// <summary>
-        /// <b>UCL1 - Underlying Client 1</b>.
-        /// </summary>
-        UCL1,
-        
-        /// <summary>
-        /// <b>UCL2 - Underlying Client 2</b>.
-        /// </summary>
-        UCL2,
-        
-        /// <summary>
-        /// <b>TRAN - Transfer Fee</b>.
-        /// </summary>
-        TRAN,
-    }
-    
-    /// <summary>
-    /// Class <b>InvestmentAccount25</b> (Investment Account 25).
-    /// </summary>
-    [SerializableAttribute()]
-    [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
-    public class InvestmentAccount25
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
+    public class InvestmentAccount12
     {
         
         /// <summary>
@@ -1712,16 +1529,16 @@ namespace i20022.semt00600102
         public string Dsgnt;
         
         /// <summary>
-        /// Element <b>IntrmyInf</b> (Intermediary Information) of type array of Intermediary11.
+        /// Element <b>IntrmyInf</b> (Intermediary Information) of type array of Intermediary1.
         /// </summary>
         [XmlElementAttribute("IntrmyInf", Order=3)]
-        public Intermediary11[] IntrmyInf;
+        public Intermediary1[] IntrmyInf;
         
         /// <summary>
-        /// Element <b>AcctSvcr</b> (Account Servicer) of type PartyIdentification2Choice.
+        /// Element <b>AcctSvcr</b> (Account Servicer) of type PartyIdentification1Choice.
         /// </summary>
         [XmlElementAttribute(Order=4)]
-        public PartyIdentification2Choice AcctSvcr;
+        public PartyIdentification1Choice AcctSvcr;
     }
     
     /// <summary>
@@ -1729,7 +1546,7 @@ namespace i20022.semt00600102
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
     public class DatePeriodDetails
     {
         
@@ -1747,12 +1564,12 @@ namespace i20022.semt00600102
     }
     
     /// <summary>
-    /// Class <b>Statement8</b> (Statement 8).
+    /// Class <b>Statement5</b> (Statement 5).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
-    public class Statement8
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
+    public class Statement5
     {
         
         /// <summary>
@@ -1774,10 +1591,10 @@ namespace i20022.semt00600102
         public DateAndDateTimeChoice CreDtTm;
         
         /// <summary>
-        /// Element <b>Frqcy</b> (Frequency) of type EventFrequency1Code.
+        /// Element <b>Frqcy</b> (Frequency) of type Frequency1Code.
         /// </summary>
         [XmlElementAttribute(Order=3)]
-        public EventFrequency1Code Frqcy;
+        public Frequency1Code Frqcy;
         
         /// <summary>
         /// Element <b>FrqcySpecified</b> (Frequency Specified) of type bool.
@@ -1805,11 +1622,11 @@ namespace i20022.semt00600102
     }
     
     /// <summary>
-    /// Enumeration <b>EventFrequency1Code</b> (Event Frequency 1Code).
+    /// Enumeration <b>Frequency1Code</b> (Frequency 1Code).
     /// </summary>
     [SerializableAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
-    public enum EventFrequency1Code
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
+    public enum Frequency1Code
     {
         
         /// <summary>
@@ -1818,34 +1635,19 @@ namespace i20022.semt00600102
         YEAR,
         
         /// <summary>
-        /// <b>SEMI - Semi Annual</b>.
-        /// </summary>
-        SEMI,
-        
-        /// <summary>
-        /// <b>QUTR - Quarterly</b>.
-        /// </summary>
-        QUTR,
-        
-        /// <summary>
-        /// <b>TOMN - Every Two Months</b>.
-        /// </summary>
-        TOMN,
-        
-        /// <summary>
         /// <b>MNTH - Monthly</b>.
         /// </summary>
         MNTH,
         
         /// <summary>
-        /// <b>TWMN - Twice A Month</b>.
+        /// <b>QURT - Quarterly</b>.
         /// </summary>
-        TWMN,
+        QURT,
         
         /// <summary>
-        /// <b>TOWK - Every Two Weeks</b>.
+        /// <b>MIAN - Semi Annual</b>.
         /// </summary>
-        TOWK,
+        MIAN,
         
         /// <summary>
         /// <b>WEEK - Weekly</b>.
@@ -1866,23 +1668,13 @@ namespace i20022.semt00600102
         /// <b>INDA - Intra Day</b>.
         /// </summary>
         INDA,
-        
-        /// <summary>
-        /// <b>OVNG - Overnight</b>.
-        /// </summary>
-        OVNG,
-        
-        /// <summary>
-        /// <b>ONDE - On Demand</b>.
-        /// </summary>
-        ONDE,
     }
     
     /// <summary>
     /// Enumeration <b>StatementUpdateTypeCode</b> (Statement Update Type Code).
     /// </summary>
     [SerializableAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
     public enum StatementUpdateTypeCode
     {
         
@@ -1898,11 +1690,57 @@ namespace i20022.semt00600102
     }
     
     /// <summary>
+    /// Class <b>StatementOfInvestmentFundTransactions1</b> (Statement Of Investment Fund Transactions 1).
+    /// </summary>
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
+    public class StatementOfInvestmentFundTransactions1
+    {
+        
+        /// <summary>
+        /// Element <b>MsgPgntn</b> (Message Pagination) of type Pagination.
+        /// </summary>
+        [XmlElementAttribute(Order=0)]
+        public Pagination MsgPgntn;
+        
+        /// <summary>
+        /// Element <b>StmtGnlDtls</b> (Statement General Details) of type Statement5.
+        /// </summary>
+        [XmlElementAttribute(Order=1)]
+        public Statement5 StmtGnlDtls;
+        
+        /// <summary>
+        /// Element <b>InvstmtAcctDtls</b> (Investment Account Details) of type InvestmentAccount12.
+        /// </summary>
+        [XmlElementAttribute(Order=2)]
+        public InvestmentAccount12 InvstmtAcctDtls;
+        
+        /// <summary>
+        /// Element <b>TxOnAcct</b> (Transaction On Account) of type array of InvestmentFundTransactionsByFund1.
+        /// </summary>
+        [XmlElementAttribute("TxOnAcct", Order=3)]
+        public InvestmentFundTransactionsByFund1[] TxOnAcct;
+        
+        /// <summary>
+        /// Element <b>SubAcctDtls</b> (Sub Account Details) of type SubAccountIdentification4.
+        /// </summary>
+        [XmlElementAttribute(Order=4)]
+        public SubAccountIdentification4 SubAcctDtls;
+        
+        /// <summary>
+        /// Element <b>Xtnsn</b> (Extension) of type array of Extension1.
+        /// </summary>
+        [XmlElementAttribute("Xtnsn", Order=5)]
+        public Extension1[] Xtnsn;
+    }
+    
+    /// <summary>
     /// Class <b>Pagination</b> (Pagination).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
     public class Pagination
     {
         
@@ -1920,176 +1758,30 @@ namespace i20022.semt00600102
     }
     
     /// <summary>
-    /// Class <b>StructuredLongPostalAddress1</b> (Structured Long Postal Address 1).
+    /// Class <b>GenericIdentification1</b> (Generic Identification 1).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
-    public class StructuredLongPostalAddress1
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:xsd:semt.007.001.01")]
+    public class GenericIdentification1
     {
         
         /// <summary>
-        /// Element <b>BldgNm</b> (Building Name) of type string.
+        /// Element <b>Id</b> (Identification) of type string.
         /// </summary>
         [XmlElementAttribute(Order=0)]
-        public string BldgNm;
+        public string Id;
         
         /// <summary>
-        /// Element <b>StrtNm</b> (Street Name) of type string.
+        /// Element <b>SchmeNm</b> (Scheme Name) of type string.
         /// </summary>
         [XmlElementAttribute(Order=1)]
-        public string StrtNm;
+        public string SchmeNm;
         
         /// <summary>
-        /// Element <b>StrtBldgId</b> (Street Building Identification) of type string.
+        /// Element <b>Issr</b> (Issuer) of type string.
         /// </summary>
         [XmlElementAttribute(Order=2)]
-        public string StrtBldgId;
-        
-        /// <summary>
-        /// Element <b>Flr</b> (Floor) of type string.
-        /// </summary>
-        [XmlElementAttribute(Order=3)]
-        public string Flr;
-        
-        /// <summary>
-        /// Element <b>TwnNm</b> (Town Name) of type string.
-        /// </summary>
-        [XmlElementAttribute(Order=4)]
-        public string TwnNm;
-        
-        /// <summary>
-        /// Element <b>DstrctNm</b> (District Name) of type string.
-        /// </summary>
-        [XmlElementAttribute(Order=5)]
-        public string DstrctNm;
-        
-        /// <summary>
-        /// Element <b>RgnId</b> (Region Identification) of type string.
-        /// </summary>
-        [XmlElementAttribute(Order=6)]
-        public string RgnId;
-        
-        /// <summary>
-        /// Element <b>Stat</b> (State) of type string.
-        /// </summary>
-        [XmlElementAttribute(Order=7)]
-        public string Stat;
-        
-        /// <summary>
-        /// Element <b>CtyId</b> (County Identification) of type string.
-        /// </summary>
-        [XmlElementAttribute(Order=8)]
-        public string CtyId;
-        
-        /// <summary>
-        /// Element <b>Ctry</b> (Country) of type string.
-        /// </summary>
-        [XmlElementAttribute(Order=9)]
-        public string Ctry;
-        
-        /// <summary>
-        /// Element <b>PstCdId</b> (Post Code Identification) of type string.
-        /// </summary>
-        [XmlElementAttribute(Order=10)]
-        public string PstCdId;
-        
-        /// <summary>
-        /// Element <b>POB</b> (PostOfficeBox) of type string.
-        /// </summary>
-        [XmlElementAttribute(Order=11)]
-        public string POB;
-    }
-    
-    /// <summary>
-    /// Class <b>LongPostalAddress1Choice</b> (Long Postal Address 1Choice).
-    /// </summary>
-    [SerializableAttribute()]
-    [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
-    public class LongPostalAddress1Choice
-    {
-        
-        /// <summary>
-        /// Element <b>Item</b> (Item) of type object.
-        /// [XOR] This element can be:
-        /// Strd (Structured) of type StructuredLongPostalAddress1 
-        /// Ustrd (Unstructured) of type string 
-        /// </summary>
-        [XmlElementAttribute("Strd", typeof(StructuredLongPostalAddress1), Order=0)]
-        [XmlElementAttribute("Ustrd", typeof(string), Order=0)]
-        public object Item;
-    }
-    
-    /// <summary>
-    /// Class <b>NameAndAddress2</b> (Name And Address 2).
-    /// </summary>
-    [SerializableAttribute()]
-    [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
-    public class NameAndAddress2
-    {
-        
-        /// <summary>
-        /// Element <b>Nm</b> (Name) of type string.
-        /// </summary>
-        [XmlElementAttribute(Order=0)]
-        public string Nm;
-        
-        /// <summary>
-        /// Element <b>Adr</b> (Address) of type LongPostalAddress1Choice.
-        /// </summary>
-        [XmlElementAttribute(Order=1)]
-        public LongPostalAddress1Choice Adr;
-    }
-    
-    /// <summary>
-    /// Class <b>PartyIdentification1Choice</b> (Party Identification 1Choice).
-    /// </summary>
-    [SerializableAttribute()]
-    [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
-    public class PartyIdentification1Choice
-    {
-        
-        /// <summary>
-        /// Element <b>Item</b> (Item) of type object.
-        /// [XOR] This element can be:
-        /// BICOrBEI (BIC Or BEI) of type string 
-        /// NmAndAdr (Name And Address) of type NameAndAddress2 
-        /// PrtryId (Proprietary Identification) of type GenericIdentification1 
-        /// </summary>
-        [XmlElementAttribute("BICOrBEI", typeof(string), Order=0)]
-        [XmlElementAttribute("NmAndAdr", typeof(NameAndAddress2), Order=0)]
-        [XmlElementAttribute("PrtryId", typeof(GenericIdentification1), Order=0)]
-        public object Item;
-    }
-    
-    /// <summary>
-    /// Class <b>AdditionalReference2</b> (Additional Reference 2).
-    /// </summary>
-    [SerializableAttribute()]
-    [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:semt.006.001.02")]
-    public class AdditionalReference2
-    {
-        
-        /// <summary>
-        /// Element <b>Ref</b> (Reference) of type string.
-        /// </summary>
-        [XmlElementAttribute(Order=0)]
-        public string Ref;
-        
-        /// <summary>
-        /// Element <b>RefIssr</b> (Reference Issuer) of type PartyIdentification1Choice.
-        /// </summary>
-        [XmlElementAttribute(Order=1)]
-        public PartyIdentification1Choice RefIssr;
-        
-        /// <summary>
-        /// Element <b>MsgNm</b> (Message Name) of type string.
-        /// </summary>
-        [XmlElementAttribute(Order=2)]
-        public string MsgNm;
+        public string Issr;
     }
 }
