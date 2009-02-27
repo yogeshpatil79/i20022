@@ -57,7 +57,7 @@ namespace i20022.pacs00800101
     /// <summary>
     /// <b>Document</b> is the root class of the ISO 20022 message
     /// with id pacs.008.001.01 name FIToFICustomerCreditTransferV01 from Payments Clearing and Settlement business area.
-    /// Repository:R 6.8.0.1 v492 - 4 July 2008
+    /// Repository:R 6.14.4.1 v524 - 8 December 2008
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
