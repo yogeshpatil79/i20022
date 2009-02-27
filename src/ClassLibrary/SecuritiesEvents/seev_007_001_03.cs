@@ -50,43 +50,43 @@ using System.Xml.Serialization;
 
 
 
-namespace i20022.seev00300102
+namespace i20022.seev00700103
 {
     
     
     /// <summary>
     /// <b>Document</b> is the root class of the ISO 20022 message
-    /// with id seev.003.001.02 name MeetingEntitlementNotificationV02 from Securities Events business area.
+    /// with id seev.007.001.03 name MeetingVoteExecutionConfirmationV03 from Securities Events business area.
     /// Repository:R 6.14.4.1 v524 - 8 December 2008
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.003.001.02")]
-    [XmlRootAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.003.001.02", IsNullable=false)]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.007.001.03")]
+    [XmlRootAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.007.001.03", IsNullable=false)]
     public class Document
     {
         
         /// <summary>
-        /// Element <b>MtgEntitlmntNtfctn</b> (Meeting Entitlement Notification) of type MeetingEntitlementNotificationV02.
+        /// Element <b>MtgVoteExctnConf</b> (Meeting Vote Execution Confirmation) of type MeetingVoteExecutionConfirmationV03.
         /// </summary>
         [XmlElementAttribute(Order=0)]
-        public MeetingEntitlementNotificationV02 MtgEntitlmntNtfctn;
+        public MeetingVoteExecutionConfirmationV03 MtgVoteExctnConf;
     }
     
     /// <summary>
-    /// Class <b>MeetingEntitlementNotificationV02</b> (Meeting Entitlement Notification V02).
+    /// Class <b>MeetingVoteExecutionConfirmationV03</b> (Meeting Vote Execution Confirmation V03).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.003.001.02")]
-    public class MeetingEntitlementNotificationV02
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.007.001.03")]
+    public class MeetingVoteExecutionConfirmationV03
     {
         
         /// <summary>
-        /// Element <b>EntitlmntNtfctnId</b> (Entitlement Notification Identification) of type MessageIdentification1.
+        /// Element <b>Id</b> (Identification) of type MessageIdentification1.
         /// </summary>
         [XmlElementAttribute(Order=0)]
-        public MessageIdentification1 EntitlmntNtfctnId;
+        public MessageIdentification1 Id;
         
         /// <summary>
         /// Element <b>RltdRef</b> (Related Reference) of type MessageIdentification.
@@ -95,28 +95,28 @@ namespace i20022.seev00300102
         public MessageIdentification RltdRef;
         
         /// <summary>
-        /// Element <b>MtgRef</b> (Meeting Reference) of type MeetingReference3.
+        /// Element <b>MtgRef</b> (Meeting Reference) of type MeetingReference4.
         /// </summary>
         [XmlElementAttribute(Order=2)]
-        public MeetingReference3 MtgRef;
+        public MeetingReference4 MtgRef;
         
         /// <summary>
-        /// Element <b>NtifngPty</b> (Notifying Party) of type PartyIdentification9Choice.
+        /// Element <b>RptgPty</b> (Reporting Party) of type PartyIdentification9Choice.
         /// </summary>
         [XmlElementAttribute(Order=3)]
-        public PartyIdentification9Choice NtifngPty;
+        public PartyIdentification9Choice RptgPty;
         
         /// <summary>
-        /// Element <b>Scty</b> (Security) of type array of SecurityPosition5.
+        /// Element <b>SctyId</b> (Security Identification) of type SecurityIdentification11.
         /// </summary>
-        [XmlElementAttribute("Scty", Order=4)]
-        public SecurityPosition5[] Scty;
+        [XmlElementAttribute(Order=4)]
+        public SecurityIdentification11 SctyId;
         
         /// <summary>
-        /// Element <b>Elgblty</b> (Eligibility) of type EligibilityDates1.
+        /// Element <b>VoteInstrs</b> (Vote Instructions) of type array of DetailedInstructionStatus9.
         /// </summary>
-        [XmlElementAttribute(Order=5)]
-        public EligibilityDates1 Elgblty;
+        [XmlElementAttribute("VoteInstrs", Order=5)]
+        public DetailedInstructionStatus9[] VoteInstrs;
     }
     
     /// <summary>
@@ -124,7 +124,7 @@ namespace i20022.seev00300102
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.003.001.02")]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.007.001.03")]
     public class MessageIdentification1
     {
         
@@ -142,348 +142,167 @@ namespace i20022.seev00300102
     }
     
     /// <summary>
-    /// Class <b>EligibilityDates1</b> (Eligibility Dates 1).
+    /// Class <b>Vote4</b> (Vote 4).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.003.001.02")]
-    public class EligibilityDates1
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.007.001.03")]
+    public class Vote4
     {
         
         /// <summary>
-        /// Element <b>EntitlmntFxgDt</b> (Entitlement Fixing Date) of type System.DateTime.
-        /// </summary>
-        [XmlElementAttribute(DataType="date", Order=0)]
-        public System.DateTime EntitlmntFxgDt;
-    }
-    
-    /// <summary>
-    /// Class <b>GenericIdentification5</b> (Generic Identification 5).
-    /// </summary>
-    [SerializableAttribute()]
-    [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.003.001.02")]
-    public class GenericIdentification5
-    {
-        
-        /// <summary>
-        /// Element <b>Issr</b> (Issuer) of type string.
+        /// Element <b>IssrLabl</b> (Issuer Label) of type string.
         /// </summary>
         [XmlElementAttribute(Order=0)]
-        public string Issr;
+        public string IssrLabl;
         
         /// <summary>
-        /// Element <b>Inf</b> (Information) of type string.
+        /// Element <b>For</b> (For) of type decimal.
         /// </summary>
         [XmlElementAttribute(Order=1)]
-        public string Inf;
+        public decimal For;
         
         /// <summary>
-        /// Element <b>Nrrtv</b> (Narrative) of type string.
-        /// </summary>
-        [XmlElementAttribute(Order=2)]
-        public string Nrrtv;
-    }
-    
-    /// <summary>
-    /// Class <b>PartyIdentification3</b> (Party Identification 3).
-    /// </summary>
-    [SerializableAttribute()]
-    [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.003.001.02")]
-    public class PartyIdentification3
-    {
-        
-        /// <summary>
-        /// Element <b>BICOrBEI</b> (BIC Or BEI) of type string.
-        /// </summary>
-        [XmlElementAttribute(Order=0)]
-        public string BICOrBEI;
-    }
-    
-    /// <summary>
-    /// Class <b>SafekeepingPlaceAsCodeAndPartyIdentification</b> (Safekeeping Place As Code And Party Identification).
-    /// </summary>
-    [SerializableAttribute()]
-    [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.003.001.02")]
-    public class SafekeepingPlaceAsCodeAndPartyIdentification
-    {
-        
-        /// <summary>
-        /// Element <b>PlcSfkpg</b> (Place Safekeeping) of type SafekeepingPlace1Code.
-        /// </summary>
-        [XmlElementAttribute(Order=0)]
-        public SafekeepingPlace1Code PlcSfkpg;
-        
-        /// <summary>
-        /// Element <b>Nrrtv</b> (Narrative) of type string.
-        /// </summary>
-        [XmlElementAttribute(Order=1)]
-        public string Nrrtv;
-        
-        /// <summary>
-        /// Element <b>Pty</b> (Party) of type PartyIdentification3.
-        /// </summary>
-        [XmlElementAttribute(Order=2)]
-        public PartyIdentification3 Pty;
-    }
-    
-    /// <summary>
-    /// Enumeration <b>SafekeepingPlace1Code</b> (Safekeeping Place 1Code).
-    /// </summary>
-    [SerializableAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.003.001.02")]
-    public enum SafekeepingPlace1Code
-    {
-        
-        /// <summary>
-        /// <b>CUST - Custodial Account</b>.
-        /// </summary>
-        CUST,
-        
-        /// <summary>
-        /// <b>ICSD - Shares Held At ICSD</b>.
-        /// </summary>
-        ICSD,
-        
-        /// <summary>
-        /// <b>NCSD - Shares Held At NCSD</b>.
-        /// </summary>
-        NCSD,
-        
-        /// <summary>
-        /// <b>SHHE - Shares Held Elsewhere</b>.
-        /// </summary>
-        SHHE,
-    }
-    
-    /// <summary>
-    /// Class <b>SafekeepingPlaceFormatChoice</b> (Safekeeping Place Format Choice).
-    /// </summary>
-    [SerializableAttribute()]
-    [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.003.001.02")]
-    public class SafekeepingPlaceFormatChoice
-    {
-        
-        /// <summary>
-        /// Element <b>Item</b> (Item) of type object.
-        /// [XOR] This element can be:
-        /// Id (Identification) of type SafekeepingPlaceAsCodeAndPartyIdentification 
-        /// IdAsCtry (Identification As Country) of type string 
-        /// IdAsDSS (Identification As DSS) of type GenericIdentification5 
-        /// </summary>
-        [XmlElementAttribute("Id", typeof(SafekeepingPlaceAsCodeAndPartyIdentification), Order=0)]
-        [XmlElementAttribute("IdAsCtry", typeof(string), Order=0)]
-        [XmlElementAttribute("IdAsDSS", typeof(GenericIdentification5), Order=0)]
-        public object Item;
-    }
-    
-    /// <summary>
-    /// Class <b>CurrencyAndAmount</b> (Currency And Amount).
-    /// </summary>
-    [SerializableAttribute()]
-    [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.003.001.02")]
-    public class CurrencyAndAmount
-    {
-        
-        /// <summary>
-        /// Element <b>Ccy</b> (Currency) of type string.
-        /// </summary>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string Ccy;
-        
-        /// <summary>
-        /// Element <b>Value</b> (Value) of type decimal.
-        /// </summary>
-        [System.Xml.Serialization.XmlTextAttribute()]
-        public decimal Value;
-    }
-    
-    /// <summary>
-    /// Class <b>UnitOrFaceAmountChoice</b> (Unit Or Face Amount Choice).
-    /// </summary>
-    [SerializableAttribute()]
-    [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.003.001.02")]
-    public class UnitOrFaceAmountChoice
-    {
-        
-        /// <summary>
-        /// Element <b>Item</b> (Item) of type object.
-        /// [XOR] This element can be:
-        /// FaceAmt (Face Amount) of type CurrencyAndAmount 
-        /// Unit (Unit) of type decimal 
-        /// </summary>
-        [XmlElementAttribute("FaceAmt", typeof(CurrencyAndAmount), Order=0)]
-        [XmlElementAttribute("Unit", typeof(decimal), Order=0)]
-        public object Item;
-    }
-    
-    /// <summary>
-    /// Class <b>HoldingBalance3</b> (Holding Balance 3).
-    /// </summary>
-    [SerializableAttribute()]
-    [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.003.001.02")]
-    public class HoldingBalance3
-    {
-        
-        /// <summary>
-        /// Element <b>Bal</b> (Balance) of type UnitOrFaceAmountChoice.
-        /// </summary>
-        [XmlElementAttribute(Order=0)]
-        public UnitOrFaceAmountChoice Bal;
-        
-        /// <summary>
-        /// Element <b>BalTp</b> (Balance Type) of type SecuritiesEntryType2Code.
-        /// </summary>
-        [XmlElementAttribute(Order=1)]
-        public SecuritiesEntryType2Code BalTp;
-        
-        /// <summary>
-        /// Element <b>BalTpSpecified</b> (Balance Type Specified) of type bool.
+        /// Element <b>ForSpecified</b> (For Specified) of type bool.
         /// </summary>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool BalTpSpecified;
+        public bool ForSpecified;
         
         /// <summary>
-        /// Element <b>SfkpgPlc</b> (Safekeeping Place) of type SafekeepingPlaceFormatChoice.
+        /// Element <b>Agnst</b> (Against) of type decimal.
         /// </summary>
         [XmlElementAttribute(Order=2)]
-        public SafekeepingPlaceFormatChoice SfkpgPlc;
+        public decimal Agnst;
         
         /// <summary>
-        /// Element <b>Dt</b> (Date) of type System.DateTime.
-        /// </summary>
-        [XmlElementAttribute(DataType="date", Order=3)]
-        public System.DateTime Dt;
-        
-        /// <summary>
-        /// Element <b>DtSpecified</b> (Date Specified) of type bool.
+        /// Element <b>AgnstSpecified</b> (Against Specified) of type bool.
         /// </summary>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool DtSpecified;
+        public bool AgnstSpecified;
+        
+        /// <summary>
+        /// Element <b>Abstn</b> (Abstain) of type decimal.
+        /// </summary>
+        [XmlElementAttribute(Order=3)]
+        public decimal Abstn;
+        
+        /// <summary>
+        /// Element <b>AbstnSpecified</b> (Abstain Specified) of type bool.
+        /// </summary>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool AbstnSpecified;
+        
+        /// <summary>
+        /// Element <b>Wthhld</b> (Withhold) of type decimal.
+        /// </summary>
+        [XmlElementAttribute(Order=4)]
+        public decimal Wthhld;
+        
+        /// <summary>
+        /// Element <b>WthhldSpecified</b> (Withhold Specified) of type bool.
+        /// </summary>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool WthhldSpecified;
+        
+        /// <summary>
+        /// Element <b>WthMgmt</b> (With Management) of type decimal.
+        /// </summary>
+        [XmlElementAttribute(Order=5)]
+        public decimal WthMgmt;
+        
+        /// <summary>
+        /// Element <b>WthMgmtSpecified</b> (With Management Specified) of type bool.
+        /// </summary>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool WthMgmtSpecified;
+        
+        /// <summary>
+        /// Element <b>AgnstMgmt</b> (Against Management) of type decimal.
+        /// </summary>
+        [XmlElementAttribute(Order=6)]
+        public decimal AgnstMgmt;
+        
+        /// <summary>
+        /// Element <b>AgnstMgmtSpecified</b> (Against Management Specified) of type bool.
+        /// </summary>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool AgnstMgmtSpecified;
+        
+        /// <summary>
+        /// Element <b>Dscrtnry</b> (Discretionary) of type decimal.
+        /// </summary>
+        [XmlElementAttribute(Order=7)]
+        public decimal Dscrtnry;
+        
+        /// <summary>
+        /// Element <b>DscrtnrySpecified</b> (Discretionary Specified) of type bool.
+        /// </summary>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool DscrtnrySpecified;
+        
+        /// <summary>
+        /// Element <b>NoActn</b> (No Action) of type decimal.
+        /// </summary>
+        [XmlElementAttribute(Order=8)]
+        public decimal NoActn;
+        
+        /// <summary>
+        /// Element <b>NoActnSpecified</b> (No Action Specified) of type bool.
+        /// </summary>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool NoActnSpecified;
     }
     
     /// <summary>
-    /// Enumeration <b>SecuritiesEntryType2Code</b> (Securities Entry Type 2Code).
-    /// </summary>
-    [SerializableAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.003.001.02")]
-    public enum SecuritiesEntryType2Code
-    {
-        
-        /// <summary>
-        /// <b>BLOK - Blocked</b>.
-        /// </summary>
-        BLOK,
-        
-        /// <summary>
-        /// <b>ELIG - Eligible</b>.
-        /// </summary>
-        ELIG,
-        
-        /// <summary>
-        /// <b>PEND - Pending Delivery</b>.
-        /// </summary>
-        PEND,
-        
-        /// <summary>
-        /// <b>PENR - Pending Receipt</b>.
-        /// </summary>
-        PENR,
-        
-        /// <summary>
-        /// <b>NOMI - Nominee</b>.
-        /// </summary>
-        NOMI,
-        
-        /// <summary>
-        /// <b>SETD - Settled</b>.
-        /// </summary>
-        SETD,
-        
-        /// <summary>
-        /// <b>BORR - Borrowed</b>.
-        /// </summary>
-        BORR,
-        
-        /// <summary>
-        /// <b>LOAN - Loan</b>.
-        /// </summary>
-        LOAN,
-        
-        /// <summary>
-        /// <b>SPOS - Street Position</b>.
-        /// </summary>
-        SPOS,
-        
-        /// <summary>
-        /// <b>TRAD - Trade</b>.
-        /// </summary>
-        TRAD,
-        
-        /// <summary>
-        /// <b>COLI - Collateral In</b>.
-        /// </summary>
-        COLI,
-        
-        /// <summary>
-        /// <b>COLO - Collateral Out</b>.
-        /// </summary>
-        COLO,
-        
-        /// <summary>
-        /// <b>UNBA - Uninstructed Balance</b>.
-        /// </summary>
-        UNBA,
-        
-        /// <summary>
-        /// <b>INBA - Instructed Balance</b>.
-        /// </summary>
-        INBA,
-        
-        /// <summary>
-        /// <b>REGO - Out For Registration</b>.
-        /// </summary>
-        REGO,
-    }
-    
-    /// <summary>
-    /// Class <b>EligiblePosition2</b> (Eligible Position 2).
+    /// Class <b>DetailedInstructionStatus9</b> (Detailed Instruction Status 9).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.003.001.02")]
-    public class EligiblePosition2
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.007.001.03")]
+    public class DetailedInstructionStatus9
     {
+        
+        /// <summary>
+        /// Element <b>InstrId</b> (Instruction Identification) of type string.
+        /// </summary>
+        [XmlElementAttribute(Order=0)]
+        public string InstrId;
         
         /// <summary>
         /// Element <b>AcctId</b> (Account Identification) of type string.
         /// </summary>
-        [XmlElementAttribute(Order=0)]
+        [XmlElementAttribute(Order=1)]
         public string AcctId;
         
         /// <summary>
         /// Element <b>AcctOwnr</b> (Account Owner) of type PartyIdentification9Choice.
         /// </summary>
-        [XmlElementAttribute(Order=1)]
+        [XmlElementAttribute(Order=2)]
         public PartyIdentification9Choice AcctOwnr;
         
         /// <summary>
-        /// Element <b>HldgBal</b> (Holding Balance) of type array of HoldingBalance3.
+        /// Element <b>SubAcctId</b> (Sub Account Identification) of type string.
         /// </summary>
-        [XmlElementAttribute("HldgBal", Order=2)]
-        public HoldingBalance3[] HldgBal;
+        [XmlElementAttribute(Order=3)]
+        public string SubAcctId;
         
         /// <summary>
         /// Element <b>RghtsHldr</b> (Rights Holder) of type array of PartyIdentification9Choice.
         /// </summary>
-        [XmlElementAttribute("RghtsHldr", Order=3)]
+        [XmlElementAttribute("RghtsHldr", Order=4)]
         public PartyIdentification9Choice[] RghtsHldr;
+        
+        /// <summary>
+        /// Element <b>StgInstr</b> (Standing Instruction) of type bool.
+        /// </summary>
+        [XmlElementAttribute(Order=5)]
+        public bool StgInstr;
+        
+        /// <summary>
+        /// Element <b>VotePerRsltn</b> (Vote Per Resolution) of type array of Vote4.
+        /// </summary>
+        [XmlElementAttribute("VotePerRsltn", Order=6)]
+        public Vote4[] VotePerRsltn;
     }
     
     /// <summary>
@@ -491,7 +310,7 @@ namespace i20022.seev00300102
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.003.001.02")]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.007.001.03")]
     public class PartyIdentification9Choice
     {
         
@@ -513,7 +332,7 @@ namespace i20022.seev00300102
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.003.001.02")]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.007.001.03")]
     public class NameAndAddress5
     {
         
@@ -535,7 +354,7 @@ namespace i20022.seev00300102
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.003.001.02")]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.007.001.03")]
     public class PostalAddress1
     {
         
@@ -598,7 +417,7 @@ namespace i20022.seev00300102
     /// Enumeration <b>AddressType2Code</b> (Address Type 2Code).
     /// </summary>
     [SerializableAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.003.001.02")]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.007.001.03")]
     public enum AddressType2Code
     {
         
@@ -638,7 +457,7 @@ namespace i20022.seev00300102
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.003.001.02")]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.007.001.03")]
     public class GenericIdentification1
     {
         
@@ -662,19 +481,19 @@ namespace i20022.seev00300102
     }
     
     /// <summary>
-    /// Class <b>AlternateFinancialInstrumentIdentification1</b> (Alternate Financial Instrument Identification 1).
+    /// Class <b>IdentificationSource1Choice</b> (Identification Source 1Choice).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.003.001.02")]
-    public class AlternateFinancialInstrumentIdentification1
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.007.001.03")]
+    public class IdentificationSource1Choice
     {
         
         /// <summary>
         /// Element <b>Item</b> (Item) of type string.
         /// </summary>
-        [XmlElementAttribute("DmstIdSrc", typeof(string), Order=0)]
-        [XmlElementAttribute("PrtryIdSrc", typeof(string), Order=0)]
+        [XmlElementAttribute("Dmst", typeof(string), Order=0)]
+        [XmlElementAttribute("Prtry", typeof(string), Order=0)]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemElementName")]
         public string Item;
         
@@ -684,185 +503,144 @@ namespace i20022.seev00300102
         [XmlElementAttribute(Order=1)]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemChoiceType ItemElementName;
-        
-        /// <summary>
-        /// Element <b>Id</b> (Identification) of type string.
-        /// </summary>
-        [XmlElementAttribute(Order=2)]
-        public string Id;
     }
     
     /// <summary>
     /// Enumeration <b>ItemChoiceType</b> (Item Choice Type).
     /// </summary>
     [SerializableAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.003.001.02", IncludeInSchema=false)]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.007.001.03", IncludeInSchema=false)]
     public enum ItemChoiceType
     {
         
         /// <summary>
-        /// <b>DmstIdSrc - Domestic Identification Source</b>.
+        /// <b>Dmst - Domestic</b>.
         /// </summary>
-        DmstIdSrc,
+        Dmst,
         
         /// <summary>
-        /// <b>PrtryIdSrc - Proprietary Identification Source</b>.
+        /// <b>Prtry - Proprietary</b>.
         /// </summary>
-        PrtryIdSrc,
+        Prtry,
     }
     
     /// <summary>
-    /// Class <b>SecurityIdentification3</b> (Security Identification 3).
+    /// Class <b>AlternateIdentification1</b> (Alternate Identification 1).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.003.001.02")]
-    public class SecurityIdentification3
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.007.001.03")]
+    public class AlternateIdentification1
     {
         
         /// <summary>
-        /// Element <b>ISIN</b> (ISIN) of type string.
+        /// Element <b>Id</b> (Identification) of type string.
         /// </summary>
         [XmlElementAttribute(Order=0)]
-        public string ISIN;
+        public string Id;
         
         /// <summary>
-        /// Element <b>TckrSymb</b> (Ticker Symbol) of type string.
+        /// Element <b>IdSrc</b> (Identification Source) of type IdentificationSource1Choice.
         /// </summary>
         [XmlElementAttribute(Order=1)]
-        public string TckrSymb;
-        
-        /// <summary>
-        /// Element <b>CUSIP</b> (CUSIP) of type string.
-        /// </summary>
-        [XmlElementAttribute(Order=2)]
-        public string CUSIP;
-        
-        /// <summary>
-        /// Element <b>SEDOL</b> (SEDOL) of type string.
-        /// </summary>
-        [XmlElementAttribute(Order=3)]
-        public string SEDOL;
-        
-        /// <summary>
-        /// Element <b>QUICK</b> (QUICK) of type string.
-        /// </summary>
-        [XmlElementAttribute(Order=4)]
-        public string QUICK;
-        
-        /// <summary>
-        /// Element <b>OthrId</b> (Other Identification) of type AlternateFinancialInstrumentIdentification1.
-        /// </summary>
-        [XmlElementAttribute(Order=5)]
-        public AlternateFinancialInstrumentIdentification1 OthrId;
+        public IdentificationSource1Choice IdSrc;
     }
     
     /// <summary>
-    /// Class <b>SecurityPosition5</b> (Security Position 5).
+    /// Class <b>SecurityIdentification11Choice</b> (Security Identification 11 Choice).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.003.001.02")]
-    public class SecurityPosition5
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.007.001.03")]
+    public class SecurityIdentification11Choice
     {
-        
-        /// <summary>
-        /// Element <b>Id</b> (Identification) of type SecurityIdentification3.
-        /// </summary>
-        [XmlElementAttribute(Order=0)]
-        public SecurityIdentification3 Id;
-        
-        /// <summary>
-        /// Element <b>Pos</b> (Position) of type array of EligiblePosition2.
-        /// </summary>
-        [XmlElementAttribute("Pos", Order=1)]
-        public EligiblePosition2[] Pos;
-    }
-    
-    /// <summary>
-    /// Class <b>MeetingReference3</b> (Meeting Reference 3).
-    /// </summary>
-    [SerializableAttribute()]
-    [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.003.001.02")]
-    public class MeetingReference3
-    {
-        
-        /// <summary>
-        /// Element <b>MtgId</b> (Meeting Identification) of type string.
-        /// </summary>
-        [XmlElementAttribute(Order=0)]
-        public string MtgId;
-        
-        /// <summary>
-        /// Element <b>IssrMtgId</b> (Issuer Meeting Identification) of type string.
-        /// </summary>
-        [XmlElementAttribute(Order=1)]
-        public string IssrMtgId;
-        
-        /// <summary>
-        /// Element <b>MtgDtAndTm</b> (Meeting Date And Time) of type System.DateTime.
-        /// </summary>
-        [XmlElementAttribute(Order=2)]
-        public System.DateTime MtgDtAndTm;
-        
-        /// <summary>
-        /// Element <b>Tp</b> (Type) of type MeetingType2Code.
-        /// </summary>
-        [XmlElementAttribute(Order=3)]
-        public MeetingType2Code Tp;
         
         /// <summary>
         /// Element <b>Item</b> (Item) of type object.
         /// [XOR] This element can be:
-        /// Clssfctn (Classification) of type MeetingTypeClassification1Code 
-        /// XtndedClssfctn (Extended Classification) of type string 
+        /// ISIN (ISIN) of type string 
+        /// OthrId (Other Identification) of type AlternateIdentification1 
         /// </summary>
-        [XmlElementAttribute("Clssfctn", typeof(MeetingTypeClassification1Code), Order=4)]
-        [XmlElementAttribute("XtndedClssfctn", typeof(string), Order=4)]
+        [XmlElementAttribute("ISIN", typeof(string), Order=0)]
+        [XmlElementAttribute("OthrId", typeof(AlternateIdentification1), Order=0)]
         public object Item;
-        
-        /// <summary>
-        /// Element <b>Lctn</b> (Location) of type array of PostalAddress1.
-        /// </summary>
-        [XmlElementAttribute("Lctn", Order=5)]
-        public PostalAddress1[] Lctn;
     }
     
     /// <summary>
-    /// Enumeration <b>MeetingType2Code</b> (Meeting Type 2Code).
+    /// Class <b>SecurityIdentification11</b> (Security Identification 11).
     /// </summary>
     [SerializableAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.003.001.02")]
-    public enum MeetingType2Code
+    [DebuggerStepThroughAttribute()]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.007.001.03")]
+    public class SecurityIdentification11
     {
         
         /// <summary>
-        /// <b>XMET - Extraordinary</b>.
+        /// Element <b>Id</b> (Identification) of type SecurityIdentification11Choice.
         /// </summary>
-        XMET,
+        [XmlElementAttribute(Order=0)]
+        public SecurityIdentification11Choice Id;
         
         /// <summary>
-        /// <b>GMET - General</b>.
+        /// Element <b>Desc</b> (Description) of type string.
         /// </summary>
-        GMET,
+        [XmlElementAttribute(Order=1)]
+        public string Desc;
+    }
+    
+    /// <summary>
+    /// Class <b>GenericIdentification13</b> (Generic Identification 13).
+    /// </summary>
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.007.001.03")]
+    public class GenericIdentification13
+    {
         
         /// <summary>
-        /// <b>MIXD - Mixed</b>.
+        /// Element <b>Id</b> (Identification) of type string.
         /// </summary>
-        MIXD,
+        [XmlElementAttribute(Order=0)]
+        public string Id;
         
         /// <summary>
-        /// <b>SPCL - Special</b>.
+        /// Element <b>SchmeNm</b> (Scheme Name) of type string.
         /// </summary>
-        SPCL,
+        [XmlElementAttribute(Order=1)]
+        public string SchmeNm;
+        
+        /// <summary>
+        /// Element <b>Issr</b> (Issuer) of type string.
+        /// </summary>
+        [XmlElementAttribute(Order=2)]
+        public string Issr;
+    }
+    
+    /// <summary>
+    /// Class <b>MeetingTypeClassification1Choice</b> (Meeting Type Classification 1Choice).
+    /// </summary>
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.007.001.03")]
+    public class MeetingTypeClassification1Choice
+    {
+        
+        /// <summary>
+        /// Element <b>Item</b> (Item) of type object.
+        /// [XOR] This element can be:
+        /// Cd (Code) of type MeetingTypeClassification1Code 
+        /// Prtry (Proprietary) of type GenericIdentification13 
+        /// </summary>
+        [XmlElementAttribute("Cd", typeof(MeetingTypeClassification1Code), Order=0)]
+        [XmlElementAttribute("Prtry", typeof(GenericIdentification13), Order=0)]
+        public object Item;
     }
     
     /// <summary>
     /// Enumeration <b>MeetingTypeClassification1Code</b> (Meeting Type Classification 1Code).
     /// </summary>
     [SerializableAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.003.001.02")]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.007.001.03")]
     public enum MeetingTypeClassification1Code
     {
         
@@ -898,11 +676,86 @@ namespace i20022.seev00300102
     }
     
     /// <summary>
+    /// Class <b>MeetingReference4</b> (Meeting Reference 4).
+    /// </summary>
+    [SerializableAttribute()]
+    [DebuggerStepThroughAttribute()]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.007.001.03")]
+    public class MeetingReference4
+    {
+        
+        /// <summary>
+        /// Element <b>MtgId</b> (Meeting Identification) of type string.
+        /// </summary>
+        [XmlElementAttribute(Order=0)]
+        public string MtgId;
+        
+        /// <summary>
+        /// Element <b>IssrMtgId</b> (Issuer Meeting Identification) of type string.
+        /// </summary>
+        [XmlElementAttribute(Order=1)]
+        public string IssrMtgId;
+        
+        /// <summary>
+        /// Element <b>MtgDtAndTm</b> (Meeting Date And Time) of type System.DateTime.
+        /// </summary>
+        [XmlElementAttribute(Order=2)]
+        public System.DateTime MtgDtAndTm;
+        
+        /// <summary>
+        /// Element <b>Tp</b> (Type) of type MeetingType2Code.
+        /// </summary>
+        [XmlElementAttribute(Order=3)]
+        public MeetingType2Code Tp;
+        
+        /// <summary>
+        /// Element <b>Clssfctn</b> (Classification) of type MeetingTypeClassification1Choice.
+        /// </summary>
+        [XmlElementAttribute(Order=4)]
+        public MeetingTypeClassification1Choice Clssfctn;
+        
+        /// <summary>
+        /// Element <b>Lctn</b> (Location) of type array of PostalAddress1.
+        /// </summary>
+        [XmlElementAttribute("Lctn", Order=5)]
+        public PostalAddress1[] Lctn;
+    }
+    
+    /// <summary>
+    /// Enumeration <b>MeetingType2Code</b> (Meeting Type 2Code).
+    /// </summary>
+    [SerializableAttribute()]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.007.001.03")]
+    public enum MeetingType2Code
+    {
+        
+        /// <summary>
+        /// <b>XMET - Extraordinary</b>.
+        /// </summary>
+        XMET,
+        
+        /// <summary>
+        /// <b>GMET - General</b>.
+        /// </summary>
+        GMET,
+        
+        /// <summary>
+        /// <b>MIXD - Mixed</b>.
+        /// </summary>
+        MIXD,
+        
+        /// <summary>
+        /// <b>SPCL - Special</b>.
+        /// </summary>
+        SPCL,
+    }
+    
+    /// <summary>
     /// Class <b>MessageIdentification</b> (Message Identification).
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
-    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.003.001.02")]
+    [XmlTypeAttribute(Namespace="urn:iso:std:iso:20022:tech:xsd:seev.007.001.03")]
     public class MessageIdentification
     {
         
