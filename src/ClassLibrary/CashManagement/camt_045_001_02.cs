@@ -57,7 +57,7 @@ namespace i20022.camt04500102
     /// <summary>
     /// <b>Document</b> is the root class of the ISO 20022 message
     /// with id camt.045.001.02 name FundDetailedConfirmedCashForecastReportCancellationV02 from Cash Management business area.
-    /// Repository:R 6.8.0.1 v492 - 4 July 2008
+    /// Repository:R 6.14.4.1 v524 - 8 December 2008
     /// </summary>
     [SerializableAttribute()]
     [DebuggerStepThroughAttribute()]
