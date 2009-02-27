@@ -50,8 +50,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reda_001_001_02.cs" />
     <Compile Include="reda_001_001_03.cs" />
+    <Compile Include="reda_002_001_02.cs" />
     <Compile Include="reda_002_001_03.cs" />
+    <Compile Include="reda_003_001_02.cs" />
     <Compile Include="reda_003_001_03.cs" />
   </ItemGroup>
   <ItemGroup>
