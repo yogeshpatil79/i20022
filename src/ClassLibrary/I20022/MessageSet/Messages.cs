@@ -1,4 +1,4 @@
-//                                      ______    ____  
+﻿//                                      ______    ____  
 //                                     |____  | "|__  | 
 //                                      _   | |     | | 
 //                                     | |  | |   __| | 
@@ -44,7 +44,6 @@
 
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 
 namespace i20022.MessageSet
@@ -77,8 +76,10 @@ namespace i20022.MessageSet
             _messages.Add("acmt.003.001.02", new Message("acmt.003.001.02", "AccountModificationInstructionV02"));
             _messages.Add("acmt.005.001.02", new Message("acmt.005.001.02", "RequestForAccountManagementStatusReportV02"));
             _messages.Add("acmt.006.001.02", new Message("acmt.006.001.02", "AccountManagementStatusReportV02"));
+            
             _messages.Add("admi.002.001.01", new Message("admi.002.001.01", "MessageRejectV01"));
             _messages.Add("admi.004.001.01", new Message("admi.004.001.01", "SystemEventNotificationV01"));
+
             _messages.Add("camt.007.002.01", new Message("camt.007.002.01", "RequestToModifyPayment"));
             _messages.Add("camt.008.002.01", new Message("camt.008.002.01", "RequestToCancelPayment"));
             _messages.Add("camt.026.001.01", new Message("camt.026.001.01", "UnableToApply"));
@@ -93,15 +94,22 @@ namespace i20022.MessageSet
             _messages.Add("camt.037.001.01", new Message("camt.037.001.01", "DebitAuthorisationRequest"));
             _messages.Add("camt.038.001.01", new Message("camt.038.001.01", "CaseStatusReportRequest"));
             _messages.Add("camt.039.001.01", new Message("camt.039.001.01", "CaseStatusReport"));
+            _messages.Add("camt.040.001.02", new Message("camt.040.001.02", "FundEstimatedCashForecastReportV02"));
             _messages.Add("camt.040.001.03", new Message("camt.040.001.03", "FundEstimatedCashForecastReportV03"));
+            _messages.Add("camt.041.001.02", new Message("camt.041.001.02", "FundConfirmedCashForecastReportV02"));
             _messages.Add("camt.041.001.03", new Message("camt.041.001.03", "FundConfirmedCashForecastReportV03"));
+            _messages.Add("camt.042.001.02", new Message("camt.042.001.02", "FundDetailedEstimatedCashForecastReportV02"));
             _messages.Add("camt.042.001.03", new Message("camt.042.001.03", "FundDetailedEstimatedCashForecastReportV03"));
+            _messages.Add("camt.043.001.02", new Message("camt.043.001.02", "FundDetailedConfirmedCashForecastReportV02"));
             _messages.Add("camt.043.001.03", new Message("camt.043.001.03", "FundDetailedConfirmedCashForecastReportV03"));
+            _messages.Add("camt.044.001.01", new Message("camt.044.001.01", "FundConfirmedCashForecastReportCancellationV01"));
             _messages.Add("camt.044.001.02", new Message("camt.044.001.02", "FundConfirmedCashForecastReportCancellationV02"));
+            _messages.Add("camt.045.001.01", new Message("camt.045.001.01", "FundDetailedConfirmedCashForecastReportCancellationV01"));
             _messages.Add("camt.045.001.02", new Message("camt.045.001.02", "FundDetailedConfirmedCashForecastReportCancellationV02"));
             _messages.Add("camt.052.001.01", new Message("camt.052.001.01", "BankToCustomerAccountReportV01"));
             _messages.Add("camt.053.001.01", new Message("camt.053.001.01", "BankToCustomerStatementV01"));
             _messages.Add("camt.054.001.01", new Message("camt.054.001.01", "BankToCustomerDebitCreditNotificationV01"));
+            
             _messages.Add("pacs.002.001.02", new Message("pacs.002.001.02", "PaymentStatusReportV02"));
             _messages.Add("pacs.003.001.01", new Message("pacs.003.001.01", "FIToFICustomerDirectDebitV01"));
             _messages.Add("pacs.004.001.01", new Message("pacs.004.001.01", "PaymentReturnV01"));
@@ -109,23 +117,36 @@ namespace i20022.MessageSet
             _messages.Add("pacs.007.001.01", new Message("pacs.007.001.01", "FIToFIPaymentReversalV01"));
             _messages.Add("pacs.008.001.01", new Message("pacs.008.001.01", "FIToFICustomerCreditTransferV01"));
             _messages.Add("pacs.009.001.01", new Message("pacs.009.001.01", "FinancialInstitutionCreditTransferV01"));
+            
             _messages.Add("pain.001.001.02", new Message("pain.001.001.02", "CustomerCreditTransferInitiationV02"));
             _messages.Add("pain.002.001.02", new Message("pain.002.001.02", "PaymentStatusReportV02"));
             _messages.Add("pain.006.001.01", new Message("pain.006.001.01", "PaymentCancellationRequestV01"));
             _messages.Add("pain.007.001.01", new Message("pain.007.001.01", "CustomerPaymentReversalV01"));
             _messages.Add("pain.008.001.01", new Message("pain.008.001.01", "CustomerDirectDebitInitiationV01"));
+
+            _messages.Add("reda.001.001.02", new Message("reda.001.001.02", "PriceReportV02"));
             _messages.Add("reda.001.001.03", new Message("reda.001.001.03", "PriceReportV03"));
+            _messages.Add("reda.002.001.02", new Message("reda.002.001.02", "PriceReportCancellationV02"));
             _messages.Add("reda.002.001.03", new Message("reda.002.001.03", "PriceReportCancellationV03"));
+            _messages.Add("reda.003.001.02", new Message("reda.003.001.02", "PriceReportCorrectionV02"));
             _messages.Add("reda.003.001.03", new Message("reda.003.001.03", "PriceReportCorrectionV03"));
+
             _messages.Add("seev.001.001.02", new Message("seev.001.001.02", "MeetingNotificationV02"));
+            _messages.Add("seev.001.001.03", new Message("seev.001.001.03", "MeetingNotificationV03"));
             _messages.Add("seev.002.001.02", new Message("seev.002.001.02", "MeetingCancellationV02"));
+            _messages.Add("seev.002.001.03", new Message("seev.002.001.03", "MeetingCancellationV03"));
             _messages.Add("seev.003.001.02", new Message("seev.003.001.02", "MeetingEntitlementNotificationV02"));
+            _messages.Add("seev.003.001.03", new Message("seev.003.001.03", "MeetingEntitlementNotificationV03"));
             _messages.Add("seev.004.001.02", new Message("seev.004.001.02", "MeetingInstructionV02"));
+            _messages.Add("seev.004.001.03", new Message("seev.004.001.03", "MeetingInstructionV03"));
             _messages.Add("seev.005.001.02", new Message("seev.005.001.02", "MeetingInstructionCancellationRequestV02"));
+            _messages.Add("seev.005.001.03", new Message("seev.005.001.03", "MeetingInstructionCancellationRequestV03"));
             _messages.Add("seev.006.001.02", new Message("seev.006.001.02", "MeetingInstructionStatusV02"));
+            _messages.Add("seev.006.001.03", new Message("seev.006.001.03", "MeetingInstructionStatusV03"));
             _messages.Add("seev.007.001.02", new Message("seev.007.001.02", "MeetingVoteExecutionConfirmationV02"));
+            _messages.Add("seev.007.001.03", new Message("seev.007.001.03", "MeetingVoteExecutionConfirmationV03"));
             _messages.Add("seev.008.001.02", new Message("seev.008.001.02", "MeetingResultDisseminationV02"));
-            
+            _messages.Add("seev.008.001.03", new Message("seev.008.001.03", "MeetingResultDisseminationV03"));
             _messages.Add("seev.009.001.01", new Message("seev.009.001.01", "AgentCANotificationAdviceV01"));
             _messages.Add("seev.010.001.01", new Message("seev.010.001.01", "AgentCANotificationCancellationRequestV01"));
             _messages.Add("seev.011.001.01", new Message("seev.011.001.01", "AgentCANotificationStatusAdviceV01"));
@@ -147,52 +168,89 @@ namespace i20022.MessageSet
             _messages.Add("seev.027.001.01", new Message("seev.027.001.01", "AgentCAStandingInstructionStatusAdviceV01"));
             _messages.Add("seev.028.001.01", new Message("seev.028.001.01", "AgentCADeactivationInstructionV01"));
             _messages.Add("seev.029.001.01", new Message("seev.029.001.01", "AgentCADeactivationCancellationRequestV01"));
-            _messages.Add("seev.030.001.01", new Message("seev.030.001.01", "AgentCADeactivationStatusAdviceV01"));            
-            
+            _messages.Add("seev.030.001.01", new Message("seev.030.001.01", "AgentCADeactivationStatusAdviceV01"));
+
+            _messages.Add("semt.001.001.01", new Message("semt.001.001.01", "SecuritiesMessageRejectionV01"));
             _messages.Add("semt.001.001.02", new Message("semt.001.001.02", "SecuritiesMessageRejectionV02"));
+            _messages.Add("semt.002.001.01", new Message("semt.002.001.01", "CustodyStatementOfHoldingsV01"));
             _messages.Add("semt.002.001.02", new Message("semt.002.001.02", "CustodyStatementOfHoldingsV02"));
+            _messages.Add("semt.003.001.01", new Message("semt.003.001.01", "AccountingStatementOfHoldingsV01"));
             _messages.Add("semt.003.001.02", new Message("semt.003.001.02", "AccountingStatementOfHoldingsV02"));
+            _messages.Add("semt.004.001.01", new Message("semt.004.001.01", "CustodyStatementOfHoldingsCancellationV01"));
             _messages.Add("semt.004.001.02", new Message("semt.004.001.02", "CustodyStatementOfHoldingsCancellationV02"));
+            _messages.Add("semt.005.001.01", new Message("semt.005.001.01", "AccountingStatementOfHoldingsCancellationV01"));
             _messages.Add("semt.005.001.02", new Message("semt.005.001.02", "AccountingStatementOfHoldingsCancellationV02"));
+            _messages.Add("semt.006.001.01", new Message("semt.006.001.01", "StatementOfInvestmentFundTransactionsV01"));
             _messages.Add("semt.006.001.02", new Message("semt.006.001.02", "StatementOfInvestmentFundTransactionsV02"));
+            _messages.Add("semt.007.001.01", new Message("semt.007.001.01", "StatementOfInvestmentFundTransactionsCancellationV01"));
             _messages.Add("semt.007.001.02", new Message("semt.007.001.02", "StatementOfInvestmentFundTransactionsCancellationV02"));
             _messages.Add("semt.008.001.02", new Message("semt.008.001.02", "RegulatoryTransactionReportV02"));
             _messages.Add("semt.009.001.02", new Message("semt.009.001.02", "RegulatoryTransactionReportCancellationRequestV02"));
             _messages.Add("semt.010.001.01", new Message("semt.010.001.01", "RegulatoryTransactionReportStatusV01"));
             _messages.Add("semt.011.001.01", new Message("semt.011.001.01", "RegulatoryTransactionReportCancellationStatusV01"));
+
+            _messages.Add("sese.001.001.01", new Message("sese.001.001.01", "TransferOutInstructionV01"));
             _messages.Add("sese.001.001.02", new Message("sese.001.001.02", "TransferOutInstructionV02"));
+            _messages.Add("sese.002.001.01", new Message("sese.002.001.01", "TransferOutCancellationRequestV01"));
             _messages.Add("sese.002.001.02", new Message("sese.002.001.02", "TransferOutCancellationRequestV02"));
+            _messages.Add("sese.003.001.01", new Message("sese.003.001.01", "TransferOutConfirmationV01"));
             _messages.Add("sese.003.001.02", new Message("sese.003.001.02", "TransferOutConfirmationV02"));
+            _messages.Add("sese.004.001.01", new Message("sese.004.001.01", "ReversalOfTransferOutConfirmationV01"));
             _messages.Add("sese.004.001.02", new Message("sese.004.001.02", "ReversalOfTransferOutConfirmationV02"));
+            _messages.Add("sese.005.001.01", new Message("sese.005.001.01", "TransferInInstructionV01"));
             _messages.Add("sese.005.001.02", new Message("sese.005.001.02", "TransferInInstructionV02"));
             _messages.Add("sese.006.001.02", new Message("sese.006.001.02", "TransferInCancellationRequestV02"));
+            _messages.Add("sese.007.001.01", new Message("sese.007.001.01", "TransferInConfirmationV01"));
             _messages.Add("sese.007.001.02", new Message("sese.007.001.02", "TransferInConfirmationV02"));
+            _messages.Add("sese.008.001.01", new Message("sese.008.001.01", "ReversalOfTransferInConfirmationV01"));
             _messages.Add("sese.008.001.02", new Message("sese.008.001.02", "ReversalOfTransferInConfirmationV02"));
+            _messages.Add("sese.009.001.01", new Message("sese.009.001.01", "RequestForTransferStatusReportV01"));
             _messages.Add("sese.009.001.02", new Message("sese.009.001.02", "RequestForTransferStatusReportV02"));
+            _messages.Add("sese.010.001.01", new Message("sese.010.001.01", "TransferCancellationStatusReportV01"));
             _messages.Add("sese.010.001.02", new Message("sese.010.001.02", "TransferCancellationStatusReportV02"));
+            _messages.Add("sese.011.001.01", new Message("sese.011.001.01", "TransferInstructionStatusReportV01"));
             _messages.Add("sese.011.001.02", new Message("sese.011.001.02", "TransferInstructionStatusReportV02"));
             _messages.Add("sese.012.001.02", new Message("sese.012.001.02", "PEPOrISAOrPortfolioTransferInstructionV02"));
             _messages.Add("sese.013.001.02", new Message("sese.013.001.02", "PEPOrISAOrPortfolioTransferConfirmationV02"));
             _messages.Add("sese.014.001.02", new Message("sese.014.001.02", "PEPOrISAOrPortfolioTransferCancellationRequestV02"));
             _messages.Add("sese.018.001.01", new Message("sese.018.001.01", "PEPOrISAOrPortfolioInformationV01"));
             _messages.Add("sese.019.001.01", new Message("sese.019.001.01", "RequestForPEPOrISAOrPortfolioInformationV01"));
+
+            _messages.Add("setr.001.001.02", new Message("setr.001.001.02", "RedemptionBulkOrderV02"));
             _messages.Add("setr.001.001.03", new Message("setr.001.001.03", "RedemptionBulkOrderV03"));
+            _messages.Add("setr.002.001.02", new Message("setr.002.001.02", "RedemptionBulkOrderCancellationRequestV02"));
             _messages.Add("setr.002.001.03", new Message("setr.002.001.03", "RedemptionBulkOrderCancellationRequestV03"));
+            _messages.Add("setr.003.001.02", new Message("setr.003.001.02", "RedemptionBulkOrderConfirmationV02"));
             _messages.Add("setr.003.001.03", new Message("setr.003.001.03", "RedemptionBulkOrderConfirmationV03"));
+            _messages.Add("setr.004.001.02", new Message("setr.004.001.02", "RedemptionOrderV02"));
             _messages.Add("setr.004.001.03", new Message("setr.004.001.03", "RedemptionOrderV03"));
+            _messages.Add("setr.005.001.02", new Message("setr.005.001.02", "RedemptionOrderCancellationRequestV02"));
             _messages.Add("setr.005.001.03", new Message("setr.005.001.03", "RedemptionOrderCancellationRequestV03"));
+            _messages.Add("setr.006.001.02", new Message("setr.006.001.02", "RedemptionOrderConfirmationV02"));
             _messages.Add("setr.006.001.03", new Message("setr.006.001.03", "RedemptionOrderConfirmationV03"));
+            _messages.Add("setr.007.001.02", new Message("setr.007.001.02", "SubscriptionBulkOrderV02"));
             _messages.Add("setr.007.001.03", new Message("setr.007.001.03", "SubscriptionBulkOrderV03"));
+            _messages.Add("setr.008.001.02", new Message("setr.008.001.02", "SubscriptionBulkOrderCancellationRequestV02"));
             _messages.Add("setr.008.001.03", new Message("setr.008.001.03", "SubscriptionBulkOrderCancellationRequestV03"));
+            _messages.Add("setr.009.001.02", new Message("setr.009.001.02", "SubscriptionBulkOrderConfirmationV02"));
             _messages.Add("setr.009.001.03", new Message("setr.009.001.03", "SubscriptionBulkOrderConfirmationV03"));
+            _messages.Add("setr.010.001.02", new Message("setr.010.001.02", "SubscriptionOrderV02"));
             _messages.Add("setr.010.001.03", new Message("setr.010.001.03", "SubscriptionOrderV03"));
+            _messages.Add("setr.011.001.02", new Message("setr.011.001.02", "SubscriptionOrderCancellationRequestV02"));
             _messages.Add("setr.011.001.03", new Message("setr.011.001.03", "SubscriptionOrderCancellationRequestV03"));
+            _messages.Add("setr.012.001.02", new Message("setr.012.001.02", "SubscriptionOrderConfirmationV02"));
             _messages.Add("setr.012.001.03", new Message("setr.012.001.03", "SubscriptionOrderConfirmationV03"));
+            _messages.Add("setr.013.001.02", new Message("setr.013.001.02", "SwitchOrderV02"));
             _messages.Add("setr.013.001.03", new Message("setr.013.001.03", "SwitchOrderV03"));
+            _messages.Add("setr.014.001.02", new Message("setr.014.001.02", "SwitchOrderCancellationRequestV02"));
             _messages.Add("setr.014.001.03", new Message("setr.014.001.03", "SwitchOrderCancellationRequestV03"));
+            _messages.Add("setr.015.001.02", new Message("setr.015.001.02", "SwitchOrderConfirmationV02"));
             _messages.Add("setr.015.001.03", new Message("setr.015.001.03", "SwitchOrderConfirmationV03"));
+            _messages.Add("setr.016.001.02", new Message("setr.016.001.02", "OrderInstructionStatusReportV02"));
             _messages.Add("setr.016.001.03", new Message("setr.016.001.03", "OrderInstructionStatusReportV03"));
+            _messages.Add("setr.017.001.02", new Message("setr.017.001.02", "OrderCancellationStatusReportV02"));
             _messages.Add("setr.017.001.03", new Message("setr.017.001.03", "OrderCancellationStatusReportV03"));
+            _messages.Add("setr.018.001.02", new Message("setr.018.001.02", "RequestForOrderStatusReportV02"));
             _messages.Add("setr.018.001.03", new Message("setr.018.001.03", "RequestForOrderStatusReportV03"));
             _messages.Add("setr.047.001.01", new Message("setr.047.001.01", "SubscriptionOrderConfirmationCancellationInstructionV01"));
             _messages.Add("setr.048.001.01", new Message("setr.048.001.01", "SubscriptionOrderConfirmationAmendmentV01"));
@@ -206,6 +264,7 @@ namespace i20022.MessageSet
             _messages.Add("setr.056.001.01", new Message("setr.056.001.01", "SwitchOrderConfirmationAmendmentV01"));
             _messages.Add("setr.057.001.01", new Message("setr.057.001.01", "OrderConfirmationStatusReportV01"));
             _messages.Add("setr.058.001.01", new Message("setr.058.001.01", "RequestForOrderConfirmationStatusReportV01"));
+            
             _messages.Add("trea.001.001.02", new Message("trea.001.001.02", "CreateNonDeliverableForwardOpeningV02"));
             _messages.Add("trea.002.001.02", new Message("trea.002.001.02", "AmendNonDeliverableForwardOpeningV02"));
             _messages.Add("trea.003.001.02", new Message("trea.003.001.02", "CancelNonDeliverableForwardOpeningV02"));
@@ -219,9 +278,11 @@ namespace i20022.MessageSet
             _messages.Add("trea.011.001.02", new Message("trea.011.001.02", "CancelForeignExchangeOptionV02"));
             _messages.Add("trea.012.001.02", new Message("trea.012.001.02", "ForeignExchangeOptionNotificationV02"));
             _messages.Add("trea.013.001.01", new Message("trea.013.001.01", "WithdrawalNotificationV01"));
+            
             _messages.Add("tsin.001.001.01", new Message("tsin.001.001.01", "InvoiceFinancingRequestV01"));
             _messages.Add("tsin.002.001.01", new Message("tsin.002.001.01", "InvoiceFinancingRequestStatusV01"));
             _messages.Add("tsin.003.001.01", new Message("tsin.003.001.01", "InvoiceFinancingCancellationRequestV01"));
+            
             _messages.Add("tsmt.001.001.03", new Message("tsmt.001.001.03", "AcknowledgementV03"));
             _messages.Add("tsmt.002.001.03", new Message("tsmt.002.001.03", "ActivityReportV03"));
             _messages.Add("tsmt.003.001.03", new Message("tsmt.003.001.03", "ActivityReportRequestV03"));
@@ -321,6 +382,17 @@ namespace i20022.MessageSet
             string nspace = instance.GetType().Namespace.Substring(7);
 
             return String.Format("{0}.{1}.{2}.{3}", nspace.Substring(0, 4), nspace.Substring(4, 3), nspace.Substring(7, 3), nspace.Substring(10, 2));
+        }
+
+
+        /// <summary>
+        /// Gets or sets the messages dictionary.
+        /// </summary>
+        /// <value>The messages dictionary.</value>
+        public static Dictionary<string, Message> MessagesDictionary
+        {
+            get { return Messages._messages; }
+            set { Messages._messages = value; }
         }
 
     }
