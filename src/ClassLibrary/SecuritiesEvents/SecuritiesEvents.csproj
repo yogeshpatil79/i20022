@@ -51,13 +51,21 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="seev_001_001_02.cs" />
+    <Compile Include="seev_001_001_03.cs" />
     <Compile Include="seev_002_001_02.cs" />
+    <Compile Include="seev_002_001_03.cs" />
     <Compile Include="seev_003_001_02.cs" />
+    <Compile Include="seev_003_001_03.cs" />
     <Compile Include="seev_004_001_02.cs" />
+    <Compile Include="seev_004_001_03.cs" />
     <Compile Include="seev_005_001_02.cs" />
+    <Compile Include="seev_005_001_03.cs" />
     <Compile Include="seev_006_001_02.cs" />
+    <Compile Include="seev_006_001_03.cs" />
     <Compile Include="seev_007_001_02.cs" />
+    <Compile Include="seev_007_001_03.cs" />
     <Compile Include="seev_008_001_02.cs" />
+    <Compile Include="seev_008_001_03.cs" />
     <Compile Include="seev_009_001_01.cs" />
     <Compile Include="seev_010_001_01.cs" />
     <Compile Include="seev_011_001_01.cs" />
